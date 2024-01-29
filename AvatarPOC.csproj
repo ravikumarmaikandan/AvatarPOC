@@ -52,8 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Generated\PaintAvatar.cs" />
     <Compile Include="Generated\PaintAvatarInfo.cs" />
+    <Compile Include="Generated\PatientAvatarGenerated.cs" />
     <Compile Include="PatientAvatarRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

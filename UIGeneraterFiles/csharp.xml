@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<templates>
+
+<template name="BODY_HEADER">
+	<![CDATA[
+#region Header
+// copyright ...
+// generated file
+// from $SOURCEFILE$
+// using $TEMPLATESOURCE$
+// by $TOOLNAME$
+#endregion
+
+using System.Drawing;
+
+namespace AvatarPOC.Generated
+{
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
+	public class PaintAvatar
+    {
+	private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
+]]></template>
+
+<template name="BODY_FOOTER"><![CDATA[
+
+     public void PaintSVG($PaintSignature$)
+     {
+	 
+     }
+}}]]></template>
+
+<template name="HEAD_HEADER"><![CDATA[
+// ignore this file
+]]></template>
+
+<template name="HEAD_FOOTER"><![CDATA[
+]]></template>
+
+
+<template name="PaintSignature"><![CDATA[PaintAvatarInfo pAvatarInfo]]></template>
+
+
+<template name="Move"><![CDATA[//    p.move($X$,$Y$);
+]]></template>
+<template name="Line"><![CDATA[//    p.line($X$,$Y$);
+]]></template>
+<template name="Rect"><![CDATA[//    p.rectangle($X1$,$Y1$,$X2$,$Y2$);
+]]></template>
+<template name="Quad"><![CDATA[//    p.quad($X1$,$Y1$,$X2$,$Y2$);
+]]></template>
+<template name="Cubic"><![CDATA[//   p.curve($X1$,$Y1$,$X2$,$Y2$,$X3$,$Y3$);
+]]></template>
+<template name="Close"><![CDATA[//   p.close();
+]]></template>
+
+
+<!--LineFeed-->
+<template name="LF">
+</template>
+
+<!--Semicolon LineFeed-->
+<template name="SLF">;
+</template>
+
+<!--Comma LineFeed-->
+<template name="CLF">,
+</template>
+
+<template name="CLF">,
+</template>
+
+<template name="FILL_DEFAULT">none</template>
+
+<template name="PointDef"><![CDATA[
+//void PaintPath_$token:ID$(PaintPathIf & p)
+//{ // Label: $NAME$
+//$ELEMENTS$
+//};
+]]></template>
+
+<template name="MemberName"><![CDATA[// $MEMBER_NAME$]]></template>
+
+<template name="pushcolor">
+    PushColor( 0x$onlyhex:fill$ );
+</template>
+<template name="popcolor">    
+    PopColor();
+</template>
+
+
+<template name="pushtransformation">
+    PushTransformation($TRANSFORM$);
+</template>
+<template name="poptransformation">    PopTransformation();</template>
+
+<template name="PaintPush">$nonempty TRANSFORM:pushtransformation$$nonempty fill:pushcolor$</template>
+<template name="PaintPop">$nonempty TRANSFORM:poptransformation$$nonempty fill:popcolor$</template>
+
+<!-- ======================================================  -->
+<skill name="Default">
+  <path>
+    <xbody>
+<![CDATA[
+static void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+{
+$recursive:PaintPush$    PaintPath_$token:ID$(p); 
+    p.Fill();
+$recursive:PaintPop$}
+//----------------------------------------
+]]></xbody>
+
+  </path>
+
+  <group>
+    <member name="forwlistpaint" separator="#LF">static void Paint_$token:MEMBER_ID$($PaintSignature$);</member>
+    <member name="paintlist" separator="#LF">    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <xbody>
+<![CDATA[
+//Group: $NAME$
+$forwlistpaint$
+static void Paint_$token:ID$($PaintSignature$)
+{
+$recursive:PaintPush$$paintlist$
+$recursive:PaintPop$}
+//----------------------------------------
+]]></xbody>
+  </group>
+
+  <use>
+    <xbody>
+<![CDATA[
+static void Paint_$token:LINK$($PaintSignature$);
+static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+{
+$recursive:PaintPush$    Paint_$token:LINK$(p);
+$recursive:PaintPop$}
+//----------------------------------------
+]]></xbody>
+  </use>
+
+  <text>
+    <xbody>
+<![CDATA[
+static void Paint_$token:LINK$($PaintSignature$);
+static void Paint_$token:ID$($PaintSignature$) //Text: $NAME$
+{
+$recursive:PaintPush$    p.DrawText( $X$, $Y$, $float:font-size$, "$font-family$", "$CONTENT$" );
+$recursive:PaintPop$}
+//----------------------------------------
+]]></xbody>
+  </text>
+
+</skill>
+
+<!-- ======================================================  -->
+
+<skill name="HideAlways">
+  <template name="hidden"><![CDATA[
+static void Paint_$token:ID$(PaintIf &)
+{
+  // always hidden
+}
+//----------------------------------------
+]]></template>
+
+  <path><body>$recursive:hidden$</body></path>
+  <group><body>$recursive:hidden$</body></group>
+  <use><body>$recursive:hidden$</body></use>
+</skill>
+<!-- ======================================================  -->
+
+<skill name="Visibility">
+  <path>
+    <body>
+<![CDATA[
+static void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+{
+  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
+  {
+$recursive:PaintPush$    p.PaintPath($token:ID$_data);
+$recursive:PaintPop$  }
+}
+//----------------------------------------
+]]></body>
+
+  </path>
+
+  <group>
+    <member name="forwlistpaint" separator="#LF">static void Paint_$token:MEMBER_ID$($PaintSignature$);</member>
+    <member name="paintlist" separator="#LF">    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <body>
+<![CDATA[
+//Group: $NAME$
+$forwlistpaint$
+static void Paint_$token:ID$($PaintSignature$)
+{
+  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
+  {
+$recursive:PaintPush$$paintlist$
+$recursive:PaintPop$
+  }
+}
+//----------------------------------------
+]]></body>
+  </group>
+
+  <use>
+    <body>
+<![CDATA[
+static void Paint_$token:LINK$($PaintSignature$);
+static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+{
+  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
+  {
+$recursive:PaintPush$    Paint_$token:LINK$(p);
+$recursive:PaintPop$}}
+//----------------------------------------
+]]></body>
+  </use>
+
+</skill>
+
+<!-- ======================================================  -->
+
+
+<skill name="Trace">
+  <path>
+    <body>
+<![CDATA[
+void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+{$nonempty TRANSFORM:pushtransformation$
+    PaintTraceIf t;
+    PaintPath_$token:ID$(t);
+    using namespace Topics;
+    p.Trace(t, $SKILL_PARAMETERS$);
+$nonempty TRANSFORM:poptransformation$}
+]]></body>
+
+  </path>
+
+  <group>
+    <body>
+<![CDATA[
+//----------------------------------------
+]]></body>
+  </group>
+
+  <use>
+    <body>
+<![CDATA[
+//----------------------------------------
+]]></body>
+  </use>
+
+</skill>
+
+<!-- ======================================================  -->
+
+
+</templates>
