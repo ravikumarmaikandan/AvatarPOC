@@ -2,8 +2,8 @@
 #region Header
 // copyright ...
 // generated file
-// from simple.svg
-// using csharp.xml
+// from D:\POC\AvatarPOC\UIGeneraterFiles\simple.svg
+// using D:\POC\AvatarPOC\UIGeneraterFiles\csharp.xml
 // by .\svgcompiler\svgconverter.exe
 #endregion
 
@@ -13,8 +13,8 @@ namespace AvatarPOC.Generated
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("__svgcompiler_svgconverter_exe", "1")]
 	public class PaintAvatar
-	{
-		private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
+    {
+	private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 //void PaintPath_path519_f0(PaintPathIf & p)
 //{ // Label: filling of Max
 ////    p.move(125.669600,39.137896);
@@ -80,9 +80,87 @@ namespace AvatarPOC.Generated
 //
 //};
 
-		public void PaintSVG(PaintAvatarInfo pAvatarInfo)
-		{
+        private void Paint_path519_f0(PaintAvatarInfo p) //Path: filling of Max
+        {
+        }
+//----------------------------------------
 
-		}
-	}
+        private void Paint_path519_s0(PaintAvatarInfo p) //Path: stroke of Max
+        {
+        }
+//----------------------------------------
+
+        //Group: Max
+        private void Paint_path519(PaintAvatarInfo p)
+        {
+		    Paint_path519_f0(p);// filling of Max
+		    Paint_path519_s0(p);// stroke of Max
+        }
+        //----------------------------------------
+
+        private void Paint_path517_f1(PaintAvatarInfo p) //Path: filling of Min
+        {
+        }
+//----------------------------------------
+
+        private void Paint_path517_s1(PaintAvatarInfo p) //Path: stroke of Min
+        {
+        }
+//----------------------------------------
+
+        //Group: Min
+        private void Paint_path517(PaintAvatarInfo p)
+        {
+		    Paint_path517_f1(p);// filling of Min
+		    Paint_path517_s1(p);// stroke of Min
+        }
+        //----------------------------------------
+
+        private void Paint_path523_f2(PaintAvatarInfo p) //Path: filling of Time
+        {
+        }
+//----------------------------------------
+
+        private void Paint_path523_s2(PaintAvatarInfo p) //Path: stroke of Time
+        {
+        }
+//----------------------------------------
+
+        //Group: Time
+        private void Paint_path523(PaintAvatarInfo p)
+        {
+		    Paint_path523_f2(p);// filling of Time
+		    Paint_path523_s2(p);// stroke of Time
+        }
+        //----------------------------------------
+
+        //Group: Heart
+        private void Paint_g528(PaintAvatarInfo p)
+        {
+		    Paint_path519(p);// Max
+		    Paint_path517(p);// Min
+		    Paint_path523(p);// Time
+        }
+        //----------------------------------------
+
+        //Group: Ebene 1
+        private void Paint_layer1(PaintAvatarInfo p)
+        {
+		    Paint_g528(p);// Heart
+        }
+        //----------------------------------------
+
+        //Group: 
+        private void Paint_svg515(PaintAvatarInfo p)
+        {
+		    Paint_layer1(p);// Ebene 1
+        }
+        //----------------------------------------
+		 
+
+        public void PaintSVG(PaintAvatarInfo p)
+        {
+			Paint_svg515(p);
+        }
+    }
 }

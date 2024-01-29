@@ -22,13 +22,15 @@ namespace AvatarPOC.Generated
 	private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 ]]></template>
 
-<template name="BODY_FOOTER"><![CDATA[
+<template name="BODY_FOOTER">
+		 <![CDATA[
 
-     public void PaintSVG($PaintSignature$)
-     {
-	 
-     }
-}}]]></template>
+        public void PaintSVG($PaintSignature$)
+        {
+			Paint_$token:TOPID$(p);
+        }
+    }
+}]]></template>
 
 <template name="HEAD_HEADER"><![CDATA[
 // ignore this file
@@ -38,7 +40,7 @@ namespace AvatarPOC.Generated
 ]]></template>
 
 
-<template name="PaintSignature"><![CDATA[PaintAvatarInfo pAvatarInfo]]></template>
+<template name="PaintSignature"><![CDATA[PaintAvatarInfo p]]></template>
 
 
 <template name="Move"><![CDATA[//    p.move($X$,$Y$);
@@ -100,31 +102,27 @@ namespace AvatarPOC.Generated
 <!-- ======================================================  -->
 <skill name="Default">
   <path>
-    <xbody>
+    <body>
 <![CDATA[
-static void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-{
-$recursive:PaintPush$    PaintPath_$token:ID$(p); 
-    p.Fill();
-$recursive:PaintPop$}
+        private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+        {
+        }
 //----------------------------------------
-]]></xbody>
+]]></body>
 
   </path>
 
   <group>
-    <member name="forwlistpaint" separator="#LF">static void Paint_$token:MEMBER_ID$($PaintSignature$);</member>
-    <member name="paintlist" separator="#LF">    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-    <xbody>
+    <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <body>
 <![CDATA[
-//Group: $NAME$
-$forwlistpaint$
-static void Paint_$token:ID$($PaintSignature$)
-{
-$recursive:PaintPush$$paintlist$
-$recursive:PaintPop$}
-//----------------------------------------
-]]></xbody>
+        //Group: $NAME$
+        private void Paint_$token:ID$($PaintSignature$)
+        {
+$paintlist$
+        }
+        //----------------------------------------
+]]></body>
   </group>
 
   <use>
