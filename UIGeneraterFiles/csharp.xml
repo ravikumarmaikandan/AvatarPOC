@@ -110,7 +110,7 @@ $ELEMENTS$
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
-            PaintPath_$token:ID$(p);
+            PaintPath_$token:ID$(_patientAvatarRenderer);
             _patientAvatarRenderer.Fill(p);
 		   
         }
