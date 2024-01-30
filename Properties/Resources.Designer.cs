@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AvatarPOC.Properties
+namespace Philips.PIC.CommonControls.Properties
 {
 
 

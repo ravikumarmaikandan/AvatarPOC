@@ -7,12 +7,12 @@
 // Date:        1/29/2024 3:06:46 PM
 #endregion
 
-using AvatarPOC.Generated;
+using Philips.PIC.CommonControls.Generated;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace AvatarPOC
+namespace Philips.PIC.CommonControls
 {
     /// <summary>
     /// 

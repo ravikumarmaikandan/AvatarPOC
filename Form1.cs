@@ -1,7 +1,7 @@
-﻿using AvatarPOC.Generated;
+﻿using Philips.PIC.CommonControls.Generated;
 using System.Windows.Forms;
 
-namespace AvatarPOC
+namespace Philips.PIC.CommonControls
 {
     public partial class Form1 : Form
     {

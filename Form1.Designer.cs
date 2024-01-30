@@ -1,4 +1,4 @@
-﻿namespace AvatarPOC
+﻿namespace Philips.PIC.CommonControls
 {
     partial class Form1
     {

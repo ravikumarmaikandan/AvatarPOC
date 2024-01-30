@@ -8,7 +8,7 @@
    version="1.1"
    id="svg515"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="einfach.svg"
+   sodipodi:docname="simple.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,14 +34,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
      inkscape:cx="359.91735"
-     inkscape:cy="518.30927"
+     inkscape:cy="386.0803"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1111"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="974"
+     inkscape:window-x="2389"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
@@ -58,13 +58,14 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Ebene 1"
+     inkscape:label="Layer1"
      inkscape:groupmode="layer"
      id="layer1">
     <g
        id="g528"
        inkscape:label="Heart"
-       onload="Animated(PulseRateHeart)">
+       onload="Animated(PulseRateHeart)"
+       transform="translate(-43.391688,7.9375004)">
       <path
          inkscape:label="Max"
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -78,7 +79,7 @@
          inkscape:connector-curvature="0"
          id="path517"
          d="m 125.6696,61.060515 c 0,0 18.94509,-47.318829 42.33333,-36.285704 45.6259,21.523474 -45.35714,136.827379 -45.35714,136.827379 0,0 -82.561166,-115.551365 -40.065477,-136.827379 21.405557,-10.71697 43.089287,36.285704 43.089287,36.285704 z"
-         style="fill:#ff0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#ff0000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          inkscape:label="Time"
          inkscape:connector-curvature="0"
@@ -87,5 +88,12 @@
          style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          sodipodi:nodetypes="cscc" />
     </g>
+    <ellipse
+       style="fill:#ff7f2a;stroke-width:0.264583"
+       id="path1"
+       cx="49.952675"
+       cy="193.26259"
+       rx="24.882793"
+       ry="10.664055" />
   </g>
 </svg>

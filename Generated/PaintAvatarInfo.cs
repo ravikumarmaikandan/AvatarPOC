@@ -9,7 +9,7 @@
 
 using System.Windows.Forms;
 
-namespace AvatarPOC.Generated
+namespace Philips.PIC.CommonControls.Generated
 {
     /// <summary>
     /// 

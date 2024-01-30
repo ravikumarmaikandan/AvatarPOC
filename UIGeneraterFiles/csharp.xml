@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <templates>
-
-<template name="BODY_HEADER">
-	<![CDATA[
-#region Header
-// copyright ...
+<template name="BODY_HEADER"><![CDATA[#region Header
+// © 2024 Koninklijke Philips N.V.  All rights reserved.
+// Reproduction or transmission in whole or in part, in any form or by any means, 
+// electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
+// the owner.
 // generated file
 // from $SOURCEFILE$
 // using $TEMPLATESOURCE$
@@ -15,7 +15,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace AvatarPOC.Generated
+namespace Philips.PIC.CommonControls.Generated
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
 	public class PaintAvatar
@@ -133,7 +133,7 @@ $paintlist$
   </group>
 
   <use>
-    <xbody>
+    <body>
 <![CDATA[
 static void Paint_$token:LINK$($PaintSignature$);
 static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
@@ -141,20 +141,8 @@ static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
 $recursive:PaintPush$    Paint_$token:LINK$(p);
 $recursive:PaintPop$}
 //----------------------------------------
-]]></xbody>
+]]></body>
   </use>
-
-  <text>
-    <xbody>
-<![CDATA[
-static void Paint_$token:LINK$($PaintSignature$);
-static void Paint_$token:ID$($PaintSignature$) //Text: $NAME$
-{
-$recursive:PaintPush$    p.DrawText( $X$, $Y$, $float:font-size$, "$font-family$", "$CONTENT$" );
-$recursive:PaintPop$}
-//----------------------------------------
-]]></xbody>
-  </text>
 
 </skill>
 
@@ -227,40 +215,35 @@ $recursive:PaintPop$}}
 </skill>
 
 <!-- ======================================================  -->
-
-
-<skill name="Trace">
+<skill name="Animated">
   <path>
     <body>
 <![CDATA[
-void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-{$nonempty TRANSFORM:pushtransformation$
-    PaintTraceIf t;
-    PaintPath_$token:ID$(t);
-    using namespace Topics;
-    p.Trace(t, $SKILL_PARAMETERS$);
-$nonempty TRANSFORM:poptransformation$}
+       //This is not applicable for skill animated Paint_$token:ID$($PaintSignature$)
+       //----------------------------------------
 ]]></body>
 
   </path>
 
   <group>
+    <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
     <body>
 <![CDATA[
-//----------------------------------------
+        //Group: $NAME$
+        private void Paint_$token:ID$($PaintSignature$)
+        {
+        }
+        //----------------------------------------
 ]]></body>
   </group>
 
   <use>
-    <body>
-<![CDATA[
+    <body><![CDATA[//This is not applicable for skill animated Paint_$token:ID$($PaintSignature$) 
 //----------------------------------------
 ]]></body>
   </use>
 
 </skill>
-
-<!-- ======================================================  -->
 
 
 </templates>
