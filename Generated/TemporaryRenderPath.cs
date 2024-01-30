@@ -43,5 +43,19 @@ namespace Philips.PIC.CommonControls.Generated
             _cursorX = x;
             _cursorY = y;
         }
+
+        public float GetYForX(float x)
+        {
+            /* todo:
+             * this function should look into the path and calculate the y value for a given x
+             * 
+             * but as a quick hack, this now just implements this simple calculation:
+             */
+            x = x * 2.0f;
+            if (x > 1.0f) x = 2.0f - x;
+            return x;
+        }
     }
+
+    
 }
