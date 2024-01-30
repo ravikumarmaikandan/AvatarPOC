@@ -2,7 +2,8 @@
 
 <templates>
 
-<template name="BODY_HEADER"><![CDATA[
+<template name="BODY_HEADER">
+	<![CDATA[
 #region Header
 // copyright ...
 // generated file
@@ -12,6 +13,7 @@
 #endregion
 
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace AvatarPOC.Generated
 {
@@ -42,7 +44,7 @@ namespace AvatarPOC.Generated
 <template name="PaintSignature"><![CDATA[PaintAvatarInfo p]]></template>
 
 
-<template name="Move"><![CDATA[//    p.move($X$,$Y$);
+<template name="Move"><![CDATA[            _patientAvatarRenderer.Move($X$f,$Y$f);
 ]]></template>
 <template name="Line"><![CDATA[//    p.line($X$,$Y$);
 ]]></template>
@@ -50,7 +52,7 @@ namespace AvatarPOC.Generated
 ]]></template>
 <template name="Quad"><![CDATA[//    p.quad($X1$,$Y1$,$X2$,$Y2$);
 ]]></template>
-<template name="Cubic"><![CDATA[//   p.curve($X1$,$Y1$,$X2$,$Y2$,$X3$,$Y3$);
+<template name="Cubic"><![CDATA[            _patientAvatarRenderer.Curve($X1$f,$Y1$f,$X2$f,$Y2$f,$X3$f,$Y3$f);
 ]]></template>
 <template name="Close"><![CDATA[//   p.close();
 ]]></template>
@@ -77,7 +79,8 @@ namespace AvatarPOC.Generated
 	<![CDATA[
         private void PaintPath_$token:ID$()
         {   // Label: $NAME$
-            //$ELEMENTS$
+		    _patientAvatarRenderer.Path = new GraphicsPath();
+$ELEMENTS$
         }
 ]]></template>
 
@@ -106,7 +109,7 @@ namespace AvatarPOC.Generated
 <![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
-            _patientAvatarRenderer.FillColor = Color.FromArgb(0x$onlyhex:fill$);
+            _patientAvatarRenderer.FillColor = Color.Red;//Color.FromArgb(0x$onlyhex:fill$);
             PaintPath_$token:ID$();
             _patientAvatarRenderer.Fill(p);
 		   
