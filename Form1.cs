@@ -16,7 +16,7 @@ namespace AvatarPOC
         {
             base.OnPaint(e);
             PaintAvatarInfo avatarInfo = new PaintAvatarInfo() { PaintEventArgs = e, TopicInfo = _topicInfo };
-            _paintAvatar.Paint(avatarInfo);
+            _paintAvatar.PaintSVG(avatarInfo);
         }
 
         private void OnTick(object sender, System.EventArgs e)
