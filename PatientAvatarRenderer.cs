@@ -8,6 +8,7 @@
 #endregion
 
 using AvatarPOC.Generated;
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
@@ -22,8 +23,11 @@ namespace AvatarPOC
         {
             paintAvatarInfo.PaintEventArgs.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             paintAvatarInfo.PaintEventArgs.Graphics.CompositingQuality = CompositingQuality.HighQuality;
-
-            SolidBrush redBrush = new SolidBrush(FillColor);
+            var red = FillColor / 0x10000;
+            var green = (FillColor / 0x100) % 0x100;
+            var blue = FillColor % 0x100;
+            SolidBrush redBrush = new SolidBrush(
+                Color.FromArgb(Opacity, red, green, blue));
             paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, Path);
         }
 
@@ -34,7 +38,8 @@ namespace AvatarPOC
         }
 
 
-        public Color FillColor { get; set; }
+        public Int32 FillColor { get; set; }
+        public int Opacity { get; set; } = 255;
         public GraphicsPath Path { get; set; } = new GraphicsPath();
         private float _cursorX;
         private float _cursorY;

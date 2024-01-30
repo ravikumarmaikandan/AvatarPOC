@@ -109,7 +109,7 @@ $ELEMENTS$
 <![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
-            _patientAvatarRenderer.FillColor = Color.Red;//Color.FromArgb(0x$onlyhex:fill$);
+            _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
             PaintPath_$token:ID$();
             _patientAvatarRenderer.Fill(p);
 		   
