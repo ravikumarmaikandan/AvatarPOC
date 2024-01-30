@@ -49,11 +49,15 @@ namespace Philips.PIC.CommonControls
 
             var resultPoints = new PointF[minPoints.Length];
 
+            var t = paintAvatarInfo.TopicInfo.temporyTimePosition;
+
+            var t1 = 1.0f - t;
+
             for ( var i = 0; i < minPoints.Length; i++ )
             {
                 resultPoints[i] = new PointF(
-                        (minPoints[i].X + maxPoints[i].X)/2,
-                        (minPoints[i].Y + maxPoints[i].Y)/2 );
+                        minPoints[i].X*t1 + maxPoints[i].X*t,
+                        minPoints[i].Y*t1 + maxPoints[i].Y*t );
             }
 
             Path = new GraphicsPath(resultPoints, pathTypes);

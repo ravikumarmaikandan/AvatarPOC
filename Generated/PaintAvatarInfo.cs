@@ -23,6 +23,6 @@ namespace Philips.PIC.CommonControls.Generated
 
     public class TopicInfo
     {
-        public float Width { get; set; }
+        public float temporyTimePosition { get; set; }
     }
 }
