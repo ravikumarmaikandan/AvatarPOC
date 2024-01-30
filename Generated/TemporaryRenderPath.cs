@@ -1,10 +1,20 @@
-﻿using System.Drawing.Drawing2D;
+﻿using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace Philips.PIC.CommonControls.Generated
 {
     internal class TemporaryRenderPath : IRenderPath
     {
-        public GraphicsPath Path { get; set; } = new GraphicsPath();
+        public TemporaryRenderPath()
+        {
+            Path = new GraphicsPath();
+        }
+        public TemporaryRenderPath(PointF[] points, byte[] pathTypes)
+        {
+            Path = new GraphicsPath(points, pathTypes);
+        }
+
+        public GraphicsPath Path { get; set; }
         private float _cursorX;
         private float _cursorY;
 
@@ -32,11 +42,6 @@ namespace Philips.PIC.CommonControls.Generated
         {
             _cursorX = x;
             _cursorY = y;
-        }
-
-        public void Start()
-        {
-            Path = new GraphicsPath();
         }
     }
 }

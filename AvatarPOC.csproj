@@ -52,6 +52,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Generated\ColorReceiver.cs" />
     <Compile Include="Generated\PaintAvatarInfo.cs" />
     <Compile Include="Generated\PatientAvatarGenerated.cs" />
     <Compile Include="Generated\TemporaryRenderPath.cs" />

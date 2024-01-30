@@ -17,9 +17,9 @@ namespace Philips.PIC.CommonControls
     /// <summary>
     /// 
     /// </summary>
-    public class PatientAvatarRenderer: IRenderPath
+    public class PatientAvatarRenderer
     {
-        public void Fill(PaintAvatarInfo paintAvatarInfo)
+        public void Fill(PaintAvatarInfo paintAvatarInfo, IRenderPath renderPath)
         {
             paintAvatarInfo.PaintEventArgs.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             paintAvatarInfo.PaintEventArgs.Graphics.CompositingQuality = CompositingQuality.HighQuality;
@@ -28,7 +28,7 @@ namespace Philips.PIC.CommonControls
             var blue = FillColor % 0x100;
             SolidBrush redBrush = new SolidBrush(
                 Color.FromArgb(Opacity, red, green, blue));
-            paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, Path);
+            paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, renderPath.Path);
         }
 
         public void Interpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath min, IRenderPath max, IRenderPath time)
@@ -53,51 +53,19 @@ namespace Philips.PIC.CommonControls
 
             var t1 = 1.0f - t;
 
-            for ( var i = 0; i < minPoints.Length; i++ )
+            for (var i = 0; i < minPoints.Length; i++)
             {
                 resultPoints[i] = new PointF(
-                        minPoints[i].X*t1 + maxPoints[i].X*t,
-                        minPoints[i].Y*t1 + maxPoints[i].Y*t );
+                        minPoints[i].X * t1 + maxPoints[i].X * t,
+                        minPoints[i].Y * t1 + maxPoints[i].Y * t);
             }
 
-            Path = new GraphicsPath(resultPoints, pathTypes);
+            var tempRenderPath = new TemporaryRenderPath(resultPoints, pathTypes);
 
-            Fill(paintAvatarInfo);
+            Fill(paintAvatarInfo, tempRenderPath);
         }
 
         public Int32 FillColor { get; set; } = 0;
         public int Opacity { get; set; } = 255;
-        public GraphicsPath Path { get; set; } = new GraphicsPath();
-        private float _cursorX;
-        private float _cursorY;
-
-
-        public void Start()
-        {
-            Path = new GraphicsPath();
-        }
-
-        public void Move(float x, float y)
-        {
-            _cursorX = x;
-            _cursorY = y;
-        }
-        public void Line(float x, float y)
-        {
-            Path.AddLine(_cursorX, _cursorY, x, y);
-            _cursorX = x;
-            _cursorY = y;
-        }
-        public void Cubic(float x1, float y1, float x2, float y2, float x3, float y3)
-        {
-            Path.AddBezier(_cursorX, _cursorY, x1, y1, x2, y2, x3, y3);
-            _cursorX = x3;
-            _cursorY = y3;
-        }
-        public void Close()
-        {
-            Path.CloseFigure();
-        }
-
     }
 }

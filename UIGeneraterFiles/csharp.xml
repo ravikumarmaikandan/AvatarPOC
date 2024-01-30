@@ -79,7 +79,6 @@ namespace Philips.PIC.CommonControls.Generated
 	<![CDATA[
         private void SetPathData_$token:ID$(IRenderPath path)
         {   // Label: $NAME$
-		    path.Start();
 $ELEMENTS$
         }
 ]]></template>
@@ -110,10 +109,17 @@ $ELEMENTS$
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
-            SetPathData_$token:ID$(_patientAvatarRenderer);
-            _patientAvatarRenderer.Fill(p);
+			var tempRenderPath = new TemporaryRenderPath();
+            SetPathData_$token:ID$(tempRenderPath);
+			
+            _patientAvatarRenderer.Fill(p,tempRenderPath);
 		   
         }
+		private void SetPathColor_$token:ID$(ColorReceiver colorReceiver)
+		{
+			colorReceiver.FillColor = 0x$onlyhex:fill$;
+		}
+		//----------------------------------------
 //----------------------------------------
 ]]></body>
 
@@ -226,17 +232,23 @@ $recursive:PaintPop$}}
   </path>
 
   <group>
-    <member name="paintlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);</member>
+    <member name="pathlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
+	  <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$($token:MEMBER_NAME$Color);</member>
     <body>
 <![CDATA[
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
-		    IRenderPath Min = new TemporaryRenderPath();
-		    IRenderPath Max = new TemporaryRenderPath();
-		    IRenderPath Time = new TemporaryRenderPath();
-$paintlist$
-			_patientAvatarRenderer.Interpolate(p, Min, Max, Time);
+			ColorReceiver MinColor = new ColorReceiver();
+			ColorReceiver MaxColor = new ColorReceiver();
+			ColorReceiver TimeColor = new ColorReceiver();
+$colorlist$
+			_patientAvatarRenderer.FillColor = MinColor.FillColor;
+		    IRenderPath MinPath = new TemporaryRenderPath();
+		    IRenderPath MaxPath = new TemporaryRenderPath();
+		    IRenderPath TimePath = new TemporaryRenderPath();
+$pathlist$
+			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath);
         }
         //----------------------------------------
 ]]></body>

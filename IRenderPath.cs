@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing.Drawing2D;
 
 namespace Philips.PIC.CommonControls
 {
@@ -11,7 +6,6 @@ namespace Philips.PIC.CommonControls
     {
         GraphicsPath Path { get; set; }
 
-        void Start();
         void Move(float x, float y);
         void Line(float x, float y);
         void Close();

@@ -68,7 +68,7 @@
        transform="translate(-43.391688,7.9375004)">
       <path
          inkscape:label="Max"
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
          d="m 125.6696,39.137896 c 0,0 25.39358,-37.4004577 47.625,-24.190466 71.38559,42.417585 -30.24113,133.79654 -50.64881,147.48275 C 89.528053,139.65607 13.354237,56.136838 74.038051,15.249811 93.890739,1.8736336 125.6696,39.137896 125.6696,39.137896 Z"
          id="path519"
          inkscape:connector-curvature="0"
@@ -85,7 +85,7 @@
          inkscape:connector-curvature="0"
          id="path523"
          d="m 102.33986,102.91858 c 10.66309,-62.908047 13.63626,-12.901074 23.63096,-7.981898 3.28801,1.618286 8.87781,-10.129735 12.189,-7.281125 l 14.52197,13.938243"
-         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
          sodipodi:nodetypes="cscc" />
     </g>
     <ellipse
