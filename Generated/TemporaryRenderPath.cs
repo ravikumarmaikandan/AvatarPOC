@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Philips.PIC.CommonControls.Generated
+namespace Philips.PIC.CommonControls
 {
     internal class TemporaryRenderPath : IRenderPath
     {

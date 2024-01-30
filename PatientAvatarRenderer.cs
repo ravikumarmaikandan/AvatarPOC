@@ -7,7 +7,6 @@
 // Date:        1/29/2024 3:06:46 PM
 #endregion
 
-using Philips.PIC.CommonControls.Generated;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -49,7 +48,7 @@ namespace Philips.PIC.CommonControls
 
             var resultPoints = new PointF[minPoints.Length];
 
-            var t = paintAvatarInfo.TopicInfo.temporyTimePosition;
+            var t = paintAvatarInfo.TopicInfo.TemporyTimePosition;
 
             var t1 = 1.0f - t;
 
