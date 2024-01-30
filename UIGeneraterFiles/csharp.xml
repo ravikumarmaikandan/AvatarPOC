@@ -44,17 +44,17 @@ namespace AvatarPOC.Generated
 <template name="PaintSignature"><![CDATA[PaintAvatarInfo p]]></template>
 
 
-<template name="Move"><![CDATA[            _patientAvatarRenderer.Move($X$f,$Y$f);
+<template name="Move"><![CDATA[            path.Move($X$f,$Y$f);
 ]]></template>
-<template name="Line"><![CDATA[//    p.line($X$,$Y$);
+<template name="Line"><![CDATA[            path.Line($X$f,$Y$f);
 ]]></template>
-<template name="Rect"><![CDATA[//    p.rectangle($X1$,$Y1$,$X2$,$Y2$);
+<template name="Rect"><![CDATA[            path.Rect($X1$f,$Y1$f,$X2$f,$Y2$f);
 ]]></template>
-<template name="Quad"><![CDATA[//    p.quad($X1$,$Y1$,$X2$,$Y2$);
+<template name="Quad"><![CDATA[            path.Quad($X1$f,$Y1$f,$X2$f,$Y2$f);
 ]]></template>
-<template name="Cubic"><![CDATA[            _patientAvatarRenderer.Curve($X1$f,$Y1$f,$X2$f,$Y2$f,$X3$f,$Y3$f);
+<template name="Cubic"><![CDATA[            path.Cubic($X1$f,$Y1$f,$X2$f,$Y2$f,$X3$f,$Y3$f);
 ]]></template>
-<template name="Close"><![CDATA[//   p.close();
+<template name="Close"><![CDATA[            path.Close();
 ]]></template>
 
 
@@ -77,9 +77,9 @@ namespace AvatarPOC.Generated
 
 <template name="PointDef">
 	<![CDATA[
-        private void PaintPath_$token:ID$()
+        private void PaintPath_$token:ID$(PatientAvatarRenderer path)
         {   // Label: $NAME$
-		    _patientAvatarRenderer.Path = new GraphicsPath();
+		    path.Start();
 $ELEMENTS$
         }
 ]]></template>
@@ -110,7 +110,7 @@ $ELEMENTS$
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
-            PaintPath_$token:ID$();
+            PaintPath_$token:ID$(p);
             _patientAvatarRenderer.Fill(p);
 		   
         }

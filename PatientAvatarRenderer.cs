@@ -31,30 +31,39 @@ namespace AvatarPOC
             paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, Path);
         }
 
-        public void Ellipse(float x, float y, float width, float height)
-        {
-            Path = new GraphicsPath();
-            Path.AddEllipse(x, y, width, height);
-        }
-
-
         public Int32 FillColor { get; set; }
         public int Opacity { get; set; } = 255;
         public GraphicsPath Path { get; set; } = new GraphicsPath();
         private float _cursorX;
         private float _cursorY;
 
+
+        public void Start()
+        {
+            Path = new GraphicsPath();
+        }
+
         public void Move(float x, float y)
         {
             _cursorX = x;
             _cursorY = y;
         }
-
-        public void Curve(float x1, float y1, float x2, float y2, float x3, float y3)
+        public void Line(float x, float y)
+        {
+            Path.AddLine(_cursorX, _cursorY, x, y);
+            _cursorX = x;
+            _cursorY = y;
+        }
+        public void Cubic(float x1, float y1, float x2, float y2, float x3, float y3)
         {
             Path.AddBezier(_cursorX, _cursorY, x1, y1, x2, y2, x3, y3);
             _cursorX = x3;
             _cursorY = y3;
         }
+        public void Close()
+        {
+            Path.CloseFigure();
+        }
+
     }
 }
