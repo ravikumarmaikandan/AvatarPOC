@@ -31,7 +31,7 @@ namespace Philips.PIC.CommonControls
             paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, renderPath.Path);
         }
 
-        public void Interpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath min, IRenderPath max, IRenderPath time)
+        public void Interpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath min, IRenderPath max, IRenderPath time, RateProviderTopic topic)
         {
             // min.Path;
             // max.Path;
@@ -49,7 +49,7 @@ namespace Philips.PIC.CommonControls
 
             var resultPoints = new PointF[minPoints.Length];
 
-            var t = paintAvatarInfo.TopicInfo.temporyTimePosition;
+            var t = topic.timePosition;
 
             var t1 = 1.0f - t;
 

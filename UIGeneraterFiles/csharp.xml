@@ -248,7 +248,7 @@ $colorlist$
 		    IRenderPath MaxPath = new TemporaryRenderPath();
 		    IRenderPath TimePath = new TemporaryRenderPath();
 $pathlist$
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath);//$SKILL_PARAMETERS$
+			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
         }
         //----------------------------------------
 ]]></body>

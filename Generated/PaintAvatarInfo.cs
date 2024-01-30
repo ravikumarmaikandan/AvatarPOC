@@ -23,6 +23,7 @@ namespace Philips.PIC.CommonControls.Generated
 
     public class TopicInfo
     {
-        public float temporyTimePosition { get; set; }
+        public RateProviderTopic PulseRateHeart { get; set; } = new RateProviderTopic();
+        public RateProviderTopic RespirationRate { get; set; }= new RateProviderTopic();
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="Generated\ColorReceiver.cs" />
     <Compile Include="Generated\PaintAvatarInfo.cs" />
     <Compile Include="Generated\PatientAvatarGenerated.cs" />
+    <Compile Include="Generated\RateProviderTopic.cs" />
     <Compile Include="Generated\TemporaryRenderPath.cs" />
     <Compile Include="IRenderPath.cs" />
     <Compile Include="PatientAvatarRenderer.cs" />
