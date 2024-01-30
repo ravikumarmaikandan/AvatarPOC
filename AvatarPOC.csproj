@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Generated\PaintAvatarInfo.cs" />
     <Compile Include="Generated\PatientAvatarGenerated.cs" />
+    <Compile Include="Generated\TemporaryRenderPath.cs" />
+    <Compile Include="IRenderPath.cs" />
     <Compile Include="PatientAvatarRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

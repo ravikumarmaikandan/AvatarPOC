@@ -17,7 +17,7 @@ namespace Philips.PIC.CommonControls
     /// <summary>
     /// 
     /// </summary>
-    public class PatientAvatarRenderer
+    public class PatientAvatarRenderer: IRenderPath
     {
         public void Fill(PaintAvatarInfo paintAvatarInfo)
         {
@@ -31,7 +31,37 @@ namespace Philips.PIC.CommonControls
             paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, Path);
         }
 
-        public Int32 FillColor { get; set; }
+        public void Interpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath min, IRenderPath max, IRenderPath time)
+        {
+            // min.Path;
+            // max.Path;
+            // -> Path
+
+            if (min.Path.PointCount != max.Path.PointCount) return;
+
+            // iterate through all points in min (and max)
+            // calculate the interpolated Point between the one of min and max
+            // and put that to Path
+
+            var minPoints = min.Path.PathPoints;
+            var maxPoints = max.Path.PathPoints;
+            var pathTypes = min.Path.PathTypes;
+
+            var resultPoints = new PointF[minPoints.Length];
+
+            for ( var i = 0; i < minPoints.Length; i++ )
+            {
+                resultPoints[i] = new PointF(
+                        (minPoints[i].X + maxPoints[i].X)/2,
+                        (minPoints[i].Y + maxPoints[i].Y)/2 );
+            }
+
+            Path = new GraphicsPath(resultPoints, pathTypes);
+
+            Fill(paintAvatarInfo);
+        }
+
+        public Int32 FillColor { get; set; } = 0;
         public int Opacity { get; set; } = 255;
         public GraphicsPath Path { get; set; } = new GraphicsPath();
         private float _cursorX;

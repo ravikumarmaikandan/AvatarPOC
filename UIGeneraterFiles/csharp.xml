@@ -77,7 +77,7 @@ namespace Philips.PIC.CommonControls.Generated
 
 <template name="PointDef">
 	<![CDATA[
-        private void PaintPath_$token:ID$(PatientAvatarRenderer path)
+        private void SetPathData_$token:ID$(IRenderPath path)
         {   // Label: $NAME$
 		    path.Start();
 $ELEMENTS$
@@ -110,7 +110,7 @@ $ELEMENTS$
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
-            PaintPath_$token:ID$(_patientAvatarRenderer);
+            SetPathData_$token:ID$(_patientAvatarRenderer);
             _patientAvatarRenderer.Fill(p);
 		   
         }
@@ -226,12 +226,17 @@ $recursive:PaintPop$}}
   </path>
 
   <group>
-    <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <member name="paintlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);</member>
     <body>
 <![CDATA[
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
+		    IRenderPath Min = new TemporaryRenderPath();
+		    IRenderPath Max = new TemporaryRenderPath();
+		    IRenderPath Time = new TemporaryRenderPath();
+$paintlist$
+			_patientAvatarRenderer.Interpolate(p, Min, Max, Time);
         }
         //----------------------------------------
 ]]></body>
