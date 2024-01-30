@@ -133,7 +133,7 @@ namespace Philips.PIC.CommonControls.Generated
 		    SetPathData_path519(MaxPath);
 		    SetPathData_path517(MinPath);
 		    SetPathData_path523(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath);
+			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath);//PulseRateHeart
         }
         //----------------------------------------
 
