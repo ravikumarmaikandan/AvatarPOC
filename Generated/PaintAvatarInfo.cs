@@ -9,7 +9,7 @@
 
 using System.Windows.Forms;
 
-namespace Philips.PIC.CommonControls.Generated
+namespace Philips.PIC.CommonControls
 {
     /// <summary>
     /// 
@@ -24,6 +24,6 @@ namespace Philips.PIC.CommonControls.Generated
     public class TopicInfo
     {
         public RateProviderTopic PulseRateHeart { get; set; } = new RateProviderTopic();
-        public RateProviderTopic RespirationRate { get; set; }= new RateProviderTopic();
+        public RateProviderTopic RespirationRate { get; set; } = new RateProviderTopic();
     }
 }
