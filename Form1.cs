@@ -1,11 +1,12 @@
-﻿using System.Windows.Forms;
+﻿using Philips.PIC.CommonControls.Generated;
+using System.Windows.Forms;
 
 namespace Philips.PIC.CommonControls
 {
     public partial class Form1 : Form
     {
         private readonly PaintAvatar _paintAvatar = new PaintAvatar();
-        private readonly TopicInfo _topicInfo = new TopicInfo() { TemporyTimePosition = 0.0f };
+        private readonly TopicInfo _topicInfo = new TopicInfo() { temporyTimePosition = 0.0f };
         public Form1()
         {
             InitializeComponent();
@@ -20,10 +21,10 @@ namespace Philips.PIC.CommonControls
 
         private void OnTick(object sender, System.EventArgs e)
         {
-            _topicInfo.TemporyTimePosition += 0.03f;
-            if (_topicInfo.TemporyTimePosition > 1.0f)
+            _topicInfo.temporyTimePosition += 0.03f;
+            if (_topicInfo.temporyTimePosition>1.0f)
             {
-                _topicInfo.TemporyTimePosition -= 1.0f;
+                _topicInfo.temporyTimePosition -= 1.0f;
             }
             Invalidate();
         }

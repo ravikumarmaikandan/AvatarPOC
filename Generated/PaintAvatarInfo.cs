@@ -9,7 +9,7 @@
 
 using System.Windows.Forms;
 
-namespace Philips.PIC.CommonControls
+namespace Philips.PIC.CommonControls.Generated
 {
     /// <summary>
     /// 
@@ -23,6 +23,6 @@ namespace Philips.PIC.CommonControls
 
     public class TopicInfo
     {
-        public float TemporyTimePosition { get; set; }
+        public float temporyTimePosition { get; set; }
     }
 }

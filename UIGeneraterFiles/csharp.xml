@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <templates>
-<template name="BODY_HEADER">
-	<![CDATA[#region Header
+<template name="BODY_HEADER"><![CDATA[#region Header
 // © 2024 Koninklijke Philips N.V.  All rights reserved.
 // Reproduction or transmission in whole or in part, in any form or by any means, 
 // electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
@@ -16,7 +15,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Philips.PIC.CommonControls
+namespace Philips.PIC.CommonControls.Generated
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
 	public class PaintAvatar
