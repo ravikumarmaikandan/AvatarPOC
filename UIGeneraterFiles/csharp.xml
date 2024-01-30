@@ -2,8 +2,7 @@
 
 <templates>
 
-<template name="BODY_HEADER">
-	<![CDATA[
+<template name="BODY_HEADER"><![CDATA[
 #region Header
 // copyright ...
 // generated file
@@ -19,7 +18,7 @@ namespace AvatarPOC.Generated
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
 	public class PaintAvatar
     {
-	private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
+        private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 ]]></template>
 
 <template name="BODY_FOOTER">
@@ -74,11 +73,12 @@ namespace AvatarPOC.Generated
 
 <template name="FILL_DEFAULT">none</template>
 
-<template name="PointDef"><![CDATA[
-//void PaintPath_$token:ID$(PaintPathIf & p)
-//{ // Label: $NAME$
-//$ELEMENTS$
-//};
+<template name="PointDef">
+	<![CDATA[
+        private void PaintPath_$token:ID$()
+        {   // Label: $NAME$
+            //$ELEMENTS$
+        }
 ]]></template>
 
 <template name="MemberName"><![CDATA[// $MEMBER_NAME$]]></template>
@@ -106,6 +106,10 @@ namespace AvatarPOC.Generated
 <![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
+            _patientAvatarRenderer.FillColor = Color.FromArgb(0x$onlyhex:fill$);
+            PaintPath_$token:ID$();
+            _patientAvatarRenderer.Fill(p);
+		   
         }
 //----------------------------------------
 ]]></body>
