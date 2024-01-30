@@ -4,9 +4,9 @@
 // electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
 // the owner.
 // generated file
-// from .\UIGeneraterFiles\simple.svg
-// using .\UIGeneraterFiles\csharp.xml
-// by D:\AvatarCodeGenerator\svgcompiler\svgconverter.exe
+// from .\simple.svg
+// using .\csharp.xml
+// by C:\Users\dep05119\Documents\Code\svgcompiler\svgconverter.exe
 #endregion
 
 using System.Drawing;
@@ -14,7 +14,7 @@ using System.Drawing.Drawing2D;
 
 namespace Philips.PIC.CommonControls.Generated
 {
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("D__AvatarCodeGenerator_svgcompiler_svgconverter_exe", "1")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("C__Users_dep05119_Documents_Code_svgcompiler_svgconverter_exe", "1")]
 	public class PaintAvatar
     {
         private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
@@ -133,7 +133,7 @@ namespace Philips.PIC.CommonControls.Generated
 		    SetPathData_path519(MaxPath);
 		    SetPathData_path517(MinPath);
 		    SetPathData_path523(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath);//PulseRateHeart
+			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateHeart);
         }
         //----------------------------------------
 
