@@ -10,6 +10,8 @@ namespace Philips.PIC.CommonControls
         public Form1()
         {
             InitializeComponent();
+            _topicInfo.PulseRateHeart.StepRate = 0.11f;
+            _topicInfo.RespRate.StepRate = 0.009f;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -22,7 +24,7 @@ namespace Philips.PIC.CommonControls
         private void OnTick(object sender, System.EventArgs e)
         {
             _topicInfo.PulseRateHeart.Step();
-            _topicInfo.RespirationRate.Step();
+            _topicInfo.RespRate.Step();
 
             Invalidate();
         }

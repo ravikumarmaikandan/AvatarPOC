@@ -9,10 +9,11 @@ namespace Philips.PIC.CommonControls
     public class RateProviderTopic
     {
         public float TimePosition { get; set; } = 0.0f;
+        public float StepRate { get; set; } = 0.03f;
 
         public void Step()
         {
-            TimePosition += 0.03f;
+            TimePosition += StepRate;
             if (TimePosition >= 1.0f)
             {
                 TimePosition -= 1.0f;
