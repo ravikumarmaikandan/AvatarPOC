@@ -1,4 +1,4 @@
-﻿using Philips.PIC.CommonControls;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Philips.PIC.CommonControls
@@ -23,13 +23,21 @@ namespace Philips.PIC.CommonControls
 
         private void OnTick(object sender, System.EventArgs e)
         {
-            _topicInfo.PulseRateHeart.Step(0.1f);
-            _topicInfo.RespRate.Step(0.1f);
-
-
-            _topicInfo.TidalVolume.NextValue();
+            _topicInfo.SometimeHavePassed(0.1f);
+            //_topicInfo.TidalVolume.NextValue();
 
             Invalidate();
+        }
+
+        private void OnHeartRateTrackerChanged(object sender, EventArgs e)
+        {
+            lblHeartRateValue.Text = heartRateTracker.Value.ToString();
+            _topicInfo.SetHeartRate(heartRateTracker.Value);
+        }
+
+        private void OnRRTrackerChanged(object sender, EventArgs e)
+        {
+            _topicInfo.SetRespRate(RRTracker.Value);
         }
     }
 }
