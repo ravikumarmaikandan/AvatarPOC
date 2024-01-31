@@ -23,6 +23,61 @@ namespace Philips.PIC.CommonControls
 
     public class TopicInfo
     {
+        public TopicInfo()
+        {
+            /*
+             * Some lines copied from Monitor code
+             * 
+            PulseRateHeart.rateLow = 0.16667; // 1.0 / (60.0/10);
+            PulseRateHeart.rateSafe = 1.11667; // 1.0 / (60.0/67);
+            PulseRateHeart.rateHigh = 3.33333; // 1.0 / (60.0/200);
+
+            PulseRateBody.rateStopped = 0.0;
+            PulseRateBody.rateLow = PulseRateHeart.rateLow;
+            PulseRateBody.rateSafe = PulseRateHeart.rateSafe;
+            PulseRateBody.rateHigh = PulseRateHeart.rateHigh;
+
+            Oxygen.colors[notavail] = AsColor("#d0d0d0");
+            Oxygen.colors[unknown] = AsColor("#d0d0d0");
+            Oxygen.colors[low] = AsColor("#c04aff");
+            Oxygen.colors[safe] = AsColor("#ad9890");
+            Oxygen.colors[high] = AsColor("#aed6f1");
+            Oxygen.shadowColors[notavail] = AsColor("#505050");
+            Oxygen.shadowColors[unknown] = AsColor("#505050");
+            Oxygen.shadowColors[low] = AsColor("#5b146e");
+            Oxygen.shadowColors[safe] = AsColor("#6c5953");
+            Oxygen.shadowColors[high] = AsColor("#839192");
+
+            FiO2.colors[notavail] = AsColor("#c0c0c0");
+            FiO2.colors[unknown] = AsColor("#c0c0c0");
+            FiO2.colors[low] = AsColor("#9e009e");
+            FiO2.colors[safe] = AsColor("#d4857c");
+            FiO2.colors[high] = AsColor("#d9e7ff");
+            FiO2.shadowColors[notavail] = AsColor("#505050");
+            FiO2.shadowColors[unknown] = AsColor("#505050");
+            FiO2.shadowColors[low] = AsColor("#55345F");
+            FiO2.shadowColors[safe] = AsColor("#7B3A33");
+            FiO2.shadowColors[high] = AsColor("#78808E");
+
+            AWP.colors[notavail] = AsColor("#d0d0d0");
+            AWP.colors[unknown] = AsColor("#d0d0d0");
+            AWP.colors[low] = AsColor("#c04aff");
+            AWP.colors[safe] = AsColor("#ad9890");
+            AWP.colors[high] = AsColor("#aed6f1");
+            AWP.shadowColors[notavail] = AsColor("#292929");
+            AWP.shadowColors[unknown] = AsColor("#292929");
+            AWP.shadowColors[low] = AsColor("#292929");
+            AWP.shadowColors[safe] = AsColor("#292929");
+            AWP.shadowColors[high] = AsColor("#292929");
+
+            RespRate.rateStopped = 0.0;
+            RespRate.rateLow = 1.0 / 20;
+            RespRate.rateSafe = 1.0 / 2.2;
+            RespRate.rateHigh = 1.0 / 0.26;
+            */
+
+        }
+
         // Rates are used in Animations
         public RateProviderTopic PulseRateHeart { get; } = new RateProviderTopic();
         public RateProviderTopic PulseRateBody { get; } = new RateProviderTopic();
