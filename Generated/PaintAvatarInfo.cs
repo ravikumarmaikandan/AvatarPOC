@@ -94,7 +94,7 @@ namespace Philips.PIC.CommonControls
         // Rates are used in Animations
         public RateProviderTopic PulseRateHeart { get; } = new RateProviderTopic();
         public RateProviderTopic PulseRateBody { get; } = new RateProviderTopic();
-        public RateProviderTopic RespRate { get; }= new RateProviderTopic();
+        public RateProviderTopic RespRate { get; } = new RateProviderTopic();
 
         public StateProviderTopic ABP { get; } = new StateProviderTopic();
         public StateProviderTopic CVP { get; } = new StateProviderTopic();
@@ -128,5 +128,12 @@ namespace Philips.PIC.CommonControls
             Value += 1;
             if (Value == 10) Value = 0;
         }
+    }
+
+    public class PatientAvatarBase
+    {
+        public const int notavail = 0;
+        public const int unknown = 1;
+        public const int safe = 2;
     }
 }
