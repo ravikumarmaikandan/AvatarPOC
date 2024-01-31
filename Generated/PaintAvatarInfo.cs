@@ -51,14 +51,14 @@ namespace Philips.PIC.CommonControls
             PulseRateBody.RateLow = PulseRateHeart.RateLow;
             PulseRateBody.RateSafe = PulseRateHeart.RateSafe;
             PulseRateBody.RateHigh = PulseRateHeart.RateHigh;
-            
-            Oxygen.SetColor(TopicStates.NotAvailable, 0xd0, 0xd0, 0xd0);
-            Oxygen.SetColor(TopicStates.Unknown, 0xd0, 0xd0, 0xd0 );
-            Oxygen.SetColor(TopicStates.TooLow, 0xc0, 0x4a, 0xff );
-            Oxygen.SetColor(TopicStates.Safe, 0xad, 0x98, 0x90 );
-            Oxygen.SetColor(TopicStates.TooHigh, 0xae, 0xd6, 0xf1 );
 
-           
+            Oxygen.SetColor(TopicStates.NotAvailable, 0xd0, 0xd0, 0xd0);
+            Oxygen.SetColor(TopicStates.Unknown, 0xd0, 0xd0, 0xd0);
+            Oxygen.SetColor(TopicStates.TooLow, 0xc0, 0x4a, 0xff);
+            Oxygen.SetColor(TopicStates.Safe, 0xad, 0x98, 0x90);
+            Oxygen.SetColor(TopicStates.TooHigh, 0xae, 0xd6, 0xf1);
+
+
             Oxygen.SetShadowColor(TopicStates.NotAvailable, 0x50, 0x50, 0x50);
             Oxygen.SetShadowColor(TopicStates.Unknown, 0x50, 0x50, 0x50);
             Oxygen.SetShadowColor(TopicStates.TooLow, 0x5b, 0x14, 0x6e);
@@ -88,7 +88,7 @@ namespace Philips.PIC.CommonControls
 
             RespRate.RateStopped = 0.0f;
             RespRate.RateLow = 1.0f / 20f;
-            RespRate.RateSafe = 1.0f/ 2.2f;
+            RespRate.RateSafe = 1.0f / 2.2f;
             RespRate.RateHigh = 1.0f / 0.26f;
         }
 
@@ -112,6 +112,52 @@ namespace Philips.PIC.CommonControls
         //STE Parameter 
         public STStateProviderTopic STSegment { get; } = new STStateProviderTopic();
 
+        public void SometimeHavePassed(float secondsFromLast)
+        {
+            PulseRateHeart.Step(secondsFromLast);
+            PulseRateBody.Step(secondsFromLast);
+            RespRate.Step(secondsFromLast);
+        }
+
+        public void SetHeartRate(int value)
+        {
+            //Compare the heart rate with the threshold
+            if (value < 50)
+            {
+                PulseRateHeart.RateInHz = PulseRateHeart.RateLow;
+                PulseRateHeart.Value = TopicStates.TooLow;
+            }
+            else if (value > 130)
+            {
+                PulseRateHeart.RateInHz = PulseRateHeart.RateHigh;
+                PulseRateHeart.Value = TopicStates.TooHigh;
+            }
+            else
+            {
+                PulseRateHeart.RateInHz = PulseRateHeart.RateSafe;
+                PulseRateHeart.Value = TopicStates.Safe;
+            }
+
+        }
+        public void SetRespRate(int rrTrackerValue)
+        {
+            //Compare the Resp rate with the threshold
+            if (rrTrackerValue < 8)
+            {
+                RespRate.RateInHz = RespRate.RateLow;
+                RespRate.Value = TopicStates.TooLow;
+            }
+            else if (rrTrackerValue > 30)
+            {
+                RespRate.RateInHz = RespRate.RateHigh;
+                RespRate.Value = TopicStates.TooHigh;
+            }
+            else
+            {
+                RespRate.RateInHz = RespRate.RateSafe;
+                RespRate.Value = TopicStates.Safe;
+            }
+        }
     }
 
     public class STStateProviderTopic
@@ -126,7 +172,7 @@ namespace Philips.PIC.CommonControls
         public Color[] ColorMap = new Color[(int)TopicStates.Max];
         public Color[] ShadowColorMap = new Color[(int)TopicStates.Max];
 
-        public void SetColor( TopicStates index, int r, int g, int b )
+        public void SetColor(TopicStates index, int r, int g, int b)
         {
             ColorMap[(int)index] = Color.FromArgb(255, r, g, b);
         }
@@ -135,7 +181,7 @@ namespace Philips.PIC.CommonControls
             ShadowColorMap[(int)index] = Color.FromArgb(255, r, g, b);
         }
 
-        public Color GetColor( )
+        public Color GetColor()
         {
             return ColorMap[(int)Value];
         }
