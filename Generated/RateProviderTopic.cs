@@ -9,16 +9,18 @@ namespace Philips.PIC.CommonControls
     public class RateProviderTopic
     {
         public float TimePosition { get; set; } = 0.0f;
-        public float StepRate { get; set; } = 0.03f;
+        public float RateInHz { get; set; } = 60;
 
-        public void Step()
+        public void Step(float secondsFromLast)
         {
-            TimePosition += StepRate;
+            TimePosition += secondsFromLast*RateInHz;
             if (TimePosition >= 1.0f)
             {
                 TimePosition -= 1.0f;
             }
 
+            // todo: Reset in case of Rate = 0
+            //if (approximately(RateInHz, 0.0f)) TimePosition = 0.0f;
         }
     }
 }
