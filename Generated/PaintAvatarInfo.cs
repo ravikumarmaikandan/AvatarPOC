@@ -23,7 +23,33 @@ namespace Philips.PIC.CommonControls
 
     public class TopicInfo
     {
-        public RateProviderTopic PulseRateHeart { get; set; } = new RateProviderTopic();
-        public RateProviderTopic RespRate { get; set; }= new RateProviderTopic();
+        // Rates are used in Animations
+        public RateProviderTopic PulseRateHeart { get; } = new RateProviderTopic();
+        public RateProviderTopic PulseRateBody { get; } = new RateProviderTopic();
+        public RateProviderTopic RespRate { get; }= new RateProviderTopic();
+
+        public StateProviderTopic ABP { get; } = new StateProviderTopic();
+        public StateProviderTopic CVP { get; } = new StateProviderTopic();
+        public StateProviderTopic Oxygen { get; } = new StateProviderTopic();
+        public StateProviderTopic TidalVolume { get; } = new StateProviderTopic();
+        public StateProviderTopic CO2 { get; } = new StateProviderTopic();
+        public StateProviderTopic Temp { get; } = new StateProviderTopic();
+        public StateProviderTopic Brain { get; } = new StateProviderTopic();
+        public StateProviderTopic CO { get; } = new StateProviderTopic();
+        public StateProviderTopic FiO2 { get; } = new StateProviderTopic();
+        public StateProviderTopic AWP { get; } = new StateProviderTopic();
+        public StateProviderTopic Neuromuscular { get; } = new StateProviderTopic();
+
+        //STE Parameter 
+        public STStateProviderTopic STSegment { get; } = new STStateProviderTopic();
+
+    }
+
+    public class STStateProviderTopic
+    {
+    }
+
+    public class StateProviderTopic
+    {
     }
 }
