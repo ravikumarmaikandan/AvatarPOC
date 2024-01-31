@@ -286,10 +286,10 @@ namespace Philips.PIC.CommonControls
         {
             
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
-		   PushMatrix(1,0,0,1,-150.538,6.1722);
+		   PushMatrix(0.528459,0,0,0.519588,-39.2349,97.6162);
 
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(p.TopicInfo.Oxygen);
+            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
             Paint_path2(p);
             _patientAvatarRenderer.FillColor = colorWas;
             _patientAvatarRenderer.transformation = transformMatrixWas;
@@ -394,12 +394,12 @@ namespace Philips.PIC.CommonControls
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
 		   PushMatrix(1,0,0,1,24.6957,21.7023);
 
-            int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0;		   
+            //int colorWas = _patientAvatarRenderer.FillColor;
+			//_patientAvatarRenderer.FillColor = 0x0;		   
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_path2(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+			//_patientAvatarRenderer.FillColor = colorWas;
             _patientAvatarRenderer.transformation = transformMatrixWas;
         }
 		private void SetPathColor_path2(ColorReceiver colorReceiver)

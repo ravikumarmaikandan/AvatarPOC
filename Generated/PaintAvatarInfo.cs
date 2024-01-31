@@ -177,7 +177,7 @@ namespace Philips.PIC.CommonControls
 
     public class StateProviderTopic
     {
-        public TopicStates Value { get; set; }
+        public TopicStates Value { get; set; } = TopicStates.TooLow;
 
         public Color[] ColorMap = new Color[(int)TopicStates.Max];
         public Color[] ShadowColorMap = new Color[(int)TopicStates.Max];
@@ -191,9 +191,12 @@ namespace Philips.PIC.CommonControls
             ShadowColorMap[(int)index] = Color.FromArgb(255, r, g, b);
         }
 
-        public Color GetColor()
+        public int GetColor()
         {
-            return ColorMap[(int)Value];
+            var c = ColorMap[(int)Value];
+
+            return c.R * 0x10000 + c.G * 0x100 + c.B;
+
         }
 
         public Color GetShadowColor()
@@ -266,9 +269,9 @@ namespace Philips.PIC.CommonControls
             return (topic.Value == constant1) || (topic.Value == constant2) || (topic.Value == constant3);
         }
 
-        public void SetColorFrom(StateProviderTopic topic)
+        public void SetColorFrom(PatientAvatarRenderer r, StateProviderTopic topic)
         {
-
+            r.FillColor = topic.GetColor();
         }
 
         public void PushMatrix(double a, double b, double c, double d, double e, double f)

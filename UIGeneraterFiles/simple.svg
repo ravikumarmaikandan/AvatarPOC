@@ -96,10 +96,10 @@
        x="0"
        y="0"
        xlink:href="#path2"
-       inkscape:transform-center-x="-0.95748782"
-       inkscape:transform-center-y="0.25542618"
+       inkscape:transform-center-x="-0.50599363"
+       inkscape:transform-center-y="0.13271579"
        id="use3"
-       transform="translate(-150.53801,6.1721989)"
+       transform="matrix(0.52845935,0,0,0.51958756,-39.234929,97.616176)"
        onload="ColorFrom(Oxygen)"
        style="fill:#00ffff;fill-opacity:1" />
     <g
