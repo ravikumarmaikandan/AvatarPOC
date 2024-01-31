@@ -18,6 +18,12 @@ namespace Philips.PIC.CommonControls
     /// </summary>
     public class PatientAvatarRenderer
     {
+        public PatientAvatarRenderer()
+        {
+            transformation.a = 1.0f;
+            transformation.d = 1.0f;
+        }
+
         public void Fill(PaintAvatarInfo paintAvatarInfo, IRenderPath renderPath)
         {
             paintAvatarInfo.PaintEventArgs.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
@@ -27,6 +33,15 @@ namespace Philips.PIC.CommonControls
             var blue = FillColor % 0x100;
             SolidBrush redBrush = new SolidBrush(
                 Color.FromArgb(Opacity, red, green, blue));
+
+            Matrix m = new Matrix(transformation.a,
+                transformation.b,
+                transformation.c,
+                transformation.d,
+                transformation.e,
+                transformation.f);
+
+            paintAvatarInfo.PaintEventArgs.Graphics.Transform = m;
             paintAvatarInfo.PaintEventArgs.Graphics.FillPath(redBrush, renderPath.Path);
         }
 
@@ -69,5 +84,7 @@ namespace Philips.PIC.CommonControls
 
         public Int32 FillColor { get; set; } = 0;
         public int Opacity { get; set; } = 255;
+
+        public TransformMatrix transformation { get; set; } = new TransformMatrix();
     }
 }

@@ -18,7 +18,6 @@ namespace Philips.PIC.CommonControls
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
 	public class PaintAvatar: PatientAvatarBase
     {
-        private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 ]]></template>
 
 <template name="BODY_FOOTER">
@@ -87,40 +86,45 @@ $ELEMENTS$
 
 <template name="MemberName"><![CDATA[// $MEMBER_NAME$]]></template>
 
-<template name="pushcolor">
-    PushColor( 0x$onlyhex:fill$ );
+<template name="pushcolor">int colorWas = _patientAvatarRenderer.FillColor;
+	_patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
 </template>
-<template name="popcolor">    
-    PopColor();
+<template name="popcolor">
+	_patientAvatarRenderer.FillColor = colorWas;
 </template>
 
 
 <template name="pushtransformation">
-    PushTransformation($TRANSFORM$);
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+		   PushMatrix($TRANSFORM$);
 </template>
-<template name="poptransformation">    PopTransformation();</template>
+<template name="poptransformation">            _patientAvatarRenderer.transformation = transformMatrixWas;</template>
 
-<template name="PaintPush">$nonempty TRANSFORM:pushtransformation$$nonempty fill:pushcolor$</template>
-<template name="PaintPop">$nonempty TRANSFORM:poptransformation$$nonempty fill:popcolor$</template>
+<template name="PaintPush">$nonempty TRANSFORM:pushtransformation$$nonempty fill:pushcolor$$nonempty opacity:pushopacity$</template>
+<template name="PaintPop">$nonempty TRANSFORM:poptransformation$$nonempty fill:popcolor$$nonempty opacity:popopacity$</template>
+<template name="PaintPushNoColor">$nonempty TRANSFORM:pushtransformation$$nonempty opacity:pushopacity$</template>
+<template name="PaintPopNoColor">$nonempty TRANSFORM:poptransformation$$nonempty opacity:popopacity$</template>
 
-<!-- ======================================================  -->
+	<!-- ======================================================  -->
 <skill name="Default">
   <path>
-    <body><![CDATA[
+    <body>
+	<![CDATA[
 
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
-		    // todo: matrix, ...
-            _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
-			var tempRenderPath = new TemporaryRenderPath();
-            SetPathData_$token:ID$(tempRenderPath);
-			
+$nonempty TRANSFORM:pushtransformation$
+            int colorWas = _patientAvatarRenderer.FillColor;
+			_patientAvatarRenderer.FillColor = 0x0$onlyhex:fill$;		   
+            var tempRenderPath = new TemporaryRenderPath();
+			SetPathData_$token:ID$(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-		   
+			_patientAvatarRenderer.FillColor = colorWas;
+$nonempty TRANSFORM:poptransformation$
         }
 		private void SetPathColor_$token:ID$(ColorReceiver colorReceiver)
 		{
-			colorReceiver.FillColor = 0x$onlyhex:fill$;
+			colorReceiver.FillColor = 0x0$onlyhex:fill$;
 		}
 		//----------------------------------------
 ]]></body>
@@ -129,14 +133,14 @@ $ELEMENTS$
 
   <group>
     <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-    <body><![CDATA[
+    <body>
+			<![CDATA[
 
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
-		    // todo: color, matrix ...
-$paintlist$
-        }
+$recursive:PaintPush$$paintlist$
+$recursive:PaintPop$        }
         //----------------------------------------
 ]]></body>
   </group>
@@ -146,8 +150,8 @@ $paintlist$
 
         private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
         {
-		    // todo
-        }
+$recursive:PaintPush$            Paint_$token:LINK$(p);
+$recursive:PaintPop$        }
         //----------------------------------------
 ]]></body>
   </use>
@@ -263,8 +267,92 @@ $pathlist$
 
 </skill>
 
-    <skill name="ShowAlways" alias="Default" />
-	<skill name="AlwaysHide" alias="HideAlways" />
+<skill name="Flying">
+		<group>
+			<member name="ps" separator="#LF" sort="P"><![CDATA[        // SetPathData_$token:MEMBER_ID$(P[$NO$]); // $MEMBER_NAME$]]></member>
+			<member name="members" separator="#LF" sort="!P"><![CDATA[        // SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);]]></member>
+			<body><![CDATA[ 
+            
+            private void Paint_$token:ID$(SVGPaintIF&p)
+            {
+                // Transformation was = p.trans;
+                // p.SetTransformation({0.120211,0,0,0.120211,75.112,210.67});
+                // PathIF P[$ps_count$];
+                // PathIF Time;
+                // $ps$
+$members$
+                // p.PaintInterpolated(P,$ps_count$,Time,PulseRateHeart);//, jumpsback);    
+                // p.trans = was; 
+            }
+            //----------------------------------------
+]]>
+			</body>
+		</group>
+</skill>
 
+<skill name="StateControl">
+		<template name="impl">
+			<![CDATA[
+                private void Paint_$token:ID$(SVGPaintIF&)
+                {
+                    // always hidden
+                }
+                //----------------------------------------
+]]>
+		</template>
+
+		<path>
+			<body>$recursive:impl$</body>
+		</path>
+		<group>
+			<body>$recursive:impl$</body>
+		</group>
+		<use>
+			<body>$recursive:impl$</body>
+		</use>
+</skill>
+
+<skill name = "ColorFrom">
+	<path>
+		<body>
+			<![CDATA[
+        private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+        {
+            _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
+			var tempRenderPath = new TemporaryRenderPath();
+            SetPathData_$token:ID$(tempRenderPath);
+			
+            _patientAvatarRenderer.Fill(p,tempRenderPath);
+		   
+        }
+		private void SetPathColor_$token:ID$(ColorReceiver colorReceiver)
+		{
+			colorReceiver.FillColor = 0x$onlyhex:fill$;
+		}
+		//----------------------------------------
+]]>
+		</body>
+
+	</path>
+	<use>
+			<body><![CDATA[
+        //Use (for ColorFrom)
+        private void Paint_$token:ID$($PaintSignature$)
+        {
+            $recursive:PaintPushNoColor$
+		    int colorWas = _patientAvatarRenderer.FillColor;
+            SetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+            Paint_$token:LINK$(p);
+            _patientAvatarRenderer.FillColor = colorWas;
+$recursive:PaintPopNoColor$
+        }
+        //----------------------------------------
+]]></body>
+		</use>
+	</skill>
+
+	
+<skill name="ShowAlways" alias="Default" />
+<skill name="AlwaysHide" alias="HideAlways" />
 
 </templates>

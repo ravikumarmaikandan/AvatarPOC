@@ -92,6 +92,16 @@
          d="m 30.158614,169.29062 c 13.27089,-0.94266 9.82409,-15.02645 15.07304,-14.97723 4.65526,0.0437 2.60935,13.96489 14.18079,14.80482"
          sodipodi:nodetypes="csc" />
     </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path2"
+       inkscape:transform-center-x="-0.95748782"
+       inkscape:transform-center-y="0.25542618"
+       id="use3"
+       transform="translate(-150.53801,6.1721989)"
+       onload="ColorFrom(Oxygen)"
+       style="fill:#00ffff;fill-opacity:1" />
     <g
        id="g528"
        inkscape:label="Heart"
@@ -127,14 +137,20 @@
        ry="11.412409"
        onload="Visibility(TidalVolume, safe, unknown, notavail)"
        inkscape:label="Test-Circle" />
-    <path
-       id="path2"
-       style="opacity:1;vector-effect:none;fill:#6c7593;stroke:none;stroke-width:0.264583"
-       inkscape:transform-center-x="-0.95748782"
-       inkscape:transform-center-y="0.25542618"
+    <g
+       id="g2"
        onload="HideAlways()"
-       transform="translate(24.695704,21.702286)"
-       d="m 172.12158,176.98587 -11.61789,-2.26927 -8.77466,7.94545 -5.46944,-10.49809 -11.68292,-1.9064 4.7976,-10.82164 -5.79369,-10.32269 11.45195,-2.99627 4.45829,-10.96579 9.48276,7.08535 11.35309,-3.35141 0.37285,11.83156 9.69879,6.78663 -9.01782,7.66836 z"
-       inkscape:label="Star" />
+       style="display:inline;fill:#ff0000;stroke:#d4d4d4;stroke-opacity:1"
+       inkscape:label="Helper">
+      <path
+         id="path2"
+         style="opacity:1;vector-effect:none;stroke:none"
+         inkscape:transform-center-x="-0.95748782"
+         inkscape:transform-center-y="0.25542618"
+         onload=""
+         transform="translate(24.695704,21.702286)"
+         d="m 172.12158,176.98587 -11.61789,-2.26927 -8.77466,7.94545 -5.46944,-10.49809 -11.68292,-1.9064 4.7976,-10.82164 -5.79369,-10.32269 11.45195,-2.99627 4.45829,-10.96579 9.48276,7.08535 11.35309,-3.35141 0.37285,11.83156 9.69879,6.78663 -9.01782,7.66836 z"
+         inkscape:label="Star" />
+    </g>
   </g>
 </svg>

@@ -30,6 +30,16 @@ namespace Philips.PIC.CommonControls
         Max
     }
 
+    public class TransformMatrix
+    {
+        public float a;
+        public float b;
+        public float c;
+        public float d;
+        public float e;
+        public float f;
+    }
+
     public class TopicInfo
     {
         public TopicInfo()
@@ -187,6 +197,8 @@ namespace Philips.PIC.CommonControls
 
     public class PatientAvatarBase
     {
+
+
         // these constants are defined here, as the generated code expect these identifiers:
         // (they are written like this in the wuschel.svg file)
         public const TopicStates notavail = TopicStates.NotAvailable;
@@ -207,5 +219,31 @@ namespace Philips.PIC.CommonControls
         {
             return (topic.Value == constant1) || (topic.Value == constant2) || (topic.Value == constant3);
         }
+
+        public void SetColorFrom(StateProviderTopic topic)
+        {
+
+        }
+
+        public void PushMatrix(double a, double b, double c, double d, double e, double f)
+        {
+            TransformMatrix o = _patientAvatarRenderer.transformation;
+
+            float a1 = o.a; float c1 = o.c; float e1 = o.e;
+            float b1 = o.b; float d1 = o.d; float f1 = o.f;
+
+            float a2 = (float)a; float c2 = (float)c; float e2 = (float)e;
+            float b2 = (float)b; float d2 = (float)d; float f2 = (float)f;
+
+            TransformMatrix m = new TransformMatrix();
+
+            m.a = a1 * a2 + b2 * c1; m.c = a1 * c2 + c1 * d2; m.e = e1 + a1 * e2 + c1 * f2;
+            m.b = a2 * b1 + b2 * d1; m.d = b1 * c2 + d1 * d2; m.f = f1 + b1 * e2 + d1 * f2;
+
+            _patientAvatarRenderer.transformation = m;
+        }
+
+        protected readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
+
     }
 }
