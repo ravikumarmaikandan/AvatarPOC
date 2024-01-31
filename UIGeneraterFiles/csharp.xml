@@ -13,13 +13,10 @@
 // by $TOOLNAME$
 #endregion
 
-using System.Drawing;
-using System.Drawing.Drawing2D;
-
 namespace Philips.PIC.CommonControls
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
-	public class PaintAvatar
+	public class PaintAvatar: PatientAvatarBase
     {
         private readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 ]]></template>
@@ -45,15 +42,19 @@ namespace Philips.PIC.CommonControls
 <template name="PaintSignature"><![CDATA[PaintAvatarInfo p]]></template>
 
 
-<template name="Move"><![CDATA[            path.Move($X$f,$Y$f);
+<template name="Move"><![CDATA[            path.Move($X$f, $Y$f);
 ]]></template>
-<template name="Line"><![CDATA[            path.Line($X$f,$Y$f);
+<template name="Line"><![CDATA[            path.Line($X$f, $Y$f);
 ]]></template>
-<template name="Rect"><![CDATA[            path.Rect($X1$f,$Y1$f,$X2$f,$Y2$f);
+<template name="Rect"><![CDATA[            path.Rect($X1$f, $Y1$f,
+                       $X2$f, $Y2$f);
 ]]></template>
-<template name="Quad"><![CDATA[            path.Quad($X1$f,$Y1$f,$X2$f,$Y2$f);
+<template name="Quad"><![CDATA[            path.Quad($X1$f, $Y1$f,
+                       $X2$f, $Y2$f);
 ]]></template>
-<template name="Cubic"><![CDATA[            path.Cubic($X1$f,$Y1$f,$X2$f,$Y2$f,$X3$f,$Y3$f);
+<template name="Cubic"><![CDATA[            path.Cubic($X1$f, $Y1$f, 
+                       $X2$f, $Y2$f, 
+		               $X3$f, $Y3$f);
 ]]></template>
 <template name="Close"><![CDATA[            path.Close();
 ]]></template>
@@ -177,12 +178,7 @@ $paintlist$
 
 		private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
-		    // todo: we need a solution here: These names should not be present here...
-		    int safe = 1;
-            int unknown = 2;
-            int notavail = 3;
-
-            if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+            if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
             {
 			    // todo: color, matrix
                 var tempRenderPath = new TemporaryRenderPath();
@@ -201,7 +197,7 @@ $paintlist$
 
         private void Paint_$token:ID$($PaintSignature$) //Group: $NAME$
         {
-		    if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
 		    {
 			    // todo: color, matrix
 $paintlist$
@@ -215,7 +211,7 @@ $paintlist$
 		<body><![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
         {
-		    if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
 		    {
                // todo
             }
