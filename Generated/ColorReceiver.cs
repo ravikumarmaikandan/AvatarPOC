@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Philips.PIC.CommonControls.Generated
+namespace Philips.PIC.CommonControls
 {
     internal class ColorReceiver
     {

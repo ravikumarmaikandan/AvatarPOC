@@ -1,4 +1,4 @@
-﻿using Philips.PIC.CommonControls.Generated;
+﻿using Philips.PIC.CommonControls;
 using System.Windows.Forms;
 
 namespace Philips.PIC.CommonControls
@@ -25,6 +25,9 @@ namespace Philips.PIC.CommonControls
         {
             _topicInfo.PulseRateHeart.Step(0.1f);
             _topicInfo.RespRate.Step(0.1f);
+
+
+            _topicInfo.TidalVolume.NextValue();
 
             Invalidate();
         }

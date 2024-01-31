@@ -105,10 +105,11 @@ $ELEMENTS$
 <!-- ======================================================  -->
 <skill name="Default">
   <path>
-    <body>
-<![CDATA[
+    <body><![CDATA[
+
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_$token:ID$(tempRenderPath);
@@ -121,18 +122,18 @@ $ELEMENTS$
 			colorReceiver.FillColor = 0x$onlyhex:fill$;
 		}
 		//----------------------------------------
-//----------------------------------------
 ]]></body>
 
   </path>
 
   <group>
     <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-    <body>
-<![CDATA[
+    <body><![CDATA[
+
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
+		    // todo: color, matrix ...
 $paintlist$
         }
         //----------------------------------------
@@ -140,14 +141,13 @@ $paintlist$
   </group>
 
   <use>
-    <body>
-<![CDATA[
-static void Paint_$token:LINK$($PaintSignature$);
-static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
-{
-$recursive:PaintPush$    Paint_$token:LINK$(p);
-$recursive:PaintPop$}
-//----------------------------------------
+    <body><![CDATA[
+
+        private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+        {
+		    // todo
+        }
+        //----------------------------------------
 ]]></body>
   </use>
 
@@ -157,11 +157,12 @@ $recursive:PaintPop$}
 
 <skill name="HideAlways">
   <template name="hidden"><![CDATA[
-static void Paint_$token:ID$(PaintIf &)
-{
-  // always hidden
-}
-//----------------------------------------
+
+        private void Paint_$token:ID$($PaintSignature$) // $NAME$
+        {
+            // intentionally left blank: always hidden
+        }
+        //----------------------------------------
 ]]></template>
 
   <path><body>$recursive:hidden$</body></path>
@@ -172,50 +173,54 @@ static void Paint_$token:ID$(PaintIf &)
 
 <skill name="Visibility">
   <path>
-    <body>
-<![CDATA[
-static void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-{
-  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
-  {
-$recursive:PaintPush$    p.PaintPath($token:ID$_data);
-$recursive:PaintPop$  }
-}
-//----------------------------------------
+    <body><![CDATA[
+
+		private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+        {
+		    // todo: we need a solution here: These names should not be present here...
+		    int safe = 1;
+            int unknown = 2;
+            int notavail = 3;
+
+            if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+            {
+			    // todo: color, matrix
+                var tempRenderPath = new TemporaryRenderPath();
+                SetPathData_$token:ID$(tempRenderPath);
+                _patientAvatarRenderer.Fill(p,tempRenderPath);
+            }
+		}
+        //----------------------------------------
 ]]></body>
 
   </path>
 
-  <group>
-    <member name="forwlistpaint" separator="#LF">static void Paint_$token:MEMBER_ID$($PaintSignature$);</member>
-    <member name="paintlist" separator="#LF">    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-    <body>
-<![CDATA[
-//Group: $NAME$
-$forwlistpaint$
-static void Paint_$token:ID$($PaintSignature$)
-{
-  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
-  {
-$recursive:PaintPush$$paintlist$
-$recursive:PaintPop$
-  }
-}
-//----------------------------------------
-]]></body>
-  </group>
+	<group>
+		<member name="paintlist" separator="#LF">		        Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+		<body><![CDATA[
 
-  <use>
-    <body>
-<![CDATA[
-static void Paint_$token:LINK$($PaintSignature$);
-static void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
-{
-  if (p.IsVisible(p.topics.$SKILL_PARAMETERS$))
-  {
-$recursive:PaintPush$    Paint_$token:LINK$(p);
-$recursive:PaintPop$}}
-//----------------------------------------
+        private void Paint_$token:ID$($PaintSignature$) //Group: $NAME$
+        {
+		    if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+		    {
+			    // todo: color, matrix
+$paintlist$
+            }
+        }
+        //----------------------------------------
+]]></body>
+	</group>
+
+	<use>
+		<body><![CDATA[
+        private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+        {
+		    if (p.IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
+		    {
+               // todo
+            }
+        }
+        //----------------------------------------
 ]]></body>
   </use>
 
@@ -226,8 +231,8 @@ $recursive:PaintPop$}}
   <path>
     <body>
 <![CDATA[
-       //This is not applicable for skill animated Paint_$token:ID$($PaintSignature$)
-       //----------------------------------------
+
+        //Path ($NAME$) is not applicable for skill animated Paint_$token:ID$($PaintSignature$)
 ]]></body>
 
   </path>
@@ -235,8 +240,7 @@ $recursive:PaintPop$}}
   <group>
     <member name="pathlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
 	  <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$($token:MEMBER_NAME$Color);</member>
-    <body>
-<![CDATA[
+    <body><![CDATA[
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
@@ -262,6 +266,9 @@ $pathlist$
   </use>
 
 </skill>
+
+    <skill name="ShowAlways" alias="Default" />
+	<skill name="AlwaysHide" alias="HideAlways" />
 
 
 </templates>

@@ -1,4 +1,5 @@
-#region Header
+
+	#region Header
 // © 2024 Koninklijke Philips N.V.  All rights reserved.
 // Reproduction or transmission in whole or in part, in any form or by any means, 
 // electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
@@ -12,7 +13,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Philips.PIC.CommonControls.Generated
+namespace Philips.PIC.CommonControls
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("C__Users_dep05119_Documents_Code_svgcompiler_svgconverter_exe", "1")]
 	public class PaintAvatar
@@ -110,9 +111,43 @@ namespace Philips.PIC.CommonControls.Generated
 
         }
 
+	
+        private void SetPathData_path1(IRenderPath path)
+        {   // Label: Test-Circle
+            path.Move(31.430895f,202.429939f);
+            path.Cubic(38.457078f,202.429939f,44.152924f,197.320429f,44.152924f,191.017530f);
+            path.Cubic(44.152924f,184.714631f,38.457078f,179.605121f,31.430895f,179.605121f);
+            path.Cubic(24.404712f,179.605121f,18.708866f,184.714631f,18.708866f,191.017530f);
+            path.Cubic(18.708866f,197.320429f,24.404712f,202.429939f,31.430895f,202.429939f);
+            path.Close();
+
+        }
+
+	
+        private void SetPathData_path2(IRenderPath path)
+        {   // Label: Star
+            path.Move(172.121580f,176.985870f);
+            path.Line(160.503690f,174.716600f);
+            path.Line(151.729030f,182.662050f);
+            path.Line(146.259590f,172.163960f);
+            path.Line(134.576670f,170.257560f);
+            path.Line(139.374270f,159.435920f);
+            path.Line(133.580580f,149.113230f);
+            path.Line(145.032530f,146.116960f);
+            path.Line(149.490820f,135.151170f);
+            path.Line(158.973580f,142.236520f);
+            path.Line(170.326670f,138.885110f);
+            path.Line(170.699520f,150.716670f);
+            path.Line(180.398310f,157.503300f);
+            path.Line(171.380490f,165.171660f);
+            path.Close();
+
+        }
+
 
         private void Paint_use6257(PaintAvatarInfo p) //Path: Max
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x000000;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use6257(tempRenderPath);
@@ -125,11 +160,11 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0x000000;
 		}
 		//----------------------------------------
-//----------------------------------------
 
 
         private void Paint_use6255(PaintAvatarInfo p) //Path: Min
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x6c7593;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use6255(tempRenderPath);
@@ -142,11 +177,11 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0x6c7593;
 		}
 		//----------------------------------------
-//----------------------------------------
 
 
         private void Paint_use6871(PaintAvatarInfo p) //Path: Time
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x000000;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use6871(tempRenderPath);
@@ -159,8 +194,6 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0x000000;
 		}
 		//----------------------------------------
-//----------------------------------------
-
 
         //Group: pulsing
         private void Paint_g6263(PaintAvatarInfo p)
@@ -185,6 +218,7 @@ namespace Philips.PIC.CommonControls.Generated
 
         private void Paint_path519(PaintAvatarInfo p) //Path: Max
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x000000;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_path519(tempRenderPath);
@@ -197,11 +231,11 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0x000000;
 		}
 		//----------------------------------------
-//----------------------------------------
 
 
         private void Paint_path517(PaintAvatarInfo p) //Path: Min
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0xff0000;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_path517(tempRenderPath);
@@ -214,11 +248,11 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0xff0000;
 		}
 		//----------------------------------------
-//----------------------------------------
 
 
         private void Paint_path523(PaintAvatarInfo p) //Path: Time
         {
+		    // todo: matrix, ...
             _patientAvatarRenderer.FillColor = 0x000000;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_path523(tempRenderPath);
@@ -231,8 +265,6 @@ namespace Philips.PIC.CommonControls.Generated
 			colorReceiver.FillColor = 0x000000;
 		}
 		//----------------------------------------
-//----------------------------------------
-
 
         //Group: Heart
         private void Paint_g528(PaintAvatarInfo p)
@@ -255,11 +287,39 @@ namespace Philips.PIC.CommonControls.Generated
         //----------------------------------------
 
 
+		private void Paint_path1(PaintAvatarInfo p) //Path: Test-Circle
+        {
+		    // todo: we need a solution here: These names should not be present here...
+		    int safe = 1;
+            int unknown = 2;
+            int notavail = 3;
+
+            if (p.IsVisible(p.TopicInfo.TidalVolume, safe, unknown, notavail))
+            {
+			    // todo: color, matrix
+                var tempRenderPath = new TemporaryRenderPath();
+                SetPathData_path1(tempRenderPath);
+                _patientAvatarRenderer.Fill(p,tempRenderPath);
+            }
+		}
+        //----------------------------------------
+
+
+        private void Paint_path2(PaintAvatarInfo p) // Star
+        {
+            // intentionally left blank: always hidden
+        }
+        //----------------------------------------
+
+
         //Group: Ebene 1
         private void Paint_layer1(PaintAvatarInfo p)
         {
+		    // todo: color, matrix ...
 		    Paint_g6263(p);// pulsing
 		    Paint_g528(p);// Heart
+		    Paint_path1(p);// Test-Circle
+		    Paint_path2(p);// Star
         }
         //----------------------------------------
 
@@ -267,6 +327,7 @@ namespace Philips.PIC.CommonControls.Generated
         //Group: 
         private void Paint_svg515(PaintAvatarInfo p)
         {
+		    // todo: color, matrix ...
 		    Paint_layer1(p);// Ebene 1
         }
         //----------------------------------------

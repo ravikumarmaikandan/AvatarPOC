@@ -19,6 +19,19 @@ namespace Philips.PIC.CommonControls
         public PaintEventArgs PaintEventArgs { get; set; }
         public TopicInfo TopicInfo { get; set; }
 
+        public bool IsVisible(StateProviderTopic topic, int constant1)
+        {
+            return topic.Value == constant1;
+        }
+        public bool IsVisible(StateProviderTopic topic, int constant1, int constant2)
+        {
+            return (topic.Value == constant1) || (topic.Value == constant2);
+        }
+        public bool IsVisible(StateProviderTopic topic, int constant1, int constant2, int constant3)
+        {
+            return (topic.Value == constant1) || (topic.Value == constant2) || (topic.Value == constant3);
+        }
+
     }
 
     public class TopicInfo
@@ -106,5 +119,14 @@ namespace Philips.PIC.CommonControls
 
     public class StateProviderTopic
     {
+        public int Value { get; set; }
+
+        public void NextValue()
+        {
+            // obviously: this is completely nonsense!
+            // just a test to have different Values
+            Value += 1;
+            if (Value == 10) Value = 0;
+        }
     }
 }
