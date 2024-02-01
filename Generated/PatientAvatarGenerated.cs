@@ -5935,8 +5935,8 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path4902(IRenderPath path)
-        {   // Label: minimum
+        private void SetPathData_path4902_f3(IRenderPath path)
+        {   // Label: filling of minimum
             path.Move(118.144010f, 227.345440f);
             path.Cubic(120.155420f, 228.081360f, 
                        121.606610f, 227.691470f, 
@@ -6052,6 +6052,246 @@ namespace Philips.PIC.CommonControls
                        94.797895f, 267.036240f, 
 		               94.677464f, 265.622800f);
             path.Line(94.586244f, 219.809840f);
+            path.Close();
+
+        }
+
+	
+        private void SetPathData_path4902_s3(IRenderPath path)
+        {   // Label: stroke of minimum
+            path.Move(118.144010f, 227.345440f);
+            path.Line(94.586244f, 219.809840f);
+            path.Line(94.677464f, 265.622800f);
+            path.Cubic(94.797895f, 267.036240f, 
+                       94.811105f, 267.857670f, 
+		               94.896535f, 268.658600f);
+            path.Cubic(95.067318f, 269.083120f, 
+                       95.692091f, 271.360210f, 
+		               93.144417f, 272.856530f);
+            path.Line(84.659258f, 277.840100f);
+            path.Cubic(84.441603f, 277.954270f, 
+                       84.153473f, 278.103780f, 
+		               83.907707f, 278.106780f);
+            path.Cubic(83.436990f, 278.114240f, 
+                       83.552005f, 278.102970f, 
+		               83.265461f, 277.744590f);
+            path.Cubic(82.988703f, 277.398450f, 
+                       83.236095f, 276.642580f, 
+		               83.492879f, 275.989110f);
+            path.Cubic(85.342879f, 270.605923f, 
+                       86.249842f, 267.801463f, 
+		               86.213769f, 267.575730f);
+            path.Line(83.154758f, 247.548060f);
+            path.Cubic(82.013326f, 243.802550f, 
+                       77.256622f, 244.003310f, 
+		               76.365305f, 247.489560f);
+            path.Line(74.386922f, 262.218730f);
+            path.Line(74.304142f, 264.777000f);
+            path.Cubic(74.398636f, 266.404950f, 
+                       73.179482f, 267.342180f, 
+		               71.974683f, 267.936730f);
+            path.Line(66.072411f, 270.606540f);
+            path.Cubic(65.479652f, 270.918500f, 
+                       63.449399f, 271.968110f, 
+		               63.242031f, 271.970110f);
+            path.Cubic(62.843231f, 271.978040f, 
+                       62.619466f, 272.032110f, 
+		               62.453209f, 271.669540f);
+            path.Cubic(62.315217f, 271.355820f, 
+                       62.336349f, 271.002340f, 
+		               62.515519f, 270.650560f);
+            path.Line(66.613955f, 263.641880f);
+            path.Line(66.588375f, 217.319510f);
+            path.Line(47.142791f, 218.067320f);
+            path.Cubic(46.441003f, 218.107920f, 
+                       43.887143f, 218.402180f, 
+		               43.422311f, 218.129320f);
+            path.Cubic(42.814489f, 217.772520f, 
+                       42.185565f, 217.299570f, 
+		               41.976236f, 216.536490f);
+            path.Cubic(41.629427f, 215.272240f, 
+                       42.524096f, 213.430220f, 
+		               43.906520f, 213.160880f);
+            path.Cubic(44.331160f, 213.078150f, 
+                       47.991469f, 212.280100f, 
+		               48.223257f, 212.230000f);
+            path.Cubic(47.766893f, 211.560310f, 
+                       47.278553f, 211.150630f, 
+		               46.941304f, 210.141780f);
+            path.Cubic(46.708501f, 209.445380f, 
+                       48.268143f, 209.668230f, 
+		               48.882936f, 210.125480f);
+            path.Cubic(49.427444f, 210.530460f, 
+                       49.609935f, 210.743830f, 
+		               50.403193f, 211.534860f);
+            path.Cubic(56.280470f, 210.353053f, 
+                       63.178133f, 208.897853f, 
+		               71.096181f, 207.169260f);
+            path.Cubic(73.883812f, 206.737540f, 
+                       75.269016f, 205.238800f, 
+		               75.374387f, 203.089860f);
+            path.Cubic(75.688486f, 200.848460f, 
+                       75.104302f, 199.088377f, 
+		               73.621833f, 197.809610f);
+            path.Cubic(67.976363f, 194.676920f, 
+                       64.732838f, 188.569400f, 
+		               66.833177f, 181.294850f);
+            path.Cubic(68.709926f, 174.794710f, 
+                       75.144671f, 170.972570f, 
+		               80.744786f, 170.966570f);
+            path.Cubic(88.470030f, 170.958650f, 
+                       93.441467f, 177.228520f, 
+		               94.405134f, 181.278150f);
+            path.Cubic(96.518976f, 190.161180f, 
+                       92.307065f, 195.398080f, 
+		               87.990820f, 197.691500f);
+            path.Cubic(85.889478f, 198.848400f, 
+                       85.771208f, 200.431540f, 
+		               85.801098f, 202.604330f);
+            path.Cubic(85.715050f, 205.410990f, 
+                       87.794922f, 206.730470f, 
+		               89.023345f, 207.155690f);
+            path.Cubic(99.935508f, 212.009190f, 
+                       108.732397f, 215.847050f, 
+		               115.414010f, 218.669270f);
+            path.Cubic(116.080830f, 218.263800f, 
+                       116.571880f, 217.768530f, 
+		               117.598250f, 217.190160f);
+            path.Cubic(118.616870f, 216.616150f, 
+                       119.554140f, 217.099840f, 
+		               119.051630f, 217.984230f);
+            path.Cubic(118.636630f, 218.714600f, 
+                       117.875200f, 219.630770f, 
+		               117.344710f, 220.177840f);
+            path.Cubic(118.233710f, 220.564130f, 
+                       119.173080f, 221.116170f, 
+		               119.450890f, 221.259040f);
+            path.Cubic(120.296800f, 221.744520f, 
+                       121.572190f, 222.271800f, 
+		               122.506370f, 223.313430f);
+            path.Cubic(123.253000f, 224.212100f, 
+                       123.534050f, 225.696710f, 
+		               122.199500f, 226.942060f);
+            path.Cubic(121.606610f, 227.691470f, 
+                       120.155420f, 228.081360f, 
+		               118.144010f, 227.345440f);
+            path.Close();
+            path.Move(118.144010f, 227.345440f);
+            path.Cubic(120.155420f, 228.081360f, 
+                       121.606610f, 227.691470f, 
+		               122.199500f, 226.942060f);
+            path.Cubic(123.534050f, 225.696710f, 
+                       123.253000f, 224.212100f, 
+		               122.506370f, 223.313430f);
+            path.Cubic(121.572190f, 222.271800f, 
+                       120.296800f, 221.744520f, 
+		               119.450890f, 221.259040f);
+            path.Cubic(119.173080f, 221.116170f, 
+                       118.233710f, 220.564130f, 
+		               117.344710f, 220.177840f);
+            path.Cubic(117.875200f, 219.630770f, 
+                       118.636630f, 218.714600f, 
+		               119.051630f, 217.984230f);
+            path.Cubic(119.554140f, 217.099840f, 
+                       118.616870f, 216.616150f, 
+		               117.598250f, 217.190160f);
+            path.Cubic(116.571880f, 217.768530f, 
+                       116.080830f, 218.263800f, 
+		               115.414010f, 218.669270f);
+            path.Cubic(108.732397f, 215.847050f, 
+                       99.935508f, 212.009190f, 
+		               89.023345f, 207.155690f);
+            path.Cubic(87.794922f, 206.730470f, 
+                       85.715050f, 205.410990f, 
+		               85.801098f, 202.604330f);
+            path.Cubic(85.771208f, 200.431540f, 
+                       85.889478f, 198.848400f, 
+		               87.990820f, 197.691500f);
+            path.Cubic(92.307065f, 195.398080f, 
+                       96.518976f, 190.161180f, 
+		               94.405134f, 181.278150f);
+            path.Cubic(93.441467f, 177.228520f, 
+                       88.470030f, 170.958650f, 
+		               80.744786f, 170.966570f);
+            path.Cubic(75.144671f, 170.972570f, 
+                       68.709926f, 174.794710f, 
+		               66.833177f, 181.294850f);
+            path.Cubic(64.732838f, 188.569400f, 
+                       67.976363f, 194.676920f, 
+		               73.621833f, 197.809610f);
+            path.Cubic(75.104302f, 199.088377f, 
+                       75.688486f, 200.848460f, 
+		               75.374387f, 203.089860f);
+            path.Cubic(75.269016f, 205.238800f, 
+                       73.883812f, 206.737540f, 
+		               71.096181f, 207.169260f);
+            path.Cubic(63.178133f, 208.897853f, 
+                       56.280470f, 210.353053f, 
+		               50.403193f, 211.534860f);
+            path.Cubic(49.609935f, 210.743830f, 
+                       49.427444f, 210.530460f, 
+		               48.882936f, 210.125480f);
+            path.Cubic(48.268143f, 209.668230f, 
+                       46.708501f, 209.445380f, 
+		               46.941304f, 210.141780f);
+            path.Cubic(47.278553f, 211.150630f, 
+                       47.766893f, 211.560310f, 
+		               48.223257f, 212.230000f);
+            path.Cubic(47.991469f, 212.280100f, 
+                       44.331160f, 213.078150f, 
+		               43.906520f, 213.160880f);
+            path.Cubic(42.524096f, 213.430220f, 
+                       41.629427f, 215.272240f, 
+		               41.976236f, 216.536490f);
+            path.Cubic(42.185565f, 217.299570f, 
+                       42.814489f, 217.772520f, 
+		               43.422311f, 218.129320f);
+            path.Cubic(43.887143f, 218.402180f, 
+                       46.441003f, 218.107920f, 
+		               47.142791f, 218.067320f);
+            path.Line(66.588375f, 217.319510f);
+            path.Line(66.613955f, 263.641880f);
+            path.Line(62.515519f, 270.650560f);
+            path.Cubic(62.336349f, 271.002340f, 
+                       62.315217f, 271.355820f, 
+		               62.453209f, 271.669540f);
+            path.Cubic(62.619466f, 272.032110f, 
+                       62.843231f, 271.978040f, 
+		               63.242031f, 271.970110f);
+            path.Cubic(63.449399f, 271.968110f, 
+                       65.479652f, 270.918500f, 
+		               66.072411f, 270.606540f);
+            path.Line(71.974683f, 267.936730f);
+            path.Cubic(73.179482f, 267.342180f, 
+                       74.398636f, 266.404950f, 
+		               74.304142f, 264.777000f);
+            path.Line(74.386922f, 262.218730f);
+            path.Line(76.365305f, 247.489560f);
+            path.Cubic(77.256622f, 244.003310f, 
+                       82.013326f, 243.802550f, 
+		               83.154758f, 247.548060f);
+            path.Line(86.213769f, 267.575730f);
+            path.Cubic(86.249842f, 267.801463f, 
+                       85.342879f, 270.605923f, 
+		               83.492879f, 275.989110f);
+            path.Cubic(83.236095f, 276.642580f, 
+                       82.988703f, 277.398450f, 
+		               83.265461f, 277.744590f);
+            path.Cubic(83.552005f, 278.102970f, 
+                       83.436990f, 278.114240f, 
+		               83.907707f, 278.106780f);
+            path.Cubic(84.153473f, 278.103780f, 
+                       84.441603f, 277.954270f, 
+		               84.659258f, 277.840100f);
+            path.Line(93.144417f, 272.856530f);
+            path.Cubic(95.692091f, 271.360210f, 
+                       95.067318f, 269.083120f, 
+		               94.896535f, 268.658600f);
+            path.Cubic(94.811105f, 267.857670f, 
+                       94.797895f, 267.036240f, 
+		               94.677464f, 265.622800f);
+            path.Line(94.586244f, 219.809840f);
+            path.Line(118.144010f, 227.345440f);
             path.Close();
 
         }
@@ -8992,7 +9232,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use3096_f3(IRenderPath path)
+        private void SetPathData_use3096_f4(IRenderPath path)
         {   // Label: filling of line
             path.Move(89.283646f, 204.708040f);
             path.Cubic(89.003188f, 204.501670f, 
@@ -9083,7 +9323,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use3096_s3(IRenderPath path)
+        private void SetPathData_use3096_s4(IRenderPath path)
         {   // Label: stroke of line
             path.Move(89.232533f, 204.830284f);
             path.Line(121.965897f, 218.516894f);
@@ -10463,7 +10703,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use7671_f4(IRenderPath path)
+        private void SetPathData_use7671_f5(IRenderPath path)
         {   // Label: filling of Line
             path.Move(60.398083f, 201.366350f);
             path.Cubic(55.230215f, 203.584140f, 
@@ -10481,7 +10721,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use7671_s4(IRenderPath path)
+        private void SetPathData_use7671_s5(IRenderPath path)
         {   // Label: stroke of Line
             path.Move(60.454679f, 201.485924f);
             path.Line(77.861623f, 193.246890f);
@@ -10746,7 +10986,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use5195_f5(IRenderPath path)
+        private void SetPathData_use5195_f6(IRenderPath path)
         {   // Label: filling of Line
             path.Move(86.436732f, 208.044450f);
             path.Cubic(93.196839f, 208.044450f, 
@@ -10786,7 +11026,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use5195_s5(IRenderPath path)
+        private void SetPathData_use5195_s6(IRenderPath path)
         {   // Label: stroke of Line
             path.Move(86.436732f, 207.911950f);
             path.Cubic(83.111815f, 207.911950f, 
@@ -11498,7 +11738,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use7919_f6(IRenderPath path)
+        private void SetPathData_use7919_f7(IRenderPath path)
         {   // Label: filling of line
             path.Move(72.106896f, 229.055000f);
             path.Line(72.106896f, 219.921580f);
@@ -11523,7 +11763,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use7919_s6(IRenderPath path)
+        private void SetPathData_use7919_s7(IRenderPath path)
         {   // Label: stroke of line
             path.Move(71.974604f, 229.055000f);
             path.Line(71.974604f, 231.942370f);
@@ -11720,7 +11960,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use3991_f7(IRenderPath path)
+        private void SetPathData_use3991_f8(IRenderPath path)
         {   // Label: filling of Line
             path.Move(96.047410f, 211.857220f);
             path.Cubic(95.581014f, 210.392850f, 
@@ -11767,7 +12007,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use3991_s7(IRenderPath path)
+        private void SetPathData_use3991_s8(IRenderPath path)
         {   // Label: stroke of Line
             path.Move(95.922581f, 211.901024f);
             path.Cubic(96.454324f, 213.416332f, 
@@ -12155,7 +12395,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3652_f8(IRenderPath path)
+        private void SetPathData_path3652_f9(IRenderPath path)
         {   // Label: filling of grey lightning
             path.Move(78.338432f, 212.434000f);
             path.Cubic(78.039057f, 212.822570f, 
@@ -12205,7 +12445,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3652_s8(IRenderPath path)
+        private void SetPathData_path3652_s9(IRenderPath path)
         {   // Label: stroke of grey lightning
             path.Move(78.353458f, 212.532865f);
             path.Cubic(78.656503f, 212.486820f, 
@@ -12299,7 +12539,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3582_f9(IRenderPath path)
+        private void SetPathData_path3582_f10(IRenderPath path)
         {   // Label: filling of ST1
             path.Move(88.458146f, 218.416100f);
             path.Line(75.644375f, 218.416100f);
@@ -12321,7 +12561,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3582_s9(IRenderPath path)
+        private void SetPathData_path3582_s10(IRenderPath path)
         {   // Label: stroke of ST1
             path.Move(88.338485f, 218.359689f);
             path.Cubic(87.870749f, 219.351860f, 
@@ -12363,7 +12603,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3626_f10(IRenderPath path)
+        private void SetPathData_path3626_f11(IRenderPath path)
         {   // Label: filling of ST2
             path.Move(77.694896f, 221.286830f);
             path.Cubic(79.070729f, 222.847880f, 
@@ -12382,7 +12622,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3626_s10(IRenderPath path)
+        private void SetPathData_path3626_s11(IRenderPath path)
         {   // Label: stroke of ST2
             path.Move(77.791556f, 221.196509f);
             path.Cubic(77.088215f, 220.443807f, 
@@ -12416,7 +12656,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3650_f11(IRenderPath path)
+        private void SetPathData_path3650_f12(IRenderPath path)
         {   // Label: filling of ST3
             path.Move(79.464958f, 223.207710f);
             path.Cubic(80.303688f, 224.086130f, 
@@ -12437,7 +12677,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path3650_s11(IRenderPath path)
+        private void SetPathData_path3650_s12(IRenderPath path)
         {   // Label: stroke of ST3
             path.Move(79.648851f, 223.208568f);
             path.Line(84.193296f, 218.545751f);
@@ -12478,7 +12718,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path195_f12(IRenderPath path)
+        private void SetPathData_path195_f13(IRenderPath path)
         {   // Label: filling of ST3_zero
             path.Move(314.468750f, 239.058590f);
             path.Line(308.384770f, 245.300780f);
@@ -12512,7 +12752,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path195_s12(IRenderPath path)
+        private void SetPathData_path195_s13(IRenderPath path)
         {   // Label: stroke of ST3_zero
             path.Move(313.969920f, 239.092767f);
             path.Cubic(314.143488f, 241.626116f, 
@@ -12578,7 +12818,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path198_f13(IRenderPath path)
+        private void SetPathData_path198_f14(IRenderPath path)
         {   // Label: filling of ST2_zero
             path.Move(297.343750f, 239.978520f);
             path.Cubic(295.345110f, 240.044420f, 
@@ -12608,7 +12848,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path198_s13(IRenderPath path)
+        private void SetPathData_path198_s14(IRenderPath path)
         {   // Label: stroke of ST2_zero
             path.Move(297.360245f, 240.478247f);
             path.Cubic(297.954538f, 240.458631f, 
@@ -12664,7 +12904,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path201_f14(IRenderPath path)
+        private void SetPathData_path201_f15(IRenderPath path)
         {   // Label: filling of ST1_zero
             path.Move(307.550780f, 235.445310f);
             path.Cubic(307.919040f, 237.151700f, 
@@ -12706,7 +12946,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_path201_s14(IRenderPath path)
+        private void SetPathData_path201_s15(IRenderPath path)
         {   // Label: stroke of ST1_zero
             path.Move(308.165305f, 235.945309f);
             path.Line(313.630336f, 235.945309f);
@@ -13386,7 +13626,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use27516_f15(IRenderPath path)
+        private void SetPathData_use27516_f16(IRenderPath path)
         {   // Label: filling of line
             path.Move(82.783531f, 205.350180f);
             path.Cubic(82.781131f, 202.151620f, 
@@ -13415,7 +13655,7 @@ namespace Philips.PIC.CommonControls
         }
 
 	
-        private void SetPathData_use27516_s15(IRenderPath path)
+        private void SetPathData_use27516_s16(IRenderPath path)
         {   // Label: stroke of line
             path.Move(82.783531f, 205.217889f);
             path.Line(82.783478f, 205.217888f);
@@ -15278,23 +15518,63 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path4902(PaintAvatarInfo p) //Path: minimum
+        private void Paint_path4902_f3(PaintAvatarInfo p) //Path: filling of minimum
         {
             
             
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path4902(tempRenderPath);
+			SetPathData_path4902_f3(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
 
         }
 		
-		private void SetPathColor_path4902(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path4902_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
+
+	
+
+        private void Paint_path4902_s3(PaintAvatarInfo p) //Path: stroke of minimum
+        {
+            
+            int colorWas = _patientAvatarRenderer.FillColor;
+             _patientAvatarRenderer.FillColor = 0x000000;
+
+            var tempRenderPath = new TemporaryRenderPath();
+			SetPathData_path4902_s3(tempRenderPath);
+            _patientAvatarRenderer.Fill(p,tempRenderPath);
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
+
+        }
+		
+		private void SetPathColor_path4902_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		{
+		    // todo
+			colorReceiver.FillColor = 0x0000000;
+		}
+		//----------------------------------------
+
+			
+
+        //Group: minimum
+        private void Paint_path4902(PaintAvatarInfo p)
+        {
+		    Paint_path4902_f3(p);// filling of minimum
+		    Paint_path4902_s3(p);// stroke of minimum
+        }
+        //----------------------------------------
+		private void SetPathData_path4902(IRenderPath path)
+		{ // not usable for groups
+		}
+		private void SetPathColor_path4902(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		{ // not usable for groups
+		}
 
 	
 
@@ -16634,14 +16914,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use3096_f3(PaintAvatarInfo p) //Path: filling of line
+        private void Paint_use3096_f4(PaintAvatarInfo p) //Path: filling of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use3096_f3(tempRenderPath);
+			SetPathData_use3096_f4(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -16649,7 +16929,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3096_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use3096_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -16658,14 +16938,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use3096_s3(PaintAvatarInfo p) //Path: stroke of line
+        private void Paint_use3096_s4(PaintAvatarInfo p) //Path: stroke of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use3096_s3(tempRenderPath);
+			SetPathData_use3096_s4(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -16673,7 +16953,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3096_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use3096_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -16687,8 +16967,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.ABP,low,safe,high))
 		    {
 			    // todo: color, matrix
-		        Paint_use3096_f3(p);// filling of line
-		        Paint_use3096_s3(p);// stroke of line
+		        Paint_use3096_f4(p);// filling of line
+		        Paint_use3096_s4(p);// stroke of line
             }
         }
 		private void SetPathData_use3096(IRenderPath path)
@@ -17590,14 +17870,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use7671_f4(PaintAvatarInfo p) //Path: filling of Line
+        private void Paint_use7671_f5(PaintAvatarInfo p) //Path: filling of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use7671_f4(tempRenderPath);
+			SetPathData_use7671_f5(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -17605,7 +17885,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7671_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use7671_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -17614,14 +17894,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use7671_s4(PaintAvatarInfo p) //Path: stroke of Line
+        private void Paint_use7671_s5(PaintAvatarInfo p) //Path: stroke of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use7671_s4(tempRenderPath);
+			SetPathData_use7671_s5(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -17629,7 +17909,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7671_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use7671_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -17641,8 +17921,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: Line
         private void Paint_use7671(PaintAvatarInfo p)
         {
-		    Paint_use7671_f4(p);// filling of Line
-		    Paint_use7671_s4(p);// stroke of Line
+		    Paint_use7671_f5(p);// filling of Line
+		    Paint_use7671_s5(p);// stroke of Line
         }
         //----------------------------------------
 		private void SetPathData_use7671(IRenderPath path)
@@ -17795,11 +18075,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: helper
         private void Paint_g4342(PaintAvatarInfo p)
         {
+            /*
 		    Paint_path5273(p);// normal
 		    Paint_path5277(p);// outside
 		    Paint_path6201(p);// inside
 		    Paint_path7273(p);// minimum
 		    Paint_path26136(p);// 
+            */
         }
         //----------------------------------------
 		private void SetPathData_g4342(IRenderPath path)
@@ -18037,14 +18319,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use5195_f5(PaintAvatarInfo p) //Path: filling of Line
+        private void Paint_use5195_f6(PaintAvatarInfo p) //Path: filling of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use5195_f5(tempRenderPath);
+			SetPathData_use5195_f6(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -18052,7 +18334,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5195_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use5195_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -18061,14 +18343,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use5195_s5(PaintAvatarInfo p) //Path: stroke of Line
+        private void Paint_use5195_s6(PaintAvatarInfo p) //Path: stroke of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use5195_s5(tempRenderPath);
+			SetPathData_use5195_s6(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -18076,7 +18358,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5195_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use5195_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -18090,8 +18372,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.TidalVolume, low, safe, high))
 		    {
 			    // todo: color, matrix
-		        Paint_use5195_f5(p);// filling of Line
-		        Paint_use5195_s5(p);// stroke of Line
+		        Paint_use5195_f6(p);// filling of Line
+		        Paint_use5195_s6(p);// stroke of Line
             }
         }
 		private void SetPathData_use5195(IRenderPath path)
@@ -18346,14 +18628,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use7919_f6(PaintAvatarInfo p) //Path: filling of line
+        private void Paint_use7919_f7(PaintAvatarInfo p) //Path: filling of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use7919_f6(tempRenderPath);
+			SetPathData_use7919_f7(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -18361,7 +18643,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7919_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use7919_f7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -18370,14 +18652,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use7919_s6(PaintAvatarInfo p) //Path: stroke of line
+        private void Paint_use7919_s7(PaintAvatarInfo p) //Path: stroke of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use7919_s6(tempRenderPath);
+			SetPathData_use7919_s7(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -18385,7 +18667,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7919_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use7919_s7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -18399,8 +18681,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.CVP, low,safe,high))
 		    {
 			    // todo: color, matrix
-		        Paint_use7919_f6(p);// filling of line
-		        Paint_use7919_s6(p);// stroke of line
+		        Paint_use7919_f7(p);// filling of line
+		        Paint_use7919_s7(p);// stroke of line
             }
         }
 		private void SetPathData_use7919(IRenderPath path)
@@ -19811,14 +20093,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use3991_f7(PaintAvatarInfo p) //Path: filling of Line
+        private void Paint_use3991_f8(PaintAvatarInfo p) //Path: filling of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use3991_f7(tempRenderPath);
+			SetPathData_use3991_f8(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -19826,7 +20108,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3991_f7(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use3991_f8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -19835,14 +20117,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use3991_s7(PaintAvatarInfo p) //Path: stroke of Line
+        private void Paint_use3991_s8(PaintAvatarInfo p) //Path: stroke of Line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use3991_s7(tempRenderPath);
+			SetPathData_use3991_s8(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -19850,7 +20132,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3991_s7(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use3991_s8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -19864,8 +20146,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.CO, low, safe, high))
 		    {
 			    // todo: color, matrix
-		        Paint_use3991_f7(p);// filling of Line
-		        Paint_use3991_s7(p);// stroke of Line
+		        Paint_use3991_f8(p);// filling of Line
+		        Paint_use3991_s8(p);// stroke of Line
             }
         }
 		private void SetPathData_use3991(IRenderPath path)
@@ -20238,14 +20520,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3652_f8(PaintAvatarInfo p) //Path: filling of grey lightning
+        private void Paint_path3652_f9(PaintAvatarInfo p) //Path: filling of grey lightning
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x595959;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3652_f8(tempRenderPath);
+			SetPathData_path3652_f9(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20253,7 +20535,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3652_f8(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3652_f9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0595959;
@@ -20262,14 +20544,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3652_s8(PaintAvatarInfo p) //Path: stroke of grey lightning
+        private void Paint_path3652_s9(PaintAvatarInfo p) //Path: stroke of grey lightning
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3652_s8(tempRenderPath);
+			SetPathData_path3652_s9(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20277,7 +20559,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3652_s8(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3652_s9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20289,8 +20571,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: grey lightning
         private void Paint_path3652(PaintAvatarInfo p)
         {
-		    Paint_path3652_f8(p);// filling of grey lightning
-		    Paint_path3652_s8(p);// stroke of grey lightning
+		    Paint_path3652_f9(p);// filling of grey lightning
+		    Paint_path3652_s9(p);// stroke of grey lightning
         }
         //----------------------------------------
 		private void SetPathData_path3652(IRenderPath path)
@@ -20320,14 +20602,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3582_f9(PaintAvatarInfo p) //Path: filling of ST1
+        private void Paint_path3582_f10(PaintAvatarInfo p) //Path: filling of ST1
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x17030f;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3582_f9(tempRenderPath);
+			SetPathData_path3582_f10(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20335,7 +20617,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3582_f9(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3582_f10(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x017030f;
@@ -20344,14 +20626,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3582_s9(PaintAvatarInfo p) //Path: stroke of ST1
+        private void Paint_path3582_s10(PaintAvatarInfo p) //Path: stroke of ST1
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3582_s9(tempRenderPath);
+			SetPathData_path3582_s10(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20359,7 +20641,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3582_s9(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3582_s10(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20373,8 +20655,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, inferior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path3582_f9(p);// filling of ST1
-		        Paint_path3582_s9(p);// stroke of ST1
+		        Paint_path3582_f10(p);// filling of ST1
+		        Paint_path3582_s10(p);// stroke of ST1
             }
         }
 		private void SetPathData_path3582(IRenderPath path)
@@ -20387,14 +20669,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3626_f10(PaintAvatarInfo p) //Path: filling of ST2
+        private void Paint_path3626_f11(PaintAvatarInfo p) //Path: filling of ST2
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x17030f;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3626_f10(tempRenderPath);
+			SetPathData_path3626_f11(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20402,7 +20684,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3626_f10(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3626_f11(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x017030f;
@@ -20411,14 +20693,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3626_s10(PaintAvatarInfo p) //Path: stroke of ST2
+        private void Paint_path3626_s11(PaintAvatarInfo p) //Path: stroke of ST2
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3626_s10(tempRenderPath);
+			SetPathData_path3626_s11(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20426,7 +20708,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3626_s10(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3626_s11(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20440,8 +20722,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, posterior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path3626_f10(p);// filling of ST2
-		        Paint_path3626_s10(p);// stroke of ST2
+		        Paint_path3626_f11(p);// filling of ST2
+		        Paint_path3626_s11(p);// stroke of ST2
             }
         }
 		private void SetPathData_path3626(IRenderPath path)
@@ -20454,14 +20736,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3650_f11(PaintAvatarInfo p) //Path: filling of ST3
+        private void Paint_path3650_f12(PaintAvatarInfo p) //Path: filling of ST3
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x17030f;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3650_f11(tempRenderPath);
+			SetPathData_path3650_f12(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20469,7 +20751,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3650_f11(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3650_f12(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x017030f;
@@ -20478,14 +20760,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path3650_s11(PaintAvatarInfo p) //Path: stroke of ST3
+        private void Paint_path3650_s12(PaintAvatarInfo p) //Path: stroke of ST3
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path3650_s11(tempRenderPath);
+			SetPathData_path3650_s12(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20493,7 +20775,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3650_s11(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path3650_s12(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20507,8 +20789,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, anterior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path3650_f11(p);// filling of ST3
-		        Paint_path3650_s11(p);// stroke of ST3
+		        Paint_path3650_f12(p);// filling of ST3
+		        Paint_path3650_s12(p);// stroke of ST3
             }
         }
 		private void SetPathData_path3650(IRenderPath path)
@@ -20521,7 +20803,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path195_f12(PaintAvatarInfo p) //Path: filling of ST3_zero
+        private void Paint_path195_f13(PaintAvatarInfo p) //Path: filling of ST3_zero
         {
             
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
@@ -20531,7 +20813,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path195_f12(tempRenderPath);
+			SetPathData_path195_f13(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20539,7 +20821,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path195_f12(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path195_f13(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
@@ -20548,14 +20830,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path195_s12(PaintAvatarInfo p) //Path: stroke of ST3_zero
+        private void Paint_path195_s13(PaintAvatarInfo p) //Path: stroke of ST3_zero
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path195_s12(tempRenderPath);
+			SetPathData_path195_s13(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20563,7 +20845,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path195_s12(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path195_s13(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20577,8 +20859,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, anterior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path195_f12(p);// filling of ST3_zero
-		        Paint_path195_s12(p);// stroke of ST3_zero
+		        Paint_path195_f13(p);// filling of ST3_zero
+		        Paint_path195_s13(p);// stroke of ST3_zero
             }
         }
 		private void SetPathData_path195(IRenderPath path)
@@ -20591,7 +20873,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path198_f13(PaintAvatarInfo p) //Path: filling of ST2_zero
+        private void Paint_path198_f14(PaintAvatarInfo p) //Path: filling of ST2_zero
         {
             
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
@@ -20601,7 +20883,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path198_f13(tempRenderPath);
+			SetPathData_path198_f14(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20609,7 +20891,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path198_f13(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path198_f14(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
@@ -20618,14 +20900,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path198_s13(PaintAvatarInfo p) //Path: stroke of ST2_zero
+        private void Paint_path198_s14(PaintAvatarInfo p) //Path: stroke of ST2_zero
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path198_s13(tempRenderPath);
+			SetPathData_path198_s14(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20633,7 +20915,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path198_s13(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path198_s14(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20647,8 +20929,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, posterior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path198_f13(p);// filling of ST2_zero
-		        Paint_path198_s13(p);// stroke of ST2_zero
+		        Paint_path198_f14(p);// filling of ST2_zero
+		        Paint_path198_s14(p);// stroke of ST2_zero
             }
         }
 		private void SetPathData_path198(IRenderPath path)
@@ -20661,7 +20943,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path201_f14(PaintAvatarInfo p) //Path: filling of ST1_zero
+        private void Paint_path201_f15(PaintAvatarInfo p) //Path: filling of ST1_zero
         {
             
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
@@ -20671,7 +20953,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path201_f14(tempRenderPath);
+			SetPathData_path201_f15(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20679,7 +20961,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path201_f14(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path201_f15(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
@@ -20688,14 +20970,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_path201_s14(PaintAvatarInfo p) //Path: stroke of ST1_zero
+        private void Paint_path201_s15(PaintAvatarInfo p) //Path: stroke of ST1_zero
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x000000;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_path201_s14(tempRenderPath);
+			SetPathData_path201_s15(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -20703,7 +20985,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path201_s14(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_path201_s15(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0000000;
@@ -20717,8 +20999,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    if (IsVisible(p.TopicInfo.STSegment, inferior, multi))
 		    {
 			    // todo: color, matrix
-		        Paint_path201_f14(p);// filling of ST1_zero
-		        Paint_path201_s14(p);// stroke of ST1_zero
+		        Paint_path201_f15(p);// filling of ST1_zero
+		        Paint_path201_s15(p);// stroke of ST1_zero
             }
         }
 		private void SetPathData_path201(IRenderPath path)
@@ -21635,14 +21917,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use27516_f15(PaintAvatarInfo p) //Path: filling of line
+        private void Paint_use27516_f16(PaintAvatarInfo p) //Path: filling of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use27516_f15(tempRenderPath);
+			SetPathData_use27516_f16(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -21650,7 +21932,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use27516_f15(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use27516_f16(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0e;
@@ -21659,14 +21941,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	
 
-        private void Paint_use27516_s15(PaintAvatarInfo p) //Path: stroke of line
+        private void Paint_use27516_s16(PaintAvatarInfo p) //Path: stroke of line
         {
             
             int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xffffff;
 
             var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_use27516_s15(tempRenderPath);
+			SetPathData_use27516_s16(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
              _patientAvatarRenderer.FillColor = colorWas;
@@ -21674,7 +21956,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use27516_s15(PaintAvatarInfo p, ColorReceiver colorReceiver)
+		private void SetPathColor_use27516_s16(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
@@ -21686,8 +21968,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: line
         private void Paint_use27516(PaintAvatarInfo p)
         {
-		    Paint_use27516_f15(p);// filling of line
-		    Paint_use27516_s15(p);// stroke of line
+		    Paint_use27516_f16(p);// filling of line
+		    Paint_use27516_s16(p);// stroke of line
         }
         //----------------------------------------
 		private void SetPathData_use27516(IRenderPath path)
@@ -22005,25 +22287,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
 		//----------------------------------------
 
-			
 
-        //Group: Timings
-        private void Paint_g5603(PaintAvatarInfo p)
+        private void Paint_g5603(PaintAvatarInfo p) // Timings
         {
-		    Paint_path1166(p);// Breathing
-		    Paint_path4914(p);// BodyPulse
-		    Paint_path46598(p);// LightningPulse
-		    Paint_path3251(p);// HeartPulse
-		    Paint_path2449(p);// Co2
-		    Paint_path52326(p);// Airway
+            // intentionally left blank: always hidden
         }
         //----------------------------------------
-		private void SetPathData_g5603(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g5603(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
 
         private void Paint_use8991(PaintAvatarInfo p) //Use: relaxed
         {
