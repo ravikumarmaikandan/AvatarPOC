@@ -87,10 +87,10 @@ $ELEMENTS$
 <template name="MemberName"><![CDATA[// $MEMBER_NAME$]]></template>
 
 <template name="pushcolor">int colorWas = _patientAvatarRenderer.FillColor;
-	_patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
+             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
 </template>
 <template name="popcolor">
-	_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 </template>
 
 
@@ -105,6 +105,7 @@ $ELEMENTS$
 <template name="PaintPushNoColor">$nonempty TRANSFORM:pushtransformation$$nonempty opacity:pushopacity$</template>
 <template name="PaintPopNoColor">$nonempty TRANSFORM:poptransformation$$nonempty opacity:popopacity$</template>
 
+
 	<!-- ======================================================  -->
 <skill name="Default">
   <path>
@@ -113,13 +114,12 @@ $ELEMENTS$
 
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
-$nonempty TRANSFORM:pushtransformation$
-            int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0$onlyhex:fill$;		   
+            $nonempty TRANSFORM:pushtransformation$
+            $nonempty fill:pushcolor$
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_$token:ID$(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+$nonempty fill:popcolor$
 $nonempty TRANSFORM:poptransformation$
         }
 		private void SetPathColor_$token:ID$(ColorReceiver colorReceiver)
@@ -318,13 +318,15 @@ $members$
 			<![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
+		    int colorWas = _patientAvatarRenderer.FillColor;
+            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.$SKILL_PARAMETERS$);
             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
 			var tempRenderPath = new TemporaryRenderPath();
             SetPathData_$token:ID$(tempRenderPath);
 			
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-		   
-        }
+            _patientAvatarRenderer.FillColor = colorWas;
+		}
 		private void SetPathColor_$token:ID$(ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = 0x$onlyhex:fill$;
@@ -341,7 +343,7 @@ $members$
         {
             $recursive:PaintPushNoColor$
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.$SKILL_PARAMETERS$);
             Paint_$token:LINK$(p);
             _patientAvatarRenderer.FillColor = colorWas;
 $recursive:PaintPopNoColor$

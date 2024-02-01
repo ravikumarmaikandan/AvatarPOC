@@ -68,6 +68,9 @@ namespace Philips.PIC.CommonControls
             if (time != null)
                 t = time.GetYForX(t);
 
+            if (t < 0.0f) t = 0.0f;
+            if (t > 1.0f) t = 1.0f;
+
             var t1 = 1.0f - t;
 
             for (var i = 0; i < minPoints.Length; i++)

@@ -208,13 +208,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_use6257(PaintAvatarInfo p) //Path: Max
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0000000;		   
+             _patientAvatarRenderer.FillColor = 0x000000;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_use6257(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_use6257(ColorReceiver colorReceiver)
@@ -227,13 +230,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_use6255(PaintAvatarInfo p) //Path: Min
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x06c7593;		   
+             _patientAvatarRenderer.FillColor = 0x6c7593;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_use6255(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_use6255(ColorReceiver colorReceiver)
@@ -246,13 +252,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_use6871(PaintAvatarInfo p) //Path: Time
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0000000;		   
+             _patientAvatarRenderer.FillColor = 0x000000;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_use6871(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_use6871(ColorReceiver colorReceiver)
@@ -300,13 +309,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_path519(PaintAvatarInfo p) //Path: Max
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0000000;		   
+             _patientAvatarRenderer.FillColor = 0x000000;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_path519(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_path519(ColorReceiver colorReceiver)
@@ -319,13 +331,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_path517(PaintAvatarInfo p) //Path: Min
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0ff0000;		   
+             _patientAvatarRenderer.FillColor = 0xff0000;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_path517(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_path517(ColorReceiver colorReceiver)
@@ -338,13 +353,16 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_path523(PaintAvatarInfo p) //Path: Time
         {
-
+            
             int colorWas = _patientAvatarRenderer.FillColor;
-			_patientAvatarRenderer.FillColor = 0x0000000;		   
+             _patientAvatarRenderer.FillColor = 0x000000;
+
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_path523(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			_patientAvatarRenderer.FillColor = colorWas;
+
+             _patientAvatarRenderer.FillColor = colorWas;
+
 
         }
 		private void SetPathColor_path523(ColorReceiver colorReceiver)
@@ -390,16 +408,15 @@ namespace Philips.PIC.CommonControls
 
         private void Paint_path2(PaintAvatarInfo p) //Path: Star
         {
-
+            
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
 		   PushMatrix(1,0,0,1,24.6957,21.7023);
 
-            //int colorWas = _patientAvatarRenderer.FillColor;
-			//_patientAvatarRenderer.FillColor = 0x0;		   
+            
             var tempRenderPath = new TemporaryRenderPath();
 			SetPathData_path2(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-			//_patientAvatarRenderer.FillColor = colorWas;
+
             _patientAvatarRenderer.transformation = transformMatrixWas;
         }
 		private void SetPathColor_path2(ColorReceiver colorReceiver)
