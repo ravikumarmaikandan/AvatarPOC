@@ -23,7 +23,7 @@ namespace Philips.PIC.CommonControls
 
         private void OnTick(object sender, System.EventArgs e)
         {
-            _topicInfo.SometimeHavePassed(0.1f);
+            _topicInfo.SometimeHavePassed(0.05f);
             //_topicInfo.TidalVolume.NextValue();
 
             Invalidate();
@@ -37,7 +37,20 @@ namespace Philips.PIC.CommonControls
 
         private void OnRRTrackerChanged(object sender, EventArgs e)
         {
+            _lblRespRate.Text = RRTracker.Value.ToString();
             _topicInfo.SetRespRate(RRTracker.Value);
+        }
+
+        private void OnOxygenTrackerScroll(object sender, EventArgs e)
+        {
+            _lblSpo2.Text = oxygenTracker.Value.ToString();
+        }
+
+        private void OnLoad(object sender, EventArgs e)
+        {
+            _lblRespRate.Text = RRTracker.Value.ToString();
+            _lblSpo2.Text = oxygenTracker.Value.ToString();
+            lblHeartRateValue.Text = heartRateTracker.Value.ToString();
         }
     }
 }
