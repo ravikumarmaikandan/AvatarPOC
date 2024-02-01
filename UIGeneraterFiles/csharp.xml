@@ -106,12 +106,15 @@ $ELEMENTS$
 <template name="PaintPopNoColor">$nonempty TRANSFORM:poptransformation$$nonempty opacity:popopacity$</template>
 
 
+<template name="ReceiveColor">colorReceiver.FillColor = 0x$onlyhex:fill$</template>
+
+
 	<!-- ======================================================  -->
 <skill name="Default">
   <path>
     <body>
 	<![CDATA[
-
+		// Skill: default -> Path $NAME$
         private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
         {
             $nonempty TRANSFORM:pushtransformation$
@@ -126,7 +129,7 @@ $nonempty TRANSFORM:poptransformation$
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
 		    // todo
-			colorReceiver.FillColor = 0x0$onlyhex:fill$;
+			$nonempty fill:receivecolor$
 		}
 		//----------------------------------------
 ]]></body>
@@ -138,7 +141,7 @@ $nonempty TRANSFORM:poptransformation$
     <body>
 			<![CDATA[
 
-        //Group: $NAME$
+        //skill: default -> Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
 $recursive:PaintPush$$paintlist$
@@ -156,7 +159,7 @@ $recursive:PaintPop$        }
   <use>
     <body>
 			<![CDATA[
-
+		// Skill: default -> use $NAME$
         private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
         {
 $recursive:PaintPush$            Paint_$token:LINK$(p);
@@ -168,6 +171,7 @@ $recursive:PaintPop$        }
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
 			SetPathColor_$token:LINK$(p, colorReceiver);
+		    $nonempty fill:receivecolor$
 		}
         //----------------------------------------
 ]]></body>
@@ -221,9 +225,8 @@ $recursive:PaintPop$        }
         {
 		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
 		    {
-			    // todo: color, matrix
-$paintlist$
-            }
+$recursive:PaintPush$$paintlist$
+$recursive:PaintPop$            }
         }
 		private void SetPathData_$token:ID$(IRenderPath path)
 		{ // not usable for groups
@@ -236,13 +239,14 @@ $paintlist$
 	</group>
 
 	<use>
-		<body><![CDATA[
+		<body>
+				<![CDATA[
         private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
         {
 		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
 		    {
-               // todo
-            }
+$recursive:PaintPush$$paintlist$
+$recursive:PaintPop$            }
         }
         //----------------------------------------
 ]]></body>
@@ -264,13 +268,15 @@ $paintlist$
   <group>
     <member name="pathlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
 	  <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Color);</member>
-    <body><![CDATA[
+    <body>
+				<![CDATA[
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
-			ColorReceiver MinColor = new ColorReceiver();
-			ColorReceiver MaxColor = new ColorReceiver();
-			ColorReceiver TimeColor = new ColorReceiver();
+			int colorWas = _patientAvatarRenderer.FillColor;
+			ColorReceiver MinColor = new ColorReceiver(colorWas);
+			ColorReceiver MaxColor = new ColorReceiver(colorWas);
+			ColorReceiver TimeColor = new ColorReceiver(colorWas);
 $colorlist$
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
@@ -278,6 +284,7 @@ $colorlist$
 		    IRenderPath TimePath = new TemporaryRenderPath();
 $pathlist$
 			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
+			_patientAvatarRenderer.FillColor = colorWas;
         }
         //----------------------------------------
 ]]></body>

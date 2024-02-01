@@ -35,10 +35,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0000001"
-     inkscape:cx="507.24997"
-     inkscape:cy="252.24999"
+     inkscape:cx="306.74998"
+     inkscape:cy="210.74999"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1-0"
+     inkscape:current-layer="g1952"
      showgrid="false"
      units="px"
      inkscape:snap-smooth-nodes="true"
@@ -70,6 +70,3784 @@
      id="layer1-0"
      transform="translate(0,-161.53331)">
     <g
+       inkscape:label="Controls"
+       id="g5680"
+       style="display:inline"
+       onload="ShowAlways()"
+       transform="translate(40.359359,151.20828)">
+      <g
+         inkscape:label="Master"
+         id="g3301"
+         style="display:none"
+         onload="StateControl(PulseRateHeart)"
+         transform="matrix(0.33434268,0,0,0.33434268,-47.118926,-52.628572)">
+        <rect
+           inkscape:label="4states"
+           id="rect3267"
+           style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ffff00;stroke-width:1.03931;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           width="69.799133"
+           height="61.059479"
+           x="521.98413"
+           y="198.30966"
+           ry="4.7241383" />
+        <rect
+           inkscape:label="stateback"
+           id="rect3269"
+           style="display:inline;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.643366;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           width="60.164364"
+           height="10.047502"
+           x="529.72919"
+           y="215.28268"
+           ry="4.0163684" />
+        <circle
+           id="circle3271"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.515594;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           r="3.9549356"
+           cx="534.88336"
+           cy="220.33597" />
+        <circle
+           inkscape:label="StateActive"
+           id="circle3273"
+           style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.623372;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           r="2.6240814"
+           cx="534.8833"
+           cy="220.36513" />
+        <rect
+           inkscape:label="toprect"
+           id="rect3281"
+           style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:1.96405;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           width="65.547417"
+           height="13.818104"
+           x="524.16266"
+           y="200.34125"
+           ry="2.5982759" />
+        <rect
+           inkscape:label="3states"
+           id="rect1399-3-7-4-54-07-5"
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ffff00;stroke-width:0.94791;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           width="69.607506"
+           height="50.707607"
+           x="521.98413"
+           y="198.30966"
+           ry="4.308682" />
+        <rect
+           inkscape:label="6states"
+           id="rect2752"
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ffff00;stroke-width:0.94791;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           width="69.607506"
+           height="83.63652"
+           x="521.98413"
+           y="198.30966"
+           ry="4.308682" />
+      </g>
+      <g
+         inkscape:label="ST"
+         id="g2802"
+         style="display:inline"
+         onload="StateControl(STSegment)"
+         transform="matrix(0.30493948,0,0,0.30493948,58.719603,28.487043)">
+        <g
+           inkscape:label="State0"
+           id="g11957-2"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-143.46162)">
+          <use
+             id="use11947-4"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11949-1"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11951-7"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11955-1"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11953-2"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g11969-1"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.22286,-143.82396)">
+          <use
+             id="use11959-5"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text11963-36"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan11961-2"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text11967-1"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan11965-4"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g11981-2"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-131.61428)">
+          <use
+             id="use11971-63"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11973-2"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11975-6"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11979-8"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11977-8"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g11993-6"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-119.76695)">
+          <use
+             id="use11983-65"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11985-2"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11987-2"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11991-8"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11989-5"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g12005-7"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-107.91961)">
+          <use
+             id="use11995-1"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11997-3"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11999-5"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text12003-3"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan12001-8"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use12007-1"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-143.46162)"
+           xlink:href="#rect2752"
+           x="0"
+           y="0" />
+        <g
+           inkscape:label="State4"
+           id="g19218"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-96.072272)">
+          <use
+             id="use19208"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use19210"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use19212"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text19216"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan19214"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State5"
+           id="g19230"
+           style="display:inline"
+           transform="matrix(1.0964231,0,0,1.0964231,-194.02168,-84.224942)">
+          <use
+             id="use19220"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use19222"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use19224"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text19228"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan19226"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:label="Oxygen"
+         id="g16853"
+         style="display:inline"
+         onload="StateControl(Oxygen)"
+         transform="matrix(0.33434268,0,0,0.33434268,-46.981161,36.395686)">
+        <g
+           inkscape:label="State0"
+           id="g16801"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use16791"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use16793"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use16795"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text16799"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan16797"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g16813"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use16803"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text16807"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan16805"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text16811"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan16809"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g16825"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use16815"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use16817"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use16819"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text16823"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan16821"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g16837"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use16827"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use16829"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use16831"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text16835"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan16833"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g16849"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use16839"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use16841"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use16843"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text16847"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan16845"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use16851"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="Neuromuscular"
+         id="g15910"
+         style="display:inline"
+         onload="StateControl(Neuromuscular)"
+         transform="matrix(0.33434268,0,0,0.33434268,-47.06971,19.420318)">
+        <g
+           inkscape:label="State0"
+           id="g15858"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use15848"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use15850"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use15852"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text15856"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan15854"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g15870"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use15860"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text15864"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan15862"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text15868"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan15866"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g15882"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use15872"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use15874"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use15876"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text15880"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan15878"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g15894"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use15884"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use15886"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use15888"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text15892"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan15890"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use15908"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect1399-3-7-4-54-07-5"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="ABP"
+         id="g14901"
+         style="display:inline"
+         onload="StateControl(ABP)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.782091,-52.628575)">
+        <g
+           inkscape:label="State0"
+           id="g14849"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use14839"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use14841"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use14843"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text14847"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan14845"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g14861"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use14851"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text14855"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan14853"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text14859"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan14857"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g14873"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use14863"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use14865"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use14867"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text14871"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan14869"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g14885"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use14875"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use14877"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use14879"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text14883"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan14881"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g14897"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use14887"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use14889"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use14891"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text14895"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan14893"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use14899"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="PulseRateBody"
+         id="g12009"
+         style="display:inline"
+         onload="StateControl(PulseRateBody)"
+         transform="matrix(0.33434268,0,0,0.33434268,-47.133788,-28.524481)">
+        <g
+           inkscape:label="State0"
+           id="g11957"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use11947"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11949"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11951"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11955"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11953"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g11969"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use11959"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text11963"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan11961"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text11967"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan11965"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g11981"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use11971"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11973"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11975"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11979"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11977"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g11993"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use11983"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11985"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11987"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text11991"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan11989"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g12005"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use11995"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use11997"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use11999"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text12003"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan12001"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use12007"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0"
+           transform="matrix(0.99876945,0,0,1.1735763,0.68527332,-34.379454)" />
+        <g
+           inkscape:label="State4"
+           id="g9304"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,43.099602)">
+          <use
+             id="use9294"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use9296"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use9298"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text9302"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan9300"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:label="PulseRateHeart"
+         id="g1420-6-7-5-1-0"
+         style="display:inline"
+         onload="StateControl(PulseRateHeart)"
+         transform="matrix(0.33434268,0,0,0.33434268,-47.11892,-52.628572)">
+        <g
+           inkscape:label="State0"
+           id="g1427-2-6-9-89-0"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use3850"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use3852"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use3854-7"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="use3856-4"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan4561"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g1588-4-40-2-1-8"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use10323"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text185-2-3-26-3-19-3-5-5"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan183-6-5-1-07-6-4-11-1"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text185-2-3-26-1-8-2-9-0-2"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan183-6-5-1-0-6-5-0-8-8"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="use1323"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use4329"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use4331"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use4333"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="use4335"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan4498"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="use1325"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use4339"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use4341"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use4343"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="use4345"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan4502"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="use1327"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use4319"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use4321"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use4323"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="use4325"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan4506"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use4055"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0"
+           transform="matrix(0.99872571,0,0,1.1799886,0.7096335,-35.648997)" />
+        <g
+           inkscape:label="State4"
+           id="g8185"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,43.255185)">
+          <use
+             id="use8175"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use8177"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use8179"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text8183"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan8181"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:label="Brain"
+         id="g19454"
+         style="display:inline"
+         onload="StateControl(Brain)"
+         transform="matrix(0.33434268,0,0,0.33434268,-0.445262,-32.213785)">
+        <g
+           inkscape:label="State0"
+           id="g19414"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use19404"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use19406"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use19408"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text19412"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan19410"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g19426"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use19416"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text19420"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan19418"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text19424"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan19422"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g19438"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use19428"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use19430"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use19432"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text19436"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan19434"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g19450"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use19440"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use19442"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use19444"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text19448"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan19446"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use19452"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect1399-3-7-4-54-07-5"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="CO2"
+         id="g20289"
+         style="display:inline"
+         onload="StateControl(CO2)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.782091,-32.213782)">
+        <g
+           inkscape:label="State0"
+           id="g20237"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use20227"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use20229"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use20231"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text20235"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan20233"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g20249"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use20239"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text20243"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan20241"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text20247"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan20245"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g20261"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use20251"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use20253"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use20255"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text20259"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan20257"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g20273"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use20263"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use20265"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use20267"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text20271"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan20269"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g20285"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use20275"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use20277"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use20279"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text20283"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan20281"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use20287"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="CVP"
+         id="g21130"
+         style="display:inline"
+         onload="StateControl(CVP)"
+         transform="matrix(0.33434268,0,0,0.33434268,-0.445262,-52.628575)">
+        <g
+           inkscape:label="State0"
+           id="g21078"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use21068"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21070"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21072"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21076"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21074"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g21090"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use21080"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text21084"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan21082"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text21088"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan21086"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g21102"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use21092"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21094"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21096"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21100"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21098"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g21114"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use21104"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21106"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21108"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21112"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21110"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g21126"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use21116"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21118"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21120"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21124"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21122"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use21128"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="TV"
+         id="g7836"
+         style="display:inline"
+         onload="StateControl(TidalVolume)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.782091,-11.798993)">
+        <g
+           inkscape:label="State0"
+           id="g7784"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use7774"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use7776"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use7778"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text7782"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan7780"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g7796"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use7786"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text7790"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan7788"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text7794"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan7792"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g7808"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use7798"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use7800"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use7802"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text7806"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan7804"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g7820"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use7810"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use7812"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use7814"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text7818"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan7816"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g7832"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use7822"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use7824"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use7826"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text7830"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan7828"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use7834"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="CO"
+         id="g21971"
+         style="display:inline"
+         onload="StateControl(CO)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.870654,8.6538792)">
+        <g
+           inkscape:label="State0"
+           id="g21919"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use21909"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21911"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21913"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21917"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21915"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g21931"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use21921"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text21925"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan21923"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text21929"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan21927"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g21943"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use21933"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21935"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21937"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21941"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21939"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g21955"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use21945"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21947"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21949"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21953"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21951"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g21967"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use21957"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use21959"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use21961"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text21965"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan21963"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use21969"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="RespRate"
+         id="g22812"
+         style="display:inline"
+         onload="StateControl(RespRate)"
+         transform="matrix(0.33434268,0,0,0.33434268,-47.119429,-4.5519903)">
+        <g
+           inkscape:label="State0"
+           id="g22760"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use22750"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use22752"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use22754"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text22758"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan22756"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g22772"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use22762"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text22766"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan22764"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text22770"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan22768"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g22784"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use22774"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use22776"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use22778"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text22782"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan22780"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g22796"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use22786"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use22788"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use22790"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text22794"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan22792"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g22808"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use22798"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use22800"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use22802"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text22806"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan22804"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use22810"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0"
+           transform="matrix(0.99876946,0,0,1.1735584,0.68527006,-34.375358)" />
+        <g
+           inkscape:label="State4"
+           id="g9316"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,43.255185)">
+          <use
+             id="use9306"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use9308"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use9310"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text9314"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan9312"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+      </g>
+      <g
+         inkscape:label="Temp"
+         id="g23621"
+         style="display:inline"
+         onload="StateControl(Temp)"
+         transform="matrix(0.33434268,0,0,0.33434268,-0.50933821,12.703187)">
+        <g
+           inkscape:label="State0"
+           id="g23569"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use23559"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use23561"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use23563"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text23567"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan23565"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g23581"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use23571"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text23575"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan23573"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text23579"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan23577"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g23593"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use23583"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use23585"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use23587"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text23591"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan23589"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g23605"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use23595"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use23597"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use23599"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text23603"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan23601"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g23617"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use23607"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use23609"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use23611"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text23615"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan23613"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use23619"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="Orientation"
+         id="g24418"
+         style="display:inline"
+         onload="StateControl(Orientation)"
+         transform="matrix(0.33434268,0,0,0.33434268,-0.46974108,51.601913)">
+        <g
+           inkscape:label="State0"
+           id="g24378"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use24368"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use24370"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use24372"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text24376"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan24374"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g24390"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use24380"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text24384"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan24382"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text24388"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan24386"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g24402"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use24392"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use24394"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use24396"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text24400"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan24398"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g24414"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use24404"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use24406"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use24408"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text24412"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan24410"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use24416"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect1399-3-7-4-54-07-5"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="AWP"
+         id="g28933"
+         style="display:inline"
+         onload="StateControl(AWP)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.870654,29.068669)">
+        <g
+           inkscape:label="State0"
+           id="g28881"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use28871"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28873"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28875"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28879"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28877"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g28893"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use28883"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text28887"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan28885"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text28891"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan28889"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g28905"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use28895"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28897"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28899"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28903"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28901"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g28917"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use28907"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28909"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28911"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28915"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28913"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g28929"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use28919"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28921"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28923"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28927"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28925"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use28931"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+      <g
+         inkscape:label="FiO2"
+         id="g28997"
+         style="display:inline"
+         onload="StateControl(FiO2)"
+         transform="matrix(0.33434268,0,0,0.33434268,-23.870654,49.483459)">
+        <g
+           inkscape:label="State0"
+           id="g28945"
+           style="display:inline"
+           transform="translate(-3.8146972e-6)">
+          <use
+             id="use28935"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28937"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28939"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28943"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28941"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="NextState"
+           id="g28957"
+           style="display:inline"
+           transform="translate(-0.18348835,-0.33047374)">
+          <use
+             id="use28947"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             transform="translate(0.1834702,0.33047087)"
+             xlink:href="#rect3281"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Current"
+             id="text28951"
+             style="font-style:normal;font-weight:normal;font-size:5.03908px;line-height:125%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="585.92719"
+             y="212.91052"
+             xml:space="preserve"><tspan
+               id="tspan28949"
+               style="font-size:5.03908px;text-align:end;text-anchor:end;stroke-width:0.164934px"
+               x="585.92719"
+               y="212.91052"
+               sodipodi:role="line">Äp</tspan></text>
+          <text
+             inkscape:label="Name"
+             id="text28955"
+             style="font-style:normal;font-weight:normal;font-size:6.29885px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="526.04736"
+             y="207.4187"
+             xml:space="preserve"><tspan
+               id="tspan28953"
+               style="font-size:6.29885px;stroke-width:0.164934px"
+               x="526.04736"
+               y="207.4187"
+               sodipodi:role="line">XXX</tspan></text>
+        </g>
+        <g
+           inkscape:label="State1"
+           id="g28969"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,10.805442)">
+          <use
+             id="use28959"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28961"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28963"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28967"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28965"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State2"
+           id="g28981"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,21.610884)">
+          <use
+             id="use28971"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28973"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28975"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28979"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28977"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <g
+           inkscape:label="State3"
+           id="g28993"
+           style="display:inline"
+           transform="translate(-3.8146972e-6,32.41633)">
+          <use
+             id="use28983"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#rect3269"
+             x="0"
+             y="0" />
+          <use
+             id="use28985"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3271"
+             x="0"
+             y="0" />
+          <use
+             inkscape:label="Active"
+             id="use28987"
+             style="display:inline"
+             width="100%"
+             height="100%"
+             xlink:href="#circle3273"
+             x="0"
+             y="0" />
+          <text
+             inkscape:label="Name"
+             id="text28991"
+             style="font-style:normal;font-weight:normal;font-size:7.03718px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.164934px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="542.34741"
+             y="223.10583"
+             xml:space="preserve"><tspan
+               id="tspan28989"
+               style="font-size:7.03718px;stroke-width:0.164934px"
+               x="542.34741"
+               y="223.10583"
+               sodipodi:role="line">txt</tspan></text>
+        </g>
+        <use
+           id="use28995"
+           style="display:inline"
+           width="100%"
+           height="100%"
+           xlink:href="#rect3267"
+           x="0"
+           y="0" />
+      </g>
+    </g>
+    <g
        inkscape:label="helper"
        id="g2086"
        style="display:inline"
@@ -81,7 +3859,7 @@
         <g
            inkscape:label="relaxed"
            id="g1838"
-           style="display:inline;vector-effect:none;fill-opacity:1"
+           style="display:none;vector-effect:none;fill-opacity:1"
            onload="Visibility(Neuromuscular,low)">
           <g
              inkscape:label="High"
@@ -341,7 +4119,7 @@
         <g
            inkscape:label="thumbsup"
            id="g1855"
-           style="display:none;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            onload="Visibility(Neuromuscular,safe)">
           <g
              inkscape:label="High"
@@ -395,7 +4173,7 @@
           <g
              inkscape:label="Safe"
              id="g5569"
-             style="display:none"
+             style="display:inline"
              onload="Visibility(ABP,safe, notavail, unknown)">
             <use
                inkscape:label="Shadow"
@@ -444,7 +4222,7 @@
           <g
              inkscape:label="Low"
              id="g11123"
-             style="display:inline"
+             style="display:none"
              onload="Visibility(ABP,low)">
             <use
                x="0"
@@ -1331,7 +5109,8 @@
         <g
            inkscape:label="thorax"
            id="g1974"
-           style="display:inline">
+           style="display:inline"
+           onload="">
           <use
              x="0"
              y="0"
@@ -1344,11 +5123,13 @@
           <g
              inkscape:label="lung"
              id="g1772"
-             style="opacity:1;fill-opacity:1">
+             style="display:inline;opacity:1;fill-opacity:1"
+             onload="">
             <g
                inkscape:label="helper"
                id="g4342"
-               style="display:none">
+               style="display:none"
+               onload="HideAlways()">
               <path
                  inkscape:label="normal"
                  id="path5273"
@@ -2788,7 +6569,7 @@
            inkscape:label="Timings"
            id="g5603"
            style="display:none"
-		   onload="HideAlways()">
+           onload="HideAlways()">
           <path
              inkscape:label="Breathing"
              id="path1166"
@@ -3045,6 +6826,1351 @@
            xlink:href="#g6083"
            x="0"
            y="0" />
+      </g>
+    </g>
+    <g
+       id="g1549"
+       inkscape:label="test"
+       transform="translate(1.3008422,62.834922)"
+       style="display:none">
+      <g
+         id="Marker"
+         inkscape:label="Marker">
+        <rect
+           style="display:inline;fill:#000100;fill-opacity:1;stroke:none;stroke-width:2.64583"
+           id="upperLeft"
+           width="1.3229166"
+           height="1.3229166"
+           x="-1.3229138"
+           y="160.21039"
+           inkscape:tile-x0="120.48808"
+           inkscape:tile-y0="9.3392639"
+           inkscape:label="upperLeft" />
+        <rect
+           style="display:inline;fill:#000100;fill-opacity:1;stroke:none;stroke-width:2.64583"
+           id="rect45026"
+           width="1.3229166"
+           height="1.3229166"
+           x="13.68531"
+           y="173.76991"
+           inkscape:tile-x0="120.48808"
+           inkscape:tile-y0="9.3392639"
+           inkscape:label="lowerRight" />
+      </g>
+      <g
+         id="g791"
+         inkscape:label="helper"
+         style="display:inline"
+         onload="HideAlways()"
+         transform="translate(-120.48808,-9.3392639)">
+        <rect
+           style="display:inline;fill:#010000;fill-opacity:1;stroke:none;stroke-width:2.64583"
+           id="rect1546"
+           width="1.3229166"
+           height="1.3229166"
+           x="120.48808"
+           y="170.87257"
+           inkscape:tile-cx="121.14954"
+           inkscape:tile-cy="10.000722"
+           inkscape:tile-w="1.3229166"
+           inkscape:tile-h="1.3229166"
+           inkscape:tile-x0="120.48808"
+           inkscape:tile-y0="9.3392639" />
+      </g>
+      <g
+         id="g1637"
+         inkscape:label="15 st"
+         style="display:inline"
+         transform="translate(-120.48808,1.2441104)">
+        <g
+           id="g1641"
+           onload="Visibility(STSegment, multi)"
+           inkscape:label="6 multiple"
+           transform="translate(3.9687467)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(3.9687499)"
+             id="use1639"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1619"
+           onload="Visibility(STSegment, posterior)"
+           inkscape:label="5 posterior"
+           transform="translate(3.9687467)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1617"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1623"
+           onload="Visibility(STSegment, inferior)"
+           inkscape:label="4 inferior"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1621"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1627"
+           onload="Visibility(STSegment, anterior)"
+           inkscape:label="3 anterior"
+           transform="translate(1.3229141)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1625"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1631"
+           inkscape:label="2 safe"
+           onload="Visibility(STSegment, safe)"
+           transform="translate(1.3229167)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use1629"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3254"
+           inkscape:label="1 unknown"
+           onload="Visibility(STSegment, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3252"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1635"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(STSegment, notavail)"
+           transform="translate(-1.3229166)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use1633"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         id="g3911-8"
+         inkscape:label="14 cardiacOutput"
+         style="display:inline"
+         transform="translate(-120.48808,-0.07881135)">
+        <g
+           id="g3893-8"
+           onload="Visibility(CO, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3891-8"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3897-1"
+           onload="Visibility(CO, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3895-8"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3901-0"
+           onload="Visibility(CO, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3899-1"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3905-5"
+           inkscape:label="1 unknown"
+           onload="Visibility(CO, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3903-8"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3909-9"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(CO, notavail)"
+           transform="translate(-1.3229166)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3907-0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         id="g3867-8"
+         inkscape:label="13 fiO2"
+         style="display:inline"
+         transform="translate(-113.8735,-1.4017331)">
+        <g
+           id="g3848-9"
+           onload="Visibility(FiO2, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3846-1"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3853-4"
+           onload="Visibility(FiO2, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3851-8"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3857-2"
+           onload="Visibility(FiO2, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3855-6"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3861-0"
+           inkscape:label="1 unknown"
+           onload="Visibility(FiO2, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3859-8"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3865-6"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(FiO2, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3863-7"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3889-8"
+         inkscape:label="12 airwayPressure"
+         style="display:inline"
+         transform="translate(-120.48808,-1.4017331)">
+        <g
+           id="g3871-5"
+           onload="Visibility(AWP, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3869-0"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3875-5"
+           onload="Visibility(AWP, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3873-2"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3879-5"
+           onload="Visibility(AWP, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3877-4"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3883-6"
+           inkscape:label="1 unknown"
+           onload="Visibility(AWP, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3881-2"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3887-6"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(AWP, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3885-7"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3911"
+         inkscape:label="11 tidalVolume"
+         style="display:inline"
+         transform="translate(-113.8735,-2.7246549)">
+        <g
+           id="g3893"
+           onload="Visibility(TidalVolume, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3891"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3897"
+           onload="Visibility(TidalVolume, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3895"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3901"
+           onload="Visibility(TidalVolume, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3899"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3905"
+           inkscape:label="1 unknown"
+           onload="Visibility(TidalVolume, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3903"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3909"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(TidalVolume, notavail)"
+           transform="translate(-1.3229166)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3907"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         id="g3867"
+         inkscape:label="10 relaxation"
+         style="display:inline"
+         transform="translate(-120.48808,-2.7246549)">
+        <g
+           id="g3848"
+           onload="Visibility(Neuromuscular, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3846"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3853"
+           onload="Visibility(Neuromuscular, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3851"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3857"
+           onload="Visibility(Neuromuscular, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3855"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3861"
+           inkscape:label="1 unknown"
+           onload="Visibility(Neuromuscular, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3859"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3865"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(Neuromuscular, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3863"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3889"
+         inkscape:label="9 brainActivity"
+         style="display:inline"
+         transform="translate(-113.8735,-4.0475767)">
+        <g
+           id="g3871"
+           onload="Visibility(Brain, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3869"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3875"
+           onload="Visibility(Brain, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3873"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3879"
+           onload="Visibility(Brain, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3877"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3883"
+           inkscape:label="1 unknown"
+           onload="Visibility(Brain, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3881"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3887"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(Brain, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3885"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3933"
+         inkscape:label="8 bodyTemperature"
+         style="display:inline"
+         transform="translate(-120.48808,-4.0475767)">
+        <g
+           id="g3915"
+           onload="Visibility(Temp, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3913"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3919"
+           onload="Visibility(Temp, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3917"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3923"
+           onload="Visibility(Temp, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3921"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3927"
+           inkscape:label="1 unknown"
+           onload="Visibility(Temp, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3925"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3931"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(Temp, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3929"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g1546"
+         inkscape:label="7 etCO2"
+         style="display:inline"
+         transform="translate(-113.8735,-5.3704985)">
+        <g
+           id="g1528"
+           onload="Visibility(CO2, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1526"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1532"
+           onload="Visibility(CO2, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1530"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1536"
+           onload="Visibility(CO2, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1534"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1540"
+           inkscape:label="1 unknown"
+           onload="Visibility(CO2, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use1538"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1544"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(CO2, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use1542"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g2397"
+         inkscape:label="6 respirationRate"
+         style="display:inline"
+         transform="translate(-120.48808,-5.3704985)">
+        <g
+           id="g2379"
+           onload="Visibility(RespRate, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2377"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2383"
+           onload="Visibility(RespRate, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2381"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2387"
+           onload="Visibility(RespRate, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2385"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2391"
+           inkscape:label="1 unknown"
+           onload="Visibility(RespRate, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use2389"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2395"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(RespRate, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use2393"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g2349"
+         inkscape:label="5 cvp"
+         style="display:inline"
+         transform="translate(-113.8735,-6.6934203)">
+        <g
+           id="g2331"
+           onload="Visibility(CVP, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2329"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2335"
+           onload="Visibility(CVP, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2333"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2339"
+           onload="Visibility(CVP, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use2337"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2343"
+           inkscape:label="1 unknown"
+           onload="Visibility(CVP, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use2341"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g2375"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(CVP, notavail)"
+           transform="translate(-1.3229166)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use2373"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         id="g823"
+         inkscape:label="4 spo2"
+         style="display:inline"
+         transform="translate(-120.48808,-6.6934203)">
+        <g
+           id="g1520"
+           onload="Visibility(Oxygen, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1518"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1516"
+           onload="Visibility(Oxygen, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use1514"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1947"
+           onload="Visibility(Oxygen, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use797"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1944"
+           inkscape:label="1 unknown"
+           onload="Visibility(Oxygen, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use795"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g1941"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(Oxygen, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use793"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3022"
+         inkscape:label="3 arterialPressure"
+         style="display:inline"
+         transform="translate(-113.8735,-8.0163421)">
+        <g
+           id="g3003"
+           onload="Visibility(ABP, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3001"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3007"
+           onload="Visibility(ABP, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3005"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3011"
+           onload="Visibility(ABP, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3009"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3015"
+           inkscape:label="1 unknown"
+           onload="Visibility(ABP, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3013"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3020"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(ABP, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3018"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3044"
+         inkscape:label="2 pulseRate"
+         style="display:inline"
+         transform="translate(-120.48808,-8.0163421)">
+        <g
+           id="g3026"
+           onload="Visibility(PulseRateBody, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3024"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3030"
+           onload="Visibility(PulseRateBody, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3028"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3034"
+           onload="Visibility(PulseRateBody, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3032"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3038"
+           inkscape:label="1 unknown"
+           onload="Visibility(PulseRateBody, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3036"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3042"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(PulseRateBody, notavail)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3040"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
+      </g>
+      <g
+         id="g3066"
+         inkscape:label="1 heartRate"
+         style="display:inline"
+         transform="translate(-113.8735,-9.3392639)">
+        <g
+           id="g3048"
+           onload="Visibility(PulseRateHeart, high)"
+           inkscape:label="4 high"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3046"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3052"
+           onload="Visibility(PulseRateHeart, safe)"
+           inkscape:label="3 safe"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3050"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3056"
+           onload="Visibility(PulseRateHeart, low)"
+           inkscape:label="2 low">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3054"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3060"
+           inkscape:label="1 unknown"
+           onload="Visibility(PulseRateHeart, unknown)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3058"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3064"
+           inkscape:label="0 notAvailable"
+           onload="Visibility(PulseRateHeart, notavail)"
+           transform="translate(-1.3229166)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3062"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+      <g
+         id="g3088"
+         inkscape:label="0 orientation"
+         style="display:inline"
+         transform="translate(-120.48808,-9.3392639)">
+        <g
+           id="g3070"
+           onload="HideAlways()"
+           inkscape:label="4 &lt;unused&gt;"
+           transform="translate(2.6458326)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3068"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3074"
+           onload="HideAlways()"
+           inkscape:label="3 &lt;unused&gt;"
+           transform="translate(1.3229185)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3072"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3078"
+           onload="Visibility(Orientation, down)"
+           inkscape:label="2 down">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(2.6458333)"
+             id="use3076"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3082"
+           inkscape:label="1 up"
+           onload="Visibility(Orientation, up)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             transform="translate(1.3229166)"
+             id="use3080"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           id="g3086"
+           inkscape:label="0 perpendicular"
+           onload="Visibility(Orientation, perpendicular)">
+          <use
+             x="0"
+             y="0"
+             inkscape:tiled-clone-of="#rect1546"
+             xlink:href="#rect1546"
+             id="use3084"
+             width="100%"
+             height="100%"
+             inkscape:label="use793"
+             onload="" />
+        </g>
       </g>
     </g>
   </g>
