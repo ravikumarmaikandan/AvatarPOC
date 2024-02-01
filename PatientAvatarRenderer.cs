@@ -20,8 +20,8 @@ namespace Philips.PIC.CommonControls
     {
         public PatientAvatarRenderer()
         {
-            transformation.a = 2.0f;
-            transformation.d = 2.0f;
+            transformation.a = 1.0f;
+            transformation.d = 1.0f;
         }
 
         public void Fill(PaintAvatarInfo paintAvatarInfo, IRenderPath renderPath)
