@@ -85,15 +85,15 @@
             // 
             // tidalVolumeTracker
             // 
+            this.tidalVolumeTracker.LargeChange = 10;
             this.tidalVolumeTracker.Location = new System.Drawing.Point(6, 74);
-            this.tidalVolumeTracker.Maximum = 25;
-            this.tidalVolumeTracker.Minimum = 7;
+            this.tidalVolumeTracker.Maximum = 180;
+            this.tidalVolumeTracker.Minimum = 30;
             this.tidalVolumeTracker.Name = "tidalVolumeTracker";
             this.tidalVolumeTracker.Size = new System.Drawing.Size(395, 69);
             this.tidalVolumeTracker.TabIndex = 2;
             this.tidalVolumeTracker.TickFrequency = 10;
-            this.tidalVolumeTracker.Value = 10;
-            this.tidalVolumeTracker.Scroll += new System.EventHandler(this.OnTidalVolumeTrackerScroll);
+            this.tidalVolumeTracker.Value = 30;
             // 
             // oxygenTracker
             // 

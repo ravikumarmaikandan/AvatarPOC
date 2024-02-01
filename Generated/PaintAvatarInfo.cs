@@ -7,6 +7,7 @@
 // Date:        1/29/2024 2:47:25 PM
 #endregion
 
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Philips.PIC.CommonControls
@@ -154,11 +155,6 @@ namespace Philips.PIC.CommonControls
         {
             //Compare the Resp rate with the threshold
             Oxygen.SetMeasuredValue(measuredValue);
-        }
-
-        public void SetTidalVolume(int measuredValue)
-        {
-            TidalVolume.SetMeasuredValue(measuredValue);
         }
     }
 
@@ -361,16 +357,11 @@ namespace Philips.PIC.CommonControls
             float a2 = (float)a; float c2 = (float)c; float e2 = (float)e;
             float b2 = (float)b; float d2 = (float)d; float f2 = (float)f;
 
-            TransformMatrix m = new TransformMatrix
-            {
+            TransformMatrix m = new TransformMatrix {
 
-                a = a1 * a2 + b2 * c1,
-                c = a1 * c2 + c1 * d2,
-                e = e1 + a1 * e2 + c1 * f2,
-                b = a2 * b1 + b2 * d1,
-                d = b1 * c2 + d1 * d2,
-                f = f1 + b1 * e2 + d1 * f2
-            };
+             a = a1 * a2 + b2 * c1, c = a1 * c2 + c1 * d2, e = e1 + a1 * e2 + c1 * f2,
+             b = a2 * b1 + b2 * d1, d = b1 * c2 + d1 * d2, f = f1 + b1 * e2 + d1 * f2
+        };
             _patientAvatarRenderer.Transformation = m;
         }
 
