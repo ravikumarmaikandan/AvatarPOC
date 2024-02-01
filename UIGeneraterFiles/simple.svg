@@ -144,7 +144,7 @@
        inkscape:label="Helper">
       <path
          id="path2"
-         style="opacity:1;vector-effect:none;stroke:none"
+         style="opacity:1;vector-effect:none;stroke:none;fill:#ff0000"
          inkscape:transform-center-x="-0.95748782"
          inkscape:transform-center-y="0.25542618"
          onload=""
