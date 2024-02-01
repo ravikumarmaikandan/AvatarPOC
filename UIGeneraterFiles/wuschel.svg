@@ -2787,7 +2787,8 @@
         <g
            inkscape:label="Timings"
            id="g5603"
-           style="display:none">
+           style="display:none"
+		   onload="HideAlways()">
           <path
              inkscape:label="Breathing"
              id="path1166"
