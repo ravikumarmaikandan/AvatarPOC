@@ -177,7 +177,7 @@ namespace Philips.PIC.CommonControls
 
     public class StateProviderTopic
     {
-        public virtual TopicStates State { get; set; } = TopicStates.TooLow;
+        public virtual TopicStates State { get; set; } = TopicStates.Safe;
 
         public float ThresholdMin { get; set; }
         public float ThresholdMax { get; set; }
@@ -338,13 +338,13 @@ namespace Philips.PIC.CommonControls
 
 
 
-        public void SetColorFrom(PatientAvatarRenderer r, StateProviderTopic topic)
+        public int GetColorFrom(StateProviderTopic topic)
         {
-            r.FillColor = topic.GetColor();
+            return topic.GetColor();
         }
-        public void SetShadowColorFrom(PatientAvatarRenderer r, StateProviderTopic topic)
+        public int GetShadowColorFrom(StateProviderTopic topic)
         {
-            r.FillColor = topic.GetShadowColor();
+            return topic.GetShadowColor();
         }
 
         public void PushMatrix(double a, double b, double c, double d, double e, double f)

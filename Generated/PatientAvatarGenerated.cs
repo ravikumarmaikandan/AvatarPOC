@@ -14109,24 +14109,25 @@ namespace Philips.PIC.CommonControls
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path10268(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use10299(ColorReceiver colorReceiver)
+		private void SetPathColor_use10299(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use10272(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path9(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -14136,12 +14137,13 @@ namespace Philips.PIC.CommonControls
             SetPathData_path9(path);
         }
 
-		private void SetPathColor_use10272(ColorReceiver colorReceiver)
+		private void SetPathColor_use10272(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use10276(PaintAvatarInfo p) //Use: Time
         {
@@ -14155,12 +14157,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use10276(ColorReceiver colorReceiver)
+		private void SetPathColor_use10276(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use10282(PaintAvatarInfo p) //Use: Max
         {
@@ -14174,9 +14177,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path10268(path);
         }
-		private void SetPathColor_use10282(ColorReceiver colorReceiver)
+		private void SetPathColor_use10282(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path10268(colorReceiver);
+			SetPathColor_path10268(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14186,9 +14189,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use10272(MinColor);
-		    SetPathColor_use10276(TimeColor);
-		    SetPathColor_use10282(MaxColor);
+		    SetPathColor_use10272(p, MinColor);
+		    SetPathColor_use10276(p, TimeColor);
+		    SetPathColor_use10282(p, MaxColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -14200,6 +14203,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g10280(PaintAvatarInfo p) //Group: High
         {
@@ -14213,7 +14217,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g10280(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g10280(ColorReceiver colorReceiver)
+		private void SetPathColor_g10280(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14224,17 +14228,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path9(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use5634(ColorReceiver colorReceiver)
+		private void SetPathColor_use5634(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 			
 
         private void Paint_use3854(PaintAvatarInfo p) //Use: Max
@@ -14245,18 +14250,19 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path9(path);
         }
-		private void SetPathColor_use3854(ColorReceiver colorReceiver)
+		private void SetPathColor_use3854(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path9(colorReceiver);
+			SetPathColor_path9(p, colorReceiver);
 		}
         //----------------------------------------
 
+				
         //Use (for ColorFrom)
         private void Paint_use3856(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path3852(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -14266,12 +14272,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path3852(path);
         }
 
-		private void SetPathColor_use3856(ColorReceiver colorReceiver)
+		private void SetPathColor_use3856(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use5605_9(PaintAvatarInfo p) //Use: Time
         {
@@ -14285,9 +14292,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use5605_9(ColorReceiver colorReceiver)
+		private void SetPathColor_use5605_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14297,9 +14304,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use3854(MaxColor);
-		    SetPathColor_use3856(MinColor);
-		    SetPathColor_use5605_9(TimeColor);
+		    SetPathColor_use3854(p, MaxColor);
+		    SetPathColor_use3856(p, MinColor);
+		    SetPathColor_use5605_9(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -14311,6 +14318,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g5641(PaintAvatarInfo p) //Group: Safe
         {
@@ -14324,7 +14332,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g5641(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g5641(ColorReceiver colorReceiver)
+		private void SetPathColor_g5641(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14338,17 +14346,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		   PushMatrix(0.996159,0,0,1,0.317619,0.133003);
 
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path186011_3_6(p);
             _patientAvatarRenderer.FillColor = colorWas;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
-		private void SetPathColor_use3210(ColorReceiver colorReceiver)
+		private void SetPathColor_use3210(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 			
 
         private void Paint_use3212(PaintAvatarInfo p) //Use: Max
@@ -14366,18 +14375,19 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path186011_3_6(path);
         }
-		private void SetPathColor_use3212(ColorReceiver colorReceiver)
+		private void SetPathColor_use3212(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path186011_3_6(colorReceiver);
+			SetPathColor_path186011_3_6(p, colorReceiver);
 		}
         //----------------------------------------
 
+				
         //Use (for ColorFrom)
         private void Paint_use5698(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path5695(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -14387,12 +14397,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path5695(path);
         }
 
-		private void SetPathColor_use5698(ColorReceiver colorReceiver)
+		private void SetPathColor_use5698(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use11024_8(PaintAvatarInfo p) //Use: Time
         {
@@ -14406,9 +14417,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use11024_8(ColorReceiver colorReceiver)
+		private void SetPathColor_use11024_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14418,9 +14429,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use3212(MaxColor);
-		    SetPathColor_use5698(MinColor);
-		    SetPathColor_use11024_8(TimeColor);
+		    SetPathColor_use3212(p, MaxColor);
+		    SetPathColor_use5698(p, MinColor);
+		    SetPathColor_use11024_8(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -14432,6 +14443,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g11028_5(PaintAvatarInfo p) //Group: Low
         {
@@ -14445,7 +14457,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g11028_5(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g11028_5(ColorReceiver colorReceiver)
+		private void SetPathColor_g11028_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14463,8 +14475,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path9(ColorReceiver colorReceiver)
+		private void SetPathColor_path9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14482,8 +14495,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3852(ColorReceiver colorReceiver)
+		private void SetPathColor_path3852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14501,8 +14515,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path10268(ColorReceiver colorReceiver)
+		private void SetPathColor_path10268(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14520,8 +14535,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path11016(ColorReceiver colorReceiver)
+		private void SetPathColor_path11016(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14539,8 +14555,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path5695(ColorReceiver colorReceiver)
+		private void SetPathColor_path5695(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14558,8 +14575,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path186011_3_6(ColorReceiver colorReceiver)
+		private void SetPathColor_path186011_3_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -14581,8 +14599,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5182(ColorReceiver colorReceiver)
+		private void SetPathColor_use5182(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -14604,8 +14623,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5001_f0(ColorReceiver colorReceiver)
+		private void SetPathColor_use5001_f0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -14627,12 +14647,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5001_s0(ColorReceiver colorReceiver)
+		private void SetPathColor_use5001_s0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use5001(PaintAvatarInfo p) //Group: dashedLine
         {
@@ -14646,7 +14668,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use5001(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use5001(ColorReceiver colorReceiver)
+		private void SetPathColor_use5001(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14675,8 +14697,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3865_f1(ColorReceiver colorReceiver)
+		private void SetPathColor_use3865_f1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -14698,12 +14721,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3865_s1(ColorReceiver colorReceiver)
+		private void SetPathColor_use3865_s1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use3865(PaintAvatarInfo p) //Group: line
         {
@@ -14717,11 +14742,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use3865(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use3865(ColorReceiver colorReceiver)
+		private void SetPathColor_use3865(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use12806(PaintAvatarInfo p) //Use: face
         {
@@ -14734,12 +14760,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1886_4(path);
         }
-		private void SetPathColor_use12806(ColorReceiver colorReceiver)
+		private void SetPathColor_use12806(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1886_4(colorReceiver);
+			SetPathColor_g1886_4(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use30934_62(PaintAvatarInfo p) //Use: airway
         {
@@ -14756,9 +14783,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1764(path);
         }
-		private void SetPathColor_use30934_62(ColorReceiver colorReceiver)
+		private void SetPathColor_use30934_62(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1764(colorReceiver);
+			SetPathColor_g1764(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14775,6 +14802,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g1838(PaintAvatarInfo p) //Group: relaxed
         {
@@ -14794,7 +14822,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1838(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1838(ColorReceiver colorReceiver)
+		private void SetPathColor_g1838(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14805,24 +14833,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path4873(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use5545(ColorReceiver colorReceiver)
+		private void SetPathColor_use5545(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use4875(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path1995(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -14832,12 +14861,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path1995(path);
         }
 
-		private void SetPathColor_use4875(ColorReceiver colorReceiver)
+		private void SetPathColor_use4875(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4877(PaintAvatarInfo p) //Use: Max
         {
@@ -14847,12 +14877,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4873(path);
         }
-		private void SetPathColor_use4877(ColorReceiver colorReceiver)
+		private void SetPathColor_use4877(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4873(colorReceiver);
+			SetPathColor_path4873(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use5605_2(PaintAvatarInfo p) //Use: Time
         {
@@ -14866,9 +14897,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use5605_2(ColorReceiver colorReceiver)
+		private void SetPathColor_use5605_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14878,9 +14909,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use4875(MinColor);
-		    SetPathColor_use4877(MaxColor);
-		    SetPathColor_use5605_2(TimeColor);
+		    SetPathColor_use4875(p, MinColor);
+		    SetPathColor_use4877(p, MaxColor);
+		    SetPathColor_use5605_2(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -14892,6 +14923,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g5576(PaintAvatarInfo p) //Group: High
         {
@@ -14905,7 +14937,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g5576(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g5576(ColorReceiver colorReceiver)
+		private void SetPathColor_g5576(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -14916,24 +14948,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path1995(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use5548(ColorReceiver colorReceiver)
+		private void SetPathColor_use5548(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use4910(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path4902(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -14943,12 +14976,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path4902(path);
         }
 
-		private void SetPathColor_use4910(ColorReceiver colorReceiver)
+		private void SetPathColor_use4910(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4904(PaintAvatarInfo p) //Use: Max
         {
@@ -14958,12 +14992,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1995(path);
         }
-		private void SetPathColor_use4904(ColorReceiver colorReceiver)
+		private void SetPathColor_use4904(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1995(colorReceiver);
+			SetPathColor_path1995(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use5605(PaintAvatarInfo p) //Use: Time
         {
@@ -14977,9 +15012,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use5605(ColorReceiver colorReceiver)
+		private void SetPathColor_use5605(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -14989,9 +15024,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use4910(MinColor);
-		    SetPathColor_use4904(MaxColor);
-		    SetPathColor_use5605(TimeColor);
+		    SetPathColor_use4910(p, MinColor);
+		    SetPathColor_use4904(p, MaxColor);
+		    SetPathColor_use5605(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -15003,6 +15038,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g5569(PaintAvatarInfo p) //Group: Safe
         {
@@ -15016,7 +15052,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g5569(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g5569(ColorReceiver colorReceiver)
+		private void SetPathColor_g5569(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15027,24 +15063,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path9777(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use6444(ColorReceiver colorReceiver)
+		private void SetPathColor_use6444(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use9853(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path9775(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -15054,12 +15091,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path9775(path);
         }
 
-		private void SetPathColor_use9853(ColorReceiver colorReceiver)
+		private void SetPathColor_use9853(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use9855(PaintAvatarInfo p) //Use: Max
         {
@@ -15069,12 +15107,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path9777(path);
         }
-		private void SetPathColor_use9855(ColorReceiver colorReceiver)
+		private void SetPathColor_use9855(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path9777(colorReceiver);
+			SetPathColor_path9777(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use11119(PaintAvatarInfo p) //Use: Time
         {
@@ -15088,9 +15127,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use11119(ColorReceiver colorReceiver)
+		private void SetPathColor_use11119(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -15100,9 +15139,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use9853(MinColor);
-		    SetPathColor_use9855(MaxColor);
-		    SetPathColor_use11119(TimeColor);
+		    SetPathColor_use9853(p, MinColor);
+		    SetPathColor_use9855(p, MaxColor);
+		    SetPathColor_use11119(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -15114,6 +15153,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g11123(PaintAvatarInfo p) //Group: Low
         {
@@ -15127,7 +15167,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g11123(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g11123(ColorReceiver colorReceiver)
+		private void SetPathColor_g11123(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15145,8 +15185,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4873(ColorReceiver colorReceiver)
+		private void SetPathColor_path4873(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15164,8 +15205,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path1995(ColorReceiver colorReceiver)
+		private void SetPathColor_path1995(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15187,8 +15229,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path20074_f2(ColorReceiver colorReceiver)
+		private void SetPathColor_path20074_f2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -15210,8 +15253,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path20074_s2(ColorReceiver colorReceiver)
+		private void SetPathColor_path20074_s2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -15228,7 +15272,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path20074(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path20074(ColorReceiver colorReceiver)
+		private void SetPathColor_path20074(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -15245,8 +15289,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4902(ColorReceiver colorReceiver)
+		private void SetPathColor_path4902(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15264,8 +15309,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path11125(ColorReceiver colorReceiver)
+		private void SetPathColor_path11125(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15283,8 +15329,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path9777(ColorReceiver colorReceiver)
+		private void SetPathColor_path9777(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15302,8 +15349,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path9775(ColorReceiver colorReceiver)
+		private void SetPathColor_path9775(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15315,6 +15363,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_use12723(PaintAvatarInfo p) //Use: face
         {
@@ -15324,12 +15373,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1886_4(path);
         }
-		private void SetPathColor_use12723(ColorReceiver colorReceiver)
+		private void SetPathColor_use12723(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1886_4(colorReceiver);
+			SetPathColor_g1886_4(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use30934(PaintAvatarInfo p) //Use: airway
         {
@@ -15339,9 +15389,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1764(path);
         }
-		private void SetPathColor_use30934(ColorReceiver colorReceiver)
+		private void SetPathColor_use30934(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1764(colorReceiver);
+			SetPathColor_g1764(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -15371,6 +15421,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g1855(PaintAvatarInfo p) //Group: thumbsup
         {
@@ -15390,7 +15441,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1855(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1855(ColorReceiver colorReceiver)
+		private void SetPathColor_g1855(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15401,17 +15452,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path819(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use2152(ColorReceiver colorReceiver)
+		private void SetPathColor_use2152(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 			
 
         private void Paint_use841(PaintAvatarInfo p) //Use: Max
@@ -15426,18 +15478,19 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path819(path);
         }
-		private void SetPathColor_use841(ColorReceiver colorReceiver)
+		private void SetPathColor_use841(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path819(colorReceiver);
+			SetPathColor_path819(p, colorReceiver);
 		}
         //----------------------------------------
 
+				
         //Use (for ColorFrom)
         private void Paint_use843(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path821(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -15447,12 +15500,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path821(path);
         }
 
-		private void SetPathColor_use843(ColorReceiver colorReceiver)
+		private void SetPathColor_use843(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use11119_5(PaintAvatarInfo p) //Use: Time
         {
@@ -15466,9 +15520,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use11119_5(ColorReceiver colorReceiver)
+		private void SetPathColor_use11119_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -15478,9 +15532,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use841(MaxColor);
-		    SetPathColor_use843(MinColor);
-		    SetPathColor_use11119_5(TimeColor);
+		    SetPathColor_use841(p, MaxColor);
+		    SetPathColor_use843(p, MinColor);
+		    SetPathColor_use11119_5(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -15492,6 +15546,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g859(PaintAvatarInfo p) //Group: High
         {
@@ -15505,7 +15560,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g859(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g859(ColorReceiver colorReceiver)
+		private void SetPathColor_g859(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15516,24 +15571,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_path821(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use2127(ColorReceiver colorReceiver)
+		private void SetPathColor_use2127(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use861(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_path823(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -15543,12 +15599,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path823(path);
         }
 
-		private void SetPathColor_use861(ColorReceiver colorReceiver)
+		private void SetPathColor_use861(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use864(PaintAvatarInfo p) //Use: Max
         {
@@ -15562,12 +15619,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path821(path);
         }
-		private void SetPathColor_use864(ColorReceiver colorReceiver)
+		private void SetPathColor_use864(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path821(colorReceiver);
+			SetPathColor_path821(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use11119_4(PaintAvatarInfo p) //Use: Time
         {
@@ -15581,9 +15639,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use11119_4(ColorReceiver colorReceiver)
+		private void SetPathColor_use11119_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -15593,9 +15651,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use861(MinColor);
-		    SetPathColor_use864(MaxColor);
-		    SetPathColor_use11119_4(TimeColor);
+		    SetPathColor_use861(p, MinColor);
+		    SetPathColor_use864(p, MaxColor);
+		    SetPathColor_use11119_4(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -15607,6 +15665,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g869(PaintAvatarInfo p) //Group: Safe
         {
@@ -15620,7 +15679,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g869(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g869(ColorReceiver colorReceiver)
+		private void SetPathColor_g869(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15631,17 +15690,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
             Paint_use845_2(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use5531(ColorReceiver colorReceiver)
+		private void SetPathColor_use5531(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 			
 
         private void Paint_use5430(PaintAvatarInfo p) //Use: Max
@@ -15652,18 +15712,19 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_use845_2(path);
         }
-		private void SetPathColor_use5430(ColorReceiver colorReceiver)
+		private void SetPathColor_use5430(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_use845_2(colorReceiver);
+			SetPathColor_use845_2(p, colorReceiver);
 		}
         //----------------------------------------
 
+				
         //Use (for ColorFrom)
         private void Paint_use5347(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
             Paint_use847_1(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -15673,12 +15734,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_use847_1(path);
         }
 
-		private void SetPathColor_use5347(ColorReceiver colorReceiver)
+		private void SetPathColor_use5347(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use11119_8(PaintAvatarInfo p) //Use: Time
         {
@@ -15692,9 +15754,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path4914(path);
         }
-		private void SetPathColor_use11119_8(ColorReceiver colorReceiver)
+		private void SetPathColor_use11119_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path4914(colorReceiver);
+			SetPathColor_path4914(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -15704,9 +15766,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use5430(MaxColor);
-		    SetPathColor_use5347(MinColor);
-		    SetPathColor_use11119_8(TimeColor);
+		    SetPathColor_use5430(p, MaxColor);
+		    SetPathColor_use5347(p, MinColor);
+		    SetPathColor_use11119_8(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -15718,6 +15780,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g855(PaintAvatarInfo p) //Group: Low
         {
@@ -15731,7 +15794,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g855(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g855(ColorReceiver colorReceiver)
+		private void SetPathColor_g855(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15749,8 +15812,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path819(ColorReceiver colorReceiver)
+		private void SetPathColor_path819(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15768,8 +15832,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path821(ColorReceiver colorReceiver)
+		private void SetPathColor_path821(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15787,8 +15852,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path823(ColorReceiver colorReceiver)
+		private void SetPathColor_path823(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15806,8 +15872,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path825(ColorReceiver colorReceiver)
+		private void SetPathColor_path825(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15825,8 +15892,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use845_2(ColorReceiver colorReceiver)
+		private void SetPathColor_use845_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15844,8 +15912,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use847_1(ColorReceiver colorReceiver)
+		private void SetPathColor_use847_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -15881,8 +15950,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8630(ColorReceiver colorReceiver)
+		private void SetPathColor_path8630(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -15899,7 +15969,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8632(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8632(ColorReceiver colorReceiver)
+		private void SetPathColor_g8632(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -15920,12 +15990,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8634(ColorReceiver colorReceiver)
+		private void SetPathColor_path8634(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g8636(PaintAvatarInfo p) //Group: closed
         {
@@ -15938,7 +16010,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8636(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8636(ColorReceiver colorReceiver)
+		private void SetPathColor_g8636(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -15960,8 +16032,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8638(ColorReceiver colorReceiver)
+		private void SetPathColor_path8638(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -15983,8 +16056,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8640(ColorReceiver colorReceiver)
+		private void SetPathColor_path8640(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x07e4f23;
 		}
 		//----------------------------------------
@@ -16006,8 +16080,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8642(ColorReceiver colorReceiver)
+		private void SetPathColor_path8642(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16029,8 +16104,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8644(ColorReceiver colorReceiver)
+		private void SetPathColor_path8644(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0b1b1b1;
 		}
 		//----------------------------------------
@@ -16049,10 +16125,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8646(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8646(ColorReceiver colorReceiver)
+		private void SetPathColor_g8646(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g8648(PaintAvatarInfo p) //Group: open
         {
@@ -16065,7 +16142,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8648(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8648(ColorReceiver colorReceiver)
+		private void SetPathColor_g8648(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16087,8 +16164,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8650(ColorReceiver colorReceiver)
+		private void SetPathColor_path8650(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e5e5e5;
 		}
 		//----------------------------------------
@@ -16110,8 +16188,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8652(ColorReceiver colorReceiver)
+		private void SetPathColor_path8652(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16133,8 +16212,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8654(ColorReceiver colorReceiver)
+		private void SetPathColor_path8654(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0cccccc;
 		}
 		//----------------------------------------
@@ -16156,12 +16236,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8656(ColorReceiver colorReceiver)
+		private void SetPathColor_path8656(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g8658(PaintAvatarInfo p) //Group: unknown
         {
@@ -16177,7 +16259,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8658(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8658(ColorReceiver colorReceiver)
+		private void SetPathColor_g8658(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16195,7 +16277,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8660(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8660(ColorReceiver colorReceiver)
+		private void SetPathColor_g8660(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -16216,12 +16298,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8694(ColorReceiver colorReceiver)
+		private void SetPathColor_path8694(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g8696(PaintAvatarInfo p) //Group: closed
         {
@@ -16234,7 +16318,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8696(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8696(ColorReceiver colorReceiver)
+		private void SetPathColor_g8696(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16256,8 +16340,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8698(ColorReceiver colorReceiver)
+		private void SetPathColor_path8698(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -16279,8 +16364,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8700(ColorReceiver colorReceiver)
+		private void SetPathColor_path8700(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x07e4f23;
 		}
 		//----------------------------------------
@@ -16302,8 +16388,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8702(ColorReceiver colorReceiver)
+		private void SetPathColor_path8702(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16325,8 +16412,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8704(ColorReceiver colorReceiver)
+		private void SetPathColor_path8704(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0b1b1b1;
 		}
 		//----------------------------------------
@@ -16345,10 +16433,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8706(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8706(ColorReceiver colorReceiver)
+		private void SetPathColor_g8706(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g8708(PaintAvatarInfo p) //Group: open
         {
@@ -16361,7 +16450,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8708(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8708(ColorReceiver colorReceiver)
+		private void SetPathColor_g8708(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16383,8 +16472,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8710(ColorReceiver colorReceiver)
+		private void SetPathColor_path8710(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e5e5e5;
 		}
 		//----------------------------------------
@@ -16406,8 +16496,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8712(ColorReceiver colorReceiver)
+		private void SetPathColor_path8712(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16429,8 +16520,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8714(ColorReceiver colorReceiver)
+		private void SetPathColor_path8714(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0cccccc;
 		}
 		//----------------------------------------
@@ -16452,12 +16544,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path8716(ColorReceiver colorReceiver)
+		private void SetPathColor_path8716(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g8718(PaintAvatarInfo p) //Group: unknown
         {
@@ -16473,7 +16567,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g8718(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g8718(ColorReceiver colorReceiver)
+		private void SetPathColor_g8718(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16494,7 +16588,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use8662(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use8662(ColorReceiver colorReceiver)
+		private void SetPathColor_use8662(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -16514,10 +16608,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use3014_9(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use3014_9(ColorReceiver colorReceiver)
+		private void SetPathColor_use3014_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use30934_9(PaintAvatarInfo p) //Use: airway
         {
@@ -16531,9 +16626,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1764(path);
         }
-		private void SetPathColor_use30934_9(ColorReceiver colorReceiver)
+		private void SetPathColor_use30934_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1764(colorReceiver);
+			SetPathColor_g1764(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -16554,8 +16649,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3096_f3(ColorReceiver colorReceiver)
+		private void SetPathColor_use3096_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -16577,12 +16673,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3096_s3(ColorReceiver colorReceiver)
+		private void SetPathColor_use3096_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use3096(PaintAvatarInfo p) //Group: line
         {
@@ -16596,7 +16694,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use3096(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use3096(ColorReceiver colorReceiver)
+		private void SetPathColor_use3096(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16614,6 +16712,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g1858(PaintAvatarInfo p) //Group: nothumps
         {
@@ -16633,7 +16732,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1858(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1858(ColorReceiver colorReceiver)
+		private void SetPathColor_g1858(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16662,8 +16761,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path2003_7(ColorReceiver colorReceiver)
+		private void SetPathColor_path2003_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16680,7 +16780,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1832_1(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1832_1(ColorReceiver colorReceiver)
+		private void SetPathColor_g1832_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -16701,12 +16801,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path62_6(ColorReceiver colorReceiver)
+		private void SetPathColor_path62_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g1827_7(PaintAvatarInfo p) //Group: closed
         {
@@ -16719,7 +16821,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1827_7(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1827_7(ColorReceiver colorReceiver)
+		private void SetPathColor_g1827_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16741,8 +16843,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path74_4(ColorReceiver colorReceiver)
+		private void SetPathColor_path74_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -16764,8 +16867,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path76_6(ColorReceiver colorReceiver)
+		private void SetPathColor_path76_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x07e4f23;
 		}
 		//----------------------------------------
@@ -16787,8 +16891,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path78_8(ColorReceiver colorReceiver)
+		private void SetPathColor_path78_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16810,8 +16915,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path80_7(ColorReceiver colorReceiver)
+		private void SetPathColor_path80_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0b1b1b1;
 		}
 		//----------------------------------------
@@ -16830,10 +16936,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6255_5(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6255_5(ColorReceiver colorReceiver)
+		private void SetPathColor_g6255_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g84_6(PaintAvatarInfo p) //Group: open
         {
@@ -16846,7 +16953,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g84_6(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g84_6(ColorReceiver colorReceiver)
+		private void SetPathColor_g84_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16868,8 +16975,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4287_3(ColorReceiver colorReceiver)
+		private void SetPathColor_path4287_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e5e5e5;
 		}
 		//----------------------------------------
@@ -16891,8 +16999,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4289_9(ColorReceiver colorReceiver)
+		private void SetPathColor_path4289_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -16914,8 +17023,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4387_6(ColorReceiver colorReceiver)
+		private void SetPathColor_path4387_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0cccccc;
 		}
 		//----------------------------------------
@@ -16937,12 +17047,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4389_4(ColorReceiver colorReceiver)
+		private void SetPathColor_path4389_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g6166_6(PaintAvatarInfo p) //Group: unknown
         {
@@ -16958,7 +17070,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6166_6(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6166_6(ColorReceiver colorReceiver)
+		private void SetPathColor_g6166_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -16976,10 +17088,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1785_3(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1785_3(ColorReceiver colorReceiver)
+		private void SetPathColor_g1785_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use1829(PaintAvatarInfo p) //Use: right eye
         {
@@ -16992,9 +17105,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1785_3(path);
         }
-		private void SetPathColor_use1829(ColorReceiver colorReceiver)
+		private void SetPathColor_use1829(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1785_3(colorReceiver);
+			SetPathColor_g1785_3(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17011,7 +17124,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1886_4(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1886_4(ColorReceiver colorReceiver)
+		private void SetPathColor_g1886_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -17035,8 +17148,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path105(ColorReceiver colorReceiver)
+		private void SetPathColor_path105(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17054,8 +17168,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path99(ColorReceiver colorReceiver)
+		private void SetPathColor_path99(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17077,8 +17192,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path1097(ColorReceiver colorReceiver)
+		private void SetPathColor_path1097(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -17096,8 +17212,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path7845(ColorReceiver colorReceiver)
+		private void SetPathColor_path7845(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17116,10 +17233,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g3907(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g3907(ColorReceiver colorReceiver)
+		private void SetPathColor_g3907(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use8624(PaintAvatarInfo p) //Use: Shadow
         {
@@ -17133,12 +17251,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path7845(path);
         }
-		private void SetPathColor_use8624(ColorReceiver colorReceiver)
+		private void SetPathColor_use8624(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path7845(colorReceiver);
+			SetPathColor_path7845(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7765(PaintAvatarInfo p) //Use: Max
         {
@@ -17152,12 +17271,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path7845(path);
         }
-		private void SetPathColor_use7765(ColorReceiver colorReceiver)
+		private void SetPathColor_use7765(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path7845(colorReceiver);
+			SetPathColor_path7845(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7767(PaintAvatarInfo p) //Use: Min
         {
@@ -17171,12 +17291,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1097(path);
         }
-		private void SetPathColor_use7767(ColorReceiver colorReceiver)
+		private void SetPathColor_use7767(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1097(colorReceiver);
+			SetPathColor_path1097(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use5676_2(PaintAvatarInfo p) //Use: Time
         {
@@ -17189,9 +17310,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path2449(path);
         }
-		private void SetPathColor_use5676_2(ColorReceiver colorReceiver)
+		private void SetPathColor_use5676_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path2449(colorReceiver);
+			SetPathColor_path2449(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17201,9 +17322,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use7765(MaxColor);
-		    SetPathColor_use7767(MinColor);
-		    SetPathColor_use5676_2(TimeColor);
+		    SetPathColor_use7765(p, MaxColor);
+		    SetPathColor_use7767(p, MinColor);
+		    SetPathColor_use5676_2(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -17215,6 +17336,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g7773(PaintAvatarInfo p) //Group: high
         {
@@ -17228,11 +17350,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7773(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7773(ColorReceiver colorReceiver)
+		private void SetPathColor_g7773(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7704(PaintAvatarInfo p) //Use: Shadow
         {
@@ -17246,12 +17369,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path105(path);
         }
-		private void SetPathColor_use7704(ColorReceiver colorReceiver)
+		private void SetPathColor_use7704(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path105(colorReceiver);
+			SetPathColor_path105(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use1091(PaintAvatarInfo p) //Use: Max
         {
@@ -17265,12 +17389,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path105(path);
         }
-		private void SetPathColor_use1091(ColorReceiver colorReceiver)
+		private void SetPathColor_use1091(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path105(colorReceiver);
+			SetPathColor_path105(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use1145(PaintAvatarInfo p) //Use: Min
         {
@@ -17284,12 +17409,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1097(path);
         }
-		private void SetPathColor_use1145(ColorReceiver colorReceiver)
+		private void SetPathColor_use1145(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1097(colorReceiver);
+			SetPathColor_path1097(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4613(PaintAvatarInfo p) //Use: Time
         {
@@ -17299,9 +17425,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path2449(path);
         }
-		private void SetPathColor_use4613(ColorReceiver colorReceiver)
+		private void SetPathColor_use4613(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path2449(colorReceiver);
+			SetPathColor_path2449(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17311,9 +17437,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use1091(MaxColor);
-		    SetPathColor_use1145(MinColor);
-		    SetPathColor_use4613(TimeColor);
+		    SetPathColor_use1091(p, MaxColor);
+		    SetPathColor_use1145(p, MinColor);
+		    SetPathColor_use4613(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -17325,6 +17451,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g3913(PaintAvatarInfo p) //Group: safe
         {
@@ -17338,11 +17465,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g3913(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g3913(ColorReceiver colorReceiver)
+		private void SetPathColor_g3913(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7875(PaintAvatarInfo p) //Use: Shadow
         {
@@ -17356,12 +17484,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path99(path);
         }
-		private void SetPathColor_use7875(ColorReceiver colorReceiver)
+		private void SetPathColor_use7875(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path99(colorReceiver);
+			SetPathColor_path99(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7877(PaintAvatarInfo p) //Use: Max
         {
@@ -17375,12 +17504,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path99(path);
         }
-		private void SetPathColor_use7877(ColorReceiver colorReceiver)
+		private void SetPathColor_use7877(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path99(colorReceiver);
+			SetPathColor_path99(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7879(PaintAvatarInfo p) //Use: Min
         {
@@ -17394,12 +17524,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1097(path);
         }
-		private void SetPathColor_use7879(ColorReceiver colorReceiver)
+		private void SetPathColor_use7879(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1097(colorReceiver);
+			SetPathColor_path1097(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use5676_4_3(PaintAvatarInfo p) //Use: Time
         {
@@ -17412,9 +17543,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path2449(path);
         }
-		private void SetPathColor_use5676_4_3(ColorReceiver colorReceiver)
+		private void SetPathColor_use5676_4_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path2449(colorReceiver);
+			SetPathColor_path2449(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17424,9 +17555,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use7877(MaxColor);
-		    SetPathColor_use7879(MinColor);
-		    SetPathColor_use5676_4_3(TimeColor);
+		    SetPathColor_use7877(p, MaxColor);
+		    SetPathColor_use7879(p, MinColor);
+		    SetPathColor_use5676_4_3(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -17438,6 +17569,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g7885(PaintAvatarInfo p) //Group: low
         {
@@ -17451,7 +17583,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7885(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7885(ColorReceiver colorReceiver)
+		private void SetPathColor_g7885(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -17473,8 +17605,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7671_f4(ColorReceiver colorReceiver)
+		private void SetPathColor_use7671_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -17496,8 +17629,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7671_s4(ColorReceiver colorReceiver)
+		private void SetPathColor_use7671_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -17514,10 +17648,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use7671(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use7671(ColorReceiver colorReceiver)
+		private void SetPathColor_use7671(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g1782(PaintAvatarInfo p) //Group: co2
         {
@@ -17534,7 +17669,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1782(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1782(ColorReceiver colorReceiver)
+		private void SetPathColor_g1782(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -17568,8 +17703,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path5273(ColorReceiver colorReceiver)
+		private void SetPathColor_path5273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17587,8 +17723,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path5277(ColorReceiver colorReceiver)
+		private void SetPathColor_path5277(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17606,8 +17743,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path6201(ColorReceiver colorReceiver)
+		private void SetPathColor_path6201(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17625,8 +17763,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path7273(ColorReceiver colorReceiver)
+		private void SetPathColor_path7273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17644,8 +17783,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path26136(ColorReceiver colorReceiver)
+		private void SetPathColor_path26136(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -17665,7 +17805,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g4342(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g4342(ColorReceiver colorReceiver)
+		private void SetPathColor_g4342(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -17675,24 +17815,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path5277(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use5197(ColorReceiver colorReceiver)
+		private void SetPathColor_use5197(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use4344(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path5273(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -17702,12 +17843,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path5273(path);
         }
 
-		private void SetPathColor_use4344(ColorReceiver colorReceiver)
+		private void SetPathColor_use4344(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4346(PaintAvatarInfo p) //Use: Max
         {
@@ -17717,12 +17859,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path5277(path);
         }
-		private void SetPathColor_use4346(ColorReceiver colorReceiver)
+		private void SetPathColor_use4346(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path5277(colorReceiver);
+			SetPathColor_path5277(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6871_2(PaintAvatarInfo p) //Use: Time
         {
@@ -17732,9 +17875,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1166(path);
         }
-		private void SetPathColor_use6871_2(ColorReceiver colorReceiver)
+		private void SetPathColor_use6871_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1166(colorReceiver);
+			SetPathColor_path1166(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17744,9 +17887,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use4344(MinColor);
-		    SetPathColor_use4346(MaxColor);
-		    SetPathColor_use6871_2(TimeColor);
+		    SetPathColor_use4344(p, MinColor);
+		    SetPathColor_use4346(p, MaxColor);
+		    SetPathColor_use6871_2(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -17758,6 +17901,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g5205(PaintAvatarInfo p) //Group: high
         {
@@ -17771,7 +17915,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g5205(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g5205(ColorReceiver colorReceiver)
+		private void SetPathColor_g5205(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -17782,24 +17926,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path5273(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use6265(ColorReceiver colorReceiver)
+		private void SetPathColor_use6265(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use6255(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path6201(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -17809,12 +17954,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path6201(path);
         }
 
-		private void SetPathColor_use6255(ColorReceiver colorReceiver)
+		private void SetPathColor_use6255(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6257(PaintAvatarInfo p) //Use: Max
         {
@@ -17828,12 +17974,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path5273(path);
         }
-		private void SetPathColor_use6257(ColorReceiver colorReceiver)
+		private void SetPathColor_use6257(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path5273(colorReceiver);
+			SetPathColor_path5273(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6871(PaintAvatarInfo p) //Use: Time
         {
@@ -17843,9 +17990,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1166(path);
         }
-		private void SetPathColor_use6871(ColorReceiver colorReceiver)
+		private void SetPathColor_use6871(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1166(colorReceiver);
+			SetPathColor_path1166(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -17855,9 +18002,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use6255(MinColor);
-		    SetPathColor_use6257(MaxColor);
-		    SetPathColor_use6871(TimeColor);
+		    SetPathColor_use6255(p, MinColor);
+		    SetPathColor_use6257(p, MaxColor);
+		    SetPathColor_use6871(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -17869,6 +18016,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g6272(PaintAvatarInfo p) //Group: safe
         {
@@ -17882,7 +18030,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6272(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6272(ColorReceiver colorReceiver)
+		private void SetPathColor_g6272(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -17904,8 +18052,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5195_f5(ColorReceiver colorReceiver)
+		private void SetPathColor_use5195_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -17927,12 +18076,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use5195_s5(ColorReceiver colorReceiver)
+		private void SetPathColor_use5195_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use5195(PaintAvatarInfo p) //Group: Line
         {
@@ -17946,7 +18097,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use5195(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use5195(ColorReceiver colorReceiver)
+		private void SetPathColor_use5195(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -17957,24 +18108,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path6201(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use7232(ColorReceiver colorReceiver)
+		private void SetPathColor_use7232(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use7234(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path7273(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -17984,12 +18136,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path7273(path);
         }
 
-		private void SetPathColor_use7234(ColorReceiver colorReceiver)
+		private void SetPathColor_use7234(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7236(PaintAvatarInfo p) //Use: Max
         {
@@ -18003,12 +18156,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path6201(path);
         }
-		private void SetPathColor_use7236(ColorReceiver colorReceiver)
+		private void SetPathColor_use7236(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path6201(colorReceiver);
+			SetPathColor_path6201(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7238(PaintAvatarInfo p) //Use: Time
         {
@@ -18018,9 +18172,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1166(path);
         }
-		private void SetPathColor_use7238(ColorReceiver colorReceiver)
+		private void SetPathColor_use7238(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1166(colorReceiver);
+			SetPathColor_path1166(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -18030,9 +18184,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use7234(MinColor);
-		    SetPathColor_use7236(MaxColor);
-		    SetPathColor_use7238(TimeColor);
+		    SetPathColor_use7234(p, MinColor);
+		    SetPathColor_use7236(p, MaxColor);
+		    SetPathColor_use7238(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -18044,6 +18198,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g7242(PaintAvatarInfo p) //Group: low
         {
@@ -18057,7 +18212,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7242(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7242(ColorReceiver colorReceiver)
+		private void SetPathColor_g7242(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -18091,7 +18246,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1772(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1772(ColorReceiver colorReceiver)
+		private void SetPathColor_g1772(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -18108,8 +18263,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path123(ColorReceiver colorReceiver)
+		private void SetPathColor_path123(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18127,8 +18283,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path126(ColorReceiver colorReceiver)
+		private void SetPathColor_path126(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18146,8 +18303,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path7917(ColorReceiver colorReceiver)
+		private void SetPathColor_path7917(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18203,8 +18361,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7919_f6(ColorReceiver colorReceiver)
+		private void SetPathColor_use7919_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -18226,12 +18385,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use7919_s6(ColorReceiver colorReceiver)
+		private void SetPathColor_use7919_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use7919(PaintAvatarInfo p) //Group: line
         {
@@ -18245,7 +18406,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use7919(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use7919(ColorReceiver colorReceiver)
+		private void SetPathColor_use7919(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -18268,7 +18429,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1777(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1777(ColorReceiver colorReceiver)
+		private void SetPathColor_g1777(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -18285,8 +18446,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path180(ColorReceiver colorReceiver)
+		private void SetPathColor_path180(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18304,8 +18466,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path1050(ColorReceiver colorReceiver)
+		private void SetPathColor_path1050(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18323,8 +18486,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path1907(ColorReceiver colorReceiver)
+		private void SetPathColor_path1907(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -18346,8 +18510,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path12973(ColorReceiver colorReceiver)
+		private void SetPathColor_path12973(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e7383d;
 		}
 		//----------------------------------------
@@ -18366,10 +18531,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g13101(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g13101(ColorReceiver colorReceiver)
+		private void SetPathColor_g13101(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use13105(PaintAvatarInfo p) //Use: 
         {
@@ -18382,12 +18548,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13105(ColorReceiver colorReceiver)
+		private void SetPathColor_use13105(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13112(PaintAvatarInfo p) //Use: 
         {
@@ -18400,12 +18567,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13112(ColorReceiver colorReceiver)
+		private void SetPathColor_use13112(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13826(PaintAvatarInfo p) //Use: 
         {
@@ -18418,12 +18586,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13826(ColorReceiver colorReceiver)
+		private void SetPathColor_use13826(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13828(PaintAvatarInfo p) //Use: 
         {
@@ -18436,12 +18605,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13828(ColorReceiver colorReceiver)
+		private void SetPathColor_use13828(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13830(PaintAvatarInfo p) //Use: 
         {
@@ -18454,12 +18624,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13830(ColorReceiver colorReceiver)
+		private void SetPathColor_use13830(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13832(PaintAvatarInfo p) //Use: 
         {
@@ -18472,12 +18643,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13832(ColorReceiver colorReceiver)
+		private void SetPathColor_use13832(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13834(PaintAvatarInfo p) //Use: 
         {
@@ -18490,12 +18662,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13834(ColorReceiver colorReceiver)
+		private void SetPathColor_use13834(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13836(PaintAvatarInfo p) //Use: 
         {
@@ -18508,12 +18681,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13836(ColorReceiver colorReceiver)
+		private void SetPathColor_use13836(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13838(PaintAvatarInfo p) //Use: 
         {
@@ -18526,12 +18700,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13838(ColorReceiver colorReceiver)
+		private void SetPathColor_use13838(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13840(PaintAvatarInfo p) //Use: 
         {
@@ -18544,12 +18719,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13840(ColorReceiver colorReceiver)
+		private void SetPathColor_use13840(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13842(PaintAvatarInfo p) //Use: 
         {
@@ -18562,12 +18738,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13842(ColorReceiver colorReceiver)
+		private void SetPathColor_use13842(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13844(PaintAvatarInfo p) //Use: 
         {
@@ -18580,12 +18757,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13844(ColorReceiver colorReceiver)
+		private void SetPathColor_use13844(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13846(PaintAvatarInfo p) //Use: 
         {
@@ -18598,12 +18776,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13846(ColorReceiver colorReceiver)
+		private void SetPathColor_use13846(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13848(PaintAvatarInfo p) //Use: 
         {
@@ -18616,12 +18795,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13848(ColorReceiver colorReceiver)
+		private void SetPathColor_use13848(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13850(PaintAvatarInfo p) //Use: 
         {
@@ -18634,12 +18814,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13850(ColorReceiver colorReceiver)
+		private void SetPathColor_use13850(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13852(PaintAvatarInfo p) //Use: 
         {
@@ -18652,12 +18833,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13852(ColorReceiver colorReceiver)
+		private void SetPathColor_use13852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13854(PaintAvatarInfo p) //Use: 
         {
@@ -18670,12 +18852,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13854(ColorReceiver colorReceiver)
+		private void SetPathColor_use13854(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13856(PaintAvatarInfo p) //Use: 
         {
@@ -18688,12 +18871,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13856(ColorReceiver colorReceiver)
+		private void SetPathColor_use13856(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13858(PaintAvatarInfo p) //Use: 
         {
@@ -18706,12 +18890,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13858(ColorReceiver colorReceiver)
+		private void SetPathColor_use13858(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13860(PaintAvatarInfo p) //Use: 
         {
@@ -18724,12 +18909,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13860(ColorReceiver colorReceiver)
+		private void SetPathColor_use13860(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22156(PaintAvatarInfo p) //Use: 
         {
@@ -18742,12 +18928,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22156(ColorReceiver colorReceiver)
+		private void SetPathColor_use22156(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22158(PaintAvatarInfo p) //Use: 
         {
@@ -18760,12 +18947,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22158(ColorReceiver colorReceiver)
+		private void SetPathColor_use22158(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22160(PaintAvatarInfo p) //Use: 
         {
@@ -18778,12 +18966,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22160(ColorReceiver colorReceiver)
+		private void SetPathColor_use22160(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22162(PaintAvatarInfo p) //Use: 
         {
@@ -18796,12 +18985,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22162(ColorReceiver colorReceiver)
+		private void SetPathColor_use22162(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22164(PaintAvatarInfo p) //Use: 
         {
@@ -18814,12 +19004,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22164(ColorReceiver colorReceiver)
+		private void SetPathColor_use22164(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22166(PaintAvatarInfo p) //Use: 
         {
@@ -18832,12 +19023,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22166(ColorReceiver colorReceiver)
+		private void SetPathColor_use22166(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22168(PaintAvatarInfo p) //Use: 
         {
@@ -18850,12 +19042,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22168(ColorReceiver colorReceiver)
+		private void SetPathColor_use22168(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22170(PaintAvatarInfo p) //Use: 
         {
@@ -18868,12 +19061,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22170(ColorReceiver colorReceiver)
+		private void SetPathColor_use22170(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22174(PaintAvatarInfo p) //Use: 
         {
@@ -18886,12 +19080,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22174(ColorReceiver colorReceiver)
+		private void SetPathColor_use22174(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22176(PaintAvatarInfo p) //Use: 
         {
@@ -18904,12 +19099,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22176(ColorReceiver colorReceiver)
+		private void SetPathColor_use22176(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22178(PaintAvatarInfo p) //Use: 
         {
@@ -18922,12 +19118,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22178(ColorReceiver colorReceiver)
+		private void SetPathColor_use22178(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22180(PaintAvatarInfo p) //Use: 
         {
@@ -18940,12 +19137,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22180(ColorReceiver colorReceiver)
+		private void SetPathColor_use22180(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22182(PaintAvatarInfo p) //Use: 
         {
@@ -18958,12 +19156,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22182(ColorReceiver colorReceiver)
+		private void SetPathColor_use22182(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22186(PaintAvatarInfo p) //Use: 
         {
@@ -18976,12 +19175,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22186(ColorReceiver colorReceiver)
+		private void SetPathColor_use22186(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22188(PaintAvatarInfo p) //Use: 
         {
@@ -18994,12 +19194,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22188(ColorReceiver colorReceiver)
+		private void SetPathColor_use22188(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22190(PaintAvatarInfo p) //Use: 
         {
@@ -19012,12 +19213,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22190(ColorReceiver colorReceiver)
+		private void SetPathColor_use22190(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22192(PaintAvatarInfo p) //Use: 
         {
@@ -19030,12 +19232,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22192(ColorReceiver colorReceiver)
+		private void SetPathColor_use22192(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22194(PaintAvatarInfo p) //Use: 
         {
@@ -19048,12 +19251,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22194(ColorReceiver colorReceiver)
+		private void SetPathColor_use22194(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use22196(PaintAvatarInfo p) //Use: 
         {
@@ -19066,12 +19270,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use22196(ColorReceiver colorReceiver)
+		private void SetPathColor_use22196(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use23732(PaintAvatarInfo p) //Use: 
         {
@@ -19084,9 +19289,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use23732(ColorReceiver colorReceiver)
+		private void SetPathColor_use23732(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -19140,10 +19345,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g13108(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g13108(ColorReceiver colorReceiver)
+		private void SetPathColor_g13108(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use13866(PaintAvatarInfo p) //Use: 
         {
@@ -19156,12 +19362,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13866(ColorReceiver colorReceiver)
+		private void SetPathColor_use13866(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13876(PaintAvatarInfo p) //Use: 
         {
@@ -19174,12 +19381,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13876(ColorReceiver colorReceiver)
+		private void SetPathColor_use13876(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use13878(PaintAvatarInfo p) //Use: 
         {
@@ -19192,9 +19400,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use13878(ColorReceiver colorReceiver)
+		private void SetPathColor_use13878(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -19211,10 +19419,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g13902(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g13902(ColorReceiver colorReceiver)
+		private void SetPathColor_g13902(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_use14386(PaintAvatarInfo p) //Use: 
         {
@@ -19227,12 +19436,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14386(ColorReceiver colorReceiver)
+		private void SetPathColor_use14386(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14390(PaintAvatarInfo p) //Use: 
         {
@@ -19245,12 +19455,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14390(ColorReceiver colorReceiver)
+		private void SetPathColor_use14390(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14392(PaintAvatarInfo p) //Use: 
         {
@@ -19263,12 +19474,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14392(ColorReceiver colorReceiver)
+		private void SetPathColor_use14392(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14394(PaintAvatarInfo p) //Use: 
         {
@@ -19281,12 +19493,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14394(ColorReceiver colorReceiver)
+		private void SetPathColor_use14394(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14398(PaintAvatarInfo p) //Use: 
         {
@@ -19299,12 +19512,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14398(ColorReceiver colorReceiver)
+		private void SetPathColor_use14398(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14400(PaintAvatarInfo p) //Use: 
         {
@@ -19317,12 +19531,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14400(ColorReceiver colorReceiver)
+		private void SetPathColor_use14400(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14402(PaintAvatarInfo p) //Use: 
         {
@@ -19335,12 +19550,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14402(ColorReceiver colorReceiver)
+		private void SetPathColor_use14402(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14406(PaintAvatarInfo p) //Use: 
         {
@@ -19353,12 +19569,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14406(ColorReceiver colorReceiver)
+		private void SetPathColor_use14406(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14408(PaintAvatarInfo p) //Use: 
         {
@@ -19371,12 +19588,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14408(ColorReceiver colorReceiver)
+		private void SetPathColor_use14408(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use14412(PaintAvatarInfo p) //Use: 
         {
@@ -19389,9 +19607,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13101(path);
         }
-		private void SetPathColor_use14412(ColorReceiver colorReceiver)
+		private void SetPathColor_use14412(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13101(colorReceiver);
+			SetPathColor_g13101(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -19415,7 +19633,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g14424(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g14424(ColorReceiver colorReceiver)
+		private void SetPathColor_g14424(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -19426,6 +19644,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_use4099(PaintAvatarInfo p) //Use: 
         {
@@ -19439,12 +19658,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1050(path);
         }
-		private void SetPathColor_use4099(ColorReceiver colorReceiver)
+		private void SetPathColor_use4099(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1050(colorReceiver);
+			SetPathColor_path1050(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use15332(PaintAvatarInfo p) //Use: 
         {
@@ -19454,12 +19674,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g14424(path);
         }
-		private void SetPathColor_use15332(ColorReceiver colorReceiver)
+		private void SetPathColor_use15332(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g14424(colorReceiver);
+			SetPathColor_g14424(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g4140(PaintAvatarInfo p) //Group: Safe
         {
@@ -19473,11 +19694,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g4140(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g4140(ColorReceiver colorReceiver)
+		private void SetPathColor_g4140(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4142(PaintAvatarInfo p) //Use: 
         {
@@ -19491,12 +19713,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path1907(path);
         }
-		private void SetPathColor_use4142(ColorReceiver colorReceiver)
+		private void SetPathColor_use4142(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path1907(colorReceiver);
+			SetPathColor_path1907(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use16082(PaintAvatarInfo p) //Use: 
         {
@@ -19506,12 +19729,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13902(path);
         }
-		private void SetPathColor_use16082(ColorReceiver colorReceiver)
+		private void SetPathColor_use16082(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13902(colorReceiver);
+			SetPathColor_g13902(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g4146(PaintAvatarInfo p) //Group: Low
         {
@@ -19525,11 +19749,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g4146(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g4146(ColorReceiver colorReceiver)
+		private void SetPathColor_g4146(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use4148(PaintAvatarInfo p) //Use: 
         {
@@ -19543,12 +19768,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path180(path);
         }
-		private void SetPathColor_use4148(ColorReceiver colorReceiver)
+		private void SetPathColor_use4148(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path180(colorReceiver);
+			SetPathColor_path180(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use16833(PaintAvatarInfo p) //Use: 
         {
@@ -19558,12 +19784,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g13108(path);
         }
-		private void SetPathColor_use16833(ColorReceiver colorReceiver)
+		private void SetPathColor_use16833(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g13108(colorReceiver);
+			SetPathColor_g13108(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g4152(PaintAvatarInfo p) //Group: High
         {
@@ -19577,7 +19804,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g4152(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g4152(ColorReceiver colorReceiver)
+		private void SetPathColor_g4152(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -19599,8 +19826,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3991_f7(ColorReceiver colorReceiver)
+		private void SetPathColor_use3991_f7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -19622,12 +19850,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use3991_s7(ColorReceiver colorReceiver)
+		private void SetPathColor_use3991_s7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use3991(PaintAvatarInfo p) //Group: Line
         {
@@ -19641,7 +19871,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use3991(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use3991(ColorReceiver colorReceiver)
+		private void SetPathColor_use3991(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -19664,7 +19894,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1761(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1761(ColorReceiver colorReceiver)
+		private void SetPathColor_g1761(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -19681,8 +19911,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path192(ColorReceiver colorReceiver)
+		private void SetPathColor_path192(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -19700,8 +19931,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path2417(ColorReceiver colorReceiver)
+		private void SetPathColor_path2417(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -19713,6 +19945,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_use3243(PaintAvatarInfo p) //Use: Min
         {
@@ -19726,12 +19959,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path2417(path);
         }
-		private void SetPathColor_use3243(ColorReceiver colorReceiver)
+		private void SetPathColor_use3243(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path2417(colorReceiver);
+			SetPathColor_path2417(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use3241(PaintAvatarInfo p) //Use: Max
         {
@@ -19745,12 +19979,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path192(path);
         }
-		private void SetPathColor_use3241(ColorReceiver colorReceiver)
+		private void SetPathColor_use3241(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path192(colorReceiver);
+			SetPathColor_path192(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use3253(PaintAvatarInfo p) //Use: Time
         {
@@ -19767,9 +20002,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path3251(path);
         }
-		private void SetPathColor_use3253(ColorReceiver colorReceiver)
+		private void SetPathColor_use3253(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path3251(colorReceiver);
+			SetPathColor_path3251(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -19779,9 +20014,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use3243(MinColor);
-		    SetPathColor_use3241(MaxColor);
-		    SetPathColor_use3253(TimeColor);
+		    SetPathColor_use3243(p, MinColor);
+		    SetPathColor_use3241(p, MaxColor);
+		    SetPathColor_use3253(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -19793,6 +20028,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g7666(PaintAvatarInfo p) //Group: low, safe, high
         {
@@ -19805,11 +20041,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7666(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7666(ColorReceiver colorReceiver)
+		private void SetPathColor_g7666(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use2102(PaintAvatarInfo p) //Use: Min
         {
@@ -19823,12 +20060,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path2417(path);
         }
-		private void SetPathColor_use2102(ColorReceiver colorReceiver)
+		private void SetPathColor_use2102(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path2417(colorReceiver);
+			SetPathColor_path2417(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use2104(PaintAvatarInfo p) //Use: Max
         {
@@ -19842,12 +20080,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path192(path);
         }
-		private void SetPathColor_use2104(ColorReceiver colorReceiver)
+		private void SetPathColor_use2104(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path192(colorReceiver);
+			SetPathColor_path192(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use2106(PaintAvatarInfo p) //Use: Time
         {
@@ -19864,9 +20103,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path3251(path);
         }
-		private void SetPathColor_use2106(ColorReceiver colorReceiver)
+		private void SetPathColor_use2106(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path3251(colorReceiver);
+			SetPathColor_path3251(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -19876,9 +20115,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use2102(MinColor);
-		    SetPathColor_use2104(MaxColor);
-		    SetPathColor_use2106(TimeColor);
+		    SetPathColor_use2102(p, MinColor);
+		    SetPathColor_use2104(p, MaxColor);
+		    SetPathColor_use2106(p, TimeColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -19890,6 +20129,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g2110(PaintAvatarInfo p) //Group: zero
         {
@@ -19902,7 +20142,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g2110(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g2110(ColorReceiver colorReceiver)
+		private void SetPathColor_g2110(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -19924,8 +20164,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path14970(ColorReceiver colorReceiver)
+		private void SetPathColor_path14970(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0cccccc;
 		}
 		//----------------------------------------
@@ -19947,12 +20188,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path14972(ColorReceiver colorReceiver)
+		private void SetPathColor_path14972(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use7659(PaintAvatarInfo p) //Group: notavail, unknown
         {
@@ -19966,7 +20209,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use7659(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use7659(ColorReceiver colorReceiver)
+		private void SetPathColor_use7659(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -19989,7 +20232,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1873(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1873(ColorReceiver colorReceiver)
+		private void SetPathColor_g1873(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -20010,8 +20253,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3652_f8(ColorReceiver colorReceiver)
+		private void SetPathColor_path3652_f8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0595959;
 		}
 		//----------------------------------------
@@ -20033,8 +20277,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3652_s8(ColorReceiver colorReceiver)
+		private void SetPathColor_path3652_s8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
@@ -20051,10 +20296,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path3652(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path3652(ColorReceiver colorReceiver)
+		private void SetPathColor_path3652(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g15456(PaintAvatarInfo p) //Group: zero
         {
@@ -20067,7 +20313,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g15456(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g15456(ColorReceiver colorReceiver)
+		private void SetPathColor_g15456(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20089,8 +20335,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3582_f9(ColorReceiver colorReceiver)
+		private void SetPathColor_path3582_f9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x017030f;
 		}
 		//----------------------------------------
@@ -20112,12 +20359,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3582_s9(ColorReceiver colorReceiver)
+		private void SetPathColor_path3582_s9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path3582(PaintAvatarInfo p) //Group: ST1
         {
@@ -20131,7 +20380,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path3582(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path3582(ColorReceiver colorReceiver)
+		private void SetPathColor_path3582(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20153,8 +20402,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3626_f10(ColorReceiver colorReceiver)
+		private void SetPathColor_path3626_f10(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x017030f;
 		}
 		//----------------------------------------
@@ -20176,12 +20426,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3626_s10(ColorReceiver colorReceiver)
+		private void SetPathColor_path3626_s10(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path3626(PaintAvatarInfo p) //Group: ST2
         {
@@ -20195,7 +20447,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path3626(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path3626(ColorReceiver colorReceiver)
+		private void SetPathColor_path3626(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20217,8 +20469,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3650_f11(ColorReceiver colorReceiver)
+		private void SetPathColor_path3650_f11(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x017030f;
 		}
 		//----------------------------------------
@@ -20240,12 +20493,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3650_s11(ColorReceiver colorReceiver)
+		private void SetPathColor_path3650_s11(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path3650(PaintAvatarInfo p) //Group: ST3
         {
@@ -20259,7 +20514,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path3650(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path3650(ColorReceiver colorReceiver)
+		private void SetPathColor_path3650(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20284,8 +20539,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path195_f12(ColorReceiver colorReceiver)
+		private void SetPathColor_path195_f12(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
 		}
 		//----------------------------------------
@@ -20307,12 +20563,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path195_s12(ColorReceiver colorReceiver)
+		private void SetPathColor_path195_s12(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path195(PaintAvatarInfo p) //Group: ST3_zero
         {
@@ -20326,7 +20584,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path195(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path195(ColorReceiver colorReceiver)
+		private void SetPathColor_path195(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20351,8 +20609,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path198_f13(ColorReceiver colorReceiver)
+		private void SetPathColor_path198_f13(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
 		}
 		//----------------------------------------
@@ -20374,12 +20633,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path198_s13(ColorReceiver colorReceiver)
+		private void SetPathColor_path198_s13(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path198(PaintAvatarInfo p) //Group: ST2_zero
         {
@@ -20393,7 +20654,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path198(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path198(ColorReceiver colorReceiver)
+		private void SetPathColor_path198(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20418,8 +20679,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
-		private void SetPathColor_path201_f14(ColorReceiver colorReceiver)
+		private void SetPathColor_path201_f14(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x04d4d4d;
 		}
 		//----------------------------------------
@@ -20441,12 +20703,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path201_s14(ColorReceiver colorReceiver)
+		private void SetPathColor_path201_s14(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0000000;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_path201(PaintAvatarInfo p) //Group: ST1_zero
         {
@@ -20460,11 +20724,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_path201(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_path201(ColorReceiver colorReceiver)
+		private void SetPathColor_path201(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g4814(PaintAvatarInfo p) //Group: zero
         {
@@ -20479,7 +20744,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g4814(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g4814(ColorReceiver colorReceiver)
+		private void SetPathColor_g4814(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20498,7 +20763,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1758(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1758(ColorReceiver colorReceiver)
+		private void SetPathColor_g1758(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -20519,8 +20784,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path26748(ColorReceiver colorReceiver)
+		private void SetPathColor_path26748(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20542,8 +20808,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path25475(ColorReceiver colorReceiver)
+		private void SetPathColor_path25475(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20565,8 +20832,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path25500(ColorReceiver colorReceiver)
+		private void SetPathColor_path25500(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20588,8 +20856,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path25502(ColorReceiver colorReceiver)
+		private void SetPathColor_path25502(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20611,8 +20880,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path25504(ColorReceiver colorReceiver)
+		private void SetPathColor_path25504(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20634,8 +20904,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path25506(ColorReceiver colorReceiver)
+		private void SetPathColor_path25506(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20657,8 +20928,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path27072(ColorReceiver colorReceiver)
+		private void SetPathColor_path27072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20680,8 +20952,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path27852(ColorReceiver colorReceiver)
+		private void SetPathColor_path27852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20703,8 +20976,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path28596(ColorReceiver colorReceiver)
+		private void SetPathColor_path28596(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20726,8 +21000,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path30398(ColorReceiver colorReceiver)
+		private void SetPathColor_path30398(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -20749,8 +21024,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path32072(ColorReceiver colorReceiver)
+		private void SetPathColor_path32072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0fcce38;
 		}
 		//----------------------------------------
@@ -20772,12 +21048,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path33110(ColorReceiver colorReceiver)
+		private void SetPathColor_path33110(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use2160(PaintAvatarInfo p) //Use: Time
         {
@@ -20790,9 +21068,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path46598(path);
         }
-		private void SetPathColor_use2160(ColorReceiver colorReceiver)
+		private void SetPathColor_use2160(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path46598(colorReceiver);
+			SetPathColor_path46598(p, colorReceiver);
 		}
         //----------------------------------------
  
@@ -20822,6 +21100,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
             //----------------------------------------
 
 			
+			
 
         private void Paint_g12081(PaintAvatarInfo p) //Group: low, safe, high
         {
@@ -20834,7 +21113,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g12081(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g12081(ColorReceiver colorReceiver)
+		private void SetPathColor_g12081(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -20856,7 +21135,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1745(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1745(ColorReceiver colorReceiver)
+		private void SetPathColor_g1745(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -20875,7 +21154,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1753(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1753(ColorReceiver colorReceiver)
+		private void SetPathColor_g1753(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -20894,7 +21173,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1974(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1974(ColorReceiver colorReceiver)
+		private void SetPathColor_g1974(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -20911,8 +21190,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path174(ColorReceiver colorReceiver)
+		private void SetPathColor_path174(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -20930,8 +21210,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path171(ColorReceiver colorReceiver)
+		private void SetPathColor_path171(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -20949,8 +21230,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path168(ColorReceiver colorReceiver)
+		private void SetPathColor_path168(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -20968,8 +21250,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path165(ColorReceiver colorReceiver)
+		private void SetPathColor_path165(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -20987,8 +21270,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path61670(ColorReceiver colorReceiver)
+		private void SetPathColor_path61670(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21008,7 +21292,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g26134(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g26134(ColorReceiver colorReceiver)
+		private void SetPathColor_g26134(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -21018,24 +21302,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.AWP);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path171(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use32817(ColorReceiver colorReceiver)
+		private void SetPathColor_use32817(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use32823(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path174(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -21045,12 +21330,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path174(path);
         }
 
-		private void SetPathColor_use32823(ColorReceiver colorReceiver)
+		private void SetPathColor_use32823(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6871_5(PaintAvatarInfo p) //Use: Time
         {
@@ -21064,12 +21350,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path52326(path);
         }
-		private void SetPathColor_use6871_5(ColorReceiver colorReceiver)
+		private void SetPathColor_use6871_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path52326(colorReceiver);
+			SetPathColor_path52326(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use32867(PaintAvatarInfo p) //Use: Max
         {
@@ -21079,9 +21366,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path171(path);
         }
-		private void SetPathColor_use32867(ColorReceiver colorReceiver)
+		private void SetPathColor_use32867(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path171(colorReceiver);
+			SetPathColor_path171(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -21091,9 +21378,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use32823(MinColor);
-		    SetPathColor_use6871_5(TimeColor);
-		    SetPathColor_use32867(MaxColor);
+		    SetPathColor_use32823(p, MinColor);
+		    SetPathColor_use6871_5(p, TimeColor);
+		    SetPathColor_use32867(p, MaxColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -21105,6 +21392,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g32821(PaintAvatarInfo p) //Group: Safe
         {
@@ -21118,7 +21406,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g32821(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g32821(ColorReceiver colorReceiver)
+		private void SetPathColor_g32821(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21129,24 +21417,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.AWP);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path168(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use54356(ColorReceiver colorReceiver)
+		private void SetPathColor_use54356(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use54358(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path171(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -21156,12 +21445,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path171(path);
         }
 
-		private void SetPathColor_use54358(ColorReceiver colorReceiver)
+		private void SetPathColor_use54358(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use54360(PaintAvatarInfo p) //Use: Time
         {
@@ -21171,12 +21461,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path52326(path);
         }
-		private void SetPathColor_use54360(ColorReceiver colorReceiver)
+		private void SetPathColor_use54360(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path52326(colorReceiver);
+			SetPathColor_path52326(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use54362(PaintAvatarInfo p) //Use: Max
         {
@@ -21186,9 +21477,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path168(path);
         }
-		private void SetPathColor_use54362(ColorReceiver colorReceiver)
+		private void SetPathColor_use54362(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path168(colorReceiver);
+			SetPathColor_path168(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -21198,9 +21489,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use54358(MinColor);
-		    SetPathColor_use54360(TimeColor);
-		    SetPathColor_use54362(MaxColor);
+		    SetPathColor_use54358(p, MinColor);
+		    SetPathColor_use54360(p, TimeColor);
+		    SetPathColor_use54362(p, MaxColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -21212,6 +21503,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g54366(PaintAvatarInfo p) //Group: High
         {
@@ -21225,7 +21517,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g54366(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g54366(ColorReceiver colorReceiver)
+		private void SetPathColor_g54366(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21236,24 +21528,25 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.AWP);
+            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path174(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
         }
-		private void SetPathColor_use62128(ColorReceiver colorReceiver)
+		private void SetPathColor_use62128(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
 		}
         //----------------------------------------
 
 			
+				
         //Use (for ColorFrom)
         private void Paint_use62130(PaintAvatarInfo p)
         {
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
-            SetColorFrom(_patientAvatarRenderer, p.TopicInfo.FiO2);
+            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path61670(p);
             _patientAvatarRenderer.FillColor = colorWas;
 
@@ -21263,12 +21556,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
             SetPathData_path61670(path);
         }
 
-		private void SetPathColor_use62130(ColorReceiver colorReceiver)
+		private void SetPathColor_use62130(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			// todo
+			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use62132(PaintAvatarInfo p) //Use: Time
         {
@@ -21278,12 +21572,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path52326(path);
         }
-		private void SetPathColor_use62132(ColorReceiver colorReceiver)
+		private void SetPathColor_use62132(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path52326(colorReceiver);
+			SetPathColor_path52326(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use62134(PaintAvatarInfo p) //Use: Max
         {
@@ -21293,9 +21588,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path174(path);
         }
-		private void SetPathColor_use62134(ColorReceiver colorReceiver)
+		private void SetPathColor_use62134(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path174(colorReceiver);
+			SetPathColor_path174(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -21305,9 +21600,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			ColorReceiver MinColor = new ColorReceiver();
 			ColorReceiver MaxColor = new ColorReceiver();
 			ColorReceiver TimeColor = new ColorReceiver();
-		    SetPathColor_use62130(MinColor);
-		    SetPathColor_use62132(TimeColor);
-		    SetPathColor_use62134(MaxColor);
+		    SetPathColor_use62130(p, MinColor);
+		    SetPathColor_use62132(p, TimeColor);
+		    SetPathColor_use62134(p, MaxColor);
 			_patientAvatarRenderer.FillColor = MinColor.FillColor;
 		    IRenderPath MinPath = new TemporaryRenderPath();
 		    IRenderPath MaxPath = new TemporaryRenderPath();
@@ -21319,6 +21614,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_g62138(PaintAvatarInfo p) //Group: Low
         {
@@ -21332,7 +21628,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g62138(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g62138(ColorReceiver colorReceiver)
+		private void SetPathColor_g62138(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21354,8 +21650,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use27516_f15(ColorReceiver colorReceiver)
+		private void SetPathColor_use27516_f15(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -21377,8 +21674,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_use27516_s15(ColorReceiver colorReceiver)
+		private void SetPathColor_use27516_s15(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ffffff;
 		}
 		//----------------------------------------
@@ -21395,10 +21693,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_use27516(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_use27516(ColorReceiver colorReceiver)
+		private void SetPathColor_use27516(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g1764(PaintAvatarInfo p) //Group: airway
         {
@@ -21415,7 +21714,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1764(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1764(ColorReceiver colorReceiver)
+		private void SetPathColor_g1764(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21444,12 +21743,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path322(ColorReceiver colorReceiver)
+		private void SetPathColor_path322(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x073c2ed;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_g1727(PaintAvatarInfo p) //Group: cold
         {
@@ -21462,7 +21763,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1727(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1727(ColorReceiver colorReceiver)
+		private void SetPathColor_g1727(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21484,12 +21785,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path243(ColorReceiver colorReceiver)
+		private void SetPathColor_path243(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0ff5333;
 		}
 		//----------------------------------------
 
+			
 
         private void Paint_use1722(PaintAvatarInfo p) //Use: 
         {
@@ -21506,12 +21809,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path243(path);
         }
-		private void SetPathColor_use1722(ColorReceiver colorReceiver)
+		private void SetPathColor_use1722(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path243(colorReceiver);
+			SetPathColor_path243(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use1724(PaintAvatarInfo p) //Use: 
         {
@@ -21528,12 +21832,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_path243(path);
         }
-		private void SetPathColor_use1724(ColorReceiver colorReceiver)
+		private void SetPathColor_use1724(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_path243(colorReceiver);
+			SetPathColor_path243(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_g1720(PaintAvatarInfo p) //Group: hot
         {
@@ -21548,7 +21853,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1720(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1720(ColorReceiver colorReceiver)
+		private void SetPathColor_g1720(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -21565,7 +21870,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6083(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6083(ColorReceiver colorReceiver)
+		private void SetPathColor_g6083(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -21589,8 +21894,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path1166(ColorReceiver colorReceiver)
+		private void SetPathColor_path1166(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21608,8 +21914,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path4914(ColorReceiver colorReceiver)
+		private void SetPathColor_path4914(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21627,8 +21934,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path46598(ColorReceiver colorReceiver)
+		private void SetPathColor_path46598(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21646,8 +21954,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path3251(ColorReceiver colorReceiver)
+		private void SetPathColor_path3251(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21669,8 +21978,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path2449(ColorReceiver colorReceiver)
+		private void SetPathColor_path2449(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0e;
 		}
 		//----------------------------------------
@@ -21688,8 +21998,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
         }
 		
-		private void SetPathColor_path52326(ColorReceiver colorReceiver)
+		private void SetPathColor_path52326(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
+		    // todo
 			colorReceiver.FillColor = 0x0;
 		}
 		//----------------------------------------
@@ -21710,7 +22021,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g5603(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g5603(ColorReceiver colorReceiver)
+		private void SetPathColor_g5603(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -21744,7 +22055,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g10882(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g10882(ColorReceiver colorReceiver)
+		private void SetPathColor_g10882(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -21768,7 +22079,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g1952(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g1952(ColorReceiver colorReceiver)
+		private void SetPathColor_g1952(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -21779,6 +22090,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         }
         //----------------------------------------
 
+			
 
         private void Paint_use2088(PaintAvatarInfo p) //Use: main
         {
@@ -21791,12 +22103,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1952(path);
         }
-		private void SetPathColor_use2088(ColorReceiver colorReceiver)
+		private void SetPathColor_use2088(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1952(colorReceiver);
+			SetPathColor_g1952(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6358(PaintAvatarInfo p) //Use: 
         {
@@ -21813,12 +22126,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6358(ColorReceiver colorReceiver)
+		private void SetPathColor_use6358(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6378(PaintAvatarInfo p) //Use: 
         {
@@ -21835,12 +22149,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6378(ColorReceiver colorReceiver)
+		private void SetPathColor_use6378(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6386(PaintAvatarInfo p) //Use: 
         {
@@ -21857,12 +22172,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6386(ColorReceiver colorReceiver)
+		private void SetPathColor_use6386(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6388(PaintAvatarInfo p) //Use: 
         {
@@ -21879,9 +22195,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6388(ColorReceiver colorReceiver)
+		private void SetPathColor_use6388(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -21902,10 +22218,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6376(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6376(ColorReceiver colorReceiver)
+		private void SetPathColor_g6376(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g6284(PaintAvatarInfo p) //Group: rot45
         {
@@ -21919,11 +22236,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6284(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6284(ColorReceiver colorReceiver)
+		private void SetPathColor_g6284(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use2092(PaintAvatarInfo p) //Use: main
         {
@@ -21936,12 +22254,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1952(path);
         }
-		private void SetPathColor_use2092(ColorReceiver colorReceiver)
+		private void SetPathColor_use2092(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1952(colorReceiver);
+			SetPathColor_g1952(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6390(PaintAvatarInfo p) //Use: 
         {
@@ -21958,12 +22277,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6390(ColorReceiver colorReceiver)
+		private void SetPathColor_use6390(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6392(PaintAvatarInfo p) //Use: 
         {
@@ -21980,12 +22300,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6392(ColorReceiver colorReceiver)
+		private void SetPathColor_use6392(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6394(PaintAvatarInfo p) //Use: 
         {
@@ -22002,12 +22323,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6394(ColorReceiver colorReceiver)
+		private void SetPathColor_use6394(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use6396(PaintAvatarInfo p) //Use: 
         {
@@ -22024,9 +22346,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use6396(ColorReceiver colorReceiver)
+		private void SetPathColor_use6396(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -22047,10 +22369,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6398(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6398(ColorReceiver colorReceiver)
+		private void SetPathColor_g6398(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g6287(PaintAvatarInfo p) //Group: rot135
         {
@@ -22064,11 +22387,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g6287(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g6287(ColorReceiver colorReceiver)
+		private void SetPathColor_g6287(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7584(PaintAvatarInfo p) //Use: main
         {
@@ -22078,12 +22402,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g1952(path);
         }
-		private void SetPathColor_use7584(ColorReceiver colorReceiver)
+		private void SetPathColor_use7584(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g1952(colorReceiver);
+			SetPathColor_g1952(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7586(PaintAvatarInfo p) //Use: 
         {
@@ -22100,12 +22425,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use7586(ColorReceiver colorReceiver)
+		private void SetPathColor_use7586(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7588(PaintAvatarInfo p) //Use: 
         {
@@ -22122,12 +22448,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use7588(ColorReceiver colorReceiver)
+		private void SetPathColor_use7588(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7590(PaintAvatarInfo p) //Use: 
         {
@@ -22144,12 +22471,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use7590(ColorReceiver colorReceiver)
+		private void SetPathColor_use7590(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
+			
 
         private void Paint_use7592(PaintAvatarInfo p) //Use: 
         {
@@ -22166,9 +22494,9 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
             SetPathData_g6083(path);
         }
-		private void SetPathColor_use7592(ColorReceiver colorReceiver)
+		private void SetPathColor_use7592(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-			SetPathColor_g6083(colorReceiver);
+			SetPathColor_g6083(p, colorReceiver);
 		}
         //----------------------------------------
 
@@ -22189,10 +22517,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7594(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7594(ColorReceiver colorReceiver)
+		private void SetPathColor_g7594(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
+			
 
         private void Paint_g7596(PaintAvatarInfo p) //Group: rot0
         {
@@ -22206,7 +22535,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_g7596(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_g7596(ColorReceiver colorReceiver)
+		private void SetPathColor_g7596(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
         //----------------------------------------
@@ -22228,7 +22557,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_layer1_0(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_layer1_0(ColorReceiver colorReceiver)
+		private void SetPathColor_layer1_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
@@ -22243,7 +22572,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathData_svg374(IRenderPath path)
 		{ // not usable for groups
 		}
-		private void SetPathColor_svg374(ColorReceiver colorReceiver)
+		private void SetPathColor_svg374(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{ // not usable for groups
 		}
 
