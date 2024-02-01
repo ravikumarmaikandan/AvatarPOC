@@ -44,6 +44,7 @@ namespace Philips.PIC.CommonControls
         private void OnOxygenTrackerScroll(object sender, EventArgs e)
         {
             _lblSpo2.Text = oxygenTracker.Value.ToString();
+            _topicInfo.SetSpO2(oxygenTracker.Value);
         }
 
         private void OnLoad(object sender, EventArgs e)
@@ -51,6 +52,12 @@ namespace Philips.PIC.CommonControls
             _lblRespRate.Text = RRTracker.Value.ToString();
             _lblSpo2.Text = oxygenTracker.Value.ToString();
             lblHeartRateValue.Text = heartRateTracker.Value.ToString();
+        }
+
+        private void OnTidalVolumeTrackerScroll(object sender, EventArgs e)
+        {
+            _lblTidalValue.Text = tidalVolumeTracker.Value.ToString();
+            _topicInfo.SetTidalVolume(tidalVolumeTracker.Value);
         }
     }
 }
