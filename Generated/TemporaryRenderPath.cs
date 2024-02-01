@@ -59,9 +59,9 @@ namespace Philips.PIC.CommonControls
         {
             // todo: better use Math.Cbrt. But that does not exist?
             if (v < 0)
-                return -Math.Pow(1.0 / 3.0, -v);
+                return -Math.Pow(-v, 1.0 / 3.0);
             else
-                return Math.Pow(1.0 / 3.0, v);
+                return Math.Pow(v, 1.0 / 3.0);
         }
 
         private bool approximately(double v, double comp, double epsilon = 1.0E-4F)
@@ -148,7 +148,7 @@ namespace Philips.PIC.CommonControls
             }
 
             double r = Math.Sqrt(-p33);
-            double t1 = 2 * Math.Sqrt(-p3);
+            double t1 = 2.0 * Math.Sqrt(-p3);
             double t = -q / r;
 
             double phi3;
@@ -189,7 +189,7 @@ namespace Philips.PIC.CommonControls
                    t * t * t * p3;
         }
 
-        private float FindYforX(double x, PointF p0, PointF p1, PointF p2, PointF p3 )
+        private float FindYforX(float x, PointF p0, PointF p1, PointF p2, PointF p3 )
         {
             // this will calc "t" values that correspond to "x"
             double[] ts = BezierGetFor(p0.X - x,
@@ -240,7 +240,7 @@ namespace Philips.PIC.CommonControls
                 if (yv > maxY) maxY = yv;
             }
 
-            double x = LinearInterpol(xvalue, minX, maxX);
+            float x = (float)LinearInterpol(xvalue, minX, maxX);
 
             int curve = 0;
             for (curve = 0; curve < curves; curve++)
