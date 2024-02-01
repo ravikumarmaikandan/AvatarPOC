@@ -95,10 +95,10 @@ $ELEMENTS$
 
 
 <template name="pushtransformation">
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix($TRANSFORM$);
 </template>
-<template name="poptransformation">            _patientAvatarRenderer.transformation = transformMatrixWas;</template>
+<template name="poptransformation">            _patientAvatarRenderer.Transformation = transformMatrixWas;</template>
 
 <template name="PaintPush">$nonempty TRANSFORM:pushtransformation$$nonempty fill:pushcolor$$nonempty opacity:pushopacity$</template>
 <template name="PaintPop">$nonempty TRANSFORM:poptransformation$$nonempty fill:popcolor$$nonempty opacity:popopacity$</template>

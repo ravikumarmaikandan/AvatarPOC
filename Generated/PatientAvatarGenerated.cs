@@ -1,5 +1,5 @@
 
-#region Header
+	#region Header
 // © 2024 Koninklijke Philips N.V.  All rights reserved.
 // Reproduction or transmission in whole or in part, in any form or by any means, 
 // electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
@@ -13,8 +13,8 @@
 namespace Philips.PIC.CommonControls
 {
 	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("C__Users_dep05119_Documents_Code_svgcompiler_svgconverter_exe", "1")]
-	public class PaintAvatar : PatientAvatarBase
-	{
+	public class PaintAvatar: PatientAvatarBase
+    {
 
 	
         private void SetPathData_path9(IRenderPath path)
@@ -11666,7 +11666,7 @@ namespace Philips.PIC.CommonControls
 		               96.047410f, 211.857220f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_path1907(IRenderPath path)
@@ -13299,7 +13299,7 @@ namespace Philips.PIC.CommonControls
 		               82.783531f, 205.350180f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_path168(IRenderPath path)
@@ -13327,7 +13327,7 @@ namespace Philips.PIC.CommonControls
 		               91.831583f, 205.620850f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_path165(IRenderPath path)
@@ -13355,7 +13355,7 @@ namespace Philips.PIC.CommonControls
 		               96.572916f, 205.620820f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_path61670(IRenderPath path)
@@ -13383,7 +13383,7 @@ namespace Philips.PIC.CommonControls
 		               80.891014f, 207.363850f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_use27516_f15(IRenderPath path)
@@ -13412,7 +13412,7 @@ namespace Philips.PIC.CommonControls
 		               82.783478f, 205.350180f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_use27516_s15(IRenderPath path)
@@ -13470,7 +13470,7 @@ namespace Philips.PIC.CommonControls
             path.Line(82.783531f, 205.482472f);
             path.Close();
 
-		}
+        }
 
 	
         private void SetPathData_path322(IRenderPath path)
@@ -14334,14 +14334,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use3210(PaintAvatarInfo p)
         {
             
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.996159,0,0,1,0.317619,0.133003);
 
 		    int colorWas = _patientAvatarRenderer.FillColor;
             SetShadowColorFrom(_patientAvatarRenderer, p.TopicInfo.Oxygen);
             Paint_path186011_3_6(p);
             _patientAvatarRenderer.FillColor = colorWas;
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		private void SetPathColor_use3210(ColorReceiver colorReceiver)
 		{
@@ -14354,12 +14354,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use3212(PaintAvatarInfo p) //Use: Max
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0.132153,0.132613);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_path186011_3_6(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use3212(IRenderPath path)
@@ -14726,10 +14726,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use12806(PaintAvatarInfo p) //Use: face
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.921918,0.214646,-0.259607,0.936207,58.0541,-6.59482);
             Paint_g1886_4(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use12806(IRenderPath path)
         {
             SetPathData_g1886_4(path);
@@ -14744,12 +14744,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use30934_62(PaintAvatarInfo p) //Use: airway
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.999756,0.0220793,-0.0220793,0.999756,4.56604,-1.70667);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g1764(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use30934_62(IRenderPath path)
@@ -16484,12 +16484,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use8662(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.8138,0.03175);
 		    Paint_g8696(p);// closed
 		    Paint_g8708(p);// open
 		    Paint_g8718(p);// unknown
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_use8662(IRenderPath path)
 		{ // not usable for groups
@@ -16504,12 +16504,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use3014_9(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.00001,0,0,0.999973,-0.000475101,0.00503745);
 		    Paint_g8632(p);// mouth
 		    Paint_g8660(p);// left eye
 		    Paint_use8662(p);// left eye
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_use3014_9(IRenderPath path)
 		{ // not usable for groups
@@ -16560,7 +16560,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
 		//----------------------------------------
 
-
+	
 
         private void Paint_use3096_s3(PaintAvatarInfo p) //Path: stroke of line
         {
@@ -16657,7 +16657,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path2003_7(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -16696,7 +16696,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path62_6(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -16782,7 +16782,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path78_8(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -16984,10 +16984,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use1829(PaintAvatarInfo p) //Use: right eye
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.8138,0.03175);
             Paint_g1785_3(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use1829(IRenderPath path)
         {
             SetPathData_g1785_3(path);
@@ -17181,10 +17181,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use5676_2(PaintAvatarInfo p) //Use: Time
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,-1,0,503.179);
             Paint_path2449(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use5676_2(IRenderPath path)
         {
             SetPathData_path2449(path);
@@ -17404,10 +17404,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use5676_4_3(PaintAvatarInfo p) //Use: Time
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,-1,0,503.179);
             Paint_path2449(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use5676_4_3(IRenderPath path)
         {
             SetPathData_path2449(path);
@@ -17866,8 +17866,8 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    SetPathData_use6257(MaxPath);
 		    SetPathData_use6871(TimePath);
 			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-		}
-		//----------------------------------------
+        }
+        //----------------------------------------
 
 
         private void Paint_g6272(PaintAvatarInfo p) //Group: safe
@@ -18256,14 +18256,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g1777(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,5.41221);
 		    Paint_g7934(p);// 
 		    Paint_use7941(p);// safe
 		    Paint_use7943(p);// low
 		    Paint_use7945(p);// high
 		    Paint_use7919(p);// line
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g1777(IRenderPath path)
 		{ // not usable for groups
@@ -18358,10 +18358,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g13101(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-0.230599,0.201774);
 		    Paint_path12973(p);// 
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g13101(IRenderPath path)
 		{ // not usable for groups
@@ -18374,10 +18374,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13105(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,3.51049,-5.26916);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13105(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18392,10 +18392,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13112(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,6.1406,-2.25124);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13112(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18410,10 +18410,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13826(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,7.89802,-4.68405);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13826(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18428,10 +18428,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13828(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,9.62824,-3.52206);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13828(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18446,10 +18446,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13830(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-1.46818,0.868928);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13830(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18464,10 +18464,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13832(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,3.79386,-2.2933);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13832(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18482,10 +18482,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13834(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,1.08065,-4.38972);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13834(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18500,10 +18500,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13836(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,7.71966,-1.3689);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13836(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18518,10 +18518,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13838(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,1.29466,1.08729);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13838(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18536,10 +18536,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13840(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.6293,1.46993);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13840(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18554,10 +18554,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13842(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.0517,-0.530081);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13842(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18572,10 +18572,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13844(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.1235,2.52306);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13844(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18590,10 +18590,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13846(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.8099,3.59216);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13846(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18608,10 +18608,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13848(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.8723,5.70559);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13848(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18626,10 +18626,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13850(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.3271,5.33617);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13850(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18644,10 +18644,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13852(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.8174,10.7139);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13852(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18662,10 +18662,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13854(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.635,12.4148);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13854(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18680,10 +18680,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13856(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,13.3214,11.1211);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13856(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18698,10 +18698,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13858(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.998,14.0421);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13858(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18716,10 +18716,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13860(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.8963,16.1791);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13860(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18734,10 +18734,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22156(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.5148,9.73314);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22156(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18752,10 +18752,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22158(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,13.6329,6.96543);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22158(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18770,10 +18770,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22160(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.8189,14.2343);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22160(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18788,10 +18788,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22162(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.2698,12.1662);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22162(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18806,10 +18806,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22164(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.085,7.25341);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22164(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18824,10 +18824,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22166(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,13.3078,3.89856);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22166(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18842,10 +18842,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22168(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.9452,1.02646);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22168(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18860,10 +18860,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22170(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,9.39151,0.259705);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22170(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18878,10 +18878,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22174(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.1264,-1.81597);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22174(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18896,10 +18896,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22176(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,2.00022,-1.478);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22176(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18914,10 +18914,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22178(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-1.06968,-1.86232);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22178(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18932,10 +18932,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22180(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,2.49721,-3.52348);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22180(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18950,10 +18950,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22182(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,5.70159,-5.25897);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22182(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18968,10 +18968,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22186(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,4.78745,-3.78703);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22186(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -18986,10 +18986,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22188(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,9.47798,-1.77245);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22188(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19004,10 +19004,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22190(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0.520133,-2.69799);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22190(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19022,10 +19022,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22192(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.1563,8.85342);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22192(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19040,10 +19040,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22194(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.6647,8.19855);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22194(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19058,10 +19058,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use22196(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,7.57554,-3.11281);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use22196(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19076,10 +19076,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use23732(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-0.0462159,-0.734105);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use23732(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19148,10 +19148,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13866(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,4.3858,-4.20197);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13866(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19166,10 +19166,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13876(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,10.2407,-2.05551);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13876(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19184,10 +19184,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use13878(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0.155601,-0.453572);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use13878(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19219,10 +19219,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14386(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,5.62128,-3.33337);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14386(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19237,10 +19237,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14390(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,8.59894,-3.77684);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14390(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19255,10 +19255,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14392(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-0.730377,-1.26886);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14392(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19273,10 +19273,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14394(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,2.65245,-4.40286);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14394(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19291,10 +19291,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14398(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,8.9159,-1.1383);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14398(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19309,10 +19309,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14400(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,1.9367,-1.92929);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14400(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19327,10 +19327,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14402(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.3223,-0.201419);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14402(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19345,10 +19345,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14406(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,12.7146,1.89121);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14406(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19363,10 +19363,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14408(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,11.5896,4.37954);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14408(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19381,10 +19381,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use14412(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,13.052,6.83294);
             Paint_g13101(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use14412(IRenderPath path)
         {
             SetPathData_g13101(path);
@@ -19652,14 +19652,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g1761(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,5.41221);
 		    Paint_g3989(p);// Helper
 		    Paint_g4140(p);// Safe
 		    Paint_g4146(p);// Low
 		    Paint_g4152(p);// High
 		    Paint_use3991(p);// Line
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g1761(IRenderPath path)
 		{ // not usable for groups
@@ -19755,12 +19755,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use3253(PaintAvatarInfo p) //Use: Time
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,-5.41221);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_path3251(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use3253(IRenderPath path)
@@ -19852,12 +19852,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use2106(PaintAvatarInfo p) //Use: Time
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,-5.41221);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_path3251(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use2106(IRenderPath path)
@@ -20269,7 +20269,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_path195_f12(PaintAvatarInfo p) //Path: filling of ST3_zero
         {
             
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.264583,0,0,0.264583,0,156.121);
 
             int colorWas = _patientAvatarRenderer.FillColor;
@@ -20281,7 +20281,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
              _patientAvatarRenderer.FillColor = colorWas;
 
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
 		private void SetPathColor_path195_f12(ColorReceiver colorReceiver)
@@ -20290,7 +20290,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
 		//----------------------------------------
 
-
+	
 
         private void Paint_path195_s12(PaintAvatarInfo p) //Path: stroke of ST3_zero
         {
@@ -20302,7 +20302,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path195_s12(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -20336,7 +20336,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_path198_f13(PaintAvatarInfo p) //Path: filling of ST2_zero
         {
             
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.264583,0,0,0.264583,0,156.121);
 
             int colorWas = _patientAvatarRenderer.FillColor;
@@ -20348,7 +20348,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
              _patientAvatarRenderer.FillColor = colorWas;
 
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
 		private void SetPathColor_path198_f13(ColorReceiver colorReceiver)
@@ -20369,7 +20369,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path198_s13(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -20403,7 +20403,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_path201_f14(PaintAvatarInfo p) //Path: filling of ST1_zero
         {
             
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.264583,0,0,0.264583,0,156.121);
 
             int colorWas = _patientAvatarRenderer.FillColor;
@@ -20415,7 +20415,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
              _patientAvatarRenderer.FillColor = colorWas;
 
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
         }
 		
 		private void SetPathColor_path201_f14(ColorReceiver colorReceiver)
@@ -20424,7 +20424,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
 		//----------------------------------------
 
-
+	
 
         private void Paint_path201_s14(PaintAvatarInfo p) //Path: stroke of ST1_zero
         {
@@ -20436,7 +20436,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathData_path201_s14(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
 
-			_patientAvatarRenderer.FillColor = colorWas;
+             _patientAvatarRenderer.FillColor = colorWas;
 
 
         }
@@ -20782,10 +20782,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use2160(PaintAvatarInfo p) //Use: Time
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(8.31868,0,0,8.31868,-1023.53,-2386.28);
             Paint_path46598(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use2160(IRenderPath path)
         {
             SetPathData_path46598(path);
@@ -20866,11 +20866,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g1753(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,5.41221);
 		    Paint_g1873(p);// heart
 		    Paint_g1745(p);// lightning, st
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g1753(IRenderPath path)
 		{ // not usable for groups
@@ -21360,7 +21360,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		}
 		//----------------------------------------
 
-
+	
 
         private void Paint_use27516_s15(PaintAvatarInfo p) //Path: stroke of line
         {
@@ -21494,12 +21494,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use1722(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,3.12208,0);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xff5333;
             Paint_path243(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use1722(IRenderPath path)
@@ -21516,12 +21516,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use1724(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,6.23887,0);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xff5333;
             Paint_path243(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use1724(IRenderPath path)
@@ -21783,10 +21783,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use2088(PaintAvatarInfo p) //Use: main
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(0.95,0.95,-0.95,0.95,211.735,-59.7288);
             Paint_g1952(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use2088(IRenderPath path)
         {
             SetPathData_g1952(path);
@@ -21801,12 +21801,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6358(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,-34.8364,-68.5652);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6358(IRenderPath path)
@@ -21823,12 +21823,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6378(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,-36.1639,-38.7685);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6378(IRenderPath path)
@@ -21845,12 +21845,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6386(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,14.1303,8.88841);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6386(IRenderPath path)
@@ -21867,12 +21867,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6388(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,52.8176,-33.4832);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6388(IRenderPath path)
@@ -21891,13 +21891,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g6376(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-11.7087,15.7701);
 		    Paint_use6358(p);// 
 		    Paint_use6378(p);// 
 		    Paint_use6386(p);// 
 		    Paint_use6388(p);// 
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g6376(IRenderPath path)
 		{ // not usable for groups
@@ -21928,10 +21928,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use2092(PaintAvatarInfo p) //Use: main
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(-0.95,0.95,-0.95,-0.95,375.735,363.733);
             Paint_g1952(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
 		private void SetPathData_use2092(IRenderPath path)
         {
             SetPathData_g1952(path);
@@ -21946,12 +21946,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6390(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,8.5681,-67.2847);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6390(IRenderPath path)
@@ -21968,12 +21968,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6392(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,-30.7477,-5.50834);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6392(IRenderPath path)
@@ -21990,12 +21990,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6394(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,17.7642,39.1292);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6394(IRenderPath path)
@@ -22012,12 +22012,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6396(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,46.2387,-54.9658);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use6396(IRenderPath path)
@@ -22036,13 +22036,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g6398(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-8.55262,-8.55263);
 		    Paint_use6390(p);// 
 		    Paint_use6392(p);// 
 		    Paint_use6394(p);// 
 		    Paint_use6396(p);// 
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g6398(IRenderPath path)
 		{ // not usable for groups
@@ -22088,12 +22088,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use7586(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,-29.8455,-29.9236);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use7586(IRenderPath path)
@@ -22110,12 +22110,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use7588(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,-15.4916,-5.57534);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use7588(IRenderPath path)
@@ -22132,12 +22132,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use7590(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,43.631,-13.8669);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use7590(IRenderPath path)
@@ -22154,12 +22154,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use7592(PaintAvatarInfo p) //Use: 
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1.414,0,0,1.414,41.35,-61.6629);
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
             Paint_g6083(p);
-            _patientAvatarRenderer.transformation = transformMatrixWas;
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
              _patientAvatarRenderer.FillColor = colorWas;
         }
 		private void SetPathData_use7592(IRenderPath path)
@@ -22178,13 +22178,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_g7594(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,-11.7087,15.7701);
 		    Paint_use7586(p);// 
 		    Paint_use7588(p);// 
 		    Paint_use7590(p);// 
 		    Paint_use7592(p);// 
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_g7594(IRenderPath path)
 		{ // not usable for groups
@@ -22217,13 +22217,13 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_layer1_0(PaintAvatarInfo p)
         {
 
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.transformation;
+	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,-161.533);
 		    Paint_g2086(p);// helper
 		    Paint_g6284(p);// rot45
 		    Paint_g6287(p);// rot135
 		    Paint_g7596(p);// rot0
-            _patientAvatarRenderer.transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
         //----------------------------------------
 		private void SetPathData_layer1_0(IRenderPath path)
 		{ // not usable for groups
@@ -22232,7 +22232,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 
-
+			
 
         //Group: 
         private void Paint_svg374(PaintAvatarInfo p)
@@ -22247,7 +22247,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 
-
+		 
 
         public void PaintSVG(PaintAvatarInfo p)
         {
