@@ -26549,7 +26549,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    Paint_g30932(p);// AwpHelper
 		    Paint_g6075(p);// tempHelper
 		    Paint_g5603(p);// Timings
-		    //Paint_g10882(p);// co2
+		    Paint_g10882(p);// co2
         }
         //----------------------------------------
 		private void SetPathData_g1952(IRenderPath path)
