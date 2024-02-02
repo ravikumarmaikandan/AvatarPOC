@@ -6310,7 +6310,8 @@
                id="g26134"
                inkscape:label="Helper"
                style="display:none"
-               onload="">
+               onload="AlwaysHide()"
+               sodipodi:insensitive="true">
               <path
                  id="path174"
                  style="display:inline;opacity:1;vector-effect:none;fill-opacity:1"

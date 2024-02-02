@@ -245,7 +245,7 @@ $recursive:PaintPop$            }
         {
 		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
 		    {
-$recursive:PaintPush$$paintlist$
+$recursive:PaintPush$            Paint_$token:LINK$(p);
 $recursive:PaintPop$            }
         }
         //----------------------------------------
