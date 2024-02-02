@@ -25,6 +25,8 @@ namespace Philips.PIC.CommonControls
 
 		public void Fill(PaintAvatarInfo paintAvatarInfo, IRenderPath renderPath)
 		{
+			if (FillColor == -1) return;
+
 			paintAvatarInfo.PaintEventArgs.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 			paintAvatarInfo.PaintEventArgs.Graphics.CompositingQuality = CompositingQuality.HighQuality;
 			var red = FillColor / 0x10000;
@@ -81,7 +83,7 @@ namespace Philips.PIC.CommonControls
 			Fill(paintAvatarInfo, tempRenderPath);
 		}
 
-		public int FillColor { get; set; } = 0;
+		public int FillColor { get; set; } = -1;
 		public int Opacity { get; set; } = 255;
 
 		public TransformMatrix Transformation { get; set; } = new TransformMatrix();
