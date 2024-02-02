@@ -375,7 +375,7 @@ namespace Philips.PIC.CommonControls
             _patientAvatarRenderer.Transformation = m;
         }
 
-        protected readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
+        internal readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 
     }
 }
