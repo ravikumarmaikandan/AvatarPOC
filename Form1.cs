@@ -18,6 +18,19 @@ namespace Philips.PIC.CommonControls
         {
             base.OnPaint(e);
             PaintAvatarInfo avatarInfo = new PaintAvatarInfo() { PaintEventArgs = e, TopicInfo = _topicInfo };
+
+            float scaleFactorX = (ClientSize.Width-280) / 150.0f;
+            float scaleFactorY = ClientSize.Height / 150.0f;
+
+            if (scaleFactorX < 0.01f) scaleFactorX = 0.01f;
+            if (scaleFactorY < 0.01f) scaleFactorY = 0.01f;
+
+            // use the smaller one, so it fits
+            float scaleFactor = scaleFactorX;
+            if (scaleFactorY < scaleFactor) scaleFactor = scaleFactorY;
+
+            _paintAvatar.SetInitialMatrix(scaleFactor, 0.0f, 0.0f, scaleFactor, 0.0f, 0.0f);
+
             _paintAvatar.PaintSVG(avatarInfo);
         }
 

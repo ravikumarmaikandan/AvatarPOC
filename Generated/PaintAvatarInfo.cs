@@ -380,6 +380,19 @@ namespace Philips.PIC.CommonControls
             _patientAvatarRenderer.Transformation = m;
         }
 
+        public void SetInitialMatrix(float a, float b, float c, float d, float e, float f)
+        {
+            _patientAvatarRenderer.Transformation = new TransformMatrix
+            {
+                A = a,
+                B = b,
+                C = c,
+                D = d,
+                E = e,
+                F = f
+            };
+        }
+
         protected readonly PatientAvatarRenderer _patientAvatarRenderer = new PatientAvatarRenderer();
 
     }

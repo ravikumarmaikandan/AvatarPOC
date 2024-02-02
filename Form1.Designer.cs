@@ -61,11 +61,12 @@
             // heartRateTracker
             // 
             this.heartRateTracker.LargeChange = 10;
-            this.heartRateTracker.Location = new System.Drawing.Point(6, 75);
+            this.heartRateTracker.Location = new System.Drawing.Point(5, 60);
+            this.heartRateTracker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.heartRateTracker.Maximum = 180;
             this.heartRateTracker.Minimum = 30;
             this.heartRateTracker.Name = "heartRateTracker";
-            this.heartRateTracker.Size = new System.Drawing.Size(395, 69);
+            this.heartRateTracker.Size = new System.Drawing.Size(351, 56);
             this.heartRateTracker.TabIndex = 0;
             this.heartRateTracker.TickFrequency = 10;
             this.heartRateTracker.Value = 80;
@@ -74,10 +75,11 @@
             // RRTracker
             // 
             this.RRTracker.LargeChange = 10;
-            this.RRTracker.Location = new System.Drawing.Point(19, 65);
+            this.RRTracker.Location = new System.Drawing.Point(17, 52);
+            this.RRTracker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RRTracker.Maximum = 60;
             this.RRTracker.Name = "RRTracker";
-            this.RRTracker.Size = new System.Drawing.Size(327, 69);
+            this.RRTracker.Size = new System.Drawing.Size(291, 56);
             this.RRTracker.TabIndex = 1;
             this.RRTracker.TickFrequency = 10;
             this.RRTracker.Value = 10;
@@ -85,11 +87,12 @@
             // 
             // tidalVolumeTracker
             // 
-            this.tidalVolumeTracker.Location = new System.Drawing.Point(6, 74);
+            this.tidalVolumeTracker.Location = new System.Drawing.Point(5, 59);
+            this.tidalVolumeTracker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tidalVolumeTracker.Maximum = 25;
             this.tidalVolumeTracker.Minimum = 7;
             this.tidalVolumeTracker.Name = "tidalVolumeTracker";
-            this.tidalVolumeTracker.Size = new System.Drawing.Size(395, 69);
+            this.tidalVolumeTracker.Size = new System.Drawing.Size(351, 56);
             this.tidalVolumeTracker.TabIndex = 2;
             this.tidalVolumeTracker.TickFrequency = 10;
             this.tidalVolumeTracker.Value = 10;
@@ -97,11 +100,13 @@
             // 
             // oxygenTracker
             // 
+            this.oxygenTracker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.oxygenTracker.LargeChange = 10;
-            this.oxygenTracker.Location = new System.Drawing.Point(19, 60);
+            this.oxygenTracker.Location = new System.Drawing.Point(17, 48);
+            this.oxygenTracker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.oxygenTracker.Maximum = 100;
             this.oxygenTracker.Name = "oxygenTracker";
-            this.oxygenTracker.Size = new System.Drawing.Size(395, 69);
+            this.oxygenTracker.Size = new System.Drawing.Size(351, 56);
             this.oxygenTracker.TabIndex = 3;
             this.oxygenTracker.TickFrequency = 10;
             this.oxygenTracker.Value = 96;
@@ -109,30 +114,36 @@
             // 
             // lblHeartRateValue
             // 
-            this.lblHeartRateValue.Location = new System.Drawing.Point(35, 42);
+            this.lblHeartRateValue.Location = new System.Drawing.Point(31, 34);
             this.lblHeartRateValue.Name = "lblHeartRateValue";
-            this.lblHeartRateValue.Size = new System.Drawing.Size(93, 30);
+            this.lblHeartRateValue.Size = new System.Drawing.Size(83, 24);
             this.lblHeartRateValue.TabIndex = 5;
             this.lblHeartRateValue.Text = "HR";
             // 
             // _gbxHeartRate
             // 
+            this._gbxHeartRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxHeartRate.Controls.Add(this.heartRateTracker);
             this._gbxHeartRate.Controls.Add(this.lblHeartRateValue);
-            this._gbxHeartRate.Location = new System.Drawing.Point(393, 12);
+            this._gbxHeartRate.Location = new System.Drawing.Point(349, 10);
+            this._gbxHeartRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxHeartRate.Name = "_gbxHeartRate";
-            this._gbxHeartRate.Size = new System.Drawing.Size(408, 150);
+            this._gbxHeartRate.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this._gbxHeartRate.Size = new System.Drawing.Size(363, 120);
             this._gbxHeartRate.TabIndex = 6;
             this._gbxHeartRate.TabStop = false;
             this._gbxHeartRate.Text = "Heart Rate";
             // 
             // _gbxRespRate
             // 
+            this._gbxRespRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxRespRate.Controls.Add(this._lblRespRate);
             this._gbxRespRate.Controls.Add(this.RRTracker);
-            this._gbxRespRate.Location = new System.Drawing.Point(393, 180);
+            this._gbxRespRate.Location = new System.Drawing.Point(349, 144);
+            this._gbxRespRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxRespRate.Name = "_gbxRespRate";
-            this._gbxRespRate.Size = new System.Drawing.Size(408, 134);
+            this._gbxRespRate.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this._gbxRespRate.Size = new System.Drawing.Size(363, 107);
             this._gbxRespRate.TabIndex = 7;
             this._gbxRespRate.TabStop = false;
             this._gbxRespRate.Text = "Resp Rate";
@@ -140,19 +151,22 @@
             // _lblRespRate
             // 
             this._lblRespRate.AutoSize = true;
-            this._lblRespRate.Location = new System.Drawing.Point(31, 26);
+            this._lblRespRate.Location = new System.Drawing.Point(28, 21);
             this._lblRespRate.Name = "_lblRespRate";
-            this._lblRespRate.Size = new System.Drawing.Size(33, 20);
+            this._lblRespRate.Size = new System.Drawing.Size(27, 16);
             this._lblRespRate.TabIndex = 2;
             this._lblRespRate.Text = "RR";
             // 
             // _gbxSPO2
             // 
+            this._gbxSPO2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxSPO2.Controls.Add(this._lblSpo2);
             this._gbxSPO2.Controls.Add(this.oxygenTracker);
-            this._gbxSPO2.Location = new System.Drawing.Point(393, 334);
+            this._gbxSPO2.Location = new System.Drawing.Point(349, 267);
+            this._gbxSPO2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxSPO2.Name = "_gbxSPO2";
-            this._gbxSPO2.Size = new System.Drawing.Size(408, 135);
+            this._gbxSPO2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this._gbxSPO2.Size = new System.Drawing.Size(363, 108);
             this._gbxSPO2.TabIndex = 8;
             this._gbxSPO2.TabStop = false;
             this._gbxSPO2.Text = "SPo2";
@@ -160,19 +174,22 @@
             // _lblSpo2
             // 
             this._lblSpo2.AutoSize = true;
-            this._lblSpo2.Location = new System.Drawing.Point(35, 26);
+            this._lblSpo2.Location = new System.Drawing.Point(31, 21);
             this._lblSpo2.Name = "_lblSpo2";
-            this._lblSpo2.Size = new System.Drawing.Size(51, 20);
+            this._lblSpo2.Size = new System.Drawing.Size(42, 16);
             this._lblSpo2.TabIndex = 4;
             this._lblSpo2.Text = "SPO2";
             // 
             // _gbxTidalValue
             // 
+            this._gbxTidalValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxTidalValue.Controls.Add(this._lblTidalValue);
             this._gbxTidalValue.Controls.Add(this.tidalVolumeTracker);
-            this._gbxTidalValue.Location = new System.Drawing.Point(393, 498);
+            this._gbxTidalValue.Location = new System.Drawing.Point(349, 398);
+            this._gbxTidalValue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxTidalValue.Name = "_gbxTidalValue";
-            this._gbxTidalValue.Size = new System.Drawing.Size(414, 162);
+            this._gbxTidalValue.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this._gbxTidalValue.Size = new System.Drawing.Size(368, 130);
             this._gbxTidalValue.TabIndex = 9;
             this._gbxTidalValue.TabStop = false;
             this._gbxTidalValue.Text = "Tidal";
@@ -180,22 +197,23 @@
             // _lblTidalValue
             // 
             this._lblTidalValue.AutoSize = true;
-            this._lblTidalValue.Location = new System.Drawing.Point(39, 36);
+            this._lblTidalValue.Location = new System.Drawing.Point(35, 29);
             this._lblTidalValue.Name = "_lblTidalValue";
-            this._lblTidalValue.Size = new System.Drawing.Size(42, 20);
+            this._lblTidalValue.Size = new System.Drawing.Size(38, 16);
             this._lblTidalValue.TabIndex = 3;
             this._lblTidalValue.Text = "Tidal";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 688);
+            this.ClientSize = new System.Drawing.Size(724, 550);
             this.Controls.Add(this._gbxTidalValue);
             this.Controls.Add(this._gbxSPO2);
             this.Controls.Add(this._gbxRespRate);
             this.Controls.Add(this._gbxHeartRate);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.OnLoad);
