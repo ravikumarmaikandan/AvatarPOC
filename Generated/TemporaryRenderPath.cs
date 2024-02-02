@@ -64,7 +64,7 @@ namespace Philips.PIC.CommonControls
                 return Math.Pow(v, 1.0 / 3.0);
         }
 
-        private bool approximately(double v, double comp, double epsilon = 1.0E-4F)
+        private bool Approximately(double v, double comp, double epsilon = 1.0E-4F)
         {
             double diff = v - comp;
             return (-epsilon < diff) && (diff < epsilon);
@@ -73,8 +73,8 @@ namespace Philips.PIC.CommonControls
         private double[] SolvePolynom(double a, double b)
         {
             // 0 = a*x + b
-            if (approximately(a, 0))
-                return new double[0];
+            if (Approximately(a, 0))
+                return Array.Empty<double>();
 
             return new double[1] { -b / a };
         }
@@ -83,13 +83,13 @@ namespace Philips.PIC.CommonControls
         private double[] SolvePolynom(double a, double b, double c)
         {
             // 0 = a*x² + bx + c
-            if (approximately(a, 0.0f))
+            if (Approximately(a, 0.0f))
                 return SolvePolynom(b, c);
 
             double s = b * b - 4 * a * c;
 
             if (s < 0.0)
-                return new double[0];
+                return Array.Empty<double>();
 
             double sq = Math.Sqrt(s);
 
@@ -99,19 +99,19 @@ namespace Philips.PIC.CommonControls
         }
         // ---------------------------------------------------------------------------
 
-        private double [] SolvePolynom(double a, double b, double c, double d)
+        private double[] SolvePolynom(double a, double b, double c, double d)
         {
             // 0 = a*x³ + bx² + cx + d
-            if (approximately(a, 0.0f))
+            if (Approximately(a, 0.0f))
                 return SolvePolynom(b, c, d);
 
-            if (approximately(d, 0.0))
+            if (Approximately(d, 0.0))
             {
                 var tmp = SolvePolynom(a, b, c);
                 // 0.0 is also a solution in this case, so add that to the result
                 // todo: How do I do this in C#? tmp.Append(0.0);
 
-                double[] result= new double[tmp.Length + 1];
+                double[] result = new double[tmp.Length + 1];
                 for (int i = 0; i < tmp.Length; i++)
                     result[i] = tmp[i];
                 result[tmp.Length] = 0.0;
@@ -127,9 +127,9 @@ namespace Philips.PIC.CommonControls
             double a3 = ba / 3;
             double p = ca - ba * a3;
             double p3 = p / 3;
-            double p33 = p3* p3 *p3;
-            double q = a3* a3 *a3 - a3 * ca / 2 + da / 2;
-            double discr = q* q +p33;
+            double p33 = p3 * p3 * p3;
+            double q = a3 * a3 * a3 - a3 * ca / 2 + da / 2;
+            double discr = q * q + p33;
 
             if (discr > 0) // 1 solution
             {
@@ -138,7 +138,7 @@ namespace Philips.PIC.CommonControls
                 double v1 = Cbrt(q + sd);
                 return new double[1] { u1 - v1 - a3 };
             }
-            else if (approximately(discr, 0.0f)) // 2 solutions
+            else if (Approximately(discr, 0.0f)) // 2 solutions
             {
                 double u1 = -Cbrt(q);
 
@@ -189,7 +189,7 @@ namespace Philips.PIC.CommonControls
                    t * t * t * p3;
         }
 
-        private float FindYforX(float x, PointF p0, PointF p1, PointF p2, PointF p3 )
+        private float FindYforX(float x, PointF p0, PointF p1, PointF p2, PointF p3)
         {
             // this will calc "t" values that correspond to "x"
             double[] ts = BezierGetFor(p0.X - x,

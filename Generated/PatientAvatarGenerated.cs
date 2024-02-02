@@ -13014,8 +13014,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3267(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13038,8 +13037,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3269(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13062,8 +13060,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_circle3271(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13086,8 +13083,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_circle3273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13110,8 +13106,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3281(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13134,8 +13129,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect1399_3_7_4_54_07_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -13158,8 +13152,7 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect2752(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19252,8 +19245,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19272,8 +19264,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19292,8 +19283,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path10268(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19312,8 +19302,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path11016(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19332,8 +19321,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path5695(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19352,8 +19340,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path186011_3_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19376,8 +19363,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use5182(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19867,8 +19853,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4873(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19887,8 +19872,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1995(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19911,8 +19895,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path20074(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19931,8 +19914,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4902(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19951,8 +19933,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path11125(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19971,8 +19952,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path9777(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -19991,8 +19971,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path9775(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20471,8 +20450,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path819(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20491,8 +20469,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path821(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20511,8 +20488,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path823(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20531,8 +20507,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path825(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20551,8 +20526,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use845_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20571,8 +20545,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use847_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20609,8 +20582,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8630(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20649,8 +20621,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8634(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20693,8 +20664,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8638(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20717,8 +20687,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8640(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20741,8 +20710,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8642(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20765,8 +20733,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8644(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20827,8 +20794,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8650(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20851,8 +20817,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8652(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20875,8 +20840,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8654(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20899,8 +20863,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8656(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -20963,8 +20926,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8694(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21007,8 +20969,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8698(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21031,8 +20992,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8700(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21055,8 +21015,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8702(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21079,8 +21038,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8704(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21141,8 +21099,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8710(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21165,8 +21122,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8712(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21189,8 +21145,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8714(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21213,8 +21168,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8716(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21378,8 +21332,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path2003_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21418,8 +21371,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path62_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21462,8 +21414,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path74_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21486,8 +21437,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path76_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21510,8 +21460,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path78_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21534,8 +21483,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path80_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21596,8 +21544,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4287_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21620,8 +21567,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4289_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21644,8 +21590,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4387_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21668,8 +21613,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4389_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21772,8 +21716,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path105(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21792,8 +21735,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path99(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21816,8 +21758,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1097(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -21836,8 +21777,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path7845(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22247,8 +22187,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use7671(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22309,8 +22248,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path5273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22329,8 +22267,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path5277(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22349,8 +22286,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path6201(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22369,8 +22305,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path7273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22389,8 +22324,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path26136(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22815,8 +22749,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path123(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22835,8 +22768,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path126(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22855,8 +22787,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path7917(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22959,8 +22890,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path180(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22979,8 +22909,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1050(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -22999,8 +22928,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1907(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -23023,8 +22951,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path12973(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24426,8 +24353,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path192(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24446,8 +24372,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path2417(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24689,8 +24614,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path14970(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24713,8 +24637,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path14972(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24777,8 +24700,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3652_f0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24801,8 +24723,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3652_s0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24858,8 +24779,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3582_f1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24882,8 +24802,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3582_s1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24924,8 +24843,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3626_f2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24948,8 +24866,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3626_s2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -24990,8 +24907,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3650_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25014,8 +24930,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3650_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25059,8 +24974,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path195_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25083,8 +24997,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path195_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25128,8 +25041,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path198_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25152,8 +25064,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path198_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25197,8 +25108,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path201_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25221,8 +25131,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path201_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25300,8 +25209,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path26748(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25324,8 +25232,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25475(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25348,8 +25255,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25500(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25372,8 +25278,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25502(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25396,8 +25301,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25504(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25420,8 +25324,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25506(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25444,8 +25347,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path27072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25468,8 +25370,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path27852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25492,8 +25393,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path28596(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25516,8 +25416,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path30398(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25540,8 +25439,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path32072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25564,8 +25462,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path33110(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25706,8 +25603,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path174(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25726,8 +25622,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path171(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25746,8 +25641,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path168(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25766,8 +25660,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path165(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -25786,8 +25679,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path61670(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26166,8 +26058,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use27516(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26218,8 +26109,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path322(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26263,8 +26153,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path243(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26377,8 +26266,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1166(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26397,8 +26285,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4914(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26417,8 +26304,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path46598(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26437,8 +26323,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3251(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26461,8 +26346,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path2449(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -26481,8 +26365,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path52326(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -27056,8 +26939,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_upperLeft(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -27080,8 +26962,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_rect45026(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 
@@ -27120,8 +27001,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_rect1546(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-		    // todo
-			
+				
 		}
 		//----------------------------------------
 

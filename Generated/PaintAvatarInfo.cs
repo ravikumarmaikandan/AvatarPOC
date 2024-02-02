@@ -48,7 +48,9 @@ namespace Philips.PIC.CommonControls
              * 
              * They were defined by the designers, but are not placed into the image file
              * 
-             * The order of lines is kept to be identical to the monitor code
+             * For maintenance reasons:
+             * Keep the order of lines, comments and values:
+             * this is be as identical as possible to the monitor code.
              */
 
             PulseRateHeart.RateStopped = 0.0f;
@@ -119,7 +121,7 @@ namespace Philips.PIC.CommonControls
         public RateProviderTopic RespRate { get; } = new RateProviderTopic();
 
         public StateProviderTopic ABP { get; } = new StateProviderTopic();
-        public StateProviderTopic CVP { get; } = new StateProviderTopic();
+        public StateProviderTopic CVP { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
         public StateProviderTopic Oxygen { get; } = new StateProviderTopic();
         public StateProviderTopic TidalVolume { get; } = new StateProviderTopic();
         public StateProviderTopic CO2 { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };

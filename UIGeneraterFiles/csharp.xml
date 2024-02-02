@@ -128,8 +128,7 @@ $nonempty TRANSFORM:poptransformation$
 		
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
-		    // todo
-			$nonempty fill:receivecolor$
+				$nonempty fill:receivecolor$
 		}
 		//----------------------------------------
 ]]></body>

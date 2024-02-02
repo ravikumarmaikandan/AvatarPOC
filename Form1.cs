@@ -29,7 +29,7 @@ namespace Philips.PIC.CommonControls
             float scaleFactor = scaleFactorX;
             if (scaleFactorY < scaleFactor) scaleFactor = scaleFactorY;
 
-            _paintAvatar.SetInitialMatrix(scaleFactor, 0.0f, 0.0f, scaleFactor, 0.0f, 0.0f);
+            _paintAvatar.SetInitialMatrix(scaleFactor, 0.0f, 0.0f, scaleFactor, 0.0f, 100.0f);
 
             _paintAvatar.PaintSVG(avatarInfo);
         }
