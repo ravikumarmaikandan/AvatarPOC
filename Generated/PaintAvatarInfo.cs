@@ -114,7 +114,7 @@ namespace Philips.PIC.CommonControls
         public RateProviderTopic RespRate { get; } = new RateProviderTopic();
 
         public StateProviderTopic ABP { get; } = new StateProviderTopic();
-        public StateProviderTopic CVP { get; } = new StateProviderTopic();
+        public StateProviderTopic CVP { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
         public StateProviderTopic Oxygen { get; } = new StateProviderTopic();
         public StateProviderTopic TidalVolume { get; } = new StateProviderTopic();
         public StateProviderTopic CO2 { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
