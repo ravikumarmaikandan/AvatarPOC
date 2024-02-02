@@ -52,14 +52,9 @@ namespace Philips.PIC.CommonControls
              */
 
             PulseRateHeart.RateStopped = 0.0f;
-            PulseRateHeart.RateLow = 0.16667f; // 1.0 / (60.0/10);
-            PulseRateHeart.RateSafe = 1.11667f; // 1.0 / (60.0/67);
-            PulseRateHeart.RateHigh = 3.33333f; // 1.0 / (60.0/200);
-
-            // PulseRateBody.RateStopped = 0.0f;
-            // PulseRateBody.RateLow = PulseRateHeart.RateLow;
-            // PulseRateBody.RateSafe = PulseRateHeart.RateSafe;
-            // PulseRateBody.RateHigh = PulseRateHeart.RateHigh;
+            PulseRateHeart.RateLow = 0.16667f;
+            PulseRateHeart.RateSafe = 1.11667f;
+            PulseRateHeart.RateHigh = 3.33333f;
 
             Oxygen.SetColor(TopicStates.NotAvailable, 0xd0d0d0);
             Oxygen.SetColor(TopicStates.Unknown, 0xd0d0d0);
