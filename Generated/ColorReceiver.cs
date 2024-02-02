@@ -10,4 +10,14 @@ namespace Philips.PIC.CommonControls
         }
         public Int32 FillColor { get; set; }
     }
+
+    internal class OpacityReceiver
+    {
+        public OpacityReceiver(float intial)
+        {
+            Opacity = intial;
+        }
+        public float Opacity { get; set; }
+
+    }
 }

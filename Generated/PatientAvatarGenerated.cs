@@ -13014,7 +13014,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3267(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_rect3267(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13037,7 +13041,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3269(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffff00;
+		}
+		private void SetPathOpacity_rect3269(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13060,7 +13068,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_circle3271(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_circle3271(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13083,7 +13095,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_circle3273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffff00;
+		}
+		private void SetPathOpacity_circle3273(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13106,7 +13122,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect3281(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffff00;
+		}
+		private void SetPathOpacity_rect3281(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13129,7 +13149,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect1399_3_7_4_54_07_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_rect1399_3_7_4_54_07_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13152,7 +13176,11 @@ namespace Philips.PIC.CommonControls
 		
 		private void SetPathColor_rect2752(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_rect2752(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -13179,6 +13207,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11947_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13196,6 +13229,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11949_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13212,6 +13250,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11951_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13232,7 +13275,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11957_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11957_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13253,6 +13301,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11959_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13270,7 +13323,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11969_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11969_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13287,6 +13345,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11971_63(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13305,6 +13368,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11973_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13321,6 +13389,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11975_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13341,7 +13414,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11981_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11981_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13358,6 +13436,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11983_65(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13376,6 +13459,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11985_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13392,6 +13480,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11987_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13412,7 +13505,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11993_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11993_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13429,6 +13527,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11995_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13447,6 +13550,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11997_3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13463,6 +13571,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11999_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13483,7 +13596,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g12005_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g12005_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13504,6 +13622,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect2752(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use12007_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect2752(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13520,6 +13643,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19208(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13538,6 +13666,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19210(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13554,6 +13687,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19212(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13574,7 +13712,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19218(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19218(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13591,6 +13734,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19220(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13609,6 +13757,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19222(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13625,6 +13778,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19224(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13645,7 +13803,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19230(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19230(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13671,6 +13834,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16791(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13687,6 +13855,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16793(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13705,6 +13878,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16795(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13721,7 +13899,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g16801(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g16801(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13742,6 +13925,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16803(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13759,7 +13947,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g16813(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g16813(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13776,6 +13969,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16815(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13794,6 +13992,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16817(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13810,6 +14013,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16819(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13830,7 +14038,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g16825(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g16825(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13847,6 +14060,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16827(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13865,6 +14083,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16829(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13881,6 +14104,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16831(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13901,7 +14129,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g16837(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g16837(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13918,6 +14151,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16839(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13936,6 +14174,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16841(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -13952,6 +14195,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16843(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -13972,7 +14220,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g16849(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g16849(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -13989,6 +14242,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use16851(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14015,6 +14273,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15848(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14031,6 +14294,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15850(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14049,6 +14317,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15852(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14065,7 +14338,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g15858(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g15858(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14086,6 +14364,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15860(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14103,7 +14386,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g15870(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g15870(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14120,6 +14408,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15872(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14138,6 +14431,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15874(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14154,6 +14452,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15876(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14174,7 +14477,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g15882(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g15882(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14191,6 +14499,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15884(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14209,6 +14522,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15886(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14225,6 +14543,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15888(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14245,7 +14568,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g15894(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g15894(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14262,6 +14590,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect1399_3_7_4_54_07_5(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use15908(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1399_3_7_4_54_07_5(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14288,6 +14621,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14839(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14304,6 +14642,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14841(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14322,6 +14665,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14843(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14338,7 +14686,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14849(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14849(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14359,6 +14712,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14851(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14376,7 +14734,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14861(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14861(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14393,6 +14756,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14863(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14411,6 +14779,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14865(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14427,6 +14800,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14867(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14447,7 +14825,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14873(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14873(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14464,6 +14847,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14875(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14482,6 +14870,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14877(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14498,6 +14891,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14879(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14518,7 +14916,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14885(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14885(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14535,6 +14938,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14887(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14553,6 +14961,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14889(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14569,6 +14982,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14891(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14589,7 +15007,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14897(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14897(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14606,6 +15029,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14899(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14632,6 +15060,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11947(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14648,6 +15081,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11949(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14666,6 +15104,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11951(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14682,7 +15125,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11957(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11957(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14703,6 +15151,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11959(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14720,7 +15173,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11969(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11969(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14737,6 +15195,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11971(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14755,6 +15218,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11973(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14771,6 +15239,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11975(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14791,7 +15264,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11981(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11981(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14808,6 +15286,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11983(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14826,6 +15309,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11985(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14842,6 +15330,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11987(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14862,7 +15355,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g11993(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g11993(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14879,6 +15377,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11995(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14897,6 +15400,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use11997(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14913,6 +15421,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use11999(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14933,7 +15446,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g12005(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g12005(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -14954,6 +15472,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3267(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use12007(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -14970,6 +15493,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use9294(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -14988,6 +15516,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use9296(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15004,6 +15537,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use9298(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15024,7 +15562,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g9304(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g9304(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15050,6 +15593,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3850(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15066,6 +15614,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use3852(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15084,6 +15637,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3854_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15100,7 +15658,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1427_2_6_9_89_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1427_2_6_9_89_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15121,6 +15684,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use10323(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15138,7 +15706,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1588_4_40_2_1_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1588_4_40_2_1_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15155,6 +15728,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4329(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15173,6 +15751,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4331(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15189,6 +15772,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4333(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15209,7 +15797,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_use1323(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_use1323(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15226,6 +15819,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4339(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15244,6 +15842,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4341(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15260,6 +15863,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4343(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15280,7 +15888,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_use1325(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_use1325(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15297,6 +15910,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4319(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15315,6 +15933,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4321(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15331,6 +15954,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4323(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15351,7 +15979,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_use1327(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_use1327(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15372,6 +16005,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3267(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4055(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15388,6 +16026,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use8175(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15406,6 +16049,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use8177(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15422,6 +16070,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use8179(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15442,7 +16095,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g8185(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g8185(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15468,6 +16126,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19404(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15484,6 +16147,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19406(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15502,6 +16170,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19408(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15518,7 +16191,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19414(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19414(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15539,6 +16217,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19416(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15556,7 +16239,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19426(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19426(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15573,6 +16261,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19428(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15591,6 +16284,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19430(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15607,6 +16305,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19432(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15627,7 +16330,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19438(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19438(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15644,6 +16352,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19440(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15662,6 +16375,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use19442(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15678,6 +16396,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19444(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15698,7 +16421,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g19450(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g19450(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15715,6 +16443,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect1399_3_7_4_54_07_5(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use19452(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1399_3_7_4_54_07_5(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15741,6 +16474,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20227(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15757,6 +16495,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20229(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15775,6 +16518,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20231(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15791,7 +16539,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g20237(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g20237(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15812,6 +16565,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20239(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15829,7 +16587,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g20249(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g20249(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15846,6 +16609,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20251(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15864,6 +16632,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20253(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15880,6 +16653,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20255(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15900,7 +16678,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g20261(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g20261(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15917,6 +16700,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20263(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15935,6 +16723,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20265(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -15951,6 +16744,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20267(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -15971,7 +16769,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g20273(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g20273(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -15988,6 +16791,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20275(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16006,6 +16814,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use20277(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16022,6 +16835,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20279(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16042,7 +16860,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g20285(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g20285(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16059,6 +16882,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use20287(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16085,6 +16913,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21068(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16101,6 +16934,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21070(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16119,6 +16957,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21072(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16135,7 +16978,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21078(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21078(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16156,6 +17004,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21080(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16173,7 +17026,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21090(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21090(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16190,6 +17048,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21092(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16208,6 +17071,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21094(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16224,6 +17092,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21096(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16244,7 +17117,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21102(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21102(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16261,6 +17139,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21104(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16279,6 +17162,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21106(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16295,6 +17183,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21108(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16315,7 +17208,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21114(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21114(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16332,6 +17230,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21116(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16350,6 +17253,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21118(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16366,6 +17274,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21120(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16386,7 +17299,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21126(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21126(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16403,6 +17321,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21128(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16429,6 +17352,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7774(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16445,6 +17373,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7776(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16463,6 +17396,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7778(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16479,7 +17417,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7784(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7784(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16500,6 +17443,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7786(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16517,7 +17465,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7796(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7796(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16534,6 +17487,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7798(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16552,6 +17510,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7800(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16568,6 +17531,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7802(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16588,7 +17556,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7808(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7808(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16605,6 +17578,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7810(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16623,6 +17601,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7812(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16639,6 +17622,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7814(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16659,7 +17647,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7820(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7820(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16676,6 +17669,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7822(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16694,6 +17692,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7824(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16710,6 +17713,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7826(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16730,7 +17738,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7832(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7832(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16747,6 +17760,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7834(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16773,6 +17791,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21909(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16789,6 +17812,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21911(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16807,6 +17835,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21913(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16823,7 +17856,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21919(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21919(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16844,6 +17882,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21921(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16861,7 +17904,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21931(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21931(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16878,6 +17926,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21933(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16896,6 +17949,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21935(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16912,6 +17970,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21937(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16932,7 +17995,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21943(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21943(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -16949,6 +18017,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21945(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -16967,6 +18040,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21947(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -16983,6 +18061,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21949(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17003,7 +18086,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21955(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21955(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17020,6 +18108,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21957(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17038,6 +18131,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use21959(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17054,6 +18152,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21961(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17074,7 +18177,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g21967(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g21967(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17091,6 +18199,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use21969(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17117,6 +18230,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22750(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17133,6 +18251,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22752(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17151,6 +18274,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22754(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17167,7 +18295,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g22760(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g22760(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17188,6 +18321,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22762(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17205,7 +18343,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g22772(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g22772(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17222,6 +18365,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22774(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17240,6 +18388,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22776(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17256,6 +18409,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22778(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17276,7 +18434,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g22784(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g22784(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17293,6 +18456,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22786(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17311,6 +18479,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22788(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17327,6 +18500,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22790(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17347,7 +18525,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g22796(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g22796(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17364,6 +18547,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22798(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17382,6 +18570,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22800(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17398,6 +18591,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22802(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17418,7 +18616,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g22808(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g22808(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17439,6 +18642,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3267(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22810(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17455,6 +18663,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use9306(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17473,6 +18686,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use9308(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17489,6 +18707,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use9310(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17509,7 +18732,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g9316(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g9316(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17535,6 +18763,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23559(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17551,6 +18784,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23561(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17569,6 +18807,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23563(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17585,7 +18828,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g23569(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g23569(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17606,6 +18854,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23571(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17623,7 +18876,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g23581(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g23581(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17640,6 +18898,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23583(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17658,6 +18921,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23585(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17674,6 +18942,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23587(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17694,7 +18967,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g23593(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g23593(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17711,6 +18989,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23595(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17729,6 +19012,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23597(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17745,6 +19033,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23599(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17765,7 +19058,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g23605(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g23605(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17782,6 +19080,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23607(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17800,6 +19103,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use23609(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17816,6 +19124,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23611(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17836,7 +19149,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g23617(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g23617(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17853,6 +19171,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23619(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17879,6 +19202,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use24368(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17895,6 +19223,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24370(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -17913,6 +19246,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use24372(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17929,7 +19267,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g24378(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g24378(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17950,6 +19293,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use24380(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -17967,7 +19315,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g24390(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g24390(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -17984,6 +19337,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24392(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18002,6 +19360,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use24394(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18018,6 +19381,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24396(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18038,7 +19406,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g24402(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g24402(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18055,6 +19428,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24404(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18073,6 +19451,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use24406(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18089,6 +19472,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24408(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18109,7 +19497,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g24414(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g24414(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18126,6 +19519,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect1399_3_7_4_54_07_5(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use24416(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1399_3_7_4_54_07_5(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18152,6 +19550,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28871(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18168,6 +19571,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28873(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18186,6 +19594,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28875(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18202,7 +19615,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28881(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28881(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18223,6 +19641,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28883(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18240,7 +19663,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28893(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28893(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18257,6 +19685,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28895(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18275,6 +19708,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28897(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18291,6 +19729,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28899(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18311,7 +19754,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28905(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28905(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18328,6 +19776,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28907(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18346,6 +19799,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28909(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18362,6 +19820,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28911(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18382,7 +19845,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28917(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28917(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18399,6 +19867,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28919(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18417,6 +19890,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28921(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18433,6 +19911,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28923(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18453,7 +19936,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28929(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28929(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18470,6 +19958,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28931(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18496,6 +19989,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3269(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28935(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18512,6 +20010,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3271(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28937(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18530,6 +20033,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3273(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28939(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18546,7 +20054,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28945(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28945(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18567,6 +20080,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_rect3281(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28947(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3281(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18584,7 +20102,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28957(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28957(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18601,6 +20124,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28959(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18619,6 +20147,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28961(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18635,6 +20168,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28963(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18655,7 +20193,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28969(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28969(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18672,6 +20215,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28971(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18690,6 +20238,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28973(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18706,6 +20259,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28975(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18726,7 +20284,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28981(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28981(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18743,6 +20306,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3269(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28983(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3269(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18761,6 +20329,11 @@ namespace Philips.PIC.CommonControls
 			SetPathColor_circle3271(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use28985(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3271(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -18777,6 +20350,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_circle3273(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28987(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_circle3273(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18797,7 +20375,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g28993(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g28993(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -18814,6 +20397,11 @@ namespace Philips.PIC.CommonControls
 		{
 			SetPathColor_rect3267(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use28995(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect3267(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18856,7 +20444,12 @@ namespace Philips.PIC.CommonControls
 		{ // not usable for groups
 		}
 		private void SetPathColor_g5680(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g5680(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 				
@@ -18881,6 +20474,7 @@ namespace Philips.PIC.CommonControls
         //Use (for ColorFrom)
         private void Paint_use10272(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -18896,6 +20490,11 @@ namespace Philips.PIC.CommonControls
 		private void SetPathColor_use10272(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use10272(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path9(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -18916,7 +20515,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use10276(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use10276(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18937,7 +20541,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use10282(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path10268(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use10282(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path10268(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -18945,22 +20554,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: Pulsing
         private void Paint_g10278(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use10272(p, MinColor);
 		    SetPathColor_use10276(p, TimeColor);
 		    SetPathColor_use10282(p, MaxColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use10272(p, MinOpacity);
+            SetPathOpacity_use10276(p, TimeOpacity);
+            SetPathOpacity_use10282(p, MaxOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use10272(MinPath);
 		    SetPathData_use10276(TimePath);
 		    SetPathData_use10282(MaxPath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -18974,12 +20592,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g10278(p);// Pulsing
             }
         }
-		private void SetPathData_g10280(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g10280(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g10280(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g10280(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g10280(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -19015,12 +20638,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path9(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3854(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path9(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Use (for ColorFrom)
         private void Paint_use3856(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -19036,6 +20665,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use3856(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use3856(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path3852(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -19056,7 +20690,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use5605_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use5605_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19064,22 +20703,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: Pulsing
         private void Paint_g3860(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use3854(p, MaxColor);
 		    SetPathColor_use3856(p, MinColor);
 		    SetPathColor_use5605_9(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use3854(p, MaxOpacity);
+            SetPathOpacity_use3856(p, MinOpacity);
+            SetPathOpacity_use5605_9(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use3854(MaxPath);
 		    SetPathData_use3856(MinPath);
 		    SetPathData_use5605_9(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -19093,12 +20741,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g3860(p);// Pulsing
             }
         }
-		private void SetPathData_g5641(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g5641(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g5641(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g5641(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g5641(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -19142,7 +20795,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use3212(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path186011_3_6(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use3212(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path186011_3_6(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19150,6 +20808,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use5698(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -19165,6 +20824,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use5698(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use5698(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path5695(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -19185,7 +20849,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use11024_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use11024_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19193,22 +20862,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: Pulsing
         private void Paint_g11026_3(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use3212(p, MaxColor);
 		    SetPathColor_use5698(p, MinColor);
 		    SetPathColor_use11024_8(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use3212(p, MaxOpacity);
+            SetPathOpacity_use5698(p, MinOpacity);
+            SetPathOpacity_use11024_8(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use3212(MaxPath);
 		    SetPathData_use5698(MinPath);
 		    SetPathData_use11024_8(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -19222,12 +20900,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g11026_3(p);// Pulsing
             }
         }
-		private void SetPathData_g11028_5(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g11028_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g11028_5(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g11028_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g11028_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -19246,6 +20929,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19266,6 +20953,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path3852(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19284,6 +20975,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path10268(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path10268(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19304,6 +20999,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path11016(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19323,6 +21022,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path5695(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19341,6 +21044,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path186011_3_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path186011_3_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    opacityReceiver.Opacity = 0.96f;
 		}
 		//----------------------------------------
 
@@ -19363,7 +21070,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use5182(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffffff;
+		}
+		private void SetPathOpacity_use5182(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19418,6 +21129,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g1886_4(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use12806(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1886_4(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -19440,7 +21156,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use30934_62(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g1764(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use30934_62(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1764(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19473,12 +21194,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use4828(p);// dashedLine
             }
         }
-		private void SetPathData_g1838(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1838(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1838(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1838(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1838(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -19503,6 +21229,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use4875(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -19518,6 +21245,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use4875(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use4875(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1995(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -19535,6 +21267,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_path4873(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4877(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4873(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19555,7 +21292,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use5605_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use5605_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19563,22 +21305,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g4881(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use4875(p, MinColor);
 		    SetPathColor_use4877(p, MaxColor);
 		    SetPathColor_use5605_2(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use4875(p, MinOpacity);
+            SetPathOpacity_use4877(p, MaxOpacity);
+            SetPathOpacity_use5605_2(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use4875(MinPath);
 		    SetPathData_use4877(MaxPath);
 		    SetPathData_use5605_2(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -19592,12 +21343,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g4881(p);// pulsing
             }
         }
-		private void SetPathData_g5576(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g5576(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g5576(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g5576(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g5576(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -19622,6 +21378,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use4910(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -19637,6 +21394,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use4910(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use4910(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4902(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -19654,6 +21416,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_path1995(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use4904(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1995(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19674,7 +21441,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use5605(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use5605(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19682,22 +21454,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g4908(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use4910(p, MinColor);
 		    SetPathColor_use4904(p, MaxColor);
 		    SetPathColor_use5605(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use4910(p, MinOpacity);
+            SetPathOpacity_use4904(p, MaxOpacity);
+            SetPathOpacity_use5605(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use4910(MinPath);
 		    SetPathData_use4904(MaxPath);
 		    SetPathData_use5605(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -19711,12 +21492,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g4908(p);// pulsing
             }
         }
-		private void SetPathData_g5569(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g5569(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g5569(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g5569(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g5569(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -19741,6 +21527,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use9853(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -19756,6 +21543,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use9853(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use9853(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path9775(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -19773,6 +21565,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_path9777(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use9855(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path9777(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19793,7 +21590,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use11119(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use11119(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -19801,22 +21603,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g11121(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use9853(p, MinColor);
 		    SetPathColor_use9855(p, MaxColor);
 		    SetPathColor_use11119(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use9853(p, MinOpacity);
+            SetPathOpacity_use9855(p, MaxOpacity);
+            SetPathOpacity_use11119(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use9853(MinPath);
 		    SetPathData_use9855(MaxPath);
 		    SetPathData_use11119(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -19830,12 +21641,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g11121(p);// pulsing
             }
         }
-		private void SetPathData_g11123(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g11123(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g11123(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g11123(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g11123(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -19855,6 +21671,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path4873(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19873,6 +21693,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path1995(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path1995(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19895,7 +21719,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path20074(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path20074(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19916,6 +21744,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path4902(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19934,6 +21766,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path11125(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path11125(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19954,6 +21790,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path9777(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -19972,6 +21812,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path9775(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path9775(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -19997,6 +21841,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g1886_4(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use12723(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1886_4(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -20013,6 +21862,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g1764(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use30934(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1764(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20062,12 +21916,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = colorWas;
             }
         }
-		private void SetPathData_g1855(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1855(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1855(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1855(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		colorReceiver.FillColor = 0xe;
+        }
+        private void SetPathOpacity_g1855(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -20105,7 +21964,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use841(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path819(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use841(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path819(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20113,6 +21977,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use843(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -20128,6 +21993,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use843(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use843(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path821(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -20148,7 +22018,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use11119_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use11119_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20156,22 +22031,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g2125(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use841(p, MaxColor);
 		    SetPathColor_use843(p, MinColor);
 		    SetPathColor_use11119_5(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use841(p, MaxOpacity);
+            SetPathOpacity_use843(p, MinOpacity);
+            SetPathOpacity_use11119_5(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use841(MaxPath);
 		    SetPathData_use843(MinPath);
 		    SetPathData_use11119_5(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -20185,12 +22069,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g2125(p);// pulsing
             }
         }
-		private void SetPathData_g859(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g859(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g859(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g859(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g859(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -20215,6 +22104,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use861(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -20230,6 +22120,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use861(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use861(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path823(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -20250,7 +22145,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use864(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path821(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use864(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path821(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20271,7 +22171,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use11119_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use11119_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20279,22 +22184,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g2115(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use861(p, MinColor);
 		    SetPathColor_use864(p, MaxColor);
 		    SetPathColor_use11119_4(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use861(p, MinOpacity);
+            SetPathOpacity_use864(p, MaxOpacity);
+            SetPathOpacity_use11119_4(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use861(MinPath);
 		    SetPathData_use864(MaxPath);
 		    SetPathData_use11119_4(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -20308,12 +22222,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g2115(p);// pulsing
             }
         }
-		private void SetPathData_g869(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g869(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g869(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g869(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g869(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -20349,12 +22268,18 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_use845_2(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use5430(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_use845_2(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Use (for ColorFrom)
         private void Paint_use5347(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
@@ -20370,6 +22295,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use5347(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.Oxygen);
+		}
+		private void SetPathOpacity_use5347(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_use847_1(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -20390,7 +22320,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use11119_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path4914(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use11119_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path4914(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -20398,22 +22333,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g2120(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use5430(p, MaxColor);
 		    SetPathColor_use5347(p, MinColor);
 		    SetPathColor_use11119_8(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use5430(p, MaxOpacity);
+            SetPathOpacity_use5347(p, MinOpacity);
+            SetPathOpacity_use11119_8(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use5430(MaxPath);
 		    SetPathData_use5347(MinPath);
 		    SetPathData_use11119_8(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -20427,12 +22371,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g2120(p);// pulsing
             }
         }
-		private void SetPathData_g855(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g855(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g855(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g855(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g855(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -20451,6 +22400,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path819(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path819(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20471,6 +22424,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path821(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -20489,6 +22446,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path823(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path823(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20509,6 +22470,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path825(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -20528,6 +22493,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_use845_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -20546,6 +22515,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use847_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_use847_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20582,7 +22555,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8630(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8630(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20599,7 +22576,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g8632(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g8632(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -20621,7 +22603,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8634(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8634(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20637,12 +22623,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path8634(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8636(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8636(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8636(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8636(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8636(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -20664,7 +22655,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8638(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffffff;
+		}
+		private void SetPathOpacity_path8638(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20687,7 +22682,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8640(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x7e4f23;
+		}
+		private void SetPathOpacity_path8640(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20710,7 +22709,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8642(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8642(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20733,7 +22736,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8644(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xb1b1b1;
+		}
+		private void SetPathOpacity_path8644(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20752,7 +22759,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g8646(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g8646(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -20767,12 +22779,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g8646(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8648(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8648(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8648(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8648(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8648(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -20794,7 +22811,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8650(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe5e5e5;
+		}
+		private void SetPathOpacity_path8650(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20817,7 +22838,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8652(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8652(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20840,7 +22865,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8654(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xcccccc;
+		}
+		private void SetPathOpacity_path8654(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20863,7 +22892,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8656(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8656(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20882,12 +22915,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path8656(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8658(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8658(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8658(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8658(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8658(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -20904,7 +22942,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g8660(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g8660(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -20926,7 +22969,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8694(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8694(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20942,12 +22989,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path8694(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8696(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8696(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8696(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8696(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8696(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -20969,7 +23021,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8698(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffffff;
+		}
+		private void SetPathOpacity_path8698(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -20992,7 +23048,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8700(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x7e4f23;
+		}
+		private void SetPathOpacity_path8700(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21015,7 +23075,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8702(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8702(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21038,7 +23102,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8704(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xb1b1b1;
+		}
+		private void SetPathOpacity_path8704(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21057,7 +23125,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g8706(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g8706(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21072,12 +23145,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g8706(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8708(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8708(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8708(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8708(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8708(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -21099,7 +23177,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8710(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe5e5e5;
+		}
+		private void SetPathOpacity_path8710(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21122,7 +23204,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8712(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8712(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21145,7 +23231,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8714(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xcccccc;
+		}
+		private void SetPathOpacity_path8714(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21168,7 +23258,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path8716(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path8716(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21187,12 +23281,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path8716(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g8718(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g8718(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g8718(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g8718(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g8718(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -21212,7 +23311,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_use8662(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_use8662(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21232,7 +23336,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_use3014_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_use3014_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21252,7 +23361,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use30934_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g1764(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use30934_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1764(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -21298,12 +23412,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path45759(p);// dashedLine
             }
         }
-		private void SetPathData_g1858(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1858(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1858(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1858(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1858(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 
@@ -21332,7 +23451,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path2003_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path2003_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21349,7 +23472,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1832_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1832_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -21371,7 +23499,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path62_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path62_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21387,12 +23519,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path62_6(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1827_7(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1827_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1827_7(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1827_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1827_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -21414,7 +23551,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path74_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffffff;
+		}
+		private void SetPathOpacity_path74_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21437,7 +23578,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path76_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x7e4f23;
+		}
+		private void SetPathOpacity_path76_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21460,7 +23605,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path78_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path78_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21483,7 +23632,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path80_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xb1b1b1;
+		}
+		private void SetPathOpacity_path80_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21502,7 +23655,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g6255_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g6255_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21517,12 +23675,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g6255_5(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g84_6(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g84_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g84_6(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g84_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g84_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -21544,7 +23707,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4287_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe5e5e5;
+		}
+		private void SetPathOpacity_path4287_3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21567,7 +23734,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4289_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path4289_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21590,7 +23761,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4387_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xcccccc;
+		}
+		private void SetPathOpacity_path4387_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21613,7 +23788,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path4389_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path4389_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21632,12 +23811,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path4389_4(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g6166_6(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g6166_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g6166_6(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g6166_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g6166_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -21654,7 +23838,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1785_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1785_3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21675,6 +23864,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g1785_3(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1829(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1785_3(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -21691,7 +23885,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1886_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1886_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 
@@ -21718,6 +23917,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path105(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -21736,6 +23939,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path99(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path99(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21758,7 +23965,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path1097(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path1097(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -21779,6 +23990,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path7845(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 			
@@ -21796,7 +24011,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3907(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3907(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -21805,9 +24025,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x343434;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.5f;
             Paint_path7845(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use8624(IRenderPath path)
         {
@@ -21816,7 +24041,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use8624(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path7845(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0x343434;
+		}
+		private void SetPathOpacity_use8624(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path7845(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.5f; 
 		}
         //----------------------------------------
 
@@ -21837,7 +24067,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7765(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path7845(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7765(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path7845(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -21847,9 +24082,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xb3b3b3;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.75f;
             Paint_path1097(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use7767(IRenderPath path)
         {
@@ -21858,7 +24098,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7767(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path1097(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xb3b3b3;
+		}
+		private void SetPathOpacity_use7767(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1097(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.75f; 
 		}
         //----------------------------------------
 
@@ -21880,28 +24125,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path2449(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use5676_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path2449(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g7771(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use7765(p, MaxColor);
 		    SetPathColor_use7767(p, MinColor);
 		    SetPathColor_use5676_2(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use7765(p, MaxOpacity);
+            SetPathOpacity_use7767(p, MinOpacity);
+            SetPathOpacity_use5676_2(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use7765(MaxPath);
 		    SetPathData_use7767(MinPath);
 		    SetPathData_use5676_2(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -21915,12 +24174,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g7771(p);// pulsing
             }
         }
-		private void SetPathData_g7773(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g7773(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g7773(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g7773(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g7773(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -21929,9 +24193,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x333333;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.5f;
             Paint_path105(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use7704(IRenderPath path)
         {
@@ -21940,7 +24209,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7704(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path105(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0x333333;
+		}
+		private void SetPathOpacity_use7704(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path105(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.5f; 
 		}
         //----------------------------------------
 
@@ -21961,7 +24235,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use1091(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path105(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use1091(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path105(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -21971,9 +24250,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xb3b3b3;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.75f;
             Paint_path1097(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use1145(IRenderPath path)
         {
@@ -21982,7 +24266,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use1145(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path1097(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xb3b3b3;
+		}
+		private void SetPathOpacity_use1145(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1097(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.75f; 
 		}
         //----------------------------------------
 
@@ -22001,28 +24290,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path2449(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4613(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path2449(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g1095(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use1091(p, MaxColor);
 		    SetPathColor_use1145(p, MinColor);
 		    SetPathColor_use4613(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use1091(p, MaxOpacity);
+            SetPathOpacity_use1145(p, MinOpacity);
+            SetPathOpacity_use4613(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use1091(MaxPath);
 		    SetPathData_use1145(MinPath);
 		    SetPathData_use4613(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -22036,12 +24339,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g1095(p);// pulsing
             }
         }
-		private void SetPathData_g3913(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3913(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3913(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3913(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3913(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -22050,9 +24358,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x333333;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.5f;
             Paint_path99(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use7875(IRenderPath path)
         {
@@ -22061,7 +24374,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7875(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path99(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0x333333;
+		}
+		private void SetPathOpacity_use7875(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path99(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.5f; 
 		}
         //----------------------------------------
 
@@ -22082,7 +24400,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7877(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path99(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7877(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path99(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -22092,9 +24415,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xb3b3b3;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.75f;
             Paint_path1097(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use7879(IRenderPath path)
         {
@@ -22103,7 +24431,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7879(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path1097(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xb3b3b3;
+		}
+		private void SetPathOpacity_use7879(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1097(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.75f; 
 		}
         //----------------------------------------
 
@@ -22125,28 +24458,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path2449(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use5676_4_3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path2449(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g7883(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use7877(p, MaxColor);
 		    SetPathColor_use7879(p, MinColor);
 		    SetPathColor_use5676_4_3(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use7877(p, MaxOpacity);
+            SetPathOpacity_use7879(p, MinOpacity);
+            SetPathOpacity_use5676_4_3(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use7877(MaxPath);
 		    SetPathData_use7879(MinPath);
 		    SetPathData_use5676_4_3(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -22160,12 +24507,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g7883(p);// pulsing
             }
         }
-		private void SetPathData_g7885(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g7885(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g7885(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g7885(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g7885(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -22187,7 +24539,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use7671(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7671(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22204,12 +24560,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use7671(p);// Line
             }
         }
-		private void SetPathData_g1782(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1782(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1782(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1782(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1782(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 
@@ -22250,6 +24611,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path5273(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -22268,6 +24633,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path5277(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path5277(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22288,6 +24657,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path6201(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -22306,6 +24679,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path7273(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path7273(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22326,6 +24703,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path26136(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 
@@ -22340,10 +24721,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use5197(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.5f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path5277(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use5197(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22357,11 +24743,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use4344(PaintAvatarInfo p)
         {
+        // here i am 0.8
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path5273(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathData_use4344(IRenderPath path)
@@ -22373,13 +24765,23 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
+		private void SetPathOpacity_use4344(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path5273(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f;
+		}
         //----------------------------------------
 
 			
 		// Skill: default -> use Max
         private void Paint_use4346(PaintAvatarInfo p) //Use: Max
         {
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path5277(p);
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use4346(IRenderPath path)
         {
@@ -22390,13 +24792,23 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path5277(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use4346(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path5277(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
+		}
         //----------------------------------------
 
 			
 		// Skill: default -> use Time
         private void Paint_use6871_2(PaintAvatarInfo p) //Use: Time
         {
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path1166(p);
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use6871_2(IRenderPath path)
         {
@@ -22407,28 +24819,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path1166(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use6871_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1166(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g5193(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use4344(p, MinColor);
 		    SetPathColor_use4346(p, MaxColor);
 		    SetPathColor_use6871_2(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use4344(p, MinOpacity);
+            SetPathOpacity_use4346(p, MaxOpacity);
+            SetPathOpacity_use6871_2(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use4344(MinPath);
 		    SetPathData_use4346(MaxPath);
 		    SetPathData_use6871_2(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -22442,12 +24868,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g5193(p);// pulsing
             }
         }
-		private void SetPathData_g5205(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g5205(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g5205(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g5205(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g5205(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -22455,10 +24886,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use6265(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path5273(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use6265(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22472,11 +24908,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use6255(PaintAvatarInfo p)
         {
+        // here i am 0.8
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path6201(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathData_use6255(IRenderPath path)
@@ -22488,6 +24930,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
+		private void SetPathOpacity_use6255(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path6201(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f;
+		}
         //----------------------------------------
 
 			
@@ -22496,9 +24943,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path5273(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use6257(IRenderPath path)
         {
@@ -22507,7 +24959,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6257(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path5273(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6257(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path5273(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
 		}
         //----------------------------------------
 
@@ -22526,28 +24983,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path1166(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use6871(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1166(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g6263(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use6255(p, MinColor);
 		    SetPathColor_use6257(p, MaxColor);
 		    SetPathColor_use6871(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use6255(p, MinOpacity);
+            SetPathOpacity_use6257(p, MaxOpacity);
+            SetPathOpacity_use6871(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use6255(MinPath);
 		    SetPathData_use6257(MaxPath);
 		    SetPathData_use6871(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -22561,12 +25032,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g6263(p);// pulsing
             }
         }
-		private void SetPathData_g6272(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g6272(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g6272(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g6272(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g6272(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 
@@ -22587,10 +25063,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use7232(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.FiO2);
             Paint_path6201(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use7232(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22604,11 +25085,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use7234(PaintAvatarInfo p)
         {
+        // here i am 0.8
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
             Paint_path7273(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathData_use7234(IRenderPath path)
@@ -22620,6 +25107,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
+		private void SetPathOpacity_use7234(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path7273(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f;
+		}
         //----------------------------------------
 
 			
@@ -22628,9 +25120,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path6201(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use7236(IRenderPath path)
         {
@@ -22639,7 +25136,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7236(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path6201(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7236(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path6201(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
 		}
         //----------------------------------------
 
@@ -22658,28 +25160,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path1166(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use7238(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1166(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: pulsing
         private void Paint_g7240(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use7234(p, MinColor);
 		    SetPathColor_use7236(p, MaxColor);
 		    SetPathColor_use7238(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use7234(p, MinOpacity);
+            SetPathOpacity_use7236(p, MaxOpacity);
+            SetPathOpacity_use7238(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use7234(MinPath);
 		    SetPathData_use7236(MaxPath);
 		    SetPathData_use7238(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -22693,12 +25209,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g7240(p);// pulsing
             }
         }
-		private void SetPathData_g7242(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g7242(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g7242(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g7242(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g7242(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 
@@ -22731,7 +25252,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1772(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1772(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -22750,6 +25276,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path123(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path123(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22770,6 +25300,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path126(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    opacityReceiver.Opacity = 0.7f;
+		}
 		//----------------------------------------
 
 	
@@ -22789,6 +25323,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path7917(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    opacityReceiver.Opacity = 0.8f;
+		}
 		//----------------------------------------
 
 
@@ -22805,9 +25343,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x3333cc;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.7f;
             Paint_path123(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
             }
         }
         //----------------------------------------
@@ -22833,9 +25376,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		    {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0x3333cc;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path7917(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
             }
         }
         //----------------------------------------
@@ -22872,7 +25420,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1777(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1777(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -22891,6 +25444,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path180(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path180(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22911,6 +25468,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path1050(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -22929,6 +25490,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path1907(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path1907(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22951,7 +25516,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path12973(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe7383d;
+		}
+		private void SetPathOpacity_path12973(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -22970,7 +25539,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g13101(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g13101(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -22990,6 +25564,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13105(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23011,6 +25590,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13112(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23030,6 +25614,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13826(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23051,6 +25640,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13828(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23070,6 +25664,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13830(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23091,6 +25690,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13832(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23110,6 +25714,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13834(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23131,6 +25740,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13836(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23150,6 +25764,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13838(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23171,6 +25790,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13840(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23190,6 +25814,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13842(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23211,6 +25840,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13844(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23230,6 +25864,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13846(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23251,6 +25890,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13848(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23270,6 +25914,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13850(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23291,6 +25940,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13852(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23310,6 +25964,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13854(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23331,6 +25990,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13856(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23350,6 +26014,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13858(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23371,6 +26040,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13860(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23390,6 +26064,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22156(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23411,6 +26090,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22158(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23430,6 +26114,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22160(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23451,6 +26140,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22162(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23470,6 +26164,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22164(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23491,6 +26190,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22166(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23510,6 +26214,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22168(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23531,6 +26240,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22170(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23550,6 +26264,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22174(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23571,6 +26290,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22176(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23590,6 +26314,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22178(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23611,6 +26340,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22180(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23630,6 +26364,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22182(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23651,6 +26390,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22186(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23670,6 +26414,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22188(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23691,6 +26440,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22190(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23710,6 +26464,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use22192(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23731,6 +26490,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22194(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23751,6 +26515,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use22196(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23770,6 +26539,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use23732(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23824,7 +26598,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g13108(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g13108(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -23844,6 +26623,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use13866(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23865,6 +26649,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13876(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23885,6 +26674,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use13878(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23901,7 +26695,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g13902(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g13902(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -23921,6 +26720,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14386(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23942,6 +26746,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14390(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -23961,6 +26770,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14392(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -23982,6 +26796,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14394(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24001,6 +26820,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14398(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24022,6 +26846,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14400(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24041,6 +26870,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14402(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24062,6 +26896,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14406(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24082,6 +26921,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13101(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use14408(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24101,6 +26945,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g13101(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use14412(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13101(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24125,7 +26974,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g14424(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g14424(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 
@@ -24152,7 +27006,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use4099(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path1050(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xff8080;
+		}
+		private void SetPathOpacity_use4099(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1050(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24171,6 +27030,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g14424(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use15332(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g14424(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24183,12 +27047,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use15332(p);// 
             }
         }
-		private void SetPathData_g4140(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g4140(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g4140(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g4140(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g4140(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -24208,7 +27077,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use4142(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path1907(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xff8080;
+		}
+		private void SetPathOpacity_use4142(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path1907(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24227,6 +27101,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13902(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16082(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13902(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24239,12 +27118,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use16082(p);// 
             }
         }
-		private void SetPathData_g4146(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g4146(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g4146(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g4146(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g4146(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -24264,7 +27148,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use4148(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path180(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xff8080;
+		}
+		private void SetPathOpacity_use4148(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path180(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24283,6 +27172,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g13108(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use16833(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g13108(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -24295,12 +27189,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use16833(p);// 
             }
         }
-		private void SetPathData_g4152(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g4152(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g4152(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g4152(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g4152(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 
@@ -24324,18 +27223,28 @@ int colorWas = _patientAvatarRenderer.FillColor;
 
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix(1,0,0,1,0,5.41221);
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
 		    Paint_g3989(p);// Helper
 		    Paint_g4140(p);// Safe
 		    Paint_g4146(p);// Low
 		    Paint_g4152(p);// High
 		    Paint_use3991(p);// Line
-            _patientAvatarRenderer.Transformation = transformMatrixWas;        }
+            _patientAvatarRenderer.Transformation = transformMatrixWas;
+    _patientAvatarRenderer.Opacity = opacityWas;
+        }
         //----------------------------------------
 		private void SetPathData_g1761(IRenderPath path)
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1761(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1761(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    opacityReceiver.Opacity = 0.8f;
 		}
 
 	
@@ -24355,6 +27264,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path192(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -24373,6 +27286,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path2417(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path2417(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24400,7 +27317,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use3243(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path2417(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe7383d;
+		}
+		private void SetPathOpacity_use3243(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path2417(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24421,7 +27343,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use3241(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path192(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use3241(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path192(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24445,7 +27372,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use3253(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path3251(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use3253(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path3251(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24453,22 +27385,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g3249(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use3243(p, MinColor);
 		    SetPathColor_use3241(p, MaxColor);
 		    SetPathColor_use3253(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use3243(p, MinOpacity);
+            SetPathOpacity_use3241(p, MaxOpacity);
+            SetPathOpacity_use3253(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use3243(MinPath);
 		    SetPathData_use3241(MaxPath);
 		    SetPathData_use3253(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -24481,12 +27422,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g3249(p);// pulsing
             }
         }
-		private void SetPathData_g7666(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g7666(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g7666(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g7666(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g7666(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -24506,7 +27452,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use2102(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path2417(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe7383d;
+		}
+		private void SetPathOpacity_use2102(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path2417(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24527,7 +27478,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use2104(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path192(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use2104(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path192(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24551,7 +27507,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use2106(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path3251(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use2106(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path3251(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -24559,22 +27520,31 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Group: pulsing
         private void Paint_g2108(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use2102(p, MinColor);
 		    SetPathColor_use2104(p, MaxColor);
 		    SetPathColor_use2106(p, TimeColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use2102(p, MinOpacity);
+            SetPathOpacity_use2104(p, MaxOpacity);
+            SetPathOpacity_use2106(p, TimeOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use2102(MinPath);
 		    SetPathData_use2104(MaxPath);
 		    SetPathData_use2106(TimePath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.PulseRateBody);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -24587,12 +27557,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g2108(p);// pulsing
             }
         }
-		private void SetPathData_g2110(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2110(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2110(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2110(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2110(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -24614,7 +27589,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path14970(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xcccccc;
+		}
+		private void SetPathOpacity_path14970(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24637,7 +27616,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path14972(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xffffff;
+		}
+		private void SetPathOpacity_path14972(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24651,12 +27634,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path14972(p);// dashed outline
             }
         }
-		private void SetPathData_use7659(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_use7659(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_use7659(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_use7659(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_use7659(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -24678,7 +27666,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1873(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				colorReceiver.FillColor = 0xff0000;
+		}
+		private void SetPathOpacity_g1873(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -24700,7 +27693,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3652_f0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x595959;
+		}
+		private void SetPathOpacity_path3652_f0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24723,7 +27720,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3652_s0(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path3652_s0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24740,7 +27741,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_path3652(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_path3652(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -24752,12 +27758,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path3652(p);// grey lightning
             }
         }
-		private void SetPathData_g15456(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g15456(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g15456(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g15456(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g15456(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -24779,7 +27790,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3582_f1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x17030f;
+		}
+		private void SetPathOpacity_path3582_f1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24802,7 +27817,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3582_s1(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path3582_s1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24816,12 +27835,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path3582_s1(p);// stroke of ST1
             }
         }
-		private void SetPathData_path3582(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path3582(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path3582(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path3582(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path3582(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -24843,7 +27867,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3626_f2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x17030f;
+		}
+		private void SetPathOpacity_path3626_f2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24866,7 +27894,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3626_s2(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path3626_s2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24880,12 +27912,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path3626_s2(p);// stroke of ST2
             }
         }
-		private void SetPathData_path3626(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path3626(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path3626(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path3626(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path3626(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -24907,7 +27944,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3650_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x17030f;
+		}
+		private void SetPathOpacity_path3650_f3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24930,7 +27971,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path3650_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path3650_s3(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24944,12 +27989,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path3650_s3(p);// stroke of ST3
             }
         }
-		private void SetPathData_path3650(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path3650(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path3650(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path3650(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path3650(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -24974,7 +28024,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path195_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x4d4d4d;
+		}
+		private void SetPathOpacity_path195_f4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -24997,7 +28051,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path195_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path195_s4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25011,12 +28069,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path195_s4(p);// stroke of ST3_zero
             }
         }
-		private void SetPathData_path195(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path195(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path195(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path195(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path195(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -25041,7 +28104,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path198_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x4d4d4d;
+		}
+		private void SetPathOpacity_path198_f5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25064,7 +28131,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path198_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path198_s5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25078,12 +28149,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path198_s5(p);// stroke of ST2_zero
             }
         }
-		private void SetPathData_path198(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path198(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path198(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path198(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path198(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -25108,7 +28184,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path201_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x4d4d4d;
+		}
+		private void SetPathOpacity_path201_f6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25131,7 +28211,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path201_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000000;
+		}
+		private void SetPathOpacity_path201_s6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25145,12 +28229,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path201_s6(p);// stroke of ST1_zero
             }
         }
-		private void SetPathData_path201(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_path201(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_path201(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_path201(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_path201(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -25164,12 +28253,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_path201(p);// ST1_zero
             }
         }
-		private void SetPathData_g4814(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g4814(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g4814(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g4814(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g4814(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -25187,7 +28281,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1758(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1758(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -25209,7 +28308,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path26748(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path26748(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25232,7 +28335,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25475(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path25475(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25255,7 +28362,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25500(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path25500(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25278,7 +28389,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25502(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path25502(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25301,7 +28416,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25504(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path25504(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25324,7 +28443,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path25506(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path25506(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25347,7 +28470,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path27072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path27072(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25370,7 +28497,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path27852(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path27852(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25393,7 +28524,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path28596(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path28596(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25416,7 +28551,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path30398(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path30398(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25439,7 +28578,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path32072(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xfcce38;
+		}
+		private void SetPathOpacity_path32072(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25462,7 +28605,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path33110(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path33110(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25483,6 +28630,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_path46598(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use2160(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path46598(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
  
@@ -25521,12 +28673,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g25478(p);// Lightning
             }
         }
-		private void SetPathData_g12081(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g12081(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g12081(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g12081(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g12081(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -25547,7 +28704,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1745(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_g1745(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -25566,7 +28728,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1753(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1753(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -25585,7 +28752,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1974(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1974(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -25604,6 +28776,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path174(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path174(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25624,6 +28800,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path171(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -25642,6 +28822,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path168(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path168(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -25662,6 +28846,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path165(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -25681,6 +28869,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path61670(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 
@@ -25695,10 +28887,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use32817(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.6f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path171(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use32817(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25712,6 +28909,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use32823(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
@@ -25728,6 +28926,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
+		private void SetPathOpacity_use32823(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path174(p, opacityReceiver);
+		    
+		}
         //----------------------------------------
 
 			
@@ -25736,9 +28939,14 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = 0xe;
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path52326(p);
 
              _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use6871_5(IRenderPath path)
         {
@@ -25747,7 +28955,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6871_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path52326(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6871_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path52326(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
 		}
         //----------------------------------------
 
@@ -25766,28 +28979,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path171(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use32867(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path171(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: Pulsing
         private void Paint_g32865(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use32823(p, MinColor);
 		    SetPathColor_use6871_5(p, TimeColor);
 		    SetPathColor_use32867(p, MaxColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use32823(p, MinOpacity);
+            SetPathOpacity_use6871_5(p, TimeOpacity);
+            SetPathOpacity_use32867(p, MaxOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use32823(MinPath);
 		    SetPathData_use6871_5(TimePath);
 		    SetPathData_use32867(MaxPath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -25801,12 +29028,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g32865(p);// Pulsing
             }
         }
-		private void SetPathData_g32821(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g32821(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g32821(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g32821(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g32821(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -25814,10 +29046,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use54356(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.6f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path168(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use54356(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25831,6 +29068,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use54358(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
@@ -25846,6 +29084,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use54358(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
+		}
+		private void SetPathOpacity_use54358(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path171(p, opacityReceiver);
+		    
 		}
         //----------------------------------------
 
@@ -25864,6 +29107,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path52326(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use54360(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path52326(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -25881,28 +29129,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path168(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use54362(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path168(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: Pulsing
         private void Paint_g54364(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use54358(p, MinColor);
 		    SetPathColor_use54360(p, TimeColor);
 		    SetPathColor_use54362(p, MaxColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use54358(p, MinOpacity);
+            SetPathOpacity_use54360(p, TimeOpacity);
+            SetPathOpacity_use54362(p, MaxOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use54358(MinPath);
 		    SetPathData_use54360(TimePath);
 		    SetPathData_use54362(MaxPath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -25916,12 +29178,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g54364(p);// Pulsing
             }
         }
-		private void SetPathData_g54366(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g54366(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g54366(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g54366(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g54366(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 				
@@ -25929,10 +29196,15 @@ int colorWas = _patientAvatarRenderer.FillColor;
         private void Paint_use62128(PaintAvatarInfo p)
         {
             
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.6f;
+
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.AWP);
             Paint_path174(p);
             _patientAvatarRenderer.FillColor = colorWas;
+
+    _patientAvatarRenderer.Opacity = opacityWas;
 
         }
 		private void SetPathColor_use62128(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25946,6 +29218,7 @@ int colorWas = _patientAvatarRenderer.FillColor;
         //Use (for ColorFrom)
         private void Paint_use62130(PaintAvatarInfo p)
         {
+        // here i am 
             
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.FiO2);
@@ -25962,13 +29235,23 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.FiO2);
 		}
+		private void SetPathOpacity_use62130(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path61670(p, opacityReceiver);
+		    
+		}
         //----------------------------------------
 
 			
 		// Skill: default -> use Time
         private void Paint_use62132(PaintAvatarInfo p) //Use: Time
         {
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
             Paint_path52326(p);
+
+    _patientAvatarRenderer.Opacity = opacityWas;
         }
 		private void SetPathData_use62132(IRenderPath path)
         {
@@ -25978,6 +29261,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_path52326(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use62132(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path52326(p, opacityReceiver);
+		    opacityReceiver.Opacity = 0.8f; 
 		}
         //----------------------------------------
 
@@ -25996,28 +29284,42 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_path174(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use62134(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path174(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 				
         //Group: Pulsing
         private void Paint_g62136(PaintAvatarInfo p)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 		    SetPathColor_use62130(p, MinColor);
 		    SetPathColor_use62132(p, TimeColor);
 		    SetPathColor_use62134(p, MaxColor);
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+            SetPathOpacity_use62130(p, MinOpacity);
+            SetPathOpacity_use62132(p, TimeOpacity);
+            SetPathOpacity_use62134(p, MaxOpacity);
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 		    SetPathData_use62130(MinPath);
 		    SetPathData_use62132(TimePath);
 		    SetPathData_use62134(MaxPath);
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.RespRate);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 
@@ -26031,12 +29333,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g62136(p);// Pulsing
             }
         }
-		private void SetPathData_g62138(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g62138(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g62138(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g62138(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g62138(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -26058,7 +29365,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_use27516(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use27516(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26068,19 +29379,29 @@ int colorWas = _patientAvatarRenderer.FillColor;
         {
 		    if (IsVisible(p.TopicInfo.AWP, low, safe, high))
 		    {
+
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = 0.8f;
 		        Paint_g26134(p);// Helper
 		        Paint_g32821(p);// Safe
 		        Paint_g54366(p);// High
 		        Paint_g62138(p);// Low
 		        Paint_use27516(p);// line
+
+    _patientAvatarRenderer.Opacity = opacityWas;
             }
         }
-		private void SetPathData_g1764(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1764(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1764(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1764(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1764(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            opacityReceiver.Opacity = 0.8f;
+        }
         //----------------------------------------
 
 
@@ -26109,7 +29430,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path322(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x73c2ed;
+		}
+		private void SetPathOpacity_path322(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26126,12 +29451,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = colorWas;
             }
         }
-		private void SetPathData_g1727(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1727(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1727(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1727(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		colorReceiver.FillColor = 0x00ffff;
+        }
+        private void SetPathOpacity_g1727(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -26153,7 +29483,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path243(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xff5333;
+		}
+		private void SetPathOpacity_path243(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26177,7 +29511,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use1722(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path243(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xff5333;
+		}
+		private void SetPathOpacity_use1722(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path243(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26201,7 +29540,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use1724(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_path243(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xff5333;
+		}
+		private void SetPathOpacity_use1724(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_path243(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26220,12 +29564,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
              _patientAvatarRenderer.FillColor = colorWas;
             }
         }
-		private void SetPathData_g1720(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1720(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1720(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1720(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		colorReceiver.FillColor = 0xff5333;
+        }
+        private void SetPathOpacity_g1720(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -26241,7 +29590,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g6083(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g6083(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 
@@ -26268,6 +29622,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path1166(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -26286,6 +29644,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path4914(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path4914(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26306,6 +29668,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 				
 		}
+		private void SetPathOpacity_path46598(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
+		}
 		//----------------------------------------
 
 	
@@ -26324,6 +29690,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path3251(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path3251(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26346,7 +29716,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_path2449(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_path2449(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26366,6 +29740,10 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_path52326(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 				
+		}
+		private void SetPathOpacity_path52326(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26415,7 +29793,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g10882(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g10882(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -26439,7 +29822,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1952(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1952(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 
@@ -26467,6 +29855,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_g1952(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2088(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1952(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -26489,7 +29882,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6358(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6358(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26513,7 +29911,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6378(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6378(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26537,7 +29940,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6386(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6386(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26561,7 +29969,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6388(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6388(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26583,7 +29996,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g6376(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g6376(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -26599,12 +30017,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g6376(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g6284(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g6284(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g6284(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g6284(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g6284(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -26624,6 +30047,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g1952(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use2092(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1952(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26647,7 +30075,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6390(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6390(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26671,7 +30104,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6392(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6392(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26695,7 +30133,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6394(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6394(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26719,7 +30162,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use6396(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use6396(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26741,7 +30189,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g6398(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g6398(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -26757,12 +30210,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g6398(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g6287(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g6287(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g6287(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g6287(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g6287(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -26779,6 +30237,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_g1952(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use7584(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g1952(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26802,7 +30265,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7586(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7586(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26826,7 +30294,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7588(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7588(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26850,7 +30323,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7590(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7590(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26874,7 +30352,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		private void SetPathColor_use7592(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
 			SetPathColor_g6083(p, colorReceiver);
-		    
+		    colorReceiver.FillColor = 0xe;
+		}
+		private void SetPathOpacity_use7592(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_g6083(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -26896,7 +30379,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g7594(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g7594(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -26912,12 +30400,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_g7594(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g7596(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g7596(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g7596(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g7596(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g7596(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 	
@@ -26939,7 +30432,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_upperLeft(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000100;
+		}
+		private void SetPathOpacity_upperLeft(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26962,7 +30459,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_rect45026(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x000100;
+		}
+		private void SetPathOpacity_rect45026(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -26979,7 +30480,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_Marker(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_Marker(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 	
@@ -27001,7 +30507,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		
 		private void SetPathColor_rect1546(PaintAvatarInfo p, ColorReceiver colorReceiver)
 		{
-				
+				colorReceiver.FillColor = 0x010000;
+		}
+		private void SetPathOpacity_rect1546(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 		//----------------------------------------
 
@@ -27030,6 +30540,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1639(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27044,12 +30559,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1639(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1641(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1641(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1641(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1641(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1641(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27070,6 +30590,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1617(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27084,12 +30609,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1617(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1619(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1619(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1619(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1619(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1619(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27110,6 +30640,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1621(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27124,12 +30659,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1621(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1623(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1623(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1623(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1623(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1623(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27150,6 +30690,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1625(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27164,12 +30709,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1625(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1627(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1627(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1627(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1627(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1627(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27190,6 +30740,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1629(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27204,12 +30759,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1629(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1631(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1631(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1631(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1631(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1631(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27230,6 +30790,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3252(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27241,12 +30806,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3252(p);// 
             }
         }
-		private void SetPathData_g3254(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3254(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3254(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3254(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3254(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27267,6 +30837,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1633(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27281,12 +30856,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1633(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1635(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1635(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1635(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1635(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1635(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27310,7 +30890,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1637(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1637(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -27331,6 +30916,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3891_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27345,12 +30935,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3891_8(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3893_8(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3893_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3893_8(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3893_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3893_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27371,6 +30966,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3895_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27385,12 +30985,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3895_8(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3897_1(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3897_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3897_1(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3897_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3897_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27411,6 +31016,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3899_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27422,12 +31032,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3899_1(p);// 
             }
         }
-		private void SetPathData_g3901_0(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3901_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3901_0(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3901_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3901_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27448,6 +31063,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3903_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27459,12 +31079,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3903_8(p);// 
             }
         }
-		private void SetPathData_g3905_5(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3905_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3905_5(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3905_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3905_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27485,6 +31110,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3907_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27499,12 +31129,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3907_0(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3909_9(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3909_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3909_9(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3909_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3909_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27526,7 +31161,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3911_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3911_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -27547,6 +31187,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3846_1(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27561,12 +31206,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3846_1(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3848_9(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3848_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3848_9(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3848_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3848_9(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27587,6 +31237,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3851_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27601,12 +31256,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3851_8(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3853_4(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3853_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3853_4(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3853_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3853_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27627,6 +31287,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3855_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27638,12 +31303,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3855_6(p);// 
             }
         }
-		private void SetPathData_g3857_2(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3857_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3857_2(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3857_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3857_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27664,6 +31334,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3859_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27675,12 +31350,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3859_8(p);// 
             }
         }
-		private void SetPathData_g3861_0(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3861_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3861_0(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3861_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3861_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27698,6 +31378,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3863_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27709,12 +31394,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3863_7(p);// use793
             }
         }
-		private void SetPathData_g3865_6(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3865_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3865_6(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3865_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3865_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27736,7 +31426,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3867_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3867_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -27757,6 +31452,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3869_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27771,12 +31471,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3869_0(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3871_5(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3871_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3871_5(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3871_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3871_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27797,6 +31502,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3873_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27811,12 +31521,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3873_2(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3875_5(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3875_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3875_5(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3875_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3875_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27837,6 +31552,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3877_4(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27848,12 +31568,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3877_4(p);// 
             }
         }
-		private void SetPathData_g3879_5(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3879_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3879_5(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3879_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3879_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27874,6 +31599,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3881_2(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27885,12 +31615,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3881_2(p);// 
             }
         }
-		private void SetPathData_g3883_6(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3883_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3883_6(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3883_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3883_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27908,6 +31643,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3885_7(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27919,12 +31659,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3885_7(p);// use793
             }
         }
-		private void SetPathData_g3887_6(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3887_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3887_6(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3887_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3887_6(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -27946,7 +31691,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3889_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3889_8(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -27967,6 +31717,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3891(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -27981,12 +31736,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3891(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3893(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3893(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3893(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3893(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3893(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28007,6 +31767,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3895(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28021,12 +31786,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3895(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3897(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3897(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3897(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3897(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3897(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28047,6 +31817,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3899(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28058,12 +31833,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3899(p);// 
             }
         }
-		private void SetPathData_g3901(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3901(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3901(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3901(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3901(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28084,6 +31864,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3903(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28095,12 +31880,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3903(p);// 
             }
         }
-		private void SetPathData_g3905(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3905(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3905(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3905(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3905(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28121,6 +31911,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3907(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28135,12 +31930,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3907(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3909(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3909(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3909(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3909(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3909(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28162,7 +31962,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3911(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3911(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -28183,6 +31988,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3846(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28197,12 +32007,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3846(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3848(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3848(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3848(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3848(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3848(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28223,6 +32038,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3851(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28237,12 +32057,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3851(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3853(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3853(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3853(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3853(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3853(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28263,6 +32088,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3855(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28274,12 +32104,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3855(p);// 
             }
         }
-		private void SetPathData_g3857(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3857(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3857(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3857(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3857(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28300,6 +32135,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3859(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28311,12 +32151,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3859(p);// 
             }
         }
-		private void SetPathData_g3861(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3861(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3861(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3861(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3861(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28334,6 +32179,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3863(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28345,12 +32195,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3863(p);// use793
             }
         }
-		private void SetPathData_g3865(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3865(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3865(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3865(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3865(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28372,7 +32227,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3867(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3867(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -28393,6 +32253,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3869(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28407,12 +32272,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3869(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3871(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3871(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3871(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3871(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3871(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28433,6 +32303,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3873(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28447,12 +32322,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3873(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3875(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3875(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3875(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3875(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3875(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28473,6 +32353,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3877(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28484,12 +32369,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3877(p);// 
             }
         }
-		private void SetPathData_g3879(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3879(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3879(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3879(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3879(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28510,6 +32400,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3881(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28521,12 +32416,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3881(p);// 
             }
         }
-		private void SetPathData_g3883(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3883(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3883(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3883(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3883(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28544,6 +32444,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3885(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28555,12 +32460,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3885(p);// use793
             }
         }
-		private void SetPathData_g3887(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3887(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3887(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3887(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3887(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28582,7 +32492,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3889(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3889(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -28603,6 +32518,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3913(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28617,12 +32537,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3913(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3915(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3915(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3915(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3915(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3915(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28643,6 +32568,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3917(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28657,12 +32587,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3917(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3919(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3919(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3919(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3919(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3919(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28683,6 +32618,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3921(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28694,12 +32634,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3921(p);// 
             }
         }
-		private void SetPathData_g3923(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3923(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3923(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3923(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3923(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28720,6 +32665,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3925(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28731,12 +32681,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3925(p);// 
             }
         }
-		private void SetPathData_g3927(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3927(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3927(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3927(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3927(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28754,6 +32709,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3929(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28765,12 +32725,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3929(p);// use793
             }
         }
-		private void SetPathData_g3931(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3931(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3931(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3931(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3931(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28792,7 +32757,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3933(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3933(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -28813,6 +32783,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1526(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28827,12 +32802,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1526(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1528(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1528(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1528(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1528(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1528(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28853,6 +32833,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1530(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28867,12 +32852,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1530(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1532(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1532(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1532(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1532(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1532(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28893,6 +32883,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1534(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28904,12 +32899,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1534(p);// 
             }
         }
-		private void SetPathData_g1536(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1536(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1536(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1536(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1536(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28930,6 +32930,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1538(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28941,12 +32946,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1538(p);// 
             }
         }
-		private void SetPathData_g1540(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1540(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1540(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1540(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1540(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -28964,6 +32974,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1542(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -28975,12 +32990,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1542(p);// use793
             }
         }
-		private void SetPathData_g1544(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1544(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1544(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1544(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1544(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29002,7 +33022,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1546(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1546(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -29023,6 +33048,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2377(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29037,12 +33067,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2377(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g2379(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2379(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2379(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2379(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2379(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29063,6 +33098,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2381(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29077,12 +33117,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2381(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g2383(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2383(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2383(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2383(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2383(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29103,6 +33148,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2385(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29114,12 +33164,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2385(p);// 
             }
         }
-		private void SetPathData_g2387(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2387(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2387(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2387(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2387(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29140,6 +33195,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2389(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29151,12 +33211,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2389(p);// 
             }
         }
-		private void SetPathData_g2391(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2391(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2391(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2391(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2391(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29174,6 +33239,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2393(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29185,12 +33255,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2393(p);// use793
             }
         }
-		private void SetPathData_g2395(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2395(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2395(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2395(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2395(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29212,7 +33287,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g2397(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g2397(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -29233,6 +33313,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2329(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29247,12 +33332,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2329(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g2331(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2331(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2331(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2331(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2331(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29273,6 +33363,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2333(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29287,12 +33382,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2333(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g2335(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2335(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2335(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2335(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2335(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29313,6 +33413,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2337(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29324,12 +33429,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2337(p);// 
             }
         }
-		private void SetPathData_g2339(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2339(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2339(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2339(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2339(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29350,6 +33460,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2341(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29361,12 +33476,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2341(p);// 
             }
         }
-		private void SetPathData_g2343(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2343(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2343(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2343(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2343(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29387,6 +33507,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use2373(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29401,12 +33526,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use2373(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g2375(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g2375(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g2375(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g2375(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g2375(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29428,7 +33558,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g2349(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g2349(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -29449,6 +33584,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1518(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29463,12 +33603,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1518(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1520(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1520(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1520(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1520(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1520(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29489,6 +33634,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use1514(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29503,12 +33653,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use1514(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g1516(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1516(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1516(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1516(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1516(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29529,6 +33684,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use797(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29540,12 +33700,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use797(p);// 
             }
         }
-		private void SetPathData_g1947(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1947(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1947(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1947(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1947(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29566,6 +33731,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use795(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29577,12 +33747,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use795(p);// 
             }
         }
-		private void SetPathData_g1944(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1944(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1944(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1944(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1944(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29600,6 +33775,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use793(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29611,12 +33791,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use793(p);// use793
             }
         }
-		private void SetPathData_g1941(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g1941(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g1941(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g1941(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g1941(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29638,7 +33823,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g823(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g823(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -29659,6 +33849,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3001(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29673,12 +33868,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3001(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3003(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3003(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3003(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3003(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3003(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29699,6 +33899,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3005(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29713,12 +33918,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3005(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3007(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3007(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3007(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3007(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3007(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29739,6 +33949,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3009(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29750,12 +33965,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3009(p);// 
             }
         }
-		private void SetPathData_g3011(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3011(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3011(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3011(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3011(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29776,6 +33996,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3013(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29787,12 +34012,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3013(p);// 
             }
         }
-		private void SetPathData_g3015(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3015(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3015(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3015(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3015(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29810,6 +34040,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3018(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29821,12 +34056,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3018(p);// use793
             }
         }
-		private void SetPathData_g3020(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3020(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3020(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3020(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3020(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29848,7 +34088,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3022(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3022(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -29869,6 +34114,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3024(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29883,12 +34133,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3024(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3026(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3026(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3026(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3026(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3026(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29909,6 +34164,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3028(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29923,12 +34183,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3028(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3030(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3030(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3030(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3030(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3030(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29949,6 +34214,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3032(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29960,12 +34230,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3032(p);// 
             }
         }
-		private void SetPathData_g3034(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3034(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3034(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3034(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3034(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -29986,6 +34261,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3036(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -29997,12 +34277,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3036(p);// 
             }
         }
-		private void SetPathData_g3038(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3038(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3038(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3038(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3038(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30020,6 +34305,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3040(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30031,12 +34321,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3040(p);// use793
             }
         }
-		private void SetPathData_g3042(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3042(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3042(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3042(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3042(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30058,7 +34353,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3044(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3044(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -30079,6 +34379,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3046(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30093,12 +34398,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3046(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3048(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3048(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3048(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3048(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3048(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30119,6 +34429,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3050(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30133,12 +34448,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3050(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3052(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3052(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3052(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3052(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3052(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30159,6 +34479,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3054(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30170,12 +34495,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3054(p);// 
             }
         }
-		private void SetPathData_g3056(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3056(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3056(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3056(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3056(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30196,6 +34526,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3058(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30207,12 +34542,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3058(p);// 
             }
         }
-		private void SetPathData_g3060(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3060(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3060(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3060(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3060(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30233,6 +34573,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3062(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30247,12 +34592,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3062(p);// 
             _patientAvatarRenderer.Transformation = transformMatrixWas;            }
         }
-		private void SetPathData_g3064(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3064(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3064(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3064(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3064(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30274,7 +34624,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3066(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3066(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -30294,6 +34649,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{
 			SetPathColor_rect1546(p, colorReceiver);
 		    
+		}
+		private void SetPathOpacity_use3068(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
 		}
         //----------------------------------------
 
@@ -30322,6 +34682,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3072(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 
@@ -30349,6 +34714,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3076(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30360,12 +34730,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3076(p);// 
             }
         }
-		private void SetPathData_g3078(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3078(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3078(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3078(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3078(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30386,6 +34761,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3080(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30397,12 +34777,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3080(p);// 
             }
         }
-		private void SetPathData_g3082(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3082(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3082(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3082(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3082(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30420,6 +34805,11 @@ int colorWas = _patientAvatarRenderer.FillColor;
 			SetPathColor_rect1546(p, colorReceiver);
 		    
 		}
+		private void SetPathOpacity_use3084(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_rect1546(p, opacityReceiver);
+		     
+		}
         //----------------------------------------
 
 			
@@ -30431,12 +34821,17 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		        Paint_use3084(p);// use793
             }
         }
-		private void SetPathData_g3086(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_g3086(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_g3086(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_g3086(PaintAvatarInfo p, ColorReceiver colorReceiver)
+        {
+        		
+        }
+        private void SetPathOpacity_g3086(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+        {
+            
+        }
         //----------------------------------------
 
 			
@@ -30458,7 +34853,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g3088(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g3088(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -30493,7 +34893,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_g1549(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_g1549(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -30516,7 +34921,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_layer1_0(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_layer1_0(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 			
@@ -30531,7 +34941,12 @@ int colorWas = _patientAvatarRenderer.FillColor;
 		{ // not usable for groups
 		}
 		private void SetPathColor_svg374(PaintAvatarInfo p, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				
+		}
+		private void SetPathOpacity_svg374(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
+		{
+		    
 		}
 
 		 

@@ -32,8 +32,13 @@ namespace Philips.PIC.CommonControls
             var red = FillColor / 0x10000;
             var green = (FillColor / 0x100) % 0x100;
             var blue = FillColor % 0x100;
+
+            int opacity = (int)System.Math.Round(Opacity * 255.0);
+            if (opacity <= 0) return;
+            if (opacity > 255) opacity = 255;
+
             SolidBrush redBrush = new SolidBrush(
-                Color.FromArgb(Opacity, red, green, blue));
+                Color.FromArgb(opacity, red, green, blue));
 
             Matrix m = new Matrix(Transformation.A,
                 Transformation.B,
@@ -48,7 +53,9 @@ namespace Philips.PIC.CommonControls
 
         public void Interpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath min, IRenderPath max, IRenderPath time, RateProviderTopic topic)
         {
+            if (FillColor == -1) return;
 
+            // Generated Code should not contain such pathes
             if (min.Path.PointCount != max.Path.PointCount) return;
 
             // iterate through all points in min (and max)
@@ -84,7 +91,7 @@ namespace Philips.PIC.CommonControls
         }
 
         public int FillColor { get; set; } = -1;
-        public int Opacity { get; set; } = 255;
+        public float Opacity { get; set; } = 1.0f;
 
         public TransformMatrix Transformation { get; set; } = new TransformMatrix();
     }

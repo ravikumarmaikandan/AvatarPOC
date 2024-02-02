@@ -93,8 +93,16 @@ $ELEMENTS$
              _patientAvatarRenderer.FillColor = colorWas;
 </template>
 
+<template name="pushopacity">
+    float opacityWas = _patientAvatarRenderer.Opacity;
+    _patientAvatarRenderer.Opacity = $opacity$f;
+</template>
+<template name="popopacity">
+    _patientAvatarRenderer.Opacity = opacityWas;
+</template>
 
-<template name="pushtransformation">
+
+  <template name="pushtransformation">
 	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
 		   PushMatrix($TRANSFORM$);
 </template>
@@ -106,10 +114,11 @@ $ELEMENTS$
 <template name="PaintPopNoColor">$nonempty TRANSFORM:poptransformation$$nonempty opacity:popopacity$</template>
 
 
-<template name="ReceiveColor">colorReceiver.FillColor = 0x$onlyhex:fill$</template>
+<template name="receiveColor">colorReceiver.FillColor = 0x$onlyhex:fill$;</template>
+<template name="receiveOpacity">opacityReceiver.Opacity = $opacity$f;</template>
 
 
-	<!-- ======================================================  -->
+  <!-- ======================================================  -->
 <skill name="Default">
   <path>
     <body>
@@ -128,7 +137,11 @@ $nonempty TRANSFORM:poptransformation$
 		
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
-				$nonempty fill:receivecolor$
+				$nonempty fill:receiveColor$
+		}
+		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+		{
+		    $nonempty opacity:receiveOpacity$
 		}
 		//----------------------------------------
 ]]></body>
@@ -150,7 +163,12 @@ $recursive:PaintPop$        }
 		{ // not usable for groups
 		}
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{ // not usable for groups
+		{
+				$nonempty fill:receiveColor$
+		}
+		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+		{
+		    $nonempty opacity:receiveOpacity$
 		}
 ]]></body>
   </group>
@@ -170,7 +188,12 @@ $recursive:PaintPop$        }
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
 			SetPathColor_$token:LINK$(p, colorReceiver);
-		    $nonempty fill:receivecolor$
+		    $nonempty fill:receiveColor$
+		}
+		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_$token:LINK$(p, opacityReceiver);
+		    $nonempty opacity:receiveOpacity$ 
 		}
         //----------------------------------------
 ]]></body>
@@ -227,12 +250,17 @@ $recursive:PaintPop$        }
 $recursive:PaintPush$$paintlist$
 $recursive:PaintPop$            }
         }
-		private void SetPathData_$token:ID$(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{ // not usable for groups
-		}
+        private void SetPathData_$token:ID$(IRenderPath path)
+        { // not usable for groups
+        }
+        private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+        {
+        		$nonempty fill:receiveColor$
+        }
+        private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+        {
+            $nonempty opacity:receiveOpacity$
+        }
         //----------------------------------------
 ]]></body>
 	</group>
@@ -266,24 +294,32 @@ $recursive:PaintPop$            }
 
   <group>
     <member name="pathlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
-	  <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Color);</member>
+    <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Color);</member>
+    <member name="opacitylist" separator="#LF">            SetPathOpacity_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Opacity);</member>
     <body>
 				<![CDATA[
         //Group: $NAME$
         private void Paint_$token:ID$($PaintSignature$)
         {
-			int colorWas = _patientAvatarRenderer.FillColor;
-			ColorReceiver MinColor = new ColorReceiver(colorWas);
-			ColorReceiver MaxColor = new ColorReceiver(colorWas);
-			ColorReceiver TimeColor = new ColorReceiver(colorWas);
+            int colorWas = _patientAvatarRenderer.FillColor;
+            ColorReceiver MinColor = new ColorReceiver(colorWas);
+            ColorReceiver MaxColor = new ColorReceiver(colorWas);
+            ColorReceiver TimeColor = new ColorReceiver(colorWas);
 $colorlist$
-			_patientAvatarRenderer.FillColor = MinColor.FillColor;
-		    IRenderPath MinPath = new TemporaryRenderPath();
-		    IRenderPath MaxPath = new TemporaryRenderPath();
-		    IRenderPath TimePath = new TemporaryRenderPath();
+            _patientAvatarRenderer.FillColor = MinColor.FillColor;
+            float opacityWas = _patientAvatarRenderer.Opacity;
+            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+$opacitylist$
+            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+            IRenderPath MinPath = new TemporaryRenderPath();
+            IRenderPath MaxPath = new TemporaryRenderPath();
+            IRenderPath TimePath = new TemporaryRenderPath();
 $pathlist$
-			_patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
-			_patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
+            _patientAvatarRenderer.FillColor = colorWas;
+            _patientAvatarRenderer.Opacity = opacityWas;
         }
         //----------------------------------------
 ]]></body>
@@ -372,6 +408,7 @@ $members$
         //Use (for ColorFrom)
         private void Paint_$token:ID$($PaintSignature$)
         {
+        // here i am $opacity$
             $recursive:PaintPushNoColor$
 		    int colorWas = _patientAvatarRenderer.FillColor;
             _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
@@ -387,6 +424,11 @@ $recursive:PaintPopNoColor$
 		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
 		{
 			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+		}
+		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_$token:LINK$(p, opacityReceiver);
+		    $nonempty opacity:receiveOpacity$
 		}
         //----------------------------------------
 ]]></body>
@@ -410,6 +452,11 @@ $recursive:PaintPopNoColor$
 		{
 		    // todo? use ShadowColorFrom Topic
 			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+		}
+		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+		{
+			SetPathOpacity_$token:LINK$(p, opacityReceiver);
+		    $nonempty opacity:receiveOpacity$
 		}
 		//----------------------------------------
 ]]>
