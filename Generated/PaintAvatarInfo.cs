@@ -31,12 +31,12 @@ namespace Philips.PIC.CommonControls
 
     public class TransformMatrix
     {
-        public float a;
-        public float b;
-        public float c;
-        public float d;
-        public float e;
-        public float f;
+        public float A { get; set; }
+        public float B { get; set; }
+        public float C { get; set; }
+        public float D { get; set; }
+        public float E { get; set; }
+        public float F { get; set; }
     }
 
     public class TopicInfo
@@ -122,9 +122,9 @@ namespace Philips.PIC.CommonControls
         public StateProviderTopic CVP { get; } = new StateProviderTopic();
         public StateProviderTopic Oxygen { get; } = new StateProviderTopic();
         public StateProviderTopic TidalVolume { get; } = new StateProviderTopic();
-        public StateProviderTopic CO2 { get; } = new StateProviderTopic();
+        public StateProviderTopic CO2 { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
         public StateProviderTopic Temp { get; } = new StateProviderTopic();
-        public StateProviderTopic Brain { get; } = new StateProviderTopic();
+        public StateProviderTopic Brain { get; } = new StateProviderTopic() { State = TopicStates.TooHigh };
         public StateProviderTopic CO { get; } = new StateProviderTopic();
         public StateProviderTopic FiO2 { get; } = new StateProviderTopic();
         public StateProviderTopic AWP { get; } = new StateProviderTopic();
@@ -202,8 +202,8 @@ namespace Philips.PIC.CommonControls
             }
         }
 
-        public int[] ColorMap = new int[(int)TopicStates.Max];
-        public int[] ShadowColorMap = new int[(int)TopicStates.Max];
+        public int[] ColorMap { get; set; } = new int[(int)TopicStates.Max];
+        public int[] ShadowColorMap { get; set; } = new int[(int)TopicStates.Max];
 
         public void SetColor(TopicStates index, int value)
         {
@@ -234,6 +234,8 @@ namespace Philips.PIC.CommonControls
                 case TopicStates.NotAvailable: State = TopicStates.Unknown; break;
                 case TopicStates.Unknown: State = TopicStates.TooLow; break;
                 case TopicStates.TooLow: State = TopicStates.Safe; break;
+                case TopicStates.Max:
+                    break;
                 default:
                 case TopicStates.Safe: State = TopicStates.Unknown; break;
                 case TopicStates.TooHigh: State = TopicStates.Unknown; break;
@@ -256,6 +258,10 @@ namespace Philips.PIC.CommonControls
                 base.State = value;
                 switch (value)
                 {
+                    case TopicStates.NotAvailable:
+                    case TopicStates.Unknown:
+                    case TopicStates.Max:
+                        break;
                     default: RateInHz = RateStopped; break;
                     case TopicStates.TooLow: RateInHz = RateLow; break;
                     case TopicStates.Safe: RateInHz = RateSafe; break;
@@ -355,8 +361,8 @@ namespace Philips.PIC.CommonControls
         {
             TransformMatrix o = _patientAvatarRenderer.Transformation;
 
-            float a1 = o.a; float c1 = o.c; float e1 = o.e;
-            float b1 = o.b; float d1 = o.d; float f1 = o.f;
+            float a1 = o.A; float c1 = o.C; float e1 = o.E;
+            float b1 = o.B; float d1 = o.D; float f1 = o.F;
 
             float a2 = (float)a; float c2 = (float)c; float e2 = (float)e;
             float b2 = (float)b; float d2 = (float)d; float f2 = (float)f;
@@ -364,12 +370,12 @@ namespace Philips.PIC.CommonControls
             TransformMatrix m = new TransformMatrix
             {
 
-                a = a1 * a2 + b2 * c1,
-                c = a1 * c2 + c1 * d2,
-                e = e1 + a1 * e2 + c1 * f2,
-                b = a2 * b1 + b2 * d1,
-                d = b1 * c2 + d1 * d2,
-                f = f1 + b1 * e2 + d1 * f2
+                A = a1 * a2 + b2 * c1,
+                C = a1 * c2 + c1 * d2,
+                E = e1 + a1 * e2 + c1 * f2,
+                B = a2 * b1 + b2 * d1,
+                D = b1 * c2 + d1 * d2,
+                F = f1 + b1 * e2 + d1 * f2
             };
             _patientAvatarRenderer.Transformation = m;
         }
