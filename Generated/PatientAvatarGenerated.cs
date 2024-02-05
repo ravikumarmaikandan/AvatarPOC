@@ -26176,28 +26176,83 @@ opacityReceiver.Opacity = 0.8f;
         SetPathOpacity_path46598(p, opacityReceiver);
      }
     //----------------------------------------
- 
+
+         
     private void Paint_g25478(PaintAvatarInfo p)
     {
-        // Transformation was = p.trans;
-        // p.SetTransformation({0.120211,0,0,0.120211,75.112,210.67});
-        // PathIF P[12];
-        // PathIF Time;
-        //         // SetPathData_path32072(P[0]); // P01
-        // SetPathData_path30398(P[1]); // P02
-        // SetPathData_path28596(P[2]); // P03
-        // SetPathData_path27852(P[3]); // P04
-        // SetPathData_path27072(P[4]); // P05
-        // SetPathData_path25506(P[5]); // P06
-        // SetPathData_path25504(P[6]); // P07
-        // SetPathData_path25502(P[7]); // P08
-        // SetPathData_path25500(P[8]); // P09
-        // SetPathData_path25475(P[9]); // P10
-        // SetPathData_path26748(P[10]); // P98
-        // SetPathData_path33110(P[11]); // P99
-        // SetPathData_use2160(Time);
-        // p.PaintInterpolated(P,12,Time,PulseRateHeart);//, jumpsback);    
-        // p.trans = was; 
+        TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
+        PushMatrix(0.120211,0,0,0.120211,75.112,210.67);
+
+        IRenderPath[] P = new TemporaryRenderPath[12];
+        ColorReceiver[] PC = new ColorReceiver[12];
+        int colorWas = _patientAvatarRenderer.FillColor;
+        IRenderPath Time = new TemporaryRenderPath();
+        // P01
+        PC[0] = new ColorReceiver(colorWas);
+        SetPathColor_path32072(p, PC[0]);
+        P[0] = new TemporaryRenderPath();
+        SetPathData_path32072(P[0]);
+        // P02
+        PC[1] = new ColorReceiver(colorWas);
+        SetPathColor_path30398(p, PC[1]);
+        P[1] = new TemporaryRenderPath();
+        SetPathData_path30398(P[1]);
+        // P03
+        PC[2] = new ColorReceiver(colorWas);
+        SetPathColor_path28596(p, PC[2]);
+        P[2] = new TemporaryRenderPath();
+        SetPathData_path28596(P[2]);
+        // P04
+        PC[3] = new ColorReceiver(colorWas);
+        SetPathColor_path27852(p, PC[3]);
+        P[3] = new TemporaryRenderPath();
+        SetPathData_path27852(P[3]);
+        // P05
+        PC[4] = new ColorReceiver(colorWas);
+        SetPathColor_path27072(p, PC[4]);
+        P[4] = new TemporaryRenderPath();
+        SetPathData_path27072(P[4]);
+        // P06
+        PC[5] = new ColorReceiver(colorWas);
+        SetPathColor_path25506(p, PC[5]);
+        P[5] = new TemporaryRenderPath();
+        SetPathData_path25506(P[5]);
+        // P07
+        PC[6] = new ColorReceiver(colorWas);
+        SetPathColor_path25504(p, PC[6]);
+        P[6] = new TemporaryRenderPath();
+        SetPathData_path25504(P[6]);
+        // P08
+        PC[7] = new ColorReceiver(colorWas);
+        SetPathColor_path25502(p, PC[7]);
+        P[7] = new TemporaryRenderPath();
+        SetPathData_path25502(P[7]);
+        // P09
+        PC[8] = new ColorReceiver(colorWas);
+        SetPathColor_path25500(p, PC[8]);
+        P[8] = new TemporaryRenderPath();
+        SetPathData_path25500(P[8]);
+        // P10
+        PC[9] = new ColorReceiver(colorWas);
+        SetPathColor_path25475(p, PC[9]);
+        P[9] = new TemporaryRenderPath();
+        SetPathData_path25475(P[9]);
+        // P98
+        PC[10] = new ColorReceiver(colorWas);
+        SetPathColor_path26748(p, PC[10]);
+        P[10] = new TemporaryRenderPath();
+        SetPathData_path26748(P[10]);
+        // P99
+        PC[11] = new ColorReceiver(colorWas);
+        SetPathColor_path33110(p, PC[11]);
+        P[11] = new TemporaryRenderPath();
+        SetPathData_path33110(P[11]);
+        SetPathData_use2160(Time);
+        if (PC[0] != null) _patientAvatarRenderer.FillColor = PC[0].FillColor;
+        _patientAvatarRenderer.MultiPointInterpolate(p, P, Time, p.TopicInfo.PulseRateHeart);
+        _patientAvatarRenderer.FillColor = colorWas;
+        _patientAvatarRenderer.Transformation = transformMatrixWas;
+
      }
      //----------------------------------------
 

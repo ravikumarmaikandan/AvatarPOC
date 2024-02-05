@@ -89,10 +89,18 @@ namespace Philips.PIC.CommonControls
 
             Fill(paintAvatarInfo, tempRenderPath);
         }
+        public void MultiPointInterpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath[] P, IRenderPath time, RateProviderTopic topic)
+        {
+            // shortcut to test code generation
+            Interpolate(paintAvatarInfo, P[2], P[10], time, topic);
+        }
 
         public int FillColor { get; set; } = -1;
         public float Opacity { get; set; } = 1.0f;
 
         public TransformMatrix Transformation { get; set; } = new TransformMatrix();
     }
+
+
+
 }

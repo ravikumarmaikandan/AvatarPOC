@@ -304,20 +304,29 @@ $pathlist$
 </skill>
 
 <skill name="Flying">
+  <template name="indent">        </template>
     <group>
-      <member name="ps" separator="#LF" sort="P"><![CDATA[        // SetPathData_$token:MEMBER_ID$(P[$NO$]); // $MEMBER_NAME$]]></member>
-      <member name="members" separator="#LF" sort="!P"><![CDATA[        // SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);]]></member>
-      <body><![CDATA[ 
+      <member name="ps" separator="#LF" sort="P"><![CDATA[        // $MEMBER_NAME$
+        PC[$NO$] = new ColorReceiver(colorWas);
+        SetPathColor_$token:MEMBER_ID$(p, PC[$NO$]);
+        P[$NO$] = new TemporaryRenderPath();
+        SetPathData_$token:MEMBER_ID$(P[$NO$]);]]></member>
+      <member name="members" separator="#LF" sort="!P"><![CDATA[        SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);]]></member>
+      <body>
+        <![CDATA[ 
     private void Paint_$token:ID$($PaintSignature$)
     {
-        // Transformation was = p.trans;
-        // p.SetTransformation({0.120211,0,0,0.120211,75.112,210.67});
-        // PathIF P[$ps_count$];
-        // PathIF Time;
-        // $ps$
+$recursive:PaintPushNoColor$
+        IRenderPath[] P = new TemporaryRenderPath[$ps_count$];
+        ColorReceiver[] PC = new ColorReceiver[$ps_count$];
+        int colorWas = _patientAvatarRenderer.FillColor;
+        IRenderPath Time = new TemporaryRenderPath();
+$ps$
 $members$
-        // p.PaintInterpolated(P,$ps_count$,Time,PulseRateHeart);//, jumpsback);    
-        // p.trans = was; 
+        if (PC[0] != null) _patientAvatarRenderer.FillColor = PC[0].FillColor;
+        _patientAvatarRenderer.MultiPointInterpolate(p, P, Time, p.TopicInfo.PulseRateHeart);
+        _patientAvatarRenderer.FillColor = colorWas;
+$recursive:PaintPopNoColor$
      }
      //----------------------------------------
 ]]>
