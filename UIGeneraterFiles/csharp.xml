@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <templates>
-<template name="BODY_HEADER">
-	<![CDATA[#region Header
+<template name="BODY_HEADER"><![CDATA[#region Header
 // © 2024 Koninklijke Philips N.V.  All rights reserved.
 // Reproduction or transmission in whole or in part, in any form or by any means, 
 // electronic, mechanical or otherwise, is prohibited without the prior  written consent of 
@@ -15,19 +14,16 @@
 
 namespace Philips.PIC.CommonControls
 {
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
-	public class PaintAvatar: PatientAvatarBase
-    {
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("$token:TOOLNAME$", "1")]
+  public class PaintAvatar: PatientAvatarBase
+  {
 ]]></template>
 
-<template name="BODY_FOOTER">
-		 <![CDATA[
-
-        public void PaintSVG($PaintSignature$)
-        {
-			Paint_$token:TOPID$(p);
-        }
+<template name="BODY_FOOTER"><![CDATA[    public void PaintSVG($PaintSignature$)
+    {
+        Paint_$token:TOPID$(p);
     }
+  }
 }]]></template>
 
 <template name="HEAD_HEADER"><![CDATA[
@@ -40,24 +36,22 @@ namespace Philips.PIC.CommonControls
 
 <template name="PaintSignature"><![CDATA[PaintAvatarInfo p]]></template>
 
-
-<template name="Move"><![CDATA[            path.Move($X$f, $Y$f);
+<template name="Move"><![CDATA[        path.Move($X$f, $Y$f);
 ]]></template>
-<template name="Line"><![CDATA[            path.Line($X$f, $Y$f);
+<template name="Line"><![CDATA[        path.Line($X$f, $Y$f);
 ]]></template>
-<template name="Rect"><![CDATA[            // path.Rect($X1$f, $Y1$f,
+<template name="Rect"><![CDATA[        // path.Rect($X1$f, $Y1$f,
                        // $X2$f, $Y2$f);
 ]]></template>
-<template name="Quad"><![CDATA[            path.Quad($X1$f, $Y1$f,
+<template name="Quad"><![CDATA[        path.Quad($X1$f, $Y1$f,
                        $X2$f, $Y2$f);
 ]]></template>
-<template name="Cubic"><![CDATA[            path.Cubic($X1$f, $Y1$f, 
-                       $X2$f, $Y2$f, 
-		               $X3$f, $Y3$f);
+<template name="Cubic"><![CDATA[        path.Cubic($X1$f, $Y1$f, 
+                   $X2$f, $Y2$f, 
+                   $X3$f, $Y3$f);
 ]]></template>
-<template name="Close"><![CDATA[            path.Close();
+<template name="Close"><![CDATA[        path.Close();
 ]]></template>
-
 
 <!--LineFeed-->
 <template name="LF">
@@ -71,42 +65,32 @@ namespace Philips.PIC.CommonControls
 <template name="CLF">,
 </template>
 
-<template name="CLF">,
-</template>
-
-<template name="FILL_DEFAULT">none</template>
-
-<template name="PointDef">
-	<![CDATA[
-        private void SetPathData_$token:ID$(IRenderPath path)
-        {   // Label: $NAME$
-$ELEMENTS$
-        }
+<template name="PointDef"><![CDATA[
+    private void SetPathData_$token:ID$(IRenderPath path)
+    { // Label: $NAME$
+$ELEMENTS$    }
 ]]></template>
 
 <template name="MemberName"><![CDATA[// $MEMBER_NAME$]]></template>
 
-<template name="pushcolor">int colorWas = _patientAvatarRenderer.FillColor;
-             _patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
+<template name="pushcolor">$indent$int colorWas = _patientAvatarRenderer.FillColor;
+$indent$_patientAvatarRenderer.FillColor = 0x$onlyhex:fill$;
 </template>
-<template name="popcolor">
-             _patientAvatarRenderer.FillColor = colorWas;
+<template name="popcolor">$indent$_patientAvatarRenderer.FillColor = colorWas;
 </template>
 
-<template name="pushopacity">
-    float opacityWas = _patientAvatarRenderer.Opacity;
-    _patientAvatarRenderer.Opacity = $opacity$f;
+<template name="pushopacity">$indent$float opacityWas = _patientAvatarRenderer.Opacity;
+$indent$_patientAvatarRenderer.Opacity = $opacity$f;
 </template>
-<template name="popopacity">
-    _patientAvatarRenderer.Opacity = opacityWas;
+<template name="popopacity">$indent$_patientAvatarRenderer.Opacity = opacityWas;
 </template>
 
 
-  <template name="pushtransformation">
-	       TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
-		   PushMatrix($TRANSFORM$);
+  <template name="pushtransformation">$indent$TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
+$indent$PushMatrix($TRANSFORM$);
 </template>
-<template name="poptransformation">            _patientAvatarRenderer.Transformation = transformMatrixWas;</template>
+<template name="poptransformation">$indent$_patientAvatarRenderer.Transformation = transformMatrixWas;
+</template>
 
 <template name="PaintPush">$nonempty TRANSFORM:pushtransformation$$nonempty fill:pushcolor$$nonempty opacity:pushopacity$</template>
 <template name="PaintPop">$nonempty TRANSFORM:poptransformation$$nonempty fill:popcolor$$nonempty opacity:popopacity$</template>
@@ -114,88 +98,81 @@ $ELEMENTS$
 <template name="PaintPopNoColor">$nonempty TRANSFORM:poptransformation$$nonempty opacity:popopacity$</template>
 
 
-<template name="receiveColor">colorReceiver.FillColor = 0x$onlyhex:fill$;</template>
-<template name="receiveOpacity">opacityReceiver.Opacity = $opacity$f;</template>
+<template name="receiveColor">$indent$colorReceiver.FillColor = 0x$onlyhex:fill$;
+</template>
+<template name="receiveOpacity">$indent$opacityReceiver.Opacity = $opacity$f;
+</template>
 
 
   <!-- ======================================================  -->
 <skill name="Default">
+  <template name ="indent">        </template>
   <path>
-    <body>
-	<![CDATA[
-		// Skill: default -> Path $NAME$
-        private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-        {
-            $nonempty TRANSFORM:pushtransformation$
-            $nonempty fill:pushcolor$
-            var tempRenderPath = new TemporaryRenderPath();
-			SetPathData_$token:ID$(tempRenderPath);
-            _patientAvatarRenderer.Fill(p,tempRenderPath);
+    <body><![CDATA[
+    // Skill: default -> Path $NAME$
+    private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+    {
+$nonempty TRANSFORM:pushtransformation$
+$nonempty fill:pushcolor$
+        var tempRenderPath = new TemporaryRenderPath();
+        SetPathData_$token:ID$(tempRenderPath);
+        _patientAvatarRenderer.Fill(p,tempRenderPath);
 $nonempty fill:popcolor$
 $nonempty TRANSFORM:poptransformation$
-        }
-		
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-				$nonempty fill:receiveColor$
-		}
-		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-		{
-		    $nonempty opacity:receiveOpacity$
-		}
-		//----------------------------------------
+    }
+    
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+$nonempty fill:receiveColor$    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+$nonempty opacity:receiveOpacity$    }
+    //----------------------------------------
 ]]></body>
 
   </path>
 
   <group>
-    <member name="paintlist" separator="#LF">		    Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-    <body>
-			<![CDATA[
-
-        //skill: default -> Group: $NAME$
-        private void Paint_$token:ID$($PaintSignature$)
-        {
+    <member name="paintlist" separator="#LF">        Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <body><![CDATA[
+    //skill: default -> Group: $NAME$
+    private void Paint_$token:ID$($PaintSignature$)
+    {
 $recursive:PaintPush$$paintlist$
-$recursive:PaintPop$        }
-        //----------------------------------------
-		private void SetPathData_$token:ID$(IRenderPath path)
-		{ // not usable for groups
-		}
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-				$nonempty fill:receiveColor$
-		}
-		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-		{
-		    $nonempty opacity:receiveOpacity$
-		}
+$recursive:PaintPop$    }
+    //----------------------------------------
+    private void SetPathData_$token:ID$(IRenderPath path)
+    { // not usable for groups
+    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+$nonempty fill:receiveColor$    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+$nonempty opacity:receiveOpacity$    }
 ]]></body>
   </group>
 
   <use>
-    <body>
-			<![CDATA[
-		// Skill: default -> use $NAME$
-        private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
-        {
-$recursive:PaintPush$            Paint_$token:LINK$(p);
-$recursive:PaintPop$        }
-		private void SetPathData_$token:ID$(IRenderPath path)
-        {
-            SetPathData_$token:LINK$(path);
-        }
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-			SetPathColor_$token:LINK$(p, colorReceiver);
-		    $nonempty fill:receiveColor$
-		}
-		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-		{
-			SetPathOpacity_$token:LINK$(p, opacityReceiver);
-		    $nonempty opacity:receiveOpacity$ 
-		}
-        //----------------------------------------
+    <body><![CDATA[
+    // Skill: default -> use $NAME$
+    private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+    {
+$recursive:PaintPush$        Paint_$token:LINK$(p);
+$recursive:PaintPop$    }
+    private void SetPathData_$token:ID$(IRenderPath path)
+    {
+        SetPathData_$token:LINK$(path);
+    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+        SetPathColor_$token:LINK$(p, colorReceiver);
+$nonempty fill:receiveColor$    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+        SetPathOpacity_$token:LINK$(p, opacityReceiver);
+$nonempty opacity:receiveOpacity$     }
+    //----------------------------------------
 ]]></body>
   </use>
 
@@ -205,12 +182,11 @@ $recursive:PaintPop$        }
 
 <skill name="HideAlways">
   <template name="hidden"><![CDATA[
-
-        private void Paint_$token:ID$($PaintSignature$) // $NAME$
-        {
-            // intentionally left blank: always hidden
-        }
-        //----------------------------------------
+    private void Paint_$token:ID$($PaintSignature$) // always hidden: '$NAME$'
+    {
+        // intentionally left blank (hidden)
+    }
+    //----------------------------------------
 ]]></template>
 
   <path><body>$recursive:hidden$</body></path>
@@ -220,62 +196,61 @@ $recursive:PaintPop$        }
 <!-- ======================================================  -->
 
 <skill name="Visibility">
+  <template name="indent">            </template>
   <path>
     <body><![CDATA[
 
-		private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+    private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+    {
+        if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
         {
-            if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
-            {
-			    // todo: color, matrix
-                var tempRenderPath = new TemporaryRenderPath();
-                SetPathData_$token:ID$(tempRenderPath);
-                _patientAvatarRenderer.Fill(p,tempRenderPath);
-            }
-		}
-        //----------------------------------------
+            // todo: color, matrix
+            var tempRenderPath = new TemporaryRenderPath();
+            SetPathData_$token:ID$(tempRenderPath);
+            _patientAvatarRenderer.Fill(p,tempRenderPath);
+        }
+    }
+    //----------------------------------------
 ]]></body>
 
   </path>
 
-	<group>
-		<member name="paintlist" separator="#LF">		        Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
-		<body>
-			<![CDATA[
+  <group>
+    <member name="paintlist" separator="#LF">            Paint_$token:MEMBER_ID$(p);$recursive:MemberName$</member>
+    <body>
+      <![CDATA[
 
-        private void Paint_$token:ID$($PaintSignature$) //Group: $NAME$
+    private void Paint_$token:ID$($PaintSignature$) //Group: $NAME$
+    {
+        if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
         {
-		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
-		    {
 $recursive:PaintPush$$paintlist$
-$recursive:PaintPop$            }
-        }
-        private void SetPathData_$token:ID$(IRenderPath path)
-        { // not usable for groups
-        }
-        private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-        {
-        		$nonempty fill:receiveColor$
-        }
-        private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-        {
-            $nonempty opacity:receiveOpacity$
-        }
-        //----------------------------------------
+$recursive:PaintPop$        }
+    }
+    private void SetPathData_$token:ID$(IRenderPath path)
+    { 
+        // method not usable for groups
+    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+$nonempty fill:receiveColor$    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+$nonempty opacity:receiveOpacity$    }
+    //----------------------------------------
 ]]></body>
-	</group>
+  </group>
 
-	<use>
-		<body>
-				<![CDATA[
-        private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+  <use>
+    <body><![CDATA[
+    private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+    {
+        if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
         {
-		    if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
-		    {
 $recursive:PaintPush$            Paint_$token:LINK$(p);
-$recursive:PaintPop$            }
-        }
-        //----------------------------------------
+$recursive:PaintPop$        }
+    }
+    //----------------------------------------
 ]]></body>
   </use>
 
@@ -284,8 +259,7 @@ $recursive:PaintPop$            }
 <!-- ======================================================  -->
 <skill name="Animated">
   <path>
-    <body>
-<![CDATA[
+    <body><![CDATA[
 
         //Path ($NAME$) is not applicable for skill animated Paint_$token:ID$($PaintSignature$)
 ]]></body>
@@ -293,201 +267,189 @@ $recursive:PaintPop$            }
   </path>
 
   <group>
-    <member name="pathlist" separator="#LF">		    SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
-    <member name="colorlist" separator="#LF">		    SetPathColor_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Color);</member>
-    <member name="opacitylist" separator="#LF">            SetPathOpacity_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Opacity);</member>
-    <body>
-				<![CDATA[
-        //Group: $NAME$
-        private void Paint_$token:ID$($PaintSignature$)
-        {
-            int colorWas = _patientAvatarRenderer.FillColor;
-            ColorReceiver MinColor = new ColorReceiver(colorWas);
-            ColorReceiver MaxColor = new ColorReceiver(colorWas);
-            ColorReceiver TimeColor = new ColorReceiver(colorWas);
+    <member name="pathlist" separator="#LF">        SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$Path);</member>
+    <member name="colorlist" separator="#LF">        SetPathColor_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Color);</member>
+    <member name="opacitylist" separator="#LF">        SetPathOpacity_$token:MEMBER_ID$(p, $token:MEMBER_NAME$Opacity);</member>
+    <body><![CDATA[
+    //Group: $NAME$
+    private void Paint_$token:ID$($PaintSignature$)
+    {
+        int colorWas = _patientAvatarRenderer.FillColor;
+        ColorReceiver MinColor = new ColorReceiver(colorWas);
+        ColorReceiver MaxColor = new ColorReceiver(colorWas);
+        ColorReceiver TimeColor = new ColorReceiver(colorWas);
 $colorlist$
-            _patientAvatarRenderer.FillColor = MinColor.FillColor;
-            float opacityWas = _patientAvatarRenderer.Opacity;
-            OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
-            OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
-            OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
+        _patientAvatarRenderer.FillColor = MinColor.FillColor;
+        float opacityWas = _patientAvatarRenderer.Opacity;
+        OpacityReceiver MinOpacity = new OpacityReceiver(opacityWas);
+        OpacityReceiver MaxOpacity = new OpacityReceiver(opacityWas);
+        OpacityReceiver TimeOpacity = new OpacityReceiver(opacityWas);
 $opacitylist$
-            _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
-            IRenderPath MinPath = new TemporaryRenderPath();
-            IRenderPath MaxPath = new TemporaryRenderPath();
-            IRenderPath TimePath = new TemporaryRenderPath();
+        _patientAvatarRenderer.Opacity = MinOpacity.Opacity;
+        IRenderPath MinPath = new TemporaryRenderPath();
+        IRenderPath MaxPath = new TemporaryRenderPath();
+        IRenderPath TimePath = new TemporaryRenderPath();
 $pathlist$
-            _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
-            _patientAvatarRenderer.FillColor = colorWas;
-            _patientAvatarRenderer.Opacity = opacityWas;
-        }
-        //----------------------------------------
+        _patientAvatarRenderer.Interpolate(p, MinPath, MaxPath, TimePath, p.TopicInfo.$SKILL_PARAMETERS$);
+        _patientAvatarRenderer.FillColor = colorWas;
+        _patientAvatarRenderer.Opacity = opacityWas;
+    }
+    //----------------------------------------
 ]]></body>
   </group>
 
   <use>
-    <body><![CDATA[//This is not applicable for skill animated Paint_$token:ID$($PaintSignature$) 
-//----------------------------------------
+    <body><![CDATA[    //This is not applicable for skill animated Paint_$token:ID$($PaintSignature$) 
+    //----------------------------------------
 ]]></body>
   </use>
 
 </skill>
 
 <skill name="Flying">
-		<group>
-			<member name="ps" separator="#LF" sort="P"><![CDATA[        // SetPathData_$token:MEMBER_ID$(P[$NO$]); // $MEMBER_NAME$]]></member>
-			<member name="members" separator="#LF" sort="!P"><![CDATA[        // SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);]]></member>
-			<body><![CDATA[ 
-            
-            private void Paint_$token:ID$($PaintSignature$)
-            {
-                // Transformation was = p.trans;
-                // p.SetTransformation({0.120211,0,0,0.120211,75.112,210.67});
-                // PathIF P[$ps_count$];
-                // PathIF Time;
-                // $ps$
+    <group>
+      <member name="ps" separator="#LF" sort="P"><![CDATA[        // SetPathData_$token:MEMBER_ID$(P[$NO$]); // $MEMBER_NAME$]]></member>
+      <member name="members" separator="#LF" sort="!P"><![CDATA[        // SetPathData_$token:MEMBER_ID$($token:MEMBER_NAME$);]]></member>
+      <body><![CDATA[ 
+    private void Paint_$token:ID$($PaintSignature$)
+    {
+        // Transformation was = p.trans;
+        // p.SetTransformation({0.120211,0,0,0.120211,75.112,210.67});
+        // PathIF P[$ps_count$];
+        // PathIF Time;
+        // $ps$
 $members$
-                // p.PaintInterpolated(P,$ps_count$,Time,PulseRateHeart);//, jumpsback);    
-                // p.trans = was; 
-            }
-            //----------------------------------------
+        // p.PaintInterpolated(P,$ps_count$,Time,PulseRateHeart);//, jumpsback);    
+        // p.trans = was; 
+     }
+     //----------------------------------------
 ]]>
-			</body>
-		</group>
+      </body>
+    </group>
 </skill>
 
 <skill name="StateControl">
-		<template name="impl">
-			<![CDATA[
+    <template name="impl"><![CDATA[
                 private void Paint_$token:ID$($PaintSignature$)
                 {
-                    // always hidden
+                    // State Control: always hidden
                 }
                 //----------------------------------------
 ]]>
-		</template>
+    </template>
 
-		<path>
-			<body>$recursive:impl$</body>
-		</path>
-		<group>
-			<body>$recursive:impl$</body>
-		</group>
-		<use>
-			<body>$recursive:impl$</body>
-		</use>
+    <path>
+      <body>$recursive:impl$</body>
+    </path>
+    <group>
+      <body>$recursive:impl$</body>
+    </group>
+    <use>
+      <body>$recursive:impl$</body>
+    </use>
 </skill>
 
 <skill name = "ColorFrom">
-	<path>
-		<body>
-			<![CDATA[
-        private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-        {
-		    int colorWas = _patientAvatarRenderer.FillColor;
-            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-			var tempRenderPath = new TemporaryRenderPath();
-            SetPathData_$token:ID$(tempRenderPath);
-			
-            _patientAvatarRenderer.Fill(p,tempRenderPath);
-            _patientAvatarRenderer.FillColor = colorWas;
-		}
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-		    // todo? use ColorFrom Topic
-			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-		}
-		//----------------------------------------
+  <path>
+    <body><![CDATA[
+    private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+    {
+        int colorWas = _patientAvatarRenderer.FillColor;
+        _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+        var tempRenderPath = new TemporaryRenderPath();
+        SetPathData_$token:ID$(tempRenderPath);
+      
+        _patientAvatarRenderer.Fill(p,tempRenderPath);
+        _patientAvatarRenderer.FillColor = colorWas;
+    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+        // todo? use ColorFrom Topic
+        colorReceiver.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+    }
+    //----------------------------------------
 ]]>
-		</body>
+    </body>
 
-	</path>
-	<use>
-			<body>
-				<![CDATA[
-        //Use (for ColorFrom)
-        private void Paint_$token:ID$($PaintSignature$)
-        {
-        // here i am $opacity$
-            $recursive:PaintPushNoColor$
-		    int colorWas = _patientAvatarRenderer.FillColor;
-            _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-            Paint_$token:LINK$(p);
-            _patientAvatarRenderer.FillColor = colorWas;
-$recursive:PaintPopNoColor$
-        }
-		private void SetPathData_$token:ID$(IRenderPath path)
-        {
-            SetPathData_$token:LINK$(path);
-        }
+  </path>
+  <use>
+      <body><![CDATA[
+    //Use (for ColorFrom)
+    private void Paint_$token:ID$($PaintSignature$)
+    {
+$recursive:PaintPushNoColor$
+        int colorWas = _patientAvatarRenderer.FillColor;
+        _patientAvatarRenderer.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+        Paint_$token:LINK$(p);
+        _patientAvatarRenderer.FillColor = colorWas;
+$recursive:PaintPopNoColor$    }
+    private void SetPathData_$token:ID$(IRenderPath path)
+    {
+        SetPathData_$token:LINK$(path);
+    }
 
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-			colorReceiver.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-		}
-		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-		{
-			SetPathOpacity_$token:LINK$(p, opacityReceiver);
-		    $nonempty opacity:receiveOpacity$
-		}
-        //----------------------------------------
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+        colorReceiver.FillColor = GetColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+        SetPathOpacity_$token:LINK$(p, opacityReceiver);
+$nonempty opacity:receiveOpacity$    }
+    //----------------------------------------
 ]]></body>
-		</use>
-	</skill>
-	<skill name = "ShadowColorFrom">
-		<path>
-			<body>
-				<![CDATA[
-        private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
-        {
-		    int colorWas = _patientAvatarRenderer.FillColor;
-            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-			var tempRenderPath = new TemporaryRenderPath();
-            SetPathData_$token:ID$(tempRenderPath);
-			
-            _patientAvatarRenderer.Fill(p,tempRenderPath);
-            _patientAvatarRenderer.FillColor = colorWas;
-		}
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-		    // todo? use ShadowColorFrom Topic
-			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-		}
-		private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
-		{
-			SetPathOpacity_$token:LINK$(p, opacityReceiver);
-		    $nonempty opacity:receiveOpacity$
-		}
-		//----------------------------------------
+    </use>
+  </skill>
+
+<skill name = "ShadowColorFrom">
+    <path>
+      <body><![CDATA[
+    private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
+    {
+        int colorWas = _patientAvatarRenderer.FillColor;
+        _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+        var tempRenderPath = new TemporaryRenderPath();
+        SetPathData_$token:ID$(tempRenderPath);
+      
+        _patientAvatarRenderer.Fill(p,tempRenderPath);
+        _patientAvatarRenderer.FillColor = colorWas;
+    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+        colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+    }
+    private void SetPathOpacity_$token:ID$($PaintSignature$, OpacityReceiver opacityReceiver)
+    {
+        $nonempty opacity:receiveOpacity$
+    }
+    //----------------------------------------
 ]]>
-			</body>
+      </body>
 
-		</path>
-		<use>
-			<body>
-				<![CDATA[
-        //Use (for ShadowColorFrom)
-        private void Paint_$token:ID$($PaintSignature$)
-        {
-            $recursive:PaintPushNoColor$
-		    int colorWas = _patientAvatarRenderer.FillColor;
-            _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-            Paint_$token:LINK$(p);
-            _patientAvatarRenderer.FillColor = colorWas;
-$recursive:PaintPopNoColor$
-        }
-		private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
-		{
-			colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
-		}
-        //----------------------------------------
+    </path>
+    <use>
+      <body><![CDATA[
+    //Use (for ShadowColorFrom)
+    private void Paint_$token:ID$($PaintSignature$)
+    {
+$recursive:PaintPushNoColor$
+        int colorWas = _patientAvatarRenderer.FillColor;
+        _patientAvatarRenderer.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+        Paint_$token:LINK$(p);
+        _patientAvatarRenderer.FillColor = colorWas;
+$recursive:PaintPopNoColor$    }
+    private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
+    {
+        colorReceiver.FillColor = GetShadowColorFrom(p.TopicInfo.$SKILL_PARAMETERS$);
+    }
+    //----------------------------------------
 ]]>
-			</body>
-		</use>
-	</skill>
+      </body>
+    </use>
+  </skill>
 
 
-	<skill name="ShowAlways" alias="Default" />
+<skill name="ShowAlways" alias="Default" />
 <skill name="AlwaysHide" alias="HideAlways" />
 
 </templates>
