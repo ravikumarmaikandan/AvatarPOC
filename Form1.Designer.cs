@@ -125,6 +125,7 @@
             this._gbxHeartRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxHeartRate.Controls.Add(this.heartRateTracker);
             this._gbxHeartRate.Controls.Add(this.lblHeartRateValue);
+            this._gbxHeartRate.ForeColor = System.Drawing.Color.White;
             this._gbxHeartRate.Location = new System.Drawing.Point(349, 10);
             this._gbxHeartRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxHeartRate.Name = "_gbxHeartRate";
@@ -139,6 +140,7 @@
             this._gbxRespRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxRespRate.Controls.Add(this._lblRespRate);
             this._gbxRespRate.Controls.Add(this.RRTracker);
+            this._gbxRespRate.ForeColor = System.Drawing.Color.White;
             this._gbxRespRate.Location = new System.Drawing.Point(349, 144);
             this._gbxRespRate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxRespRate.Name = "_gbxRespRate";
@@ -162,6 +164,7 @@
             this._gbxSPO2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxSPO2.Controls.Add(this._lblSpo2);
             this._gbxSPO2.Controls.Add(this.oxygenTracker);
+            this._gbxSPO2.ForeColor = System.Drawing.Color.White;
             this._gbxSPO2.Location = new System.Drawing.Point(349, 267);
             this._gbxSPO2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxSPO2.Name = "_gbxSPO2";
@@ -185,6 +188,7 @@
             this._gbxTidalValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._gbxTidalValue.Controls.Add(this._lblTidalValue);
             this._gbxTidalValue.Controls.Add(this.tidalVolumeTracker);
+            this._gbxTidalValue.ForeColor = System.Drawing.Color.White;
             this._gbxTidalValue.Location = new System.Drawing.Point(349, 398);
             this._gbxTidalValue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._gbxTidalValue.Name = "_gbxTidalValue";
@@ -207,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(724, 550);
             this.Controls.Add(this._gbxTidalValue);
             this.Controls.Add(this._gbxSPO2);

@@ -12731,21 +12731,18 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path 4states
     private void Paint_rect3267(PaintAvatarInfo p) //Path: 4states
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffff00;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_rect3267(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect3267(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffff00;
     }
     private void SetPathOpacity_rect3267(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -12755,7 +12752,6 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path stateback
     private void Paint_rect3269(PaintAvatarInfo p) //Path: stateback
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffff00;
 
@@ -12763,8 +12759,6 @@ namespace Philips.PIC.CommonControls
         SetPathData_rect3269(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect3269(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -12779,7 +12773,6 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path 
     private void Paint_circle3271(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -12787,8 +12780,6 @@ namespace Philips.PIC.CommonControls
         SetPathData_circle3271(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_circle3271(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -12803,7 +12794,6 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path StateActive
     private void Paint_circle3273(PaintAvatarInfo p) //Path: StateActive
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffff00;
 
@@ -12811,8 +12801,6 @@ namespace Philips.PIC.CommonControls
         SetPathData_circle3273(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_circle3273(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -12827,7 +12815,6 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path toprect
     private void Paint_rect3281(PaintAvatarInfo p) //Path: toprect
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffff00;
 
@@ -12835,8 +12822,6 @@ namespace Philips.PIC.CommonControls
         SetPathData_rect3281(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect3281(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -12851,21 +12836,18 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path 3states
     private void Paint_rect1399_3_7_4_54_07_5(PaintAvatarInfo p) //Path: 3states
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffff00;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_rect1399_3_7_4_54_07_5(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect1399_3_7_4_54_07_5(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffff00;
     }
     private void SetPathOpacity_rect1399_3_7_4_54_07_5(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -12875,21 +12857,18 @@ namespace Philips.PIC.CommonControls
     // Skill: default -> Path 6states
     private void Paint_rect2752(PaintAvatarInfo p) //Path: 6states
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffff00;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_rect2752(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect2752(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffff00;
     }
     private void SetPathOpacity_rect2752(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -19548,12 +19527,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path9(PaintAvatarInfo p) //Path: standard
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path9(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path9(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19568,12 +19544,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path3852(PaintAvatarInfo p) //Path: minimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path3852(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path3852(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19588,12 +19561,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path10268(PaintAvatarInfo p) //Path: outside
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path10268(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path10268(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19608,12 +19578,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path11016(PaintAvatarInfo p) //Path: absmini
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path11016(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path11016(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19628,12 +19595,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path5695(PaintAvatarInfo p) //Path: lowMin
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path5695(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path5695(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19647,13 +19611,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path lowMax
     private void Paint_path186011_3_6(PaintAvatarInfo p) //Path: lowMax
     {
-
+        float opacityWas = _patientAvatarRenderer.Opacity;
+        _patientAvatarRenderer.Opacity = 0.96f;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path186011_3_6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
+        _patientAvatarRenderer.Opacity = opacityWas;
     }
     
     private void SetPathColor_path186011_3_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19668,7 +19632,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_use5182(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffffff;
 
@@ -19676,8 +19639,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_use5182(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_use5182(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -19694,10 +19655,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,notavail,unknown))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use5001(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -19713,10 +19677,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,low,safe,high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use3865(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -19774,10 +19741,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,notavail,unknown))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use4828(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -20219,12 +20189,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path4873(PaintAvatarInfo p) //Path: outside
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path4873(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path4873(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20239,12 +20206,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path1995(PaintAvatarInfo p) //Path: standard
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path1995(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path1995(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20258,21 +20222,18 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path standardLine
     private void Paint_path20074(PaintAvatarInfo p) //Path: standardLine
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffffff;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path20074(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path20074(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffffff;
     }
     private void SetPathOpacity_path20074(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -20283,12 +20244,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path4902(PaintAvatarInfo p) //Path: minimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path4902(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path4902(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20303,12 +20261,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path11125(PaintAvatarInfo p) //Path: absminimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path11125(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path11125(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20323,12 +20278,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path9777(PaintAvatarInfo p) //Path: LowMax
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path9777(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path9777(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20343,12 +20295,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path9775(PaintAvatarInfo p) //Path: LowMin
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path9775(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path9775(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20408,10 +20357,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,low,safe,high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use4896(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -20421,10 +20373,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,notavail,unknown))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_path24403(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -20878,12 +20833,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path819(PaintAvatarInfo p) //Path: outside
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path819(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path819(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20898,12 +20850,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path821(PaintAvatarInfo p) //Path: standard
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path821(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path821(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20918,12 +20867,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path823(PaintAvatarInfo p) //Path: minimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path823(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path823(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20938,12 +20884,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path825(PaintAvatarInfo p) //Path: absminimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path825(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path825(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20958,12 +20901,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_use845_2(PaintAvatarInfo p) //Path: LowMax
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_use845_2(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_use845_2(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -20978,12 +20918,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_use847_1(PaintAvatarInfo p) //Path: LowMin
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_use847_1(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_use847_1(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21009,7 +20946,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8630(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21017,8 +20953,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8630(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8630(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21050,7 +20984,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8634(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21058,8 +20991,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8634(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8634(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21098,7 +21029,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8638(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffffff;
 
@@ -21106,8 +21036,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8638(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8638(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21122,7 +21050,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8640(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x7e4f23;
 
@@ -21130,8 +21057,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8640(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8640(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21146,7 +21071,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8642(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21154,8 +21078,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8642(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8642(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21170,7 +21092,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8644(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xb1b1b1;
 
@@ -21178,8 +21099,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8644(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8644(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21237,7 +21156,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8650(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe5e5e5;
 
@@ -21245,8 +21163,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8650(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8650(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21261,7 +21177,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8652(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21269,8 +21184,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8652(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8652(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21285,7 +21198,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8654(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xcccccc;
 
@@ -21293,8 +21205,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8654(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8654(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21309,7 +21219,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8656(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21317,8 +21226,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8656(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8656(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21378,7 +21285,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8694(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21386,8 +21292,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8694(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8694(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21426,7 +21330,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8698(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffffff;
 
@@ -21434,8 +21337,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8698(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8698(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21450,7 +21351,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8700(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x7e4f23;
 
@@ -21458,8 +21358,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8700(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8700(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21474,7 +21372,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8702(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21482,8 +21379,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8702(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8702(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21498,7 +21393,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8704(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xb1b1b1;
 
@@ -21506,8 +21400,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8704(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8704(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21565,7 +21457,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8710(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe5e5e5;
 
@@ -21573,8 +21464,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8710(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8710(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21589,7 +21478,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8712(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21597,8 +21485,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8712(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8712(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21613,7 +21499,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8714(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xcccccc;
 
@@ -21621,8 +21506,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8714(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8714(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21637,7 +21520,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path8716(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21645,8 +21527,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path8716(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path8716(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21755,10 +21635,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,low,safe,high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use3096(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -21768,10 +21651,13 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     {
         if (IsVisible(p.TopicInfo.ABP,notavail,unknown))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_path45759(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -21813,7 +21699,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path2003_7(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21821,8 +21706,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path2003_7(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path2003_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21854,7 +21737,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path62_6(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21862,8 +21744,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path62_6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path62_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21902,7 +21782,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path74_4(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffffff;
 
@@ -21910,8 +21789,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path74_4(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path74_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21926,7 +21803,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path76_6(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x7e4f23;
 
@@ -21934,8 +21810,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path76_6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path76_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21950,7 +21824,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path78_8(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -21958,8 +21831,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path78_8(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path78_8(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -21974,7 +21845,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path80_7(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xb1b1b1;
 
@@ -21982,8 +21852,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path80_7(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path80_7(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22041,7 +21909,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path4287_3(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe5e5e5;
 
@@ -22049,8 +21916,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path4287_3(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path4287_3(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22065,7 +21930,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path4289_9(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -22073,8 +21937,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path4289_9(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path4289_9(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22089,7 +21951,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path4387_6(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xcccccc;
 
@@ -22097,8 +21958,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path4387_6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path4387_6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22113,7 +21972,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path 
     private void Paint_path4389_4(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -22121,8 +21979,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path4389_4(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path4389_4(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22229,12 +22085,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path105(PaintAvatarInfo p) //Path: safe
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path105(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path105(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22249,12 +22102,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path99(PaintAvatarInfo p) //Path: low
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path99(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path99(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22268,7 +22118,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path absmin
     private void Paint_path1097(PaintAvatarInfo p) //Path: absmin
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -22276,8 +22125,6 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
         SetPathData_path1097(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path1097(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22293,12 +22140,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path7845(PaintAvatarInfo p) //Path: high
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path7845(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path7845(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22784,21 +22628,18 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     // Skill: default -> Path Line
     private void Paint_use7671(PaintAvatarInfo p) //Path: Line
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffffff;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_use7671(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_use7671(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffffff;
     }
     private void SetPathOpacity_use7671(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -22852,12 +22693,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path5273(PaintAvatarInfo p) //Path: normal
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path5273(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path5273(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22872,12 +22710,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path5277(PaintAvatarInfo p) //Path: outside
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path5277(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path5277(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22892,12 +22727,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path6201(PaintAvatarInfo p) //Path: inside
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path6201(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path6201(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22912,12 +22744,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path7273(PaintAvatarInfo p) //Path: minimum
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path7273(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path7273(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -22932,12 +22761,9 @@ _patientAvatarRenderer.Transformation = transformMatrixWas;
     private void Paint_path26136(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path26136(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path26136(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23251,10 +23077,13 @@ opacityReceiver.Opacity = 0.8f;
     {
         if (IsVisible(p.TopicInfo.TidalVolume, low, safe, high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use5195(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -23410,10 +23239,13 @@ opacityReceiver.Opacity = 0.8f;
     {
         if (IsVisible(p.TopicInfo.TidalVolume,unknown, notavail))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use2968(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -23443,12 +23275,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path123(PaintAvatarInfo p) //Path: safe
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path123(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path123(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23462,13 +23291,13 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path low
     private void Paint_path126(PaintAvatarInfo p) //Path: low
     {
-
+        float opacityWas = _patientAvatarRenderer.Opacity;
+        _patientAvatarRenderer.Opacity = 0.7f;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path126(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
+        _patientAvatarRenderer.Opacity = opacityWas;
     }
     
     private void SetPathColor_path126(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23483,13 +23312,13 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path high
     private void Paint_path7917(PaintAvatarInfo p) //Path: high
     {
-
+        float opacityWas = _patientAvatarRenderer.Opacity;
+        _patientAvatarRenderer.Opacity = 0.8f;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path7917(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
+        _patientAvatarRenderer.Opacity = opacityWas;
     }
     
     private void SetPathColor_path7917(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23554,10 +23383,13 @@ opacityReceiver.Opacity = 0.8f;
     {
         if (IsVisible(p.TopicInfo.CVP, low,safe,high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use7919(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -23589,12 +23421,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path180(PaintAvatarInfo p) //Path: Max
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path180(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path180(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23609,12 +23438,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path1050(PaintAvatarInfo p) //Path: Mid
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path1050(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path1050(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23629,12 +23455,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path1907(PaintAvatarInfo p) //Path: Min
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path1907(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path1907(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -23648,7 +23471,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path 
     private void Paint_path12973(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe7383d;
 
@@ -23656,8 +23478,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path12973(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path12973(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25155,10 +24975,13 @@ opacityReceiver.Opacity = 0.8f;
     {
         if (IsVisible(p.TopicInfo.CO, low, safe, high))
         {
-            // todo: color, matrix
+            int colorWas = _patientAvatarRenderer.FillColor;
+            _patientAvatarRenderer.FillColor = 0xffffff;
+
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_use3991(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
+            _patientAvatarRenderer.FillColor = colorWas;
         }
     }
     //----------------------------------------
@@ -25194,12 +25017,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path192(PaintAvatarInfo p) //Path: outer
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path192(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path192(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25214,12 +25034,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path2417(PaintAvatarInfo p) //Path: inner
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path2417(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path2417(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25487,7 +25304,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path grey heart
     private void Paint_path14970(PaintAvatarInfo p) //Path: grey heart
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xcccccc;
 
@@ -25495,8 +25311,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path14970(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path14970(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25511,7 +25325,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path dashed outline
     private void Paint_path14972(PaintAvatarInfo p) //Path: dashed outline
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xffffff;
 
@@ -25519,8 +25332,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path14972(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path14972(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25580,7 +25391,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path filling of grey lightning
     private void Paint_path3652_f0(PaintAvatarInfo p) //Path: filling of grey lightning
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x595959;
 
@@ -25588,8 +25398,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3652_f0(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3652_f0(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25604,7 +25412,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of grey lightning
     private void Paint_path3652_s0(PaintAvatarInfo p) //Path: stroke of grey lightning
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25612,8 +25419,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3652_s0(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3652_s0(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25666,7 +25471,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path filling of ST1
     private void Paint_path3582_f1(PaintAvatarInfo p) //Path: filling of ST1
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x17030f;
 
@@ -25674,8 +25478,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3582_f1(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3582_f1(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25690,7 +25492,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST1
     private void Paint_path3582_s1(PaintAvatarInfo p) //Path: stroke of ST1
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25698,8 +25499,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3582_s1(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3582_s1(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25736,7 +25535,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path filling of ST2
     private void Paint_path3626_f2(PaintAvatarInfo p) //Path: filling of ST2
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x17030f;
 
@@ -25744,8 +25542,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3626_f2(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3626_f2(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25760,7 +25556,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST2
     private void Paint_path3626_s2(PaintAvatarInfo p) //Path: stroke of ST2
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25768,8 +25563,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3626_s2(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3626_s2(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25806,7 +25599,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path filling of ST3
     private void Paint_path3650_f3(PaintAvatarInfo p) //Path: filling of ST3
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x17030f;
 
@@ -25814,8 +25606,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3650_f3(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3650_f3(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25830,7 +25620,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST3
     private void Paint_path3650_s3(PaintAvatarInfo p) //Path: stroke of ST3
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25838,8 +25627,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path3650_s3(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path3650_s3(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25878,17 +25665,14 @@ opacityReceiver.Opacity = 0.8f;
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(0.264583,0,0,0.264583,0,156.121);
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path195_f4(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-        _patientAvatarRenderer.FillColor = colorWas;
-
         _patientAvatarRenderer.Transformation = transformMatrixWas;
-
+        _patientAvatarRenderer.FillColor = colorWas;
     }
     
     private void SetPathColor_path195_f4(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25903,7 +25687,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST3_zero
     private void Paint_path195_s4(PaintAvatarInfo p) //Path: stroke of ST3_zero
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25911,8 +25694,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path195_s4(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path195_s4(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25951,17 +25732,14 @@ opacityReceiver.Opacity = 0.8f;
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(0.264583,0,0,0.264583,0,156.121);
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path198_f5(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-        _patientAvatarRenderer.FillColor = colorWas;
-
         _patientAvatarRenderer.Transformation = transformMatrixWas;
-
+        _patientAvatarRenderer.FillColor = colorWas;
     }
     
     private void SetPathColor_path198_f5(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -25976,7 +25754,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST2_zero
     private void Paint_path198_s5(PaintAvatarInfo p) //Path: stroke of ST2_zero
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -25984,8 +25761,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path198_s5(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path198_s5(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26024,17 +25799,14 @@ opacityReceiver.Opacity = 0.8f;
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(0.264583,0,0,0.264583,0,156.121);
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x4d4d4d;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path201_f6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-        _patientAvatarRenderer.FillColor = colorWas;
-
         _patientAvatarRenderer.Transformation = transformMatrixWas;
-
+        _patientAvatarRenderer.FillColor = colorWas;
     }
     
     private void SetPathColor_path201_f6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26049,7 +25821,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path stroke of ST1_zero
     private void Paint_path201_s6(PaintAvatarInfo p) //Path: stroke of ST1_zero
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000000;
 
@@ -26057,8 +25828,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path201_s6(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path201_s6(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26137,7 +25906,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P98
     private void Paint_path26748(PaintAvatarInfo p) //Path: P98
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26145,8 +25913,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path26748(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path26748(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26161,7 +25927,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P10
     private void Paint_path25475(PaintAvatarInfo p) //Path: P10
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26169,8 +25934,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path25475(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path25475(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26185,7 +25948,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P09
     private void Paint_path25500(PaintAvatarInfo p) //Path: P09
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26193,8 +25955,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path25500(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path25500(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26209,7 +25969,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P08
     private void Paint_path25502(PaintAvatarInfo p) //Path: P08
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26217,8 +25976,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path25502(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path25502(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26233,7 +25990,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P07
     private void Paint_path25504(PaintAvatarInfo p) //Path: P07
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26241,8 +25997,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path25504(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path25504(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26257,7 +26011,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P06
     private void Paint_path25506(PaintAvatarInfo p) //Path: P06
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26265,8 +26018,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path25506(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path25506(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26281,7 +26032,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P05
     private void Paint_path27072(PaintAvatarInfo p) //Path: P05
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26289,8 +26039,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path27072(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path27072(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26305,7 +26053,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P04
     private void Paint_path27852(PaintAvatarInfo p) //Path: P04
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26313,8 +26060,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path27852(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path27852(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26329,7 +26074,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P03
     private void Paint_path28596(PaintAvatarInfo p) //Path: P03
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26337,8 +26081,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path28596(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path28596(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26353,7 +26095,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P02
     private void Paint_path30398(PaintAvatarInfo p) //Path: P02
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26361,8 +26102,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path30398(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path30398(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26377,7 +26116,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P01
     private void Paint_path32072(PaintAvatarInfo p) //Path: P01
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xfcce38;
 
@@ -26385,8 +26123,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path32072(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path32072(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26401,7 +26137,6 @@ opacityReceiver.Opacity = 0.8f;
     // Skill: default -> Path P99
     private void Paint_path33110(PaintAvatarInfo p) //Path: P99
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -26409,8 +26144,6 @@ opacityReceiver.Opacity = 0.8f;
         SetPathData_path33110(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path33110(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26556,12 +26289,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path174(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path174(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path174(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26576,12 +26306,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path171(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path171(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path171(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26596,12 +26323,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path168(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path168(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path168(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26616,12 +26340,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path165(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path165(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path165(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -26636,12 +26357,9 @@ opacityReceiver.Opacity = 0.8f;
     private void Paint_path61670(PaintAvatarInfo p) //Path: 
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path61670(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path61670(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27075,21 +26793,18 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path line
     private void Paint_use27516(PaintAvatarInfo p) //Path: line
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
-        _patientAvatarRenderer.FillColor = 0xe;
+        _patientAvatarRenderer.FillColor = 0xffffff;
 
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_use27516(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_use27516(PaintAvatarInfo p, ColorReceiver colorReceiver)
     {
-        colorReceiver.FillColor = 0xe;
+        colorReceiver.FillColor = 0xffffff;
     }
     private void SetPathOpacity_use27516(PaintAvatarInfo p, OpacityReceiver opacityReceiver)
     {
@@ -27134,7 +26849,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path 
     private void Paint_path322(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x73c2ed;
 
@@ -27142,8 +26856,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_path322(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path322(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27183,7 +26895,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path 
     private void Paint_path243(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xff5333;
 
@@ -27191,8 +26902,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_path243(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path243(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27310,12 +27019,9 @@ _patientAvatarRenderer.Opacity = opacityWas;
     private void Paint_path1166(PaintAvatarInfo p) //Path: Breathing
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path1166(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path1166(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27330,12 +27036,9 @@ _patientAvatarRenderer.Opacity = opacityWas;
     private void Paint_path4914(PaintAvatarInfo p) //Path: BodyPulse
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path4914(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path4914(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27350,12 +27053,9 @@ _patientAvatarRenderer.Opacity = opacityWas;
     private void Paint_path46598(PaintAvatarInfo p) //Path: LightningPulse
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path46598(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path46598(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27370,12 +27070,9 @@ _patientAvatarRenderer.Opacity = opacityWas;
     private void Paint_path3251(PaintAvatarInfo p) //Path: HeartPulse
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path3251(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path3251(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27389,7 +27086,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path Co2
     private void Paint_path2449(PaintAvatarInfo p) //Path: Co2
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0xe;
 
@@ -27397,8 +27093,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_path2449(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_path2449(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -27414,12 +27108,9 @@ _patientAvatarRenderer.Opacity = opacityWas;
     private void Paint_path52326(PaintAvatarInfo p) //Path: Airway
     {
 
-
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_path52326(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-
-
     }
     
     private void SetPathColor_path52326(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -28027,7 +27718,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path upperLeft
     private void Paint_upperLeft(PaintAvatarInfo p) //Path: upperLeft
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000100;
 
@@ -28035,8 +27725,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_upperLeft(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_upperLeft(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -28051,7 +27739,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path lowerRight
     private void Paint_rect45026(PaintAvatarInfo p) //Path: lowerRight
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x000100;
 
@@ -28059,8 +27746,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_rect45026(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect45026(PaintAvatarInfo p, ColorReceiver colorReceiver)
@@ -28092,7 +27777,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
     // Skill: default -> Path 
     private void Paint_rect1546(PaintAvatarInfo p) //Path: 
     {
-
         int colorWas = _patientAvatarRenderer.FillColor;
         _patientAvatarRenderer.FillColor = 0x010000;
 
@@ -28100,8 +27784,6 @@ _patientAvatarRenderer.Opacity = opacityWas;
         SetPathData_rect1546(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
         _patientAvatarRenderer.FillColor = colorWas;
-
-
     }
     
     private void SetPathColor_rect1546(PaintAvatarInfo p, ColorReceiver colorReceiver)

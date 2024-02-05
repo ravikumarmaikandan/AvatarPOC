@@ -112,14 +112,11 @@ $indent$PushMatrix($TRANSFORM$);
     // Skill: default -> Path $NAME$
     private void Paint_$token:ID$($PaintSignature$) //Path: $NAME$
     {
-$nonempty TRANSFORM:pushtransformation$
-$nonempty fill:pushcolor$
+$recursive:PaintPush$
         var tempRenderPath = new TemporaryRenderPath();
         SetPathData_$token:ID$(tempRenderPath);
         _patientAvatarRenderer.Fill(p,tempRenderPath);
-$nonempty fill:popcolor$
-$nonempty TRANSFORM:poptransformation$
-    }
+$recursive:PaintPop$    }
     
     private void SetPathColor_$token:ID$($PaintSignature$, ColorReceiver colorReceiver)
     {
@@ -204,11 +201,11 @@ $nonempty opacity:receiveOpacity$     }
     {
         if (IsVisible(p.TopicInfo.$SKILL_PARAMETERS$))
         {
-            // todo: color, matrix
+$recursive:PaintPush$
             var tempRenderPath = new TemporaryRenderPath();
             SetPathData_$token:ID$(tempRenderPath);
             _patientAvatarRenderer.Fill(p,tempRenderPath);
-        }
+$recursive:PaintPop$        }
     }
     //----------------------------------------
 ]]></body>
