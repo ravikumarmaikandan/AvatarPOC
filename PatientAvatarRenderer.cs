@@ -7,8 +7,10 @@
 // Date:        1/29/2024 3:06:46 PM
 #endregion
 
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace Philips.PIC.CommonControls
 {
@@ -89,10 +91,72 @@ namespace Philips.PIC.CommonControls
 
             Fill(paintAvatarInfo, tempRenderPath);
         }
-        public void MultiPointInterpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath[] P, IRenderPath time, RateProviderTopic topic)
+        public void MultiPointInterpolate(PaintAvatarInfo paintAvatarInfo, IRenderPath[] list, IRenderPath time, RateProviderTopic topic)
         {
-            // shortcut to test code generation
-            Interpolate(paintAvatarInfo, P[2], P[10], time, topic);
+            if (FillColor == -1) return;
+
+            var length = list.Length;
+
+            // count is the number of key points of animation
+            var count = list.Length;
+            if (count > 2) count -= 3;
+            if (count <= 0) count = 1;
+
+            var pathTypes = list[0].Path.PathTypes;
+            var resultPoints = new PointF[pathTypes.Length];
+
+            var t = topic.TimePosition;
+            if (time != null)
+                t = time.GetYForX(t);
+
+            if (t < 0.0f) t = 0.0f;
+            if (t > 1.0f) t = 1.0f;
+
+            // map t to "key points": Where we are in the array of control points
+            t = t * count;
+            int idx = (int)System.Math.Floor(t);
+
+            t = t - idx; // = fract of t = where we are between two points
+
+            // Interpolation: from "pB" to "pC"
+            // as if we "come from pA" (=what happened before pB)
+            // and "will go to pD" (=what happens after pC)
+            // start is "idx" here, which should be pB, so step back one:
+            idx--; if (idx < 0) idx += length; // wrap?
+
+            // and get our point sources
+            var pA = list[idx++].Path.PathPoints; if (idx >= length) idx -= length;
+            var pB = list[idx++].Path.PathPoints; if (idx >= length) idx -= length;
+            var pC = list[idx++].Path.PathPoints; if (idx >= length) idx -= length;
+            var pD = list[idx++].Path.PathPoints; 
+
+            // "catmull rom" factors for interpolation of our control points
+            float t2 = t * t;
+            float t3 = t * t * t;
+            float fA = -0.5f * t + 1.0f * t2 - 0.5f * t3;
+            float fB = 1.0f - 2.5f * t2 + 1.5f * t3;
+            float fC = 0.5f * t + 2.0f * t2 - 1.5f * t3;
+            float fD = -0.5f * t2 + 0.5f * t3;
+
+            for (var i = 0; i < pA.Length; i++)
+            {
+                float pAx = pA[i].X;
+                float pAy = pA[i].Y;
+                float pBx = pB[i].X;
+                float pBy = pB[i].Y;
+                float pCx = pC[i].X;
+                float pCy = pC[i].Y;
+                float pDx = pD[i].X;
+                float pDy = pD[i].Y;
+
+                resultPoints[i] = new PointF(
+                    pAx * fA + pBx * fB + pCx * fC + pDx * fD,
+                    pAy * fA + pBy * fB + pCy * fC + pDy * fD);
+
+            }
+
+            var tempRenderPath = new TemporaryRenderPath(resultPoints, pathTypes);
+            Fill(paintAvatarInfo, tempRenderPath);
         }
 
         public int FillColor { get; set; } = -1;
