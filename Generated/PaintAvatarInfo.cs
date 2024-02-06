@@ -28,8 +28,12 @@ namespace Philips.PIC.CommonControls
 		TooHigh,
 		Max
 	}
+    public enum StTopicStates
+    {
+        NotAvailable,
+    }
 
-	public class TransformMatrix
+    public class TransformMatrix
 	{
 		public float A { get; set; }
 		public float B { get; set; }
@@ -58,10 +62,10 @@ namespace Philips.PIC.CommonControls
 			PulseRateHeart.RateSafe = 1.11667f; // 1.0 / (60.0/67);
 			PulseRateHeart.RateHigh = 3.33333f; // 1.0 / (60.0/200);
 
-			// PulseRateBody.RateStopped = 0.0f;
-			// PulseRateBody.RateLow = PulseRateHeart.RateLow;
-			// PulseRateBody.RateSafe = PulseRateHeart.RateSafe;
-			// PulseRateBody.RateHigh = PulseRateHeart.RateHigh;
+			PulseRateBody.RateStopped = 0.0f;
+			PulseRateBody.RateLow = PulseRateHeart.RateLow;
+			PulseRateBody.RateSafe = PulseRateHeart.RateSafe;
+			PulseRateBody.RateHigh = PulseRateHeart.RateHigh;
 
 			Oxygen.SetColor(TopicStates.NotAvailable, 0xd0d0d0);
 			Oxygen.SetColor(TopicStates.Unknown, 0xd0d0d0);
@@ -104,29 +108,38 @@ namespace Philips.PIC.CommonControls
 			PulseRateHeart.ThresholdMin = 50.0f;
 			PulseRateHeart.ThresholdMax = 115.0f;
 
-			RespRate.ThresholdMin = 8.0f;
+            PulseRateBody.ThresholdMin = 50.0f;
+            PulseRateBody.ThresholdMax = 115.0f;
+
+            RespRate.ThresholdMin = 8.0f;
 			RespRate.ThresholdMax = 30.0f;
 
-			Oxygen.ThresholdMin = 90.0f;
+            ABP.ThresholdMin = 90.0f;
+            ABP.ThresholdMax = 130.0f;
+
+            Oxygen.ThresholdMin = 90.0f;
 			Oxygen.ThresholdMax = 100.0f;
 
-			TidalVolume.ThresholdMin = 7.0f;
-			TidalVolume.ThresholdMax = 25.0f;
+			TidalVolume.ThresholdMin = 3.0f;
+			TidalVolume.ThresholdMax = 15.0f;
+
+			Temp.ThresholdMin = 35.5f;
+			Temp.ThresholdMax = 38.3f;
 
 		}
 
 		// Rates are used in Animations
 		public RateProviderTopic PulseRateHeart { get; } = new RateProviderTopic();
-		public RateProviderTopic PulseRateBody { get { return PulseRateHeart; } }
-		public RateProviderTopic RespRate { get; } = new RateProviderTopic();
+		public RateProviderTopic PulseRateBody { get; } = new RateProviderTopic();
+        public RateProviderTopic RespRate { get; } = new RateProviderTopic();
 
 		public StateProviderTopic ABP { get; } = new StateProviderTopic();
-		public StateProviderTopic CVP { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
+		public StateProviderTopic CVP { get; } = new StateProviderTopic();
 		public StateProviderTopic Oxygen { get; } = new StateProviderTopic();
 		public StateProviderTopic TidalVolume { get; } = new StateProviderTopic();
-		public StateProviderTopic CO2 { get; } = new StateProviderTopic() { State = TopicStates.NotAvailable };
+		public StateProviderTopic CO2 { get; } = new StateProviderTopic();
 		public StateProviderTopic Temp { get; } = new StateProviderTopic();
-		public StateProviderTopic Brain { get; } = new StateProviderTopic() { State = TopicStates.TooHigh };
+		public StateProviderTopic Brain { get; } = new StateProviderTopic();
 		public StateProviderTopic CO { get; } = new StateProviderTopic();
 		public StateProviderTopic FiO2 { get; } = new StateProviderTopic();
 		public StateProviderTopic AWP { get; } = new StateProviderTopic();
@@ -140,31 +153,42 @@ namespace Philips.PIC.CommonControls
 		public void SometimeHavePassed(float secondsFromLast)
 		{
 			PulseRateHeart.Step(secondsFromLast);
-			RespRate.Step(secondsFromLast);
+            PulseRateBody.Step(secondsFromLast);
+            RespRate.Step(secondsFromLast);
 		}
 
-		public void SetHeartRate(int measuredValue)
+		public void SetHeartRate(float measuredValue)
 		{
 			PulseRateHeart.SetMeasuredValue(measuredValue);
 		}
-		public void SetRespRate(int measuredValue)
+        public void SetPulseRate(float measuredValue)
+        {
+            PulseRateBody.SetMeasuredValue(measuredValue);
+        }
+        public void SetRespRate(float measuredValue)
 		{
-			//Compare the Resp rate with the threshold
 			RespRate.SetMeasuredValue(measuredValue);
 		}
-		public void SetSpO2(int measuredValue)
+		public void SetSpO2(float measuredValue)
 		{
-			//Compare the Resp rate with the threshold
 			Oxygen.SetMeasuredValue(measuredValue);
 		}
+        public void SetPressure(float measuredValue)
+        {
+            ABP.SetMeasuredValue(measuredValue);
+        }
 
-		public void SetTidalVolume(int measuredValue)
+        public void SetTidalVolume(float measuredValue)
 		{
 			TidalVolume.SetMeasuredValue(measuredValue);
 		}
-	}
+        public void SetTemp(float measuredValue)
+        {
+            Temp.SetMeasuredValue(measuredValue);
+        }
+    }
 
-	public class STStateProviderTopic
+    public class STStateProviderTopic
 	{
 		// todo
 	}
@@ -183,14 +207,22 @@ namespace Philips.PIC.CommonControls
 
 	public class StateProviderTopic
 	{
-		public virtual TopicStates State { get; set; } = TopicStates.Safe;
+		public virtual TopicStates State { get; set; } = TopicStates.NotAvailable;
 
 		public float ThresholdMin { get; set; }
 		public float ThresholdMax { get; set; }
 
 		public void SetMeasuredValue(float value)
 		{
-			if (value < ThresholdMin)
+			if (value <= -2000.0f)
+			{
+				State = TopicStates.NotAvailable;
+			}
+			else if (value <= -1000.0f)
+			{
+				State = TopicStates.Unknown;
+			}
+			else if (value < ThresholdMin)
 			{
 				State = TopicStates.TooLow;
 			}
@@ -226,23 +258,6 @@ namespace Philips.PIC.CommonControls
 		{
 			return ShadowColorMap[(int)State];
 		}
-
-		public void NextValue()
-		{
-			// obviously: this is completely nonsense!
-			// just a test to have different Values
-			switch (State)
-			{
-				case TopicStates.NotAvailable: State = TopicStates.Unknown; break;
-				case TopicStates.Unknown: State = TopicStates.TooLow; break;
-				case TopicStates.TooLow: State = TopicStates.Safe; break;
-				case TopicStates.Max:
-					break;
-				default:
-				case TopicStates.Safe: State = TopicStates.Unknown; break;
-				case TopicStates.TooHigh: State = TopicStates.Unknown; break;
-			}
-		}
 	}
 
 	public class RateProviderTopic : StateProviderTopic
@@ -260,11 +275,13 @@ namespace Philips.PIC.CommonControls
 				base.State = value;
 				switch (value)
 				{
-					case TopicStates.NotAvailable:
+					default:
+                    case TopicStates.NotAvailable:
 					case TopicStates.Unknown:
 					case TopicStates.Max:
-						break;
-					default: RateInHz = RateStopped; break;
+                        RateInHz = RateStopped;
+                        break;
+
 					case TopicStates.TooLow: RateInHz = RateLow; break;
 					case TopicStates.Safe: RateInHz = RateSafe; break;
 					case TopicStates.TooHigh: RateInHz = RateHigh; break;
@@ -273,7 +290,7 @@ namespace Philips.PIC.CommonControls
 		}
 
 		public float TimePosition { get; set; } = 0.0f;
-		public float RateInHz { get; set; } = 60;
+		public float RateInHz { get; set; } = 0.0f; // initally no rate
 
 		public void Step(float secondsFromLast)
 		{

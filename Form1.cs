@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 
 namespace Philips.PIC.CommonControls
@@ -10,8 +12,6 @@ namespace Philips.PIC.CommonControls
         public Form1()
         {
             InitializeComponent();
-            _topicInfo.PulseRateHeart.RateInHz = (67.0f / 60.0f);  // BPM to Hz
-            _topicInfo.RespRate.RateInHz = (23.0f / 60.0f); // BPM to Hz
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -58,40 +58,87 @@ namespace Philips.PIC.CommonControls
         private void OnTick(object sender, System.EventArgs e)
         {
             _topicInfo.SometimeHavePassed(0.05f);
-            //_topicInfo.TidalVolume.NextValue();
 
             Invalidate();
         }
 
         private void OnHeartRateTrackerChanged(object sender, EventArgs e)
         {
-            lblHeartRateValue.Text = heartRateTracker.Value.ToString();
-            _topicInfo.SetHeartRate(heartRateTracker.Value);
+            _topicInfo.SetHeartRate(GetValue(heartRateTracker));
+            UpdateTexts();
         }
 
         private void OnRRTrackerChanged(object sender, EventArgs e)
         {
-            _lblRespRate.Text = RRTracker.Value.ToString();
-            _topicInfo.SetRespRate(RRTracker.Value);
+            _topicInfo.SetRespRate(GetValue(RRTracker));
+            UpdateTexts();
         }
 
         private void OnOxygenTrackerScroll(object sender, EventArgs e)
         {
-            _lblSpo2.Text = oxygenTracker.Value.ToString();
-            _topicInfo.SetSpO2(oxygenTracker.Value);
+            _topicInfo.SetSpO2(GetValue(oxygenTracker));
+            UpdateTexts();
+        }
+
+        private void UpdateText(System.Windows.Forms.Label lbl, TrackBar tb, float factor = 1.0f )
+        {
+            if (tb.Value <= tb.Minimum)
+                lbl.Text = "NA";
+            else if (tb.Value >= tb.Maximum)
+                lbl.Text = "Unk";
+            else
+                lbl.Text = (tb.Value * factor).ToString();
+        }
+
+        private float GetValue( TrackBar tb, float factor = 1.0f )
+        {
+            if (tb.Value <= tb.Minimum)
+                return -2000.0f; // 'Not available' constant 
+            else if (tb.Value >= tb.Maximum)
+                return -1000.0f; // 'unknown' constant
+            else
+                return (tb.Value * factor);
+        }
+
+        private void UpdateTexts()
+        {
+            UpdateText( _lblRespRate, RRTracker);
+            UpdateText( _lblSpo2, oxygenTracker);
+            UpdateText( lblHeartRateValue, heartRateTracker);
+            UpdateText( pulseLabel, pulseBar);
+            UpdateText( pressureLabel, pressureBar);
+            UpdateText(_lblTidalValue, tidalVolumeTracker);
+            UpdateText( tempLabel, tempBar, 0.1f);
         }
 
         private void OnLoad(object sender, EventArgs e)
         {
-            _lblRespRate.Text = RRTracker.Value.ToString();
-            _lblSpo2.Text = oxygenTracker.Value.ToString();
-            lblHeartRateValue.Text = heartRateTracker.Value.ToString();
+
+            UpdateTexts();
         }
 
         private void OnTidalVolumeTrackerScroll(object sender, EventArgs e)
         {
-            _lblTidalValue.Text = tidalVolumeTracker.Value.ToString();
-            _topicInfo.SetTidalVolume(tidalVolumeTracker.Value);
+            UpdateTexts();
+            _topicInfo.SetTidalVolume(GetValue(tidalVolumeTracker));
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            _topicInfo.SetTemp(GetValue(tempBar, 0.1f));
+            UpdateTexts();
+        }
+
+        private void pulseBar_Scroll(object sender, EventArgs e)
+        {
+            _topicInfo.SetPulseRate(GetValue(pulseBar));
+            UpdateTexts();
+        }
+
+        private void pressureBar_Scroll(object sender, EventArgs e)
+        {
+            _topicInfo.SetPressure(GetValue(pressureBar));
+            UpdateTexts();
         }
     }
 }
