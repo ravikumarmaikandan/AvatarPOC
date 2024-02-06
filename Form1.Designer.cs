@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(724, 550);
+            this.ClientSize = new System.Drawing.Size(724, 571);
             this.Controls.Add(this._gbxTidalValue);
             this.Controls.Add(this._gbxSPO2);
             this.Controls.Add(this._gbxRespRate);

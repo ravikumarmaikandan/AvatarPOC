@@ -19,9 +19,22 @@ namespace Philips.PIC.CommonControls
             base.OnPaint(e);
             PaintAvatarInfo avatarInfo = new PaintAvatarInfo() { PaintEventArgs = e, TopicInfo = _topicInfo };
 
-            float scaleFactorX = (ClientSize.Width-280) / 150.0f;
-            float scaleFactorY = ClientSize.Height / 150.0f;
 
+            int destWidth = ClientSize.Width - 280;// -280 for the controls, anchored right
+            int destHeight = ClientSize.Height;
+
+            float sourceWidth = 150.0f;
+            float sourceHeight = 150.0f;
+
+            /* Example to calculate initial matrix:
+             * 
+             * Image is scaled to maximum size that is possible within destWidth/destHeight
+             * and then centered in that area.
+             */
+            float scaleFactorX = destWidth / sourceWidth; 
+            float scaleFactorY = destHeight / sourceHeight;
+
+            // limit scaling: not zero and no negative values
             if (scaleFactorX < 0.01f) scaleFactorX = 0.01f;
             if (scaleFactorY < 0.01f) scaleFactorY = 0.01f;
 
@@ -29,7 +42,15 @@ namespace Philips.PIC.CommonControls
             float scaleFactor = scaleFactorX;
             if (scaleFactorY < scaleFactor) scaleFactor = scaleFactorY;
 
-            _paintAvatar.SetInitialMatrix(scaleFactor, 0.0f, 0.0f, scaleFactor, 0.0f, 100.0f);
+            // this will give us this size:
+            float resultWidth = sourceWidth * scaleFactor;
+            float resultHeight = sourceHeight * scaleFactor; 
+
+            // that can be centered this way (one of the values typically is 0)
+            float xOffset = (destWidth - resultWidth) / 2;
+            float yOffset = (destHeight - resultHeight) / 2;
+
+            _paintAvatar.SetInitialMatrix(scaleFactor, 0.0f, 0.0f, scaleFactor, xOffset, yOffset);
 
             _paintAvatar.PaintSVG(avatarInfo);
         }
