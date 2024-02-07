@@ -115,9 +115,30 @@ namespace Philips.PIC.CommonControls
         {
 
             UpdateTexts();
-        }
 
-        private void OnTidalVolumeTrackerScroll(object sender, EventArgs e)
+            // for quick testing: directly set state, without using Method
+            _topicInfo.PulseRateHeart.State = TopicStates.NotAvailable;
+            _topicInfo.PulseRateBody.State = TopicStates.NotAvailable;
+            _topicInfo.RespRate.State = TopicStates.NotAvailable;
+            _topicInfo.ABP.State = TopicStates.NotAvailable;
+            _topicInfo.CVP.State = TopicStates.NotAvailable;
+            _topicInfo.Oxygen.State = TopicStates.NotAvailable;
+            _topicInfo.TidalVolume.State = TopicStates.NotAvailable;
+            _topicInfo.CO2.State = TopicStates.Safe;
+            _topicInfo.Temp.State = TopicStates.NotAvailable;
+            _topicInfo.Brain.State = TopicStates.TooHigh;
+            _topicInfo.CO.State = TopicStates.NotAvailable;
+            _topicInfo.FiO2.State = TopicStates.NotAvailable; 
+            _topicInfo.AWP.State = TopicStates.NotAvailable;
+            _topicInfo.Neuromuscular.State = TopicStates.NotAvailable;
+
+            // todo: _topicInfo.STSegment
+
+            _topicInfo.Orientation.State = Orientations.up;
+
+    }
+
+    private void OnTidalVolumeTrackerScroll(object sender, EventArgs e)
         {
             UpdateTexts();
             _topicInfo.SetTidalVolume(GetValue(tidalVolumeTracker));
