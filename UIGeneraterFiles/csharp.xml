@@ -172,7 +172,16 @@ $nonempty opacity:receiveOpacity$     }
     //----------------------------------------
 ]]></body>
   </use>
-
+  <text>
+    <body><![CDATA[
+    private void Paint_$token:ID$($PaintSignature$) //Use: $NAME$
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+]]></body>
+    
+  </text>
 </skill>
 
 <!-- ======================================================  -->

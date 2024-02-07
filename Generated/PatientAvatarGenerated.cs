@@ -12939,6 +12939,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11955_1(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g11957_2(PaintAvatarInfo p)
     {
@@ -12947,6 +12953,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11947_4(p);// 
         Paint_use11949_1(p);// 
         Paint_use11951_7(p);// Active
+        Paint_text11955_1(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -12982,12 +12989,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11963_36(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text11967_1(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g11969_1(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1.09642,0,0,1.09642,-194.223,-143.824);
         Paint_use11959_5(p);// 
+        Paint_text11963_36(p);// Current
+        Paint_text11967_1(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13058,6 +13079,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11979_8(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g11981_2(PaintAvatarInfo p)
     {
@@ -13066,6 +13093,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11971_63(p);// 
         Paint_use11973_2(p);// 
         Paint_use11975_6(p);// Active
+        Paint_text11979_8(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13136,6 +13164,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11991_8(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g11993_6(PaintAvatarInfo p)
     {
@@ -13144,6 +13178,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11983_65(p);// 
         Paint_use11985_2(p);// 
         Paint_use11987_2(p);// Active
+        Paint_text11991_8(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13214,6 +13249,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text12003_3(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g12005_7(PaintAvatarInfo p)
     {
@@ -13222,6 +13263,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11995_1(p);// 
         Paint_use11997_3(p);// 
         Paint_use11999_5(p);// Active
+        Paint_text12003_3(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13314,6 +13356,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19216(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State4
     private void Paint_g19218(PaintAvatarInfo p)
     {
@@ -13322,6 +13370,7 @@ namespace Philips.PIC.CommonControls
         Paint_use19208(p);// 
         Paint_use19210(p);// 
         Paint_use19212(p);// Active
+        Paint_text19216(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13392,6 +13441,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19228(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State5
     private void Paint_g19230(PaintAvatarInfo p)
     {
@@ -13400,6 +13455,7 @@ namespace Philips.PIC.CommonControls
         Paint_use19220(p);// 
         Paint_use19222(p);// 
         Paint_use19224(p);// Active
+        Paint_text19228(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13477,12 +13533,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text16799(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g16801(PaintAvatarInfo p)
     {
         Paint_use16791(p);// 
         Paint_use16793(p);// 
         Paint_use16795(p);// Active
+        Paint_text16799(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g16801(IRenderPath path)
@@ -13517,12 +13580,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text16807(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text16811(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g16813(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use16803(p);// 
+        Paint_text16807(p);// Current
+        Paint_text16811(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13593,6 +13670,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text16823(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g16825(PaintAvatarInfo p)
     {
@@ -13601,6 +13684,7 @@ namespace Philips.PIC.CommonControls
         Paint_use16815(p);// 
         Paint_use16817(p);// 
         Paint_use16819(p);// Active
+        Paint_text16823(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13671,6 +13755,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text16835(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g16837(PaintAvatarInfo p)
     {
@@ -13679,6 +13769,7 @@ namespace Philips.PIC.CommonControls
         Paint_use16827(p);// 
         Paint_use16829(p);// 
         Paint_use16831(p);// Active
+        Paint_text16835(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13749,6 +13840,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text16847(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g16849(PaintAvatarInfo p)
     {
@@ -13757,6 +13854,7 @@ namespace Philips.PIC.CommonControls
         Paint_use16839(p);// 
         Paint_use16841(p);// 
         Paint_use16843(p);// Active
+        Paint_text16847(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13853,12 +13951,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text15856(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g15858(PaintAvatarInfo p)
     {
         Paint_use15848(p);// 
         Paint_use15850(p);// 
         Paint_use15852(p);// Active
+        Paint_text15856(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g15858(IRenderPath path)
@@ -13893,12 +13998,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text15864(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text15868(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g15870(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use15860(p);// 
+        Paint_text15864(p);// Current
+        Paint_text15868(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -13969,6 +14088,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text15880(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g15882(PaintAvatarInfo p)
     {
@@ -13977,6 +14102,7 @@ namespace Philips.PIC.CommonControls
         Paint_use15872(p);// 
         Paint_use15874(p);// 
         Paint_use15876(p);// Active
+        Paint_text15880(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14047,6 +14173,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text15892(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g15894(PaintAvatarInfo p)
     {
@@ -14055,6 +14187,7 @@ namespace Philips.PIC.CommonControls
         Paint_use15884(p);// 
         Paint_use15886(p);// 
         Paint_use15888(p);// Active
+        Paint_text15892(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14151,12 +14284,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text14847(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g14849(PaintAvatarInfo p)
     {
         Paint_use14839(p);// 
         Paint_use14841(p);// 
         Paint_use14843(p);// Active
+        Paint_text14847(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g14849(IRenderPath path)
@@ -14191,12 +14331,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text14855(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text14859(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g14861(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use14851(p);// 
+        Paint_text14855(p);// Current
+        Paint_text14859(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14267,6 +14421,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text14871(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g14873(PaintAvatarInfo p)
     {
@@ -14275,6 +14435,7 @@ namespace Philips.PIC.CommonControls
         Paint_use14863(p);// 
         Paint_use14865(p);// 
         Paint_use14867(p);// Active
+        Paint_text14871(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14345,6 +14506,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text14883(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g14885(PaintAvatarInfo p)
     {
@@ -14353,6 +14520,7 @@ namespace Philips.PIC.CommonControls
         Paint_use14875(p);// 
         Paint_use14877(p);// 
         Paint_use14879(p);// Active
+        Paint_text14883(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14423,6 +14591,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text14895(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g14897(PaintAvatarInfo p)
     {
@@ -14431,6 +14605,7 @@ namespace Philips.PIC.CommonControls
         Paint_use14887(p);// 
         Paint_use14889(p);// 
         Paint_use14891(p);// Active
+        Paint_text14895(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14527,12 +14702,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11955(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g11957(PaintAvatarInfo p)
     {
         Paint_use11947(p);// 
         Paint_use11949(p);// 
         Paint_use11951(p);// Active
+        Paint_text11955(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g11957(IRenderPath path)
@@ -14567,12 +14749,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11963(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text11967(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g11969(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use11959(p);// 
+        Paint_text11963(p);// Current
+        Paint_text11967(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14643,6 +14839,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11979(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g11981(PaintAvatarInfo p)
     {
@@ -14651,6 +14853,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11971(p);// 
         Paint_use11973(p);// 
         Paint_use11975(p);// Active
+        Paint_text11979(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14721,6 +14924,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text11991(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g11993(PaintAvatarInfo p)
     {
@@ -14729,6 +14938,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11983(p);// 
         Paint_use11985(p);// 
         Paint_use11987(p);// Active
+        Paint_text11991(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14799,6 +15009,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text12003(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g12005(PaintAvatarInfo p)
     {
@@ -14807,6 +15023,7 @@ namespace Philips.PIC.CommonControls
         Paint_use11995(p);// 
         Paint_use11997(p);// 
         Paint_use11999(p);// Active
+        Paint_text12003(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14899,6 +15116,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text9302(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State4
     private void Paint_g9304(PaintAvatarInfo p)
     {
@@ -14907,6 +15130,7 @@ namespace Philips.PIC.CommonControls
         Paint_use9294(p);// 
         Paint_use9296(p);// 
         Paint_use9298(p);// Active
+        Paint_text9302(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -14984,12 +15208,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_use3856_4(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g1427_2_6_9_89_0(PaintAvatarInfo p)
     {
         Paint_use3850(p);// 
         Paint_use3852(p);// 
         Paint_use3854_7(p);// Active
+        Paint_use3856_4(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g1427_2_6_9_89_0(IRenderPath path)
@@ -15024,12 +15255,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text185_2_3_26_3_19_3_5_5(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text185_2_3_26_1_8_2_9_0_2(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g1588_4_40_2_1_8(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use10323(p);// 
+        Paint_text185_2_3_26_3_19_3_5_5(p);// Current
+        Paint_text185_2_3_26_1_8_2_9_0_2(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15100,6 +15345,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_use4335(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_use1323(PaintAvatarInfo p)
     {
@@ -15108,6 +15359,7 @@ namespace Philips.PIC.CommonControls
         Paint_use4329(p);// 
         Paint_use4331(p);// 
         Paint_use4333(p);// Active
+        Paint_use4335(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15178,6 +15430,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_use4345(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_use1325(PaintAvatarInfo p)
     {
@@ -15186,6 +15444,7 @@ namespace Philips.PIC.CommonControls
         Paint_use4339(p);// 
         Paint_use4341(p);// 
         Paint_use4343(p);// Active
+        Paint_use4345(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15256,6 +15515,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_use4325(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_use1327(PaintAvatarInfo p)
     {
@@ -15264,6 +15529,7 @@ namespace Philips.PIC.CommonControls
         Paint_use4319(p);// 
         Paint_use4321(p);// 
         Paint_use4323(p);// Active
+        Paint_use4325(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15356,6 +15622,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text8183(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State4
     private void Paint_g8185(PaintAvatarInfo p)
     {
@@ -15364,6 +15636,7 @@ namespace Philips.PIC.CommonControls
         Paint_use8175(p);// 
         Paint_use8177(p);// 
         Paint_use8179(p);// Active
+        Paint_text8183(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15441,12 +15714,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19412(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g19414(PaintAvatarInfo p)
     {
         Paint_use19404(p);// 
         Paint_use19406(p);// 
         Paint_use19408(p);// Active
+        Paint_text19412(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g19414(IRenderPath path)
@@ -15481,12 +15761,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19420(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text19424(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g19426(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use19416(p);// 
+        Paint_text19420(p);// Current
+        Paint_text19424(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15557,6 +15851,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19436(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g19438(PaintAvatarInfo p)
     {
@@ -15565,6 +15865,7 @@ namespace Philips.PIC.CommonControls
         Paint_use19428(p);// 
         Paint_use19430(p);// 
         Paint_use19432(p);// Active
+        Paint_text19436(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15635,6 +15936,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text19448(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g19450(PaintAvatarInfo p)
     {
@@ -15643,6 +15950,7 @@ namespace Philips.PIC.CommonControls
         Paint_use19440(p);// 
         Paint_use19442(p);// 
         Paint_use19444(p);// Active
+        Paint_text19448(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15739,12 +16047,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text20235(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g20237(PaintAvatarInfo p)
     {
         Paint_use20227(p);// 
         Paint_use20229(p);// 
         Paint_use20231(p);// Active
+        Paint_text20235(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g20237(IRenderPath path)
@@ -15779,12 +16094,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text20243(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text20247(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g20249(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use20239(p);// 
+        Paint_text20243(p);// Current
+        Paint_text20247(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15855,6 +16184,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text20259(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g20261(PaintAvatarInfo p)
     {
@@ -15863,6 +16198,7 @@ namespace Philips.PIC.CommonControls
         Paint_use20251(p);// 
         Paint_use20253(p);// 
         Paint_use20255(p);// Active
+        Paint_text20259(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -15933,6 +16269,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text20271(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g20273(PaintAvatarInfo p)
     {
@@ -15941,6 +16283,7 @@ namespace Philips.PIC.CommonControls
         Paint_use20263(p);// 
         Paint_use20265(p);// 
         Paint_use20267(p);// Active
+        Paint_text20271(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16011,6 +16354,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text20283(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g20285(PaintAvatarInfo p)
     {
@@ -16019,6 +16368,7 @@ namespace Philips.PIC.CommonControls
         Paint_use20275(p);// 
         Paint_use20277(p);// 
         Paint_use20279(p);// Active
+        Paint_text20283(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16115,12 +16465,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21076(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g21078(PaintAvatarInfo p)
     {
         Paint_use21068(p);// 
         Paint_use21070(p);// 
         Paint_use21072(p);// Active
+        Paint_text21076(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g21078(IRenderPath path)
@@ -16155,12 +16512,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21084(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text21088(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g21090(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use21080(p);// 
+        Paint_text21084(p);// Current
+        Paint_text21088(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16231,6 +16602,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21100(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g21102(PaintAvatarInfo p)
     {
@@ -16239,6 +16616,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21092(p);// 
         Paint_use21094(p);// 
         Paint_use21096(p);// Active
+        Paint_text21100(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16309,6 +16687,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21112(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g21114(PaintAvatarInfo p)
     {
@@ -16317,6 +16701,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21104(p);// 
         Paint_use21106(p);// 
         Paint_use21108(p);// Active
+        Paint_text21112(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16387,6 +16772,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21124(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g21126(PaintAvatarInfo p)
     {
@@ -16395,6 +16786,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21116(p);// 
         Paint_use21118(p);// 
         Paint_use21120(p);// Active
+        Paint_text21124(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16491,12 +16883,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text7782(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g7784(PaintAvatarInfo p)
     {
         Paint_use7774(p);// 
         Paint_use7776(p);// 
         Paint_use7778(p);// Active
+        Paint_text7782(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g7784(IRenderPath path)
@@ -16531,12 +16930,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text7790(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text7794(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g7796(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use7786(p);// 
+        Paint_text7790(p);// Current
+        Paint_text7794(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16607,6 +17020,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text7806(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g7808(PaintAvatarInfo p)
     {
@@ -16615,6 +17034,7 @@ namespace Philips.PIC.CommonControls
         Paint_use7798(p);// 
         Paint_use7800(p);// 
         Paint_use7802(p);// Active
+        Paint_text7806(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16685,6 +17105,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text7818(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g7820(PaintAvatarInfo p)
     {
@@ -16693,6 +17119,7 @@ namespace Philips.PIC.CommonControls
         Paint_use7810(p);// 
         Paint_use7812(p);// 
         Paint_use7814(p);// Active
+        Paint_text7818(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16763,6 +17190,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text7830(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g7832(PaintAvatarInfo p)
     {
@@ -16771,6 +17204,7 @@ namespace Philips.PIC.CommonControls
         Paint_use7822(p);// 
         Paint_use7824(p);// 
         Paint_use7826(p);// Active
+        Paint_text7830(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16867,12 +17301,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21917(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g21919(PaintAvatarInfo p)
     {
         Paint_use21909(p);// 
         Paint_use21911(p);// 
         Paint_use21913(p);// Active
+        Paint_text21917(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g21919(IRenderPath path)
@@ -16907,12 +17348,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21925(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text21929(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g21931(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use21921(p);// 
+        Paint_text21925(p);// Current
+        Paint_text21929(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -16983,6 +17438,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21941(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g21943(PaintAvatarInfo p)
     {
@@ -16991,6 +17452,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21933(p);// 
         Paint_use21935(p);// 
         Paint_use21937(p);// Active
+        Paint_text21941(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17061,6 +17523,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21953(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g21955(PaintAvatarInfo p)
     {
@@ -17069,6 +17537,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21945(p);// 
         Paint_use21947(p);// 
         Paint_use21949(p);// Active
+        Paint_text21953(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17139,6 +17608,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text21965(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g21967(PaintAvatarInfo p)
     {
@@ -17147,6 +17622,7 @@ namespace Philips.PIC.CommonControls
         Paint_use21957(p);// 
         Paint_use21959(p);// 
         Paint_use21961(p);// Active
+        Paint_text21965(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17243,12 +17719,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text22758(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g22760(PaintAvatarInfo p)
     {
         Paint_use22750(p);// 
         Paint_use22752(p);// 
         Paint_use22754(p);// Active
+        Paint_text22758(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g22760(IRenderPath path)
@@ -17283,12 +17766,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text22766(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text22770(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g22772(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use22762(p);// 
+        Paint_text22766(p);// Current
+        Paint_text22770(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17359,6 +17856,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text22782(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g22784(PaintAvatarInfo p)
     {
@@ -17367,6 +17870,7 @@ namespace Philips.PIC.CommonControls
         Paint_use22774(p);// 
         Paint_use22776(p);// 
         Paint_use22778(p);// Active
+        Paint_text22782(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17437,6 +17941,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text22794(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g22796(PaintAvatarInfo p)
     {
@@ -17445,6 +17955,7 @@ namespace Philips.PIC.CommonControls
         Paint_use22786(p);// 
         Paint_use22788(p);// 
         Paint_use22790(p);// Active
+        Paint_text22794(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17515,6 +18026,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text22806(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g22808(PaintAvatarInfo p)
     {
@@ -17523,6 +18040,7 @@ namespace Philips.PIC.CommonControls
         Paint_use22798(p);// 
         Paint_use22800(p);// 
         Paint_use22802(p);// Active
+        Paint_text22806(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17615,6 +18133,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text9314(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State4
     private void Paint_g9316(PaintAvatarInfo p)
     {
@@ -17623,6 +18147,7 @@ namespace Philips.PIC.CommonControls
         Paint_use9306(p);// 
         Paint_use9308(p);// 
         Paint_use9310(p);// Active
+        Paint_text9314(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17700,12 +18225,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text23567(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g23569(PaintAvatarInfo p)
     {
         Paint_use23559(p);// 
         Paint_use23561(p);// 
         Paint_use23563(p);// Active
+        Paint_text23567(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g23569(IRenderPath path)
@@ -17740,12 +18272,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text23575(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text23579(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g23581(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use23571(p);// 
+        Paint_text23575(p);// Current
+        Paint_text23579(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17816,6 +18362,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text23591(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g23593(PaintAvatarInfo p)
     {
@@ -17824,6 +18376,7 @@ namespace Philips.PIC.CommonControls
         Paint_use23583(p);// 
         Paint_use23585(p);// 
         Paint_use23587(p);// Active
+        Paint_text23591(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17894,6 +18447,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text23603(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g23605(PaintAvatarInfo p)
     {
@@ -17902,6 +18461,7 @@ namespace Philips.PIC.CommonControls
         Paint_use23595(p);// 
         Paint_use23597(p);// 
         Paint_use23599(p);// Active
+        Paint_text23603(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -17972,6 +18532,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text23615(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g23617(PaintAvatarInfo p)
     {
@@ -17980,6 +18546,7 @@ namespace Philips.PIC.CommonControls
         Paint_use23607(p);// 
         Paint_use23609(p);// 
         Paint_use23611(p);// Active
+        Paint_text23615(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18076,12 +18643,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text24376(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g24378(PaintAvatarInfo p)
     {
         Paint_use24368(p);// 
         Paint_use24370(p);// 
         Paint_use24372(p);// Active
+        Paint_text24376(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g24378(IRenderPath path)
@@ -18116,12 +18690,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text24384(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text24388(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g24390(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use24380(p);// 
+        Paint_text24384(p);// Current
+        Paint_text24388(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18192,6 +18780,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text24400(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g24402(PaintAvatarInfo p)
     {
@@ -18200,6 +18794,7 @@ namespace Philips.PIC.CommonControls
         Paint_use24392(p);// 
         Paint_use24394(p);// 
         Paint_use24396(p);// Active
+        Paint_text24400(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18270,6 +18865,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text24412(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g24414(PaintAvatarInfo p)
     {
@@ -18278,6 +18879,7 @@ namespace Philips.PIC.CommonControls
         Paint_use24404(p);// 
         Paint_use24406(p);// 
         Paint_use24408(p);// Active
+        Paint_text24412(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18374,12 +18976,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28879(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g28881(PaintAvatarInfo p)
     {
         Paint_use28871(p);// 
         Paint_use28873(p);// 
         Paint_use28875(p);// Active
+        Paint_text28879(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g28881(IRenderPath path)
@@ -18414,12 +19023,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28887(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text28891(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g28893(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use28883(p);// 
+        Paint_text28887(p);// Current
+        Paint_text28891(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18490,6 +19113,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28903(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g28905(PaintAvatarInfo p)
     {
@@ -18498,6 +19127,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28895(p);// 
         Paint_use28897(p);// 
         Paint_use28899(p);// Active
+        Paint_text28903(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18568,6 +19198,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28915(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g28917(PaintAvatarInfo p)
     {
@@ -18576,6 +19212,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28907(p);// 
         Paint_use28909(p);// 
         Paint_use28911(p);// Active
+        Paint_text28915(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18646,6 +19283,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28927(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g28929(PaintAvatarInfo p)
     {
@@ -18654,6 +19297,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28919(p);// 
         Paint_use28921(p);// 
         Paint_use28923(p);// Active
+        Paint_text28927(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18750,12 +19394,19 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28943(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State0
     private void Paint_g28945(PaintAvatarInfo p)
     {
         Paint_use28935(p);// 
         Paint_use28937(p);// 
         Paint_use28939(p);// Active
+        Paint_text28943(p);// Name
     }
     //----------------------------------------
     private void SetPathData_g28945(IRenderPath path)
@@ -18790,12 +19441,26 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28951(PaintAvatarInfo p) //Use: Current
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
+    private void Paint_text28955(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: NextState
     private void Paint_g28957(PaintAvatarInfo p)
     {
         TransformMatrix transformMatrixWas =_patientAvatarRenderer.Transformation;
         PushMatrix(1,0,0,1,-0.183488,-0.330474);
         Paint_use28947(p);// 
+        Paint_text28951(p);// Current
+        Paint_text28955(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18866,6 +19531,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28967(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State1
     private void Paint_g28969(PaintAvatarInfo p)
     {
@@ -18874,6 +19545,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28959(p);// 
         Paint_use28961(p);// 
         Paint_use28963(p);// Active
+        Paint_text28967(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -18944,6 +19616,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28979(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State2
     private void Paint_g28981(PaintAvatarInfo p)
     {
@@ -18952,6 +19630,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28971(p);// 
         Paint_use28973(p);// 
         Paint_use28975(p);// Active
+        Paint_text28979(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
@@ -19022,6 +19701,12 @@ namespace Philips.PIC.CommonControls
      }
     //----------------------------------------
 
+    private void Paint_text28991(PaintAvatarInfo p) //Use: Name
+    {
+          // no code for texts
+    }
+    //----------------------------------------
+
     //skill: default -> Group: State3
     private void Paint_g28993(PaintAvatarInfo p)
     {
@@ -19030,6 +19715,7 @@ namespace Philips.PIC.CommonControls
         Paint_use28983(p);// 
         Paint_use28985(p);// 
         Paint_use28987(p);// Active
+        Paint_text28991(p);// Name
         _patientAvatarRenderer.Transformation = transformMatrixWas;
     }
     //----------------------------------------
